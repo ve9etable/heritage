@@ -60,14 +60,27 @@ records.every((r) => r.file.startsWith(SITES_DIR + "/")) ? ok("记录路径均�
   : bad("存在未写入 " + SITES_DIR + "/ 的记录");
 
 console.log("\n6. 数据质量");
-const thin = records.filter((r) => (r.warn && r.warn.length) || !r.points.length || !r.desc || !r.year);
-thin.length === 0 ? ok("所有记录均抽到名称/年代/简介/看点")
-  : bad("以下记录字段不全（卡片会很单薄）：" + thin.map((r) => r.name + "(" + (r.warn || []).join("、") + ")").join("；"));
+/** 卡片必需字段：缺了卡片会明显残缺 */
+const REQUIRED = [["name", "名称"], ["desc", "简介"], ["tier", "级别"], ["region", "地区"],
+  ["category", "类别"], ["points", "看点"], ["tags", "标签"]];
+const incomplete = records.filter((r) => REQUIRED.some(([k]) => !r[k] || (Array.isArray(r[k]) && !r[k].length)));
+incomplete.length === 0 ? ok("所有记录均抽到名称/级别/地区/类别/简介/看点/标签")
+  : bad("以下记录缺少必需字段（卡片会很单薄）：" + incomplete.map((r) => r.name).join("、"));
+/** 年代为「软」字段：原文确实没写就显示「年代不详」，不算错误 */
+const noYear = records.filter((r) => !r.year);
+noYear.length === 0 ? ok("所有记录均抽到年代")
+  : info("以下 " + noYear.length + " 篇页面原文未标注始建年代，卡片显示「年代不详」并排在年代排序末位："
+    + noYear.map((r) => r.name).join("、"));
+const noEra = records.filter((r) => !r.era || r.era === "年代不详");
+noEra.length === 0 ? ok("年代短标签齐全") : info("缺少年代短标签：" + noEra.map((r) => r.name).join("、"));
 const artsUsed = [...new Set(records.map((r) => r.art))];
 const artsDefined = [...index.matchAll(/^\s{4}(\w+):\s'<svg class="art"/gm)].map((m) => m[1]);
 const noArt = artsUsed.filter((a) => !artsDefined.includes(a));
 noArt.length === 0 ? ok("记录用到的插画 " + artsUsed.join("/") + " 均已在 index.html 的 ART 中定义")
   : bad("index.html 的 ART 缺少插画：" + noArt.join("、"));
+const names = records.map((r) => r.name);
+const dupName = names.filter((n, i) => names.indexOf(n) !== i);
+dupName.length === 0 ? ok("无重名单位") : bad("存在重名单位：" + [...new Set(dupName)].join("、"));
 const themeFile = path.join(root, "data", "theme.json");
 if (fs.existsSync(themeFile)) {
   const theme = JSON.parse(fs.readFileSync(themeFile, "utf8").replace(/^\s*\/\/.*$/gm, ""));
