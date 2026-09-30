@@ -273,6 +273,7 @@
 
 <button class="totop" id="totop" type="button" aria-label="返回顶部">↑</button>
 
+<script src="data/sites.js"></script>
 <script>
 (function(){
   "use strict";
@@ -337,82 +338,85 @@
       + '<path d="M0 156q60-8 120 0t120 0 120 0 120 0v44H0z" fill="rgba(0,0,0,.15)"/>'
       + '<g fill="rgba(255,255,255,.16)"><rect x="0" y="170" width="480" height="30"/></g>'
       + '<path d="M60 180h360" stroke="rgba(255,255,255,.22)" stroke-width="2"/>'
+      + '</svg>',
+
+    pagoda: '<svg class="art" viewBox="0 0 480 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true">'
+      + '<path d="M0 150v-28q60-16 120 0t120 0 120 0 120 0v28z" fill="rgba(0,0,0,.11)"/>'
+      + '<g fill="rgba(255,255,255,.12)"><path d="M40 150v-34l30-22 30 22v34z"/>'
+      + '<path d="M400 150v-28l26-18 26 18v28z"/></g>'
+      + '<g fill="rgba(255,255,255,.18)"><rect x="196" y="146" width="88" height="8"/>'
+      + '<rect x="206" y="154" width="68" height="6"/></g>'
+      + '<g fill="rgba(255,255,255,.22)"><rect x="214" y="126" width="52" height="22"/>'
+      + '<path d="M176 128q64-20 128 0-64-10-128 0z"/><rect x="222" y="134" width="8" height="14"/>'
+      + '<rect x="250" y="134" width="8" height="14"/></g>'
+      + '<g fill="rgba(255,255,255,.24)"><rect x="220" y="98" width="40" height="30"/>'
+      + '<path d="M188 100q52-18 104 0-52-9-104 0z"/></g>'
+      + '<g fill="rgba(255,255,255,.26)"><rect x="226" y="72" width="28" height="28"/>'
+      + '<path d="M200 74q40-16 80 0-40-8-80 0z"/></g>'
+      + '<g fill="rgba(255,255,255,.28)"><rect x="232" y="50" width="16" height="24"/>'
+      + '<path d="M212 52q28-13 56 0-28-7-56 0z"/></g>'
+      + '<g fill="rgba(255,255,255,.34)"><rect x="237" y="30" width="6" height="22"/>'
+      + '<circle cx="240" cy="26" r="4"/></g>'
+      + '<path d="M0 156q60-9 120 0t120 0 120 0 120 0v44H0z" fill="rgba(0,0,0,.17)"/>'
+      + '<path d="M0 176q60-7 120 0t120 0 120 0 120 0v24H0z" fill="rgba(255,255,255,.09)"/>'
+      + '</svg>',
+
+    garden: '<svg class="art" viewBox="0 0 480 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true">'
+      + '<path d="M0 150v-30q60-14 120 0t120 0 120 0 120 0v30z" fill="rgba(0,0,0,.11)"/>'
+      + '<g fill="rgba(255,255,255,.13)"><path d="M52 152v-40l14-16 14 16v40z"/>'
+      + '<path d="M96 152v-28l11-13 11 13v28z"/><path d="M372 152v-32l12-14 12 14v32z"/>'
+      + '<path d="M410 152v-24l10-12 10 12v24z"/></g>'
+      + '<g fill="rgba(255,255,255,.19)"><rect x="140" y="120" width="200" height="34"/>'
+      + '<rect x="132" y="114" width="216" height="7"/></g>'
+      + '<g fill="rgba(0,0,0,.16)"><rect x="162" y="128" width="10" height="26"/>'
+      + '<rect x="196" y="128" width="10" height="26"/><rect x="230" y="128" width="10" height="26"/>'
+      + '<rect x="264" y="128" width="10" height="26"/><rect x="298" y="128" width="10" height="26"/></g>'
+      + '<g fill="rgba(255,255,255,.27)"><rect x="196" y="84" width="88" height="32"/>'
+      + '<path d="M174 88q66-30 132 0-66-16-132 0z"/><rect x="214" y="94" width="8" height="22"/>'
+      + '<rect x="240" y="94" width="8" height="22"/><rect x="266" y="94" width="8" height="22"/></g>'
+      + '<g fill="rgba(255,255,255,.22)"><rect x="228" y="58" width="24" height="20"/>'
+      + '<path d="M210 62q30-18 60 0-30-9-60 0z"/></g>'
+      + '<g fill="rgba(255,255,255,.18)"><path d="M240 46v-14"/><circle cx="240" cy="30" r="5"/></g>'
+      + '<g fill="rgba(255,255,255,.16)"><rect x="120" y="152" width="240" height="6"/></g>'
+      + '<path d="M0 158q60-9 120 0t120 0 120 0 120 0v42H0z" fill="rgba(0,0,0,.16)"/>'
+      + '<path d="M40 176q30-5 60 0t60 0 60 0 60 0 60 0 60 0" stroke="rgba(255,255,255,.16)"'
+      + ' stroke-width="2" fill="none"/>'
       + '</svg>'
   };
 
-  var SITES = [
-    {
-      file: "sites/叙州城墙深度实地导览.html",
-      art: "xz",
-      name: "叙州城墙",
-      alias: "叙州城城墙旧址（宜宾）",
-      region: "四川省 · 宜宾市翠屏区",
-      tier: "市保",
-      tierFull: "宜宾市市级文物保护单位",
-      category: "古建筑 / 古遗址",
-      year: 1373,
-      era: "明洪武六年 1373年",
-      a: "#c9a227", a2: "#7d6412", glyph: "城",
-      desc: "明洪武六年（1373年）四川总兵李文忠下令修筑的宜宾石城，与成都城、重庆城并称明王朝巩固四川统治的三大堡垒；现存水东门段、冠英街（合江门）段城墙，条石错缝迭砌，砌墙石块大者重达1吨以上。",
-      points: [
-        "水东门城门：拱形门洞、宽2.7米，门上设女墙",
-        "水东门广场段城墙 长393.8米 · 高6.1米 · 厚6.7米",
-        "冠英街段城墙 长220.5米，连合江门地标广场",
-        "合江门远眺岷江、金沙江、长江三江交汇"
-      ],
-      tags: ["明代石城","六门格局","依江为堑","露天文保","免费参观"],
-      open: "沿滨江路免费参观"
-    },
-    {
-      file: "sites/甲秀楼深度实地导览.html",
-      art: "jxl",
-      name: "甲秀楼",
-      alias: "甲秀楼（贵阳）",
-      region: "贵州省 · 贵阳市南明区",
-      tier: "国保",
-      tierFull: "全国重点文物保护单位",
-      category: "古建筑（楼阁）",
-      year: 1598,
-      era: "明万历二十六年 1598年",
-      a: "#a03a2c", a2: "#5c1712", glyph: "楼",
-      desc: "明万历二十六年（1598年）筑于南明河鳌矶石上，取「科甲挺秀」之意；三层三檐四角攒尖顶石木阁楼，构造在中国古建筑史上独一无二，与浮玉桥、涵碧亭、翠微园共成「城南胜迹」，贵阳城市地标与市徽。",
-      points: [
-        "三层三重檐四角攒尖顶，飞甍翘角、石柱托檐",
-        "门前 174 字长联，中国名胜古迹三大长联之一",
-        "楼内八块清代碑刻",
-        "浮玉桥与涵碧亭：拍甲秀楼全景最佳位置"
-      ],
-      tags: ["城南胜迹","174字长联","清代碑刻","市徽地标","国家AAA级景区"],
-      open: "9:00—17:00 · 免费"
-    },
-    {
-      file: "sites/翠屏书院深度实地导览.html",
-      art: "cps",
-      name: "翠屏书院",
-      alias: "翠屏书院（宜宾）",
-      region: "四川省 · 宜宾市翠屏区翠屏山",
-      tier: "省保",
-      tierFull: "四川省文物保护单位",
-      category: "古建筑（明清书院）",
-      year: 1481,
-      era: "明成化十七年 1481年",
-      a: "#c96a26", a2: "#7d3d13", glyph: "院",
-      desc: "明成化十七年（1481年）叙州府知府陆渊之创建，次年开学，为叙州府属书院、古时宜宾最高学府，明清时期四川南部书院建筑的典型代表；1960年辟为赵一曼纪念馆馆址，2014年入选国家级抗战纪念设施、遗址名录。",
-      points: [
-        "赵一曼汉白玉塑像，高约五米、身着军装",
-        "同一中轴线纵向排列的三馆陈列",
-        "清嘉庆时期主体建筑一进三幢、钟亭鼓亭",
-        "1961年朱德委员长亲笔题写馆名"
-      ],
-      tags: ["明清书院","赵一曼纪念馆","抗战遗址名录","四合院布局","全年免费"],
-      open: "全年 365 天免费开放"
-    }
-  ];
+  // 单位数据全部来自 data/sites.js（由 tools/build.js 从 sites/*.html 抽取生成），
+  // 本文件只保留「展示逻辑 + 插画」，新增单位无需改动这里。
+  var RAW = window.SITES_DATA;
+  var DATA_OK = Array.isArray(RAW) && RAW.length > 0;
+  var SITES = DATA_OK ? RAW.slice() : [];
+  var MISSING = [];
+  if(!DATA_OK) MISSING.push("未找到 data/sites.js，请运行 node tools/build.js 生成数据后再刷新");
 
-  var HOT = ["城墙","书院","国保","宜宾","贵阳","明代","赵一曼","免费","水东门","长联"];
-  var TIER_ORDER = ["全部","国保","省保","市保"];
-  var LEVEL = {"国保":0,"省保":1,"市保":2};
-  var TIER_LONG = {"全部":"全部级别","国保":"全国重点文物保护单位","省保":"省级文物保护单位","市保":"市级文物保护单位"};
+  var LEVEL = {"国保":0,"省保":1,"市保":2,"县保":3,"其他":9};
+  var TIER_LONG = {"全部":"全部级别","国保":"全国重点文物保护单位","省保":"省级文物保护单位",
+    "市保":"市级文物保护单位","县保":"县级文物保护单位","其他":"其他级别"};
+  var TIER_ORDER = ["全部"].concat(
+    SITES.map(function(s){ return s.tier; })
+        .filter(function(t, i, a){ return a.indexOf(t) === i; })
+        .sort(function(a, b){ return (LEVEL[a] || 5) - (LEVEL[b] || 5); }));
+
+  /** 热门词：优先城市名，其次各处的特色标签，数量随收录增长 */
+  function deriveHot(){
+    var out = [], seen = {}, push = function(t){
+      t = (t || "").trim();
+      if(t.length >= 2 && t.length <= 8 && !seen[t] && out.length < 10){ seen[t] = 1; out.push(t); }
+    };
+    SITES.forEach(function(s){ push(s.city); });
+    SITES.forEach(function(s){
+      (s.tags || []).forEach(function(t){
+        if(t.indexOf("代") < 0) push(t);
+        push((s.points || [])[0] ? s.points[0].split("：")[0] : "");
+      });
+    });
+    push("免费");
+    return out;
+  }
+  var HOT = deriveHot();
 
   var $ = function(id){ return document.getElementById(id); };
   var grid = $("grid"), emptyBox = $("empty"), emptyQ = $("emptyQ"), countEl = $("count");
@@ -421,14 +425,24 @@
   var state = { q: "", tier: "全部", sort: "default" };
 
   SITES.forEach(function(s){
-    s.hay = [s.name,s.alias,s.region,s.tier,s.tierFull,s.category,s.era,s.desc,s.open,s.file,
-             s.tags.join(" ")].concat(s.points).join(" ").toLowerCase();
+    s.hay = [s.name,s.alias,s.full,s.region,s.city,s.tier,s.tierFull,s.levelNote,s.category,
+             s.era,s.year,s.desc,s.open,s.file,(s.tags || []).join(" "),
+             (s.points || []).join(" "),(s.route || []).join(" ")]
+            .filter(Boolean).join(" ").toLowerCase();
   });
 
   function esc(s){
     return String(s).replace(/[&<>"]/g, function(c){
       return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];
     });
+  }
+
+  /** 「四川省宜宾市翠屏区」→「四川省 · 宜宾市翠屏区」 */
+  function fmtRegion(r){
+    return String(r || "").replace(/^(.{2,5}省|.{2,7}自治区)/, "$1 · ");
+  }
+  function fmtCategory(c){
+    return String(c || "").replace(/\s*\/\s*/g, " / ");
   }
 
   function hl(text, q){
@@ -459,17 +473,16 @@
   }
 
   function renderStats(){
-    var cities = {}, minY = Infinity, maxY = 0, top = "";
+    var cities = {}, minY = Infinity, maxY = 0;
     SITES.forEach(function(s){
-      cities[s.region.split(" · ")[1] || s.region] = 1;
-      minY = Math.min(minY, s.year); maxY = Math.max(maxY, s.year);
-      if(!top || LEVEL[s.tier] < LEVEL[top]) top = s.tier;
+      cities[s.city || s.region] = 1;
+      if(s.year){ minY = Math.min(minY, s.year); maxY = Math.max(maxY, s.year); }
     });
     var rows = [
       {n: SITES.length, u: "处", l: "收录文保单位"},
       {n: Object.keys(cities).length, u: "座", l: "覆盖城市"},
       {n: SITES.filter(function(s){ return s.tier === "国保"; }).length, u: "处", l: "全国重点文保"},
-      {n: minY, u: "— " + maxY, l: "始建年代跨度"}
+      {n: minY === Infinity ? "—" : minY, u: minY === Infinity ? "" : "— " + maxY, l: "始建年代跨度"}
     ];
     statsEl.innerHTML = rows.map(function(r){
       return '<div class="stat"><div class="n">' + r.n + "<small>" + r.u + "</small></div>" +
@@ -486,13 +499,13 @@
         '<span class="era">' + esc(s.era) + "</span></div>" +
       '<div class="body">' +
         '<h2>' + hl(s.name, state.q) + '<span class="en">' + hl(s.alias, state.q) + "</span></h2>" +
-        '<div class="where"><span>📍 ' + hl(s.region, state.q) + "</span>" +
-          "<span>🏷 " + hl(s.category, state.q) + "</span></div>" +
+        '<div class="where"><span>📍 ' + hl(fmtRegion(s.region), state.q) + "</span>" +
+          "<span>🏷 " + hl(fmtCategory(s.category), state.q) + "</span></div>" +
         '<p class="desc">' + hl(s.desc, state.q) + "</p>" +
-        '<ul class="points">' + s.points.slice(0,3).map(function(p){
+        '<ul class="points">' + (s.points || []).slice(0,3).map(function(p){
           return "<li>" + hl(p, state.q) + "</li>";
         }).join("") + "</ul>" +
-        '<div class="tags">' + s.tags.map(function(t){
+        '<div class="tags">' + (s.tags || []).map(function(t){
           return '<span class="tag">' + hl(t, state.q) + "</span>";
         }).join("") + "</div>" +
         '<div class="foot"><span class="go">进入深度导览</span>' +
@@ -600,6 +613,16 @@
   state.q = m0 ? decodeURIComponent(m0[1]) : "";
   input.value = state.q;
   render();
+
+  if(MISSING.length){
+    emptyBox.hidden = false;
+    emptyQ.textContent = "";
+    emptyBox.querySelector(".big").textContent = "⚠";
+    emptyBox.querySelector("p").innerHTML = esc(MISSING[0]) +
+      "<br><span style='font-size:13px'>命令：<code>node tools/build.js</code></span>";
+    emptyBox.querySelector("p:last-of-type").textContent = "";
+    countEl.textContent = "数据未生成";
+  }
 })();
 </script>
 </body>

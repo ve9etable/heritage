@@ -2,24 +2,28 @@
 
 一个收录**全国重点 / 省级 / 市级文物保护单位**的静态介绍站：首页以卡片墙呈现每处文保单位，点击卡片即跳转到对应的独立深度实地导览页，首页支持**实时搜索**与筛选排序。
 
-- 纯静态，无框架、无构建依赖，GitHub Pages 直接可用
-- 卡片信息来自各导览页正文（基本信息、核心看点、开放信息等）
-- 插画为内联 SVG，随卡片主题色变化
+- 纯静态，无框架、无前端构建依赖，GitHub Pages 直接可用
+- **HTML 页面本身即唯一数据源**：`tools/build.js` 从 `sites/*.html` 抽取卡片所需字段生成 `data/sites.js`，新增单位无需改动 `index.html`
+- 插画与主题色自动分配（也可在 `data/theme.json` 里手工指定）
+- 部署前由 `tools/check.js` 校验结构与数据一致性
 
 ## 目录结构
 
 ```
 .
-├── index.html                     # 站点首页（卡片墙 + 搜索筛选）
+├── index.html                     # 站点首页（卡片墙 + 搜索筛选），不含任何单位数据
+├── data/                          # 自动生成 / 可选配置
+│   ├── sites.js                   # 由 tools/build.js 生成，勿手工编辑
+│   └── theme.json                 # 可选：插画与配色的手工覆盖
 ├── sites/                         # 所有独立导览页放这里，新增页面只放本目录
 │   ├── 叙州城墙深度实地导览.html     # 宜宾市市级文物保护单位
 │   ├── 甲秀楼深度实地导览.html       # 全国重点文物保护单位
 │   └── 翠屏书院深度实地导览.html     # 四川省文物保护单位
-├── tools/check.js                 # 结构与链接校验脚本
-└── .github/workflows/pages.yml    # 自动构建并部署到 GitHub Pages
+├── tools/
+│   ├── build.js                   # 从 sites/*.html 抽取数据 → data/sites.js
+│   └── check.js                   # 结构与数据校验（部署前守门）
+└── .github/workflows/pages.yml    # 自动生成数据 + 校验 + 部署到 GitHub Pages
 ```
-
-> 根目录只保留 `index.html`，导览页一律放入 `sites/`，`tools/check.js` 会在部署前拦截「页面没归位」和「新增页面忘记在首页登记」两类问题。
 
 ## 本地预览
 
@@ -29,37 +33,41 @@ python -m http.server 8000     # 然后访问 http://localhost:8000
 npx serve .
 ```
 
-> 页面本身是纯静态的，直接双击 `index.html` 也能正常浏览；使用本地服务器可避免个别浏览器对本地文件路径的限制。
+> 若刚新增了导览页，先跑一次 `node tools/build.js` 生成数据；直接双击 `index.html` 也能正常浏览（数据文件用 `<script src>` 加载，不受 `file://` 的 CORS 限制）。
 
 ## 新增一处文保单位
 
-两步：
+**只需两步，`index.html` 完全不用动：**
 
 1. 把导览页存为 `sites/某单位深度实地导览.html`；
-2. 在 `index.html` 的 `SITES` 数组中追加一条记录，首页会自动生成卡片：
+2. 重新生成数据：
 
-```js
+```bash
+node tools/build.js     # 扫描 sites/*.html → 写入 data/sites.js
+node tools/check.js     # 校验（可选，check.js 内部也会自动重新生成并比对）
+```
+
+`build.js` 会从每个页面自动抽取：名称、副名、单位全称、保护级别、所在地、类别、始建年代、
+导语简介、核心看点、推荐路线、参观信息、标签，首页卡片与搜索索引随之自动生成。
+抽取结果默认按**始建年代由早到晚**排序。
+
+页面需要包含 `<h1>`、`.kicker`、`.sub` 以及「一、基本信息」表格（`单位全称` / `保护级别` /
+`类别` / `地址` / `始建` / `规模` / `身份叠加`）和「五、核心看点」「七、推荐观看顺序」
+「九、参观/开放信息」小节，缺项时 `build.js` 会在终端给出提示，`check.js` 也会报出来。
+
+### 调整插画与配色
+
+`build.js` 按单位名称匹配插画（塔→塔、城墙→城墙、楼阁→楼阁、书院/祠庙→院落、园林→园林），
+配色从 8 色调古建色板按名称哈希选取，水印字取名称首字。需要指定时在 `data/theme.json`
+里加一条（键为文件名或单位名均可）：
+
+```json
 {
-  file: "sites/某单位深度实地导览.html",   // 固定写在 sites/ 下
-  art: "xz",                          // 插画样式：xz 城墙 / jxl 楼阁 / cps 书院
-  name: "某单位",
-  alias: "某单位（城市）",
-  region: "省份 · 城市 · 区县",
-  tier: "国保",                       // 只能是 国保 / 省保 / 市保
-  tierFull: "全国重点文物保护单位",
-  category: "古建筑（楼阁）",
-  year: 1598,
-  era: "明万历二十六年 1598年",
-  a: "#a03a2c", a2: "#5c1712",       // 卡片主题色（浅、深）
-  glyph: "楼",                        // 卡片水印字
-  desc: "一段简介……",
-  points: ["核心看点 1", "核心看点 2", "核心看点 3"],
-  tags: ["标签1", "标签2"],
-  open: "开放时间 / 门票说明"
+  "某单位深度实地导览.html": { "art": "jxl", "a": "#a03a2c", "a2": "#5c1712", "glyph": "楼" }
 }
 ```
 
-搜索关键词索引会自动包含名称、地区、级别、年代、简介、看点与标签，无需额外维护。改完在项目根目录跑一下 `node tools/check.js` 确认无遗漏，再提交推送即可自动上线。
+可用插画：`xz` 城墙、`jxl` 楼阁、`cps` 院落、`pagoda` 塔、`garden` 园林。
 
 ## 部署到 GitHub Pages
 
@@ -67,10 +75,11 @@ npx serve .
 
 1. 在 GitHub 新建一个**公开**仓库（GitHub Pages 免费额度要求公开仓库），把本目录内容推上去。
 2. 仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
-3. 推送到 `main` 后查看 **Actions** 中的 `Deploy to GitHub Pages`，成功后即可访问
-   `https://<用户名>.github.io/<仓库名>/`。
+3. 推送到 `main` 后查看 **Actions** 中的「生成数据并校验 / 部署到 GitHub Pages」，
+   成功后即可访问 `https://<用户名>.github.io/<仓库名>/`。
 
-`tools/check.js` 会在部署前校验必要文件与卡片跳转目标是否真实存在，避免线上出现 404。
+工作流每次推送都会重新执行 `build.js` 再部署，因此**忘记生成数据也不会导致线上缺卡片**；
+若某页结构异常导致字段抽不到，校验步骤会失败并指出具体页面。
 
 ## 内容说明
 

@@ -14,13 +14,9 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-env:
-  SITE_NAME: 文保单位深度导览馆
-  SITE_DESCRIPTION: 收录全国重点、省级、市级文物保护单位的深度实地导览，支持在线搜索。
-
 jobs:
   build:
-    name: 结构与链接校验
+    name: 生成数据并校验
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,14 +25,17 @@ jobs:
         with:
           node-version: 20
 
-      - name: 校验站点结构与卡片链接
+      - name: 从 sites/*.html 生成数据索引
+        run: node tools/build.js
+
+      - name: 校验站点结构与数据
         run: node tools/check.js
 
       - name: 生成 artifact
         run: |
           mkdir -p _site
           cp index.html .nojekyll _site/
-          cp -r sites _site/
+          cp -r sites data _site/
 
       - name: 上传 Pages 构建产物
         uses: actions/upload-pages-artifact@v3
