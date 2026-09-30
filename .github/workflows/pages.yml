@@ -21,8 +21,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 启用并校验 Pages 设置（enablement 默认 true，仓库未开 Pages 时会一并开启）
+      # 启用并校验 Pages 设置。enablement: true 让仓库未开 Pages 时由本步骤自动创建
+      # （GitHub 的 Actions 默认不代开 Pages，缺这一步 deploy-pages 会 404）
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/setup-node@v4
         with:
