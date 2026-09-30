@@ -129,7 +129,7 @@
   select.sel:hover{border-color:var(--gold);}
 
   /* ================= GRID / CARD ================= */
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;padding:32px 0 6px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;padding:32px 0 46px;}
   .card{position:relative;display:flex;flex-direction:column;overflow:hidden;background:var(--paper);
     border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--sh);
     transition:transform .28s cubic-bezier(.2,.75,.3,1),box-shadow .28s,border-color .28s;
@@ -189,12 +189,6 @@
     border:1px solid var(--line);color:var(--ink);padding:8px 18px;border-radius:999px;transition:all .16s;}
   .empty button:hover{border-color:var(--gold);color:var(--brick-deep);transform:translateY(-1px);
     box-shadow:var(--sh);}
-
-  .note{margin:28px 0 44px;background:linear-gradient(180deg,#f3eeda,#efe8d5);border:1px solid var(--line);
-    border-left:4px solid var(--gold);border-radius:10px;padding:15px 19px;font-size:13.2px;color:var(--ink-2);}
-  .note b{color:var(--brick-deep);}
-  .note code{font-size:12.5px;background:rgba(255,255,255,.7);border:1px solid var(--line);
-    border-radius:5px;padding:0 5px;}
 
   footer.site{position:relative;color:#a89f8d;text-align:center;padding:30px 22px 34px;font-size:12.5px;
     background:linear-gradient(180deg,#2b261a,#221e15);border-top:4px solid var(--gold);}
@@ -269,9 +263,6 @@
     <p>未找到与「<span class="q" id="emptyQ"></span>」匹配的文保单位</p>
     <p style="font-size:13px;margin-top:6px;">试试更短的关键词（如“城墙”“书院”“国保”），或清除筛选条件</p>
     <button type="button" id="reset">重置搜索与筛选</button>
-  </div>
-  <div class="note">
-    <b>关于本站：</b>各卡片跳转至 <code>sites/</code> 目录下的独立导览页，内容整理自政府官网、地方志、官方媒体等权威渠道；布局示意图以现场实测为准，开放时间与保护要求以文物主管部门最新公告为准。新增单位只需在 <code>index.html</code> 的 <code>SITES</code> 数组中追加一条记录。
   </div>
 </main>
 
