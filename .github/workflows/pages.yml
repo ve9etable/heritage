@@ -1,0 +1,55 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  SITE_NAME: 文保单位深度导览馆
+  SITE_DESCRIPTION: 收录全国重点、省级、市级文物保护单位的深度实地导览，支持在线搜索。
+
+jobs:
+  build:
+    name: 结构与链接校验
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 校验站点结构与卡片链接
+        run: node tools/check.js
+
+      - name: 生成 artifact
+        run: |
+          mkdir -p _site
+          cp -r index.html .nojekyll *.html _site/
+
+      - name: 上传 Pages 构建产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: 部署到 GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署
+        id: deployment
+        uses: actions/deploy-pages@v4

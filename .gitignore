@@ -1,0 +1,10 @@
+# 依赖与构建缓存
+node_modules/
+_site/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

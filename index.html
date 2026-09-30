@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="文保单位深度实地导览馆：收录全国重点、省级、市级文物保护单位，按基本信息、历史沿革、空间动线、营造特色、核心看点、楹联匾额、推荐路线、保护现状、参观信息整理，可在线搜索。">
+<meta name="keywords" content="文物保护单位,文保单位,古建筑,深度导览,文化遗产,全国重点文物保护单位">
+<meta name="author" content="heritage-site-intro">
+<meta name="theme-color" content="#2f2a1c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文保单位深度导览馆">
+<meta property="og:description" content="搜索并浏览收录的文物保护单位深度实地导览。">
+<title>文保单位深度导览馆 · 文物保护单位介绍</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236b1f17'/%3E%3Cpath d='M13 20h38v-5H13zm3 5v26h-5v6h42v-6h-5V25z' fill='%23e6c98a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#26231d;--ink-2:#57514a;--ink-3:#8b8274;
+    --brick:#8a7220;--brick-deep:#5c4a12;
+    --gold:#cfa83c;--gold-soft:#e6c98a;
+    --stone:#ece5d3;--stone-2:#f8f5ec;--paper:#fefdf8;--line:#e5ddc2;
+    --radius:16px;
+    --sh:0 1px 2px rgba(70,58,34,.05),0 10px 26px -14px rgba(70,58,34,.26);
+    --sh-h:0 2px 6px rgba(70,58,34,.07),0 26px 48px -20px rgba(70,58,34,.40);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased;background:var(--stone-2);
+    background-image:radial-gradient(circle at 10% 4%,rgba(207,168,60,.13),transparent 42%),
+      radial-gradient(circle at 92% 0%,rgba(107,31,23,.09),transparent 40%);
+    background-attachment:fixed;}
+  h1,h2,h3,.serif{font-family:"Noto Serif SC","Songti SC",STSong,Georgia,serif;}
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px;}
+  mark{background:linear-gradient(180deg,transparent 56%,rgba(207,168,60,.62) 56%);color:inherit;padding:0 1px;}
+  :focus-visible{outline:3px solid rgba(207,168,60,.75);outline-offset:3px;border-radius:4px;}
+
+  /* ================= HERO ================= */
+  .hero{position:relative;overflow:hidden;color:#f4eee1;isolation:isolate;
+    background:linear-gradient(158deg,#54461a 0%,#38301f 46%,#231f17 100%);}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;opacity:.5;
+    background-image:repeating-linear-gradient(122deg,rgba(230,217,138,.05) 0 1px,transparent 1px 13px),
+      radial-gradient(ellipse 70% 60% at 78% 12%,rgba(207,168,60,.22),transparent 65%);}
+  .hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.14;
+    background-image:linear-gradient(rgba(255,255,255,.5) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.5) 1px,transparent 1px);
+    background-size:34px 34px;
+    -webkit-mask-image:radial-gradient(ellipse 60% 70% at 50% 0%,#000,transparent 75%);
+    mask-image:radial-gradient(ellipse 60% 70% at 50% 0%,#000,transparent 75%);}
+  .hero-in{position:relative;z-index:1;display:flex;align-items:flex-start;gap:34px;padding:52px 0 44px;}
+  .hero-main{flex:1 1 auto;min-width:0;}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:3.4px;
+    color:var(--gold-soft);border:1px solid rgba(230,217,138,.34);padding:5px 14px;border-radius:999px;
+    background:rgba(230,217,138,.06);}
+  .kicker i{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(207,168,60,.22);}
+  .hero h1{font-size:38px;line-height:1.2;font-weight:800;letter-spacing:2.5px;margin-top:18px;}
+  .hero h1 em{font-style:normal;position:relative;color:#f0d99a;}
+  .hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:9px;
+    background:linear-gradient(90deg,rgba(207,168,60,.42),transparent 85%);border-radius:3px;z-index:-1;}
+  .hero .sub{font-size:14.5px;color:#cdc4b3;margin-top:14px;max-width:640px;}
+  .hero .sub b{color:#ffe0cd;font-weight:600;}
+  .seal{flex:0 0 auto;width:104px;height:104px;border-radius:8px;display:grid;place-items:center;
+    background:linear-gradient(150deg,#a8322a,#7d1f19);color:#ffeede;font-size:23px;line-height:1.16;
+    letter-spacing:3px;font-family:"Noto Serif SC","Songti SC",serif;font-weight:700;text-align:center;
+    box-shadow:0 14px 30px -12px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.18);
+    transform:rotate(-4deg);padding:8px;}
+  .seal span{display:block;font-size:12px;letter-spacing:2px;font-weight:400;opacity:.86;}
+
+  /* ================= SEARCH ================= */
+  .search{margin-top:28px;max-width:640px;}
+  .search-box{display:flex;align-items:center;gap:11px;background:rgba(254,253,248,.97);
+    border:1px solid rgba(230,217,138,.45);border-radius:999px;padding:7px 9px 7px 17px;
+    box-shadow:0 18px 40px -20px rgba(0,0,0,.8);transition:box-shadow .2s,border-color .2s;}
+  .search-box:focus-within{border-color:var(--gold);
+    box-shadow:0 0 0 5px rgba(207,168,60,.20),0 18px 40px -18px rgba(0,0,0,.7);}
+  .search-box > svg{width:18px;height:18px;flex:0 0 auto;color:#8a7220;}
+  .search-box input{flex:1 1 auto;min-width:0;border:0;background:transparent;outline:0;font:inherit;
+    font-size:15px;color:var(--ink);padding:7px 0;}
+  .search-box input::placeholder{color:#a79c86;}
+  .search-box input::-webkit-search-cancel-button{display:none;}
+  .clear-btn{flex:0 0 auto;width:29px;height:29px;border-radius:50%;border:0;cursor:pointer;
+    background:#ece5d2;color:#7a705a;font-size:17px;line-height:1;display:none;padding:0;
+    transition:background .16s,color .16s;}
+  .clear-btn.show{display:grid;place-items:center;}
+  .clear-btn:hover{background:#e0d8c1;color:var(--ink);}
+  .hints{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .hints .lbl{font-size:11.5px;letter-spacing:1px;color:#9d937c;}
+  .hint{font:inherit;font-size:12.5px;cursor:pointer;border-radius:999px;padding:3px 11px;
+    background:rgba(230,217,138,.10);border:1px solid rgba(230,217,138,.24);color:#ded4b9;
+    transition:background .16s,color .16s,border-color .16s;}
+  .hint:hover{background:rgba(207,168,60,.26);border-color:rgba(207,168,60,.5);color:#fff7e2;}
+
+  /* ================= STATS ================= */
+  .stats{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fffdf6,#f6f2e6);}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;}
+  .stat{padding:18px 20px 17px;border-left:1px solid var(--line);position:relative;}
+  .stat:first-child{border-left:0;}
+  .stat .n{font-family:"Noto Serif SC",Georgia,serif;font-size:27px;font-weight:800;
+    color:var(--brick-deep);line-height:1.1;letter-spacing:.5px;}
+  .stat .n small{font-size:13px;font-weight:400;color:var(--ink-3);margin-left:3px;letter-spacing:0;}
+  .stat .l{font-size:12px;color:var(--ink-2);letter-spacing:1.2px;margin-top:4px;}
+  @media(max-width:720px){
+    .stats .wrap{grid-template-columns:repeat(2,1fr);}
+    .stat:nth-child(3){border-left:0;}
+    .stat:nth-child(n+3){border-top:1px solid var(--line);}
+  }
+
+  /* ================= TOOLBAR ================= */
+  .toolbar{position:sticky;top:0;z-index:30;background:rgba(248,245,236,.90);
+    backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);
+    border-bottom:1px solid var(--line);box-shadow:0 6px 18px -16px rgba(70,58,34,.7);}
+  .toolbar .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding-top:11px;padding-bottom:11px;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;}
+  .chip{font:inherit;font-size:13px;cursor:pointer;background:var(--paper);color:var(--ink-2);
+    border:1px solid var(--line);padding:5px 13px;border-radius:999px;transition:all .16s;white-space:nowrap;}
+  .chip:hover{border-color:var(--gold);color:var(--brick-deep);
+    transform:translateY(-1px);}
+  .chip[aria-pressed="true"]{background:linear-gradient(160deg,#6b5a16,#4a3d0f);border-color:transparent;
+    color:#f7f0dd;box-shadow:0 4px 12px -5px rgba(74,61,15,.8);}
+  .chip .n{opacity:.6;font-size:11.5px;margin-left:4px;}
+  .spacer{flex:1 1 auto;}
+  .count{font-size:13px;color:var(--ink-2);white-space:nowrap;}
+  .count b{font-family:"Noto Serif SC",serif;font-size:16px;color:var(--brick-deep);}
+  .count .q{color:var(--brick-deep);font-weight:700;}
+  select.sel{font:inherit;font-size:12.5px;padding:6px 10px;border-radius:9px;border:1px solid var(--line);
+    background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0h10L5 6z' fill='%238a7220'/%3E%3C/svg%3E") no-repeat right 10px center;
+    color:var(--ink);outline:0;cursor:pointer;appearance:none;-webkit-appearance:none;padding-right:26px;}
+  select.sel:hover{border-color:var(--gold);}
+
+  /* ================= GRID / CARD ================= */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;padding:32px 0 6px;}
+  .card{position:relative;display:flex;flex-direction:column;overflow:hidden;background:var(--paper);
+    border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--sh);
+    transition:transform .28s cubic-bezier(.2,.75,.3,1),box-shadow .28s,border-color .28s;
+    opacity:0;transform:translateY(14px);}
+  .card.in{opacity:1;transform:none;}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--sh-h);border-color:color-mix(in srgb,var(--a) 45%,var(--line));}
+  .card::after{content:"";position:absolute;inset:0 0 auto 0;height:3px;z-index:3;
+    background:linear-gradient(90deg,var(--a),color-mix(in srgb,var(--a) 25%,transparent) 55%,transparent 90%);}
+
+  .thumb{position:relative;height:176px;overflow:hidden;background:linear-gradient(150deg,var(--a2),var(--a) 78%);}
+  .thumb .art{position:absolute;inset:0;width:100%;height:100%;
+    transition:transform .5s cubic-bezier(.2,.75,.3,1);}
+  .card:hover .thumb .art{transform:scale(1.045);}
+  .thumb::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,0,0,.20),transparent 34%,transparent 68%,rgba(0,0,0,.10));}
+  .thumb .glyph{position:absolute;right:12px;bottom:-24px;z-index:1;font-size:112px;line-height:1;
+    font-family:"Noto Serif SC","Songti SC",serif;font-weight:800;color:rgba(255,255,255,.20);
+    text-shadow:0 2px 10px rgba(0,0,0,.18);transition:transform .5s cubic-bezier(.2,.75,.3,1);}
+  .card:hover .thumb .glyph{transform:translateY(-4px) rotate(-3deg);}
+  .thumb .tier{position:absolute;left:12px;top:12px;z-index:2;display:inline-flex;align-items:center;gap:6px;
+    font-size:11px;font-weight:700;letter-spacing:.4px;color:#fff;background:rgba(28,22,12,.42);
+    border:1px solid rgba(255,255,255,.30);padding:4px 10px;border-radius:999px;backdrop-filter:blur(4px);}
+  .thumb .tier::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--gold-soft);}
+  .thumb .era{position:absolute;right:12px;top:12px;z-index:2;font-size:11px;letter-spacing:.4px;
+    color:rgba(255,255,255,.95);background:rgba(28,22,12,.34);border:1px solid rgba(255,255,255,.22);
+    padding:4px 9px;border-radius:999px;backdrop-filter:blur(4px);}
+
+  .body{padding:17px 19px 15px;display:flex;flex-direction:column;gap:10px;flex:1 1 auto;}
+  .body h2{font-size:21px;font-weight:800;letter-spacing:.8px;line-height:1.3;display:flex;
+    align-items:baseline;gap:7px;flex-wrap:wrap;}
+  .body h2 .en{font-size:11.5px;font-weight:400;letter-spacing:.8px;color:var(--ink-3);}
+  .where{display:flex;flex-wrap:wrap;gap:6px;font-size:11.8px;color:var(--ink-2);}
+  .where span{background:#f2ecda;border:1px solid var(--line);padding:2px 8px;border-radius:7px;line-height:1.6;}
+  .desc{font-size:13.7px;color:var(--ink-2);line-height:1.9;display:-webkit-box;
+    -webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;}
+  .points{display:flex;flex-direction:column;gap:6px;padding:10px 12px;border-radius:10px;
+    background:linear-gradient(180deg,#fbf8ef,#f6f1e2);border:1px solid var(--line);}
+  .points li{list-style:none;font-size:12.8px;color:var(--ink);display:flex;gap:8px;line-height:1.65;}
+  .points li::before{content:"";flex:0 0 auto;width:5px;height:5px;border-radius:50%;background:var(--a);
+    margin-top:8px;box-shadow:0 0 0 3px color-mix(in srgb,var(--a) 18%,transparent);}
+  .tags{display:flex;flex-wrap:wrap;gap:5px;}
+  .tag{font-size:11.3px;color:var(--a2);background:color-mix(in srgb,var(--a) 10%,#fff);
+    border:1px solid color-mix(in srgb,var(--a) 30%,#fff);padding:2px 8px;border-radius:999px;line-height:1.6;}
+  .foot{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:9px;}
+  .go{font-size:13.5px;font-weight:700;color:var(--a2);letter-spacing:.6px;white-space:nowrap;}
+  .foot .hintline{font-size:11.2px;color:var(--ink-3);margin-left:auto;text-align:right;line-height:1.5;}
+  .foot .arrow{flex:0 0 auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+    background:color-mix(in srgb,var(--a) 13%,#fff);color:var(--a2);font-size:14px;
+    transition:transform .25s,background .25s,color .25s;}
+  .card:hover .foot .arrow{transform:translateX(3px);background:var(--a);color:#fff;}
+
+  .empty{text-align:center;padding:64px 20px 74px;color:var(--ink-2);}
+  .empty .big{font-size:46px;line-height:1;margin-bottom:12px;color:var(--ink-3);}
+  .empty p{font-size:14.5px;}
+  .empty .q{color:var(--brick-deep);font-weight:700;}
+  .empty button{font:inherit;font-size:13.5px;margin-top:16px;cursor:pointer;background:var(--paper);
+    border:1px solid var(--line);color:var(--ink);padding:8px 18px;border-radius:999px;transition:all .16s;}
+  .empty button:hover{border-color:var(--gold);color:var(--brick-deep);transform:translateY(-1px);
+    box-shadow:var(--sh);}
+
+  .note{margin:28px 0 44px;background:linear-gradient(180deg,#f3eeda,#efe8d5);border:1px solid var(--line);
+    border-left:4px solid var(--gold);border-radius:10px;padding:15px 19px;font-size:13.2px;color:var(--ink-2);}
+  .note b{color:var(--brick-deep);}
+  .note code{font-size:12.5px;background:rgba(255,255,255,.7);border:1px solid var(--line);
+    border-radius:5px;padding:0 5px;}
+
+  footer.site{position:relative;color:#a89f8d;text-align:center;padding:30px 22px 34px;font-size:12.5px;
+    background:linear-gradient(180deg,#2b261a,#221e15);border-top:4px solid var(--gold);}
+  footer.site::before{content:"";position:absolute;inset:0;
+    background:repeating-linear-gradient(122deg,rgba(230,217,138,.04) 0 1px,transparent 1px 14px);}
+  footer.site>*{position:relative;}
+  footer.site .q{color:var(--gold-soft);font-family:"Noto Serif SC",serif;font-size:15px;letter-spacing:4px;}
+  footer.site .links{margin-top:12px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+  footer.site .links a{color:#cbc1ab;border-bottom:1px solid rgba(203,193,171,.28);padding-bottom:1px;}
+  footer.site .links a:hover{color:var(--gold-soft);border-bottom-color:var(--gold-soft);}
+
+  .totop{position:fixed;right:20px;bottom:20px;z-index:40;width:42px;height:42px;border-radius:50%;
+    border:1px solid var(--line);background:rgba(254,253,248,.94);color:var(--brick-deep);cursor:pointer;
+    font-size:16px;display:grid;place-items:center;box-shadow:var(--sh);opacity:0;pointer-events:none;
+    transform:translateY(10px);transition:opacity .25s,transform .25s,box-shadow .2s;}
+  .totop.show{opacity:1;pointer-events:auto;transform:none;}
+  .totop:hover{box-shadow:var(--sh-h);transform:translateY(-2px);}
+
+  @media(max-width:680px){
+    .hero-in{flex-direction:column;gap:20px;padding:34px 0 30px;gap:18px;}
+    .hero h1{font-size:26px;letter-spacing:1.6px;}
+    .seal{width:74px;height:74px;font-size:17px;letter-spacing:2px;transform:rotate(-3deg);}
+    .seal span{font-size:10px;}
+    .spacer{display:none;}
+    .toolbar .wrap{gap:8px;padding-top:9px;padding-bottom:9px;}
+    .count{order:-1;width:100%;}
+    .grid{grid-template-columns:1fr;gap:16px;padding-top:22px;}
+  }
+  @media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;animation-duration:.01ms!important;}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-main">
+      <div class="kicker"><i></i>CULTURAL HERITAGE · 深度实地导览</div>
+      <h1>文保单位<em>深度导览</em>馆</h1>
+      <p class="sub">收录 <b>全国重点 · 省级 · 市级</b> 文物保护单位，每处按「基本信息 — 历史沿革 — 空间动线 — 营造特色 — 核心看点 — 楹联匾额 — 推荐路线 — 保护现状 — 参观信息」整理成可随身查用的导览页。</p>
+
+      <div class="search">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.7-3.7"></path></svg>
+          <input id="q" type="search" autocomplete="off" spellcheck="false"
+                 placeholder="搜索名称、地区、保护级别、年代、看点关键词…" aria-label="搜索文保单位">
+          <button class="clear-btn" id="clear" type="button" aria-label="清空搜索">×</button>
+        </div>
+        <div class="hints" id="hints"><span class="lbl">热门</span></div>
+      </div>
+    </div>
+    <div class="seal" aria-hidden="true">文保<br>导览<span>VERIFIED</span></div>
+  </div>
+</header>
+
+<section class="stats"><div class="wrap" id="stats"></div></section>
+
+<div class="toolbar">
+  <div class="wrap">
+    <div class="chips" id="chips" role="group" aria-label="按保护级别筛选"></div>
+    <span class="spacer"></span>
+    <div class="count" id="count" role="status" aria-live="polite"></div>
+    <select class="sel" id="sort" aria-label="排序方式">
+      <option value="default">默认排序</option>
+      <option value="level">保护级别优先</option>
+      <option value="era">始建年代由早到晚</option>
+      <option value="name">按名称</option>
+    </select>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>
+    <div class="big">⌕</div>
+    <p>未找到与「<span class="q" id="emptyQ"></span>」匹配的文保单位</p>
+    <p style="font-size:13px;margin-top:6px;">试试更短的关键词（如“城墙”“书院”“国保”），或清除筛选条件</p>
+    <button type="button" id="reset">重置搜索与筛选</button>
+  </div>
+  <div class="note">
+    <b>关于本站：</b>各卡片跳转至独立导览页，内容整理自政府官网、地方志、官方媒体等权威渠道；布局示意图以现场实测为准，开放时间与保护要求以文物主管部门最新公告为准。新增单位只需在 <code>index.html</code> 的 <code>SITES</code> 数组中追加一条记录。
+  </div>
+</main>
+
+<footer class="site">
+  <div class="q">观 其 城 垣 楼 院</div>
+  <div style="margin-top:8px;">文物保护单位介绍 · 深度实地导览 · 信息以官方最新公布为准</div>
+  <div class="links">
+    <a href="https://www.ncha.gov.cn/" target="_blank" rel="noopener">国家文物局</a>
+    <a href="#top">返回顶部</a>
+  </div>
+</footer>
+
+<button class="totop" id="totop" type="button" aria-label="返回顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  var ART = {
+    xz: '<svg class="art" viewBox="0 0 480 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true">'
+      + '<defs><pattern id="cr-xz" width="30" height="15" patternUnits="userSpaceOnUse">'
+      + '<rect width="19" height="15" fill="rgba(255,255,255,.34)"/></pattern>'
+      + '<linearGradient id="rg-xz" x1="0" y1="0" x2="0" y2="1">'
+      + '<stop offset="0" stop-color="rgba(255,255,255,.30)"/><stop offset="1" stop-color="rgba(255,255,255,.16)"/>'
+      + '</linearGradient></defs>'
+      + '<path d="M0 150V120l46-30 40 24 52-40 58 44 60-30 54 32 58-30 62 34v26z" fill="rgba(255,255,255,.10)"/>'
+      + '<path d="M0 150v-24h40v-8h14v8h40v-8h14v8h40v-8h14v8h40v-8h14v8h40v-8h14v8h40v-8h14v8h40v-8h14v8h56v24z" fill="url(#rg-xz)"/>'
+      + '<rect x="18" y="112" width="444" height="40" fill="rgba(255,255,255,.20)"/>'
+      + '<g fill="rgba(255,255,255,.30)"><rect x="18" y="106" width="444" height="8"/><rect x="18" y="150" width="444" height="6"/></g>'
+      + '<path d="M120 152v-40h96v40z" fill="rgba(255,255,255,.26)"/>'
+      + '<path d="M112 112h112l-14-10h-84z" fill="rgba(255,255,255,.34)"/>'
+      + '<path d="M150 152v-30a18 18 0 0 1 36 0v30z" fill="rgba(40,30,8,.34)"/>'
+      + '<path d="M186 152v-30a18 18 0 0 1 36 0v30z" fill="rgba(40,30,8,.34)"/>'
+      + '<g fill="rgba(255,255,255,.22)"><rect x="60" y="128" width="30" height="7"/><rect x="300" y="128" width="30" height="7"/><rect x="352" y="128" width="30" height="7"/></g>'
+      + '<path d="M0 156q40-9 80 0t80 0 80 0 80 0 80 0 80 0v44H0z" fill="rgba(0,0,0,.16)"/>'
+      + '<path d="M0 172q40-7 80 0t80 0 80 0 80 0 80 0 80 0v28H0z" fill="rgba(255,255,255,.10)"/>'
+      + '<g fill="rgba(255,255,255,.24)"><circle cx="86" cy="181" r="2.4"/><circle cx="330" cy="186" r="2"/><circle cx="404" cy="180" r="2.6"/></g>'
+      + '</svg>',
+
+    jxl: '<svg class="art" viewBox="0 0 480 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true">'
+      + '<path d="M0 150v-20q60-16 120 0t120 0 120 0 120 0v20z" fill="rgba(0,0,0,.12)"/>'
+      + '<g fill="rgba(255,255,255,.13)"><path d="M60 150v-58h74v58z"/><path d="M52 92h90l-12-9H64z"/></g>'
+      + '<g fill="rgba(255,255,255,.24)">'
+      + '<path d="M60 132h74v4H60z"/><path d="M84 96h6v34h-6z"/><path d="M104 96h6v34h-6z"/><path d="M124 96h6v34h-6z"/>'
+      + '<path d="M52 90c6-12 22-16 45-16s39 4 45 16z"/>'
+      + '<g fill="rgba(0,0,0,.16)"><path d="M60 140h74v3H60z"/></g></g>'
+      + '<path d="M206 150c6-14 26-22 62-22s56 8 62 22z" fill="rgba(0,0,0,.20)"/>'
+      + '<g fill="rgba(255,255,255,.24)"><rect x="252" y="112" width="32" height="18" rx="2"/>'
+      + '<rect x="256" y="80" width="24" height="16" rx="2"/><rect x="259" y="54" width="18" height="12" rx="2"/></g>'
+      + '<g fill="rgba(255,255,255,.34)">'
+      + '<path d="M232 114c8-10 20-14 36-14s28 4 36 14c-8-5-18-7-36-7s-28 2-36 7z"/>'
+      + '<path d="M240 82c7-8 16-11 28-11s21 3 28 11c-7-4-15-6-28-6s-21 2-28 6z"/>'
+      + '<path d="M246 56c6-6 12-8 22-8s16 2 22 8c-6-3-12-4-22-4s-16 1-22 4z"/>'
+      + '<path d="M264 22h8v28h-8z"/></g>'
+      + '<path d="M0 156q60-10 120 0t120 0 120 0 120 0v44H0z" fill="rgba(0,0,0,.18)"/>'
+      + '<path d="M0 174q60-8 120 0t120 0 120 0 120 0v26H0z" fill="rgba(255,255,255,.09)"/>'
+      + '<g fill="rgba(255,255,255,.22)"><circle cx="112" cy="183" r="2.4"/><circle cx="380" cy="180" r="2.6"/><circle cx="424" cy="188" r="2"/></g>'
+      + '</svg>',
+
+    cps: '<svg class="art" viewBox="0 0 480 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true">'
+      + '<path d="M0 150v-52l52-34 48 32 56-46 62 50 56-30 60 34 66-38 80 46v38z" fill="rgba(255,255,255,.11)"/>'
+      + '<g fill="rgba(255,255,255,.20)">'
+      + '<rect x="86" y="112" width="308" height="8"/><rect x="80" y="146" width="320" height="6"/></g>'
+      + '<g fill="rgba(255,255,255,.26)"><rect x="150" y="122" width="180" height="24"/>'
+      + '<path d="M138 124c14-16 42-22 102-22s88 6 102 22z"/></g>'
+      + '<g fill="rgba(0,0,0,.20)"><rect x="172" y="128" width="8" height="18"/><rect x="204" y="128" width="8" height="18"/>'
+      + '<rect x="268" y="128" width="8" height="18"/><rect x="300" y="128" width="8" height="18"/></g>'
+      + '<g fill="rgba(255,255,255,.30)">'
+      + '<rect x="30" y="128" width="106" height="18"/><path d="M22 130c12-12 34-16 61-16s49 4 61 16z"/>'
+      + '<rect x="344" y="128" width="106" height="18"/><path d="M336 130c12-12 34-16 61-16s49 4 61 16z"/></g>'
+      + '<g fill="rgba(255,255,255,.16)"><rect x="204" y="92" width="72" height="8"/>'
+      + '<path d="M196 94c9-11 25-15 46-15s37 4 46 15z"/><rect x="226" y="100" width="6" height="12"/>'
+      + '<rect x="248" y="100" width="6" height="12"/></g>'
+      + '<g fill="rgba(255,255,255,.20)"><path d="M450 150v-30l6-6 6 6v30z"/><path d="M418 150v-22l5-5 5 5v22z"/>'
+      + '<path d="M12 150v-24l6-6 6 6v24z"/></g>'
+      + '<path d="M0 156q60-8 120 0t120 0 120 0 120 0v44H0z" fill="rgba(0,0,0,.15)"/>'
+      + '<g fill="rgba(255,255,255,.16)"><rect x="0" y="170" width="480" height="30"/></g>'
+      + '<path d="M60 180h360" stroke="rgba(255,255,255,.22)" stroke-width="2"/>'
+      + '</svg>'
+  };
+
+  var SITES = [
+    {
+      file: "叙州城墙深度实地导览.html",
+      art: "xz",
+      name: "叙州城墙",
+      alias: "叙州城城墙旧址（宜宾）",
+      region: "四川省 · 宜宾市翠屏区",
+      tier: "市保",
+      tierFull: "宜宾市市级文物保护单位",
+      category: "古建筑 / 古遗址",
+      year: 1373,
+      era: "明洪武六年 1373年",
+      a: "#c9a227", a2: "#7d6412", glyph: "城",
+      desc: "明洪武六年（1373年）四川总兵李文忠下令修筑的宜宾石城，与成都城、重庆城并称明王朝巩固四川统治的三大堡垒；现存水东门段、冠英街（合江门）段城墙，条石错缝迭砌，砌墙石块大者重达1吨以上。",
+      points: [
+        "水东门城门：拱形门洞、宽2.7米，门上设女墙",
+        "水东门广场段城墙 长393.8米 · 高6.1米 · 厚6.7米",
+        "冠英街段城墙 长220.5米，连合江门地标广场",
+        "合江门远眺岷江、金沙江、长江三江交汇"
+      ],
+      tags: ["明代石城","六门格局","依江为堑","露天文保","免费参观"],
+      open: "沿滨江路免费参观"
+    },
+    {
+      file: "甲秀楼深度实地导览.html",
+      art: "jxl",
+      name: "甲秀楼",
+      alias: "甲秀楼（贵阳）",
+      region: "贵州省 · 贵阳市南明区",
+      tier: "国保",
+      tierFull: "全国重点文物保护单位",
+      category: "古建筑（楼阁）",
+      year: 1598,
+      era: "明万历二十六年 1598年",
+      a: "#a03a2c", a2: "#5c1712", glyph: "楼",
+      desc: "明万历二十六年（1598年）筑于南明河鳌矶石上，取「科甲挺秀」之意；三层三檐四角攒尖顶石木阁楼，构造在中国古建筑史上独一无二，与浮玉桥、涵碧亭、翠微园共成「城南胜迹」，贵阳城市地标与市徽。",
+      points: [
+        "三层三重檐四角攒尖顶，飞甍翘角、石柱托檐",
+        "门前 174 字长联，中国名胜古迹三大长联之一",
+        "楼内八块清代碑刻",
+        "浮玉桥与涵碧亭：拍甲秀楼全景最佳位置"
+      ],
+      tags: ["城南胜迹","174字长联","清代碑刻","市徽地标","国家AAA级景区"],
+      open: "9:00—17:00 · 免费"
+    },
+    {
+      file: "翠屏书院深度实地导览.html",
+      art: "cps",
+      name: "翠屏书院",
+      alias: "翠屏书院（宜宾）",
+      region: "四川省 · 宜宾市翠屏区翠屏山",
+      tier: "省保",
+      tierFull: "四川省文物保护单位",
+      category: "古建筑（明清书院）",
+      year: 1481,
+      era: "明成化十七年 1481年",
+      a: "#c96a26", a2: "#7d3d13", glyph: "院",
+      desc: "明成化十七年（1481年）叙州府知府陆渊之创建，次年开学，为叙州府属书院、古时宜宾最高学府，明清时期四川南部书院建筑的典型代表；1960年辟为赵一曼纪念馆馆址，2014年入选国家级抗战纪念设施、遗址名录。",
+      points: [
+        "赵一曼汉白玉塑像，高约五米、身着军装",
+        "同一中轴线纵向排列的三馆陈列",
+        "清嘉庆时期主体建筑一进三幢、钟亭鼓亭",
+        "1961年朱德委员长亲笔题写馆名"
+      ],
+      tags: ["明清书院","赵一曼纪念馆","抗战遗址名录","四合院布局","全年免费"],
+      open: "全年 365 天免费开放"
+    }
+  ];
+
+  var HOT = ["城墙","书院","国保","宜宾","贵阳","明代","赵一曼","免费","水东门","长联"];
+  var TIER_ORDER = ["全部","国保","省保","市保"];
+  var LEVEL = {"国保":0,"省保":1,"市保":2};
+  var TIER_LONG = {"全部":"全部级别","国保":"全国重点文物保护单位","省保":"省级文物保护单位","市保":"市级文物保护单位"};
+
+  var $ = function(id){ return document.getElementById(id); };
+  var grid = $("grid"), emptyBox = $("empty"), emptyQ = $("emptyQ"), countEl = $("count");
+  var chipsEl = $("chips"), hintsEl = $("hints"), statsEl = $("stats"), input = $("q");
+  var clearBtn = $("clear"), sortSel = $("sort"), toTop = $("totop");
+  var state = { q: "", tier: "全部", sort: "default" };
+
+  SITES.forEach(function(s){
+    s.hay = [s.name,s.alias,s.region,s.tier,s.tierFull,s.category,s.era,s.desc,s.open,s.file,
+             s.tags.join(" ")].concat(s.points).join(" ").toLowerCase();
+  });
+
+  function esc(s){
+    return String(s).replace(/[&<>"]/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];
+    });
+  }
+
+  function hl(text, q){
+    var safe = esc(text);
+    var terms = (q || "").trim().split(/\s+/).filter(function(t){ return t; });
+    if(!terms.length) return safe;
+    var re = new RegExp("(" + terms.map(function(t){
+      return t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }).join("|") + ")", "gi");
+    return safe.replace(re, "<mark>$1</mark>");
+  }
+
+  function countByTier(tier){
+    return tier === "全部" ? SITES.length : SITES.filter(function(s){ return s.tier === tier; }).length;
+  }
+
+  function renderChips(){
+    chipsEl.innerHTML = TIER_ORDER.map(function(t){
+      return '<button class="chip" type="button" data-tier="' + t + '" title="' + TIER_LONG[t] + '" aria-pressed="' +
+        (state.tier === t) + '">' + t + '<span class="n">' + countByTier(t) + "</span></button>";
+    }).join("");
+  }
+
+  function renderHints(){
+    hintsEl.innerHTML = '<span class="lbl">热门</span>' + HOT.map(function(t){
+      return '<button class="hint" type="button" data-q="' + t + '">' + t + "</button>";
+    }).join("");
+  }
+
+  function renderStats(){
+    var cities = {}, minY = Infinity, maxY = 0, top = "";
+    SITES.forEach(function(s){
+      cities[s.region.split(" · ")[1] || s.region] = 1;
+      minY = Math.min(minY, s.year); maxY = Math.max(maxY, s.year);
+      if(!top || LEVEL[s.tier] < LEVEL[top]) top = s.tier;
+    });
+    var rows = [
+      {n: SITES.length, u: "处", l: "收录文保单位"},
+      {n: Object.keys(cities).length, u: "座", l: "覆盖城市"},
+      {n: SITES.filter(function(s){ return s.tier === "国保"; }).length, u: "处", l: "全国重点文保"},
+      {n: minY, u: "— " + maxY, l: "始建年代跨度"}
+    ];
+    statsEl.innerHTML = rows.map(function(r){
+      return '<div class="stat"><div class="n">' + r.n + "<small>" + r.u + "</small></div>" +
+        '<div class="l">' + r.l + "</div></div>";
+    }).join("");
+  }
+
+  function card(s, i){
+    return '<a class="card" style="--a:' + s.a + ";--a2:" + s.a2 + ';transition-delay:' + (i * 60) + 'ms" href="' +
+      encodeURI(s.file) + '" aria-label="进入 ' + esc(s.name) + " 深度实地导览页\">" +
+      '<div class="thumb">' + ART[s.art] +
+        '<span class="glyph" aria-hidden="true">' + s.glyph + "</span>" +
+        '<span class="tier">' + esc(s.tierFull) + "</span>" +
+        '<span class="era">' + esc(s.era) + "</span></div>" +
+      '<div class="body">' +
+        '<h2>' + hl(s.name, state.q) + '<span class="en">' + hl(s.alias, state.q) + "</span></h2>" +
+        '<div class="where"><span>📍 ' + hl(s.region, state.q) + "</span>" +
+          "<span>🏷 " + hl(s.category, state.q) + "</span></div>" +
+        '<p class="desc">' + hl(s.desc, state.q) + "</p>" +
+        '<ul class="points">' + s.points.slice(0,3).map(function(p){
+          return "<li>" + hl(p, state.q) + "</li>";
+        }).join("") + "</ul>" +
+        '<div class="tags">' + s.tags.map(function(t){
+          return '<span class="tag">' + hl(t, state.q) + "</span>";
+        }).join("") + "</div>" +
+        '<div class="foot"><span class="go">进入深度导览</span>' +
+          '<span class="hintline">' + esc(s.open) + "</span>" +
+          '<span class="arrow" aria-hidden="true">→</span></div>' +
+      "</div></a>";
+  }
+
+  function matches(s){
+    if(state.tier !== "全部" && s.tier !== state.tier) return false;
+    var terms = state.q.toLowerCase().split(/\s+/).filter(function(t){ return t; });
+    if(!terms.length) return true;
+    return terms.every(function(t){ return s.hay.indexOf(t) !== -1; });
+  }
+
+  function sortList(list){
+    var arr = list.slice();
+    if(state.sort === "level") arr.sort(function(a,b){ return LEVEL[a.tier] - LEVEL[b.tier] || a.year - b.year; });
+    else if(state.sort === "era") arr.sort(function(a,b){ return a.year - b.year; });
+    else if(state.sort === "name") arr.sort(function(a,b){ return a.name.localeCompare(b.name,"zh-Hans-CN"); });
+    return arr;
+  }
+
+  var io = ("IntersectionObserver" in window) ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }) : null;
+
+  function render(){
+    var list = sortList(SITES.filter(matches));
+    grid.innerHTML = list.map(card).join("");
+
+    var nodes = grid.children;
+    for(var i = 0; i < nodes.length; i++){
+      if(io) io.observe(nodes[i]);
+      else nodes[i].classList.add("in");
+    }
+
+    emptyBox.hidden = list.length !== 0;
+    emptyQ.textContent = state.q + (state.tier !== "全部" ? "（" + state.tier + "）" : "");
+    clearBtn.classList.toggle("show", state.q.length > 0);
+
+    var filtered = state.q || state.tier !== "全部";
+    countEl.innerHTML = filtered
+      ? '找到 <b>' + list.length + "</b> / " + SITES.length + " 处" +
+        (state.q ? ' <span class="q">“' + esc(state.q) + "”</span>" : "") +
+        (state.tier !== "全部" ? " · " + state.tier : "")
+      : '共收录 <b>' + SITES.length + "</b> 处文物保护单位";
+  }
+
+  function setQuery(v, fromHash){
+    state.q = String(v).replace(/^\s+|\s+$/g, "");
+    if(!fromHash){
+      var base = location.href.split("#")[0];
+      var h = state.q ? base + "#q=" + encodeURIComponent(state.q) : base;
+      if(history.replaceState) history.replaceState(null, "", h);
+      else location.hash = state.q ? "#q=" + encodeURIComponent(state.q) : " ";
+    }
+    input.value = state.q;
+    render();
+  }
+
+  input.addEventListener("input", function(){ setQuery(input.value); });
+  input.addEventListener("keydown", function(e){ if(e.key === "Escape"){ setQuery(""); input.blur(); } });
+  clearBtn.addEventListener("click", function(){ setQuery(""); input.focus(); });
+
+  chipsEl.addEventListener("click", function(e){
+    var b = e.target.closest("[data-tier]");
+    if(!b) return;
+    state.tier = b.getAttribute("data-tier");
+    renderChips(); render();
+  });
+
+  hintsEl.addEventListener("click", function(e){
+    var b = e.target.closest("[data-q]");
+    if(!b) return;
+    setQuery(b.getAttribute("data-q"));
+    input.focus();
+  });
+
+  sortSel.addEventListener("change", function(){ state.sort = sortSel.value; render(); });
+
+  $("reset").addEventListener("click", function(){
+    state.tier = "全部"; state.sort = "default"; sortSel.value = "default";
+    renderChips(); setQuery(""); input.focus();
+  });
+
+  document.addEventListener("keydown", function(e){
+    if(e.key === "/" && document.activeElement !== input){ e.preventDefault(); input.focus(); input.select(); }
+  });
+
+  window.addEventListener("hashchange", function(){
+    var m = /^#q=(.*)$/.exec(location.hash);
+    if(m) setQuery(decodeURIComponent(m[1]), true);
+  });
+
+  window.addEventListener("scroll", function(){
+    toTop.classList.toggle("show", window.scrollY > 520);
+  }, { passive: true });
+  toTop.addEventListener("click", function(){ window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+  renderHints();
+  renderChips();
+  renderStats();
+  var m0 = /^#q=(.*)$/.exec(location.hash);
+  state.q = m0 ? decodeURIComponent(m0[1]) : "";
+  input.value = state.q;
+  render();
+})();
+</script>
+</body>
+</html>
