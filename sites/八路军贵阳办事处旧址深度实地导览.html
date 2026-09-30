@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>八路军贵阳办事处旧址深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M18 14 L46 14 L46 50 L18 50 Z M18 14 L32 7 L46 14 Z M26 20 L26 50 M38 20 L38 50 M18 26 L46 26 M18 34 L46 34 M18 42 L46 42' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">贵州省省级文物保护单位 · 红色史迹 · 革命旧址</div>
+    <h1>八路军贵阳办事处旧址</h1>
+    <p class="sub">位于贵阳市云岩区<strong>民生路92号院内</strong>，1939年1月挂牌成立、1941年1月被查封，抗战时期西南交通中转枢纽，木结构二进院落，<strong>贵州省省级文物保护单位</strong>（<a href="https://www.guiyang.gov.cn/zwgk/zwgkxwdt/zwgkxwdtjrgy/202410/t20241001_85783842.html">据贵阳市人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>八路军贵阳办事处旧址（又称"八路军贵阳交通站旧址"）</td></tr>
+      <tr><td>保护级别</td><td><strong>贵州省省级文物保护单位</strong>（第一批，1982年公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（红色史迹·革命旧址）</td></tr>
+      <tr><td>位置</td><td>贵阳市云岩区民生路92号院内</td></tr>
+      <tr><td>年代</td><td>1938年12月下旬决定设立，1939年1月3日挂牌成立</td></tr>
+      <tr><td>性质</td><td>中共中央南方局设立、八路军重庆办事处领导下的抗战交通枢纽</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>设立</strong>：1938年12月下旬，为防止日寇封锁切断西南交通、保持大后方与延安联系，经中共中央南方局研究决定在贵阳设公开办事机构；派原八路军武汉办事处副官长袁超俊率队到贵阳设立（据贵阳广播电视台、据抖音百科线索）。</li>
+    <li><strong>挂牌</strong>：1939年1月3日正式挂牌成立（据贵阳大数据局）。</li>
+    <li><strong>运行</strong>：1939—1940年主要承担转运军需物资、接待转移过往人员、联系中共贵州地下党等任务；为八路军、新四军转运大批军需物资，转送大批革命干部、家属和爱国青年到延安（据贵阳大数据局、据新华网）。</li>
+    <li><strong>查封</strong>：1941年1月被国民党当局查封（据新华网）。</li>
+    <li><strong>定级保护</strong>：1982年列为省级文物保护单位（据贵阳市人民政府、据人民网）。</li>
+    <li><strong>修缮开放</strong>：2019年贵阳市政府按"修旧如旧"原则修缮；2021年增设陈列展览；2024年10月1日重新免费开放，成为贵阳红色文化新地标（据贵阳晚报、据贵阳市人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>旧址位于民生路92号院内，外观是一座普通木结构居民院落，有正房、厢房，为二进三间两楼（<a href="http://www.gywb.cn/system/2024/04/09/102316163.shtml">据贵阳网</a>、据贵阳晚报）。</p>
+  <ul>
+    <li><strong>格局</strong>：二进式院落，正房、厢房围合一方约15平方米的天井，后院东角有一口小水井（据贵阳晚报、据贵州法治报）。</li>
+    <li><strong>现状</strong>：修缮后旧址为两进式院落，包含四个展馆（据中共贵州省委党校、据贵州省民政厅）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 230" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">八路军贵阳办事处旧址 · 布局示意</text>
+      <g font-size="9">
+        <rect x="60" y="44" width="80" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="100" y="59" text-anchor="middle" fill="#8a4a1f" font-weight="700">民生路92号入口</text>
+        <rect x="160" y="44" width="60" height="24" rx="4" fill="#f6ead0" stroke="#c05a1e" stroke-width="2"/>
+        <text x="190" y="59" text-anchor="middle" fill="#8a4a1f" font-weight="700">石碑</text>
+        <rect x="60" y="88" width="150" height="40" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="135" y="103" text-anchor="middle" fill="#8a4a1f" font-weight="700">一进 · 正房（三间）</text>
+        <text x="135" y="118" text-anchor="middle" fill="#8a4a1f" font-size="8">天井约15㎡</text>
+        <rect x="230" y="88" width="150" height="40" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="305" y="103" text-anchor="middle" fill="#8a4a1f" font-weight="700">二进 · 厢房</text>
+        <text x="305" y="118" text-anchor="middle" fill="#8a4a1f" font-size="8">四个展馆</text>
+        <circle cx="60" cy="170" r="8" fill="#8fc0d8" stroke="#5a8fa8" stroke-width="1.5"/>
+        <text x="80" y="174" fill="#4a6a7a" font-size="8">后院·小水井</text>
+        <text x="220" y="200" text-anchor="middle" font-size="8.5" fill="#8a6a40">二进三间两楼 · 木结构居民院落</text>
+        <text x="220" y="214" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 八路军贵阳办事处旧址布局示意：民生路92号入口 → "八路军贵阳交通站"石碑 → 一进·正房三间·天井约15㎡ → 二进·厢房·四个展馆 → 后院·小水井 · 二进三间两楼 · 木结构居民院落 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>木结构居民院落</strong>：二进三间两楼的普通木结构院落，有正房、厢房（据贵阳网、据贵阳晚报）。</li>
+    <li><strong>细部</strong>：正房为三开间矮楼平房，分为前后间，正房前为约15平方米的天井，后院东角一口小水井（据贵州法治报、据贵阳晚报）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 二进式院落</strong>：正房、厢房围合天井的木结构院落（据贵阳晚报、据贵州法治报）。</li>
+    <li><strong>② 小水井</strong>：后院东角的小水井，与交通站选址有关（据贵阳晚报）。</li>
+    <li><strong>③ 复原陈列展览</strong>：四个展馆，以历史照片、实物、影像记录交通站成立、任务与斗争场景（据中共贵州省委党校、据贵阳市人民政府）。</li>
+    <li><strong>④ 石碑石匾</strong>：入口处"八路军贵阳交通站"石碑（据贵州广播电视台、据贵州法治报）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>入口石碑</strong>：旧址入口处有一块刻有"八路军贵阳交通站"字样的石碑（据贵州法治报、据贵州广播电视台）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约30—60分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>贵阳市云岩区民生路92号八路军贵阳办事处旧址</strong>；</li>
+    <li>观入口<strong>"八路军贵阳交通站"石碑</strong>；</li>
+    <li>入一进院落看<strong>正房·天井</strong>，再到<strong>二进院落·厢房</strong>；</li>
+    <li>细看<strong>四个展馆</strong>复原陈列与后院<strong>小水井</strong>，了解1939—1941年交通站贡献后离场（据贵阳晚报、据贵州省民政厅）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　旧址2024年10月1日修缮后重新免费开放，可入内参观，具体开放时间、预约以官方最新公告为准（据贵阳晚报、据贵阳市人民政府）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：抗战时期中共中央南方局设立的贵阳工作站，为八路军、新四军转运物资、转送干部爱国青年到延安，见证国共合作与贵阳抗日救亡（据贵阳网、据新华网）。</li>
+    <li><strong>建筑价值</strong>：保存良好的二进三间两楼木结构居民院落（据贵阳网、据贵阳晚报）。</li>
+    <li><strong>保护现状</strong>：1982年公布为省级文保单位；2019年修缮、2021年设陈列、2024年重新开放（据贵阳市人民政府、据贵阳晚报）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：贵州省贵阳市云岩区民生路92号院内。</li>
+    <li><strong>开放状态</strong>：旧址2024年10月1日修缮后重新开放，为免费开放的红色景点，具体开放时间、预约方式以官方最新公告为准（据贵阳晚报、据贵阳市人民政府）。</li>
+    <li><strong>交通</strong>：位于贵阳闹市民生路（小吃街斜对面）（据贵阳广播电视台、据抖音线索）。</li>
+    <li><strong>提示</strong>：省级文保单位、红色史迹，参观时请爱护文物，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>贵阳市人民政府《市中心再添一处"红色景点"八路军贵阳交通站旧址今起试运行》：<a href="https://www.guiyang.gov.cn/zwgk/zwgkxwdt/zwgkxwdtjrgy/202410/t20241001_85783842.html">guiyang.gov.cn</a></li>
+      <li>新华网贵州频道《八路军贵阳交通站：大后方支持抗战的"红色枢纽"》：<a href="http://gz.news.cn/20250722/3ee32984c9124df49b9c3d7407be49d5/c.html">gz.news.cn</a></li>
+      <li>贵阳晚报《重温峥嵘岁月里的红色记忆》：<a href="https://wb.gywb.cn/ipaper/gywb/html/2026-07/30/content_4702.htm">wb.gywb.cn</a></li>
+      <li>人民网贵州频道《赓续红色精神 凝聚前行力量》：<a href="http://gz.people.com.cn/n2/2021/0517/c396691-34728711.html">gz.people.com.cn</a></li>
+      <li>贵阳网《八路军贵阳交通站旧址：再现光辉历程 铭记光荣历史》：<a href="http://www.gywb.cn/system/2024/04/09/102316163.shtml">gywb.cn</a></li>
+      <li>贵州省民政厅《大后方枢纽上的"红色堡垒"》：<a href="https://mzt.guizhou.gov.cn/xwzx/mzyw/202507/t20250709_88260422.html">mzt.guizhou.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">红色枢纽 · 一纸一物通延安</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

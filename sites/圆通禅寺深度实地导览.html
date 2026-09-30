@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>圆通禅寺（圆通寺）深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M32 10 L54 30 L46 30 L46 54 L18 54 L18 30 L10 30 Z' fill='%23f0d9a8'/%3E%3Crect x='24' y='34' width='16' height='8' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 古建筑 · 佛教寺院</div>
+    <h1>圆通禅寺（圆通寺）</h1>
+    <p class="sub">位于昆明市五华区<strong>圆通街30号</strong>（圆通山南麓），始建于唐南诏国时期、初名<strong>"补陀罗寺"</strong>，为中国最早的观音寺之一；以独特<strong>倒坡式水院佛寺</strong>与汉传·南传·藏传<strong>三系佛教共存</strong>著称，1998年公布为<strong>云南省文物保护单位</strong>（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505639.shtml">据五华区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>圆通禅寺（圆通寺）</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省文物保护单位</strong>（1998年公布）</td></tr>
+      <tr><td>类别</td><td>古建筑（佛教寺院）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市五华区圆通街30号（圆通山南麓、螺峰山麓）</td></tr>
+      <tr><td>始建年代</td><td>唐南诏国时期（738—902年），初名"补陀罗寺"，为中国最早的观音寺之一</td></tr>
+      <tr><td>规模</td><td>昆明最古老的佛教寺院之一、昆明市内最大的寺院，占地面积1.3万余平方米</td></tr>
+      <tr><td>叠加身份</td><td>云南省、昆明市佛教协会所在地，三系佛教（汉传·南传·藏传）共存的佛教圣地</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>创寺</strong>：始建于唐南诏国时期，初名"补陀罗寺"（"补陀罗"为梵文potalaka译音，意"开着小白花的光明山"，为观音道场），是昆明地区修建最早的佛寺之一（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505639.shtml">据五华区人民政府</a>、据抖音）。</li>
+    <li><strong>更名</strong>：元大德五年（1301年）寺院大修，因"圆通"是观音的三十二个法号之一，更名为"圆通寺"（<a href="http://www.cppcc.people.com.cn/n/2015/0613/c34948-27147897.html">据人民网</a>）。</li>
+    <li><strong>历代修葺</strong>：宋末元初一度毁于兵火，元代重建；明清两代多次修葺，曾一度改作道观，故寺内建筑、碑刻、造像兼有佛、道两教特色（<a href="https://chinabuddhism.com.cn/web/details/43502">据中国佛教协会</a>）。</li>
+    <li><strong>现存格局</strong>：现存主体建筑为清代所建（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505639.shtml">据五华区人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>圆通寺前临五华山、后接圆通山，地处两山之间的谷地，形成独特的"倒坡式"布局：进入山门后便是一路向下的缓坡，圆通胜境坊屹立于缓坡中段，坡底便是天王殿（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505639.shtml">据五华区人民政府</a>）。</p>
+  <ul>
+    <li><strong>山门</strong>：红门红柱，色彩鲜艳（据携程）。</li>
+    <li><strong>圆通胜境坊</strong>：清康熙七年（1668年）建，四柱三门式、雕梁画栋，为寺院标志性建筑（据携程、据美篇）。</li>
+    <li><strong>天王殿（龙华宝殿）</strong>：坡底主殿，供奉弥勒佛（据五华区人民政府、据携程）。</li>
+    <li><strong>放生池·八角亭</strong>：天王殿后为宽阔放生池，池中心立八角亭（供奉二十四臂千手观音），周围水榭回廊环绕，南北各架三孔石桥连通（据抖音百科、据抖音）。</li>
+    <li><strong>圆通宝殿（大雄宝殿）</strong>：地处寺院最低点，内祀清光绪年间精塑的三世佛/三身佛（据抖音百科）。</li>
+    <li><strong>铜佛殿</strong>：东侧南传佛教佛殿（据抖音）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">圆通禅寺 · 布局示意（倒坡式水院佛寺）</text>
+      <g font-size="9">
+        <path d="M40,50 L400,50 L400,255 L40,255 Z" fill="none" stroke="#c05a1e" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="220" y="45" text-anchor="middle" fill="#8a4a1f">昆明五华区圆通街 · 圆通山南麓 · 进入山门一路向下</text>
+        <rect x="110" y="58" width="200" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="74" text-anchor="middle" fill="#8a4a1f" font-weight="700">山门（红门红柱）</text>
+        <rect x="110" y="88" width="200" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="105" text-anchor="middle" fill="#8a4a1f" font-weight="700">圆通胜境坊（清康熙七年·1668）</text>
+        <rect x="110" y="120" width="200" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="136" text-anchor="middle" fill="#8a4a1f" font-weight="700">天王殿（龙华宝殿 · 弥勒佛）</text>
+        <rect x="80" y="150" width="260" height="40" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="166" text-anchor="middle" fill="#8a4a1f" font-weight="700">放生池 · 八角亭（二十四臂千手观音）</text>
+        <text x="210" y="182" text-anchor="middle" fill="#8a6a40" font-size="8">水榭回廊 · 南北三孔石桥</text>
+        <rect x="110" y="196" width="200" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="212" text-anchor="middle" fill="#8a4a1f" font-weight="700">圆通宝殿（大雄宝殿 · 最低点）</text>
+        <text x="210" y="225" text-anchor="middle" fill="#8a6a40" font-size="8">三世佛 · 蟠龙柱</text>
+        <rect x="110" y="236" width="200" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="252" text-anchor="middle" fill="#8a4a1f" font-weight="700">铜佛殿（南传）· 藏传佛殿</text>
+      </g>
+      <text x="220" y="276" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 圆通禅寺布局示意：山门 → 圆通胜境坊 → 天王殿（龙华宝殿）→ 放生池·八角亭（三孔石桥·水榭回廊）→ 圆通宝殿（最低点）→ 铜佛殿/藏传佛殿 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>倒坡式寺院</strong>：背依山岩、随坡而下、层层构筑，为全国少见的"水院佛寺"（据抖音百科、据抖音）。</li>
+    <li><strong>水院格局</strong>：放生池中建八角亭，四周水榭回廊环绕，两座三孔石桥连通，如江南水乡园林（据本地宝、据抖音）。</li>
+    <li><strong>三大教派佛殿</strong>：圆通宝殿（汉传）、铜佛殿（南传）、普光明殿（藏传）共存，三系佛教齐聚，全国佛寺少见（据美篇、据抖音）。</li>
+    <li><strong>圆通宝殿彩绘泥塑</strong>：殿内两根高达十米的明代青黄二龙蟠龙柱，工艺精湛，为云南泥塑艺术瑰宝（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 放生池·八角亭</strong>：水苑式核心景观，也是"倒坡寺"最低点；亭内供奉二十四臂千手观音，池水倒映亭台殿宇（据抖音、据抖音百科）。</li>
+    <li><strong>② 圆通宝殿（大雄宝殿）</strong>：寺内主殿，供奉三世佛，两根蟠龙柱（青黄二龙盘旋）高达十米，为云南泥塑艺术瑰宝（据抖音）。</li>
+    <li><strong>③ 铜佛殿</strong>：1985年建，供奉泰国赠送的释迦牟尼铜佛（高3.13米、重4.7吨），融合泰、印、中建筑风格，尽显南传佛教艺术（据抖音）。</li>
+    <li><strong>④ 圆通胜境坊</strong>：清康熙七年建的标志性牌坊，雕梁画栋（据携程、据美篇）。</li>
+    <li><strong>⑤ 后山摩崖题刻</strong>：国内少有的元明清历代摩崖石刻，为书法与石刻艺术珍品（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>圆通胜境坊</strong>：清康熙年间建造，四柱三门式、雕梁画栋，为寺院标志性建筑（据美篇、据携程）。</li>
+    <li><strong>后山摩崖</strong>：元明清历代摩崖题刻，为国内少有的摩崖石刻遗存（据抖音）。</li>
+    <li><strong>殿堂楹联</strong>：寺内各殿多有楹联题刻，兼有佛、道两教特色（据中国佛教协会）。</li>
+    <li><strong>塑像题刻</strong>：圆通宝殿明代蟠龙柱与历代碑刻并存（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约1—1.5小时）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市五华区圆通街30号</strong>（圆通山南麓）；</li>
+    <li>入<strong>山门</strong>，经<strong>圆通胜境坊</strong>（清康熙七年建）下行；</li>
+    <li>至<strong>天王殿（龙华宝殿）</strong>；</li>
+    <li>过<strong>放生池·八角亭</strong>（二十四臂千手观音·三孔石桥·水榭回廊）；</li>
+    <li>至<strong>圆通宝殿（大雄宝殿）</strong>，观三世佛与蟠龙柱；</li>
+    <li>观<strong>铜佛殿</strong>（泰国铜佛·南传风格）与藏传佛殿，后山摩崖题刻后离场（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505639.shtml">据五华区人民政府</a>、据抖音）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　圆通禅寺为昆明最古老的佛教寺院之一，倒坡式水院佛寺与三系佛教共存为全国少见，宜沿中轴线缓缓下行细赏（据抖音百科、据美篇）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：始建于唐南诏时期，为中国最早的观音寺之一，比浙江普陀山观音道场早100多年，是昆明佛教史与建筑史的重要见证（据人民网、据抖音）。</li>
+    <li><strong>艺术价值</strong>：倒坡式水院佛寺格局独特，圆通宝殿明代蟠龙柱与铜佛殿南传佛教造像为艺术珍品，摩崖题刻丰富（据抖音、据美篇）。</li>
+    <li><strong>保护现状</strong>：1998年公布为云南省文物保护单位；现为云南省、昆明市佛教协会所在地，重要的佛教文化胜地和旅游景点（<a href="https://m.baike.com/wiki/%E5%9C%86%E9%80%9A%E5%AF%BA/19346595">据抖音百科</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区圆通街30号。</li>
+    <li><strong>开放时间</strong>：据携程信息，开放时间约为8:00—17:00，门票6元（香花券）；具体以圆通寺及文物主管部门官方最新公告为准（据携程）。</li>
+    <li><strong>交通</strong>：位于昆明市中心圆通街，公交/地铁可达（据携程）。</li>
+    <li><strong>提示</strong>：寺为省级文物与佛教活动场所，参观请保持肃穆；具体开放时间、门票以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市五华区人民政府《圆通寺（省级）》：<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505639.shtml">kmwh.gov.cn</a></li>
+      <li>人民网《云南昆明圆通寺》：<a href="http://www.cppcc.people.com.cn/n/2015/0613/c34948-27147897.html">cppcc.people.com.cn</a></li>
+      <li>中国佛教协会《昆明圆通寺》：<a href="https://chinabuddhism.com.cn/web/details/43502">chinabuddhism.com.cn</a></li>
+      <li>抖音百科《圆通寺》：<a href="https://m.baike.com/wiki/%E5%9C%86%E9%80%9A%E5%AF%BA/19346595">m.baike.com</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">圆通胜境 · 水院禅林</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国立西南联合大学旧址（全国重点文物保护单位）深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236b1f17'/%3E%3Cpath d='M14 22 L50 22 L42 18 L22 18 Z' fill='%23e6c98a'/%3E%3Crect x='24' y='26' width='16' height='24' fill='%23b8745a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;--brick:#8a2a20;--brick-deep:#6b1f17;
+    --brick-soft:#a85046;--gold:#a8823c;--stone:#e9e3d8;--stone-2:#f4f0e8;
+    --paper:#fbf9f4;--line:#d9d2c4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  li > ul{margin:6px 0 6px 20px;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f3ea;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--gold);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#c9c0ae;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">全国重点文物保护单位 · 近现代史迹 · 深度实地导览</div>
+    <h1>国立西南联合大学旧址</h1>
+    <p class="sub">国立西南联合大学旧址位于云南省昆明市五华区一二一大街298号云南师范大学一二·一西南联大校区内，是<strong>全国重点文物保护单位（2006年5月25日第六批）</strong>。它是抗战期间西南联大在滇八年办学的校本部所在地，占地70余亩，完整保存<strong>14处历史遗存</strong>，是我国重要的近现代高等教育历史旧址与爱国主义教育纪念地（<a href="http://www.kmwh.gov.cn/zzms/c/2021-06-11/5232362.shtml">据昆明市五华区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>国立西南联合大学旧址（位于云南师范大学一二·一西南联大校区内）</td></tr>
+      <tr><td>保护级别</td><td><strong>全国重点文物保护单位</strong>（2006年5月25日国务院公布第六批）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（教育文化遗产 / 抗战纪念地）</td></tr>
+      <tr><td>地址</td><td>云南省昆明市五华区一二一大街298号，云南师范大学一二·一西南联大校区内</td></tr>
+      <tr><td>规模</td><td>占地70余亩，旧址内完整保存西南联大历史遗存14处（<a href="http://www.kmwh.gov.cn/zzms/c/2021-06-11/5232362.shtml">据昆明市五华区人民政府</a>）</td></tr>
+      <tr><td>始建</td><td>抗战时期（1938—1946年在滇办学的校本部旧址），校舍因陋就简、经历多次改扩建</td></tr>
+      <tr><td>叠加身份</td><td>全国首批百个爱国主义教育示范基地、全国红色旅游经典景区、国家级抗战纪念设施遗址、国家级海峡两岸交流基地、全国免费开放博物馆</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>三校合组</strong>：抗战爆发后，国立北京大学、国立清华大学、私立南开大学三校师生于1937年内迁湖南长沙组建"长沙临时大学"，后近千名师生经海、陆两线分批迁至云南昆明、蒙自；1938年4月2日正式更名"国立西南联合大学"，5月4日开课（<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">据云南师范大学</a>）。</li>
+    <li><strong>在滇办学</strong>：西南联大在昆明办学8年（1938—1946），校舍因陋就简，日寇空袭时师生"跑警报"，原教室为铁皮顶、"火腿椅"；著名学者云集（<a href="http://m.toutiao.com/group/7689056179816792622/">据中国青年网</a>）。</li>
+    <li><strong>英才辈出</strong>：在滇8年走出杨振宁、李政道2位诺贝尔奖获得者，黄昆、叶笃正、吴征镒等5位国家最高科学技术奖获得者，赵九章、屠守锷、邓稼先等8位"两弹一星功勋奖章"获得者，175位院士及百余位文化学者（<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">据云南师范大学</a>、<a href="http://m.toutiao.com/group/7689056179816792622/">据中国青年网</a>）。</li>
+    <li><strong>复原北返</strong>：1946年抗战胜利后，北大、清华、南开三校复员北返，将师范学院整建制留昆独立设置，更名"国立昆明师范学院"，后发展为今云南师范大学（<a href="http://m.toutiao.com/group/7689056179816792622/">据中国青年网</a>）。</li>
+    <li><strong>定级保护</strong>：2006年5月25日国务院公布为全国重点文物保护单位；后陆续列入国家级抗战纪念设施遗址、云南省不可移动革命文物名录（<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">据云南师范大学</a>）。</li>
+    <li><strong>开放利用</strong>：旧址内建有西南联大博物馆（"一二·一"运动纪念馆）；2023年9月恢复对外开放，实行免费预约（<a href="https://bwg.ynnu.edu.cn/cgzn.htm">据云南师范大学西南联大博物馆</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>西南联大旧址位于云南师大校园内，由<strong>校门—民主草坪—纪念碑—原教室—四烈士墓—三校亭/梅园—博物馆</strong>等构成。旧址现存14处历史遗存，主要动线自校门向北延伸：<strong>校门（"国立西南联合大学"石牌坊门）→ 民主草坪 → "一二·一"运动四烈士墓 → 国立西南联合大学纪念碑（及从军学生题名碑）→ 西南联大原教室（铁皮顶）→ 三校亭/梅园 → 西南联大博物馆</strong>（<a href="http://www.kmwh.gov.cn/zzms/c/2021-06-11/5232362.shtml">据昆明市五华区人民政府</a>、<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">据云南师范大学</a>）。</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 560" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="150" y="22" font-size="12" fill="#8a7b66">一二一大街 →</text>
+      <!-- 校门 -->
+      <rect x="170" y="40" width="110" height="18" rx="2" fill="#5a554c" stroke="#3f3a33" stroke-width="1.2"/>
+      <text x="225" y="53" text-anchor="middle" font-size="11" fill="#fff">校门 · "国立西南联合大学"</text>
+      <line x1="225" y1="58" x2="225" y2="80" stroke="#b08a4a" stroke-width="2"/>
+      <!-- 民主草坪 -->
+      <rect x="60" y="80" width="330" height="40" rx="5" fill="#7da46b" stroke="#5f853f" stroke-width="1.2"/>
+      <text x="225" y="104" text-anchor="middle" font-size="11" fill="#fff">民主草坪（原联大图书馆前大草坪）</text>
+      <line x1="225" y1="120" x2="225" y2="142" stroke="#b08a4a" stroke-width="2"/>
+      <!-- 四烈士墓 -->
+      <rect x="60" y="142" width="330" height="44" rx="5" fill="#6f8f52" stroke="#51683a" stroke-width="1.2"/>
+      <text x="225" y="160" text-anchor="middle" font-size="11" fill="#fff">"一二·一"运动四烈士墓</text>
+      <text x="225" y="176" text-anchor="middle" font-size="10" fill="#e6f2d8">石雕火炬纪念柱 · 李公朴/闻一多衣冠冢</text>
+      <line x1="225" y1="186" x2="225" y2="208" stroke="#b08a4a" stroke-width="2"/>
+      <!-- 纪念碑 -->
+      <rect x="60" y="208" width="330" height="44" rx="5" fill="#4f6b4a" stroke="#3a5036" stroke-width="1.2"/>
+      <text x="225" y="226" text-anchor="middle" font-size="11" fill="#fff">国立西南联合大学纪念碑（"三绝碑"）</text>
+      <text x="225" y="242" text-anchor="middle" font-size="10" fill="#e6f0df">冯友兰撰文 · 闻一多篆额 · 罗庸书丹 · 背面从军题名碑</text>
+      <line x1="225" y1="252" x2="225" y2="274" stroke="#b08a4a" stroke-width="2"/>
+      <!-- 原教室 -->
+      <rect x="60" y="274" width="330" height="44" rx="5" fill="#b0875a" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="225" y="292" text-anchor="middle" font-size="11" fill="#fff">西南联大原教室（铁皮顶）</text>
+      <text x="225" y="308" text-anchor="middle" font-size="10" fill="#f3e6cf">"火腿椅" · "静坐听雨"典故</text>
+      <line x1="225" y1="318" x2="225" y2="340" stroke="#b08a4a" stroke-width="2"/>
+      <!-- 博物馆 -->
+      <rect x="60" y="340" width="330" height="44" rx="5" fill="#8a2a20" stroke="#6b1f17" stroke-width="1.2"/>
+      <text x="225" y="358" text-anchor="middle" font-size="11" fill="#fff">西南联大博物馆《刚毅坚卓——西南联大历史展》</text>
+      <text x="225" y="374" text-anchor="middle" font-size="10" fill="#ffe4d6">"一二·一"运动纪念馆 · 免费预约</text>
+      <!-- 周边 -->
+      <rect x="60" y="410" width="150" height="36" rx="5" fill="#b0875a" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="135" y="432" text-anchor="middle" font-size="10" fill="#fff">三校亭 · 梅园</text>
+      <rect x="240" y="410" width="150" height="36" rx="5" fill="#b0875a" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="315" y="432" text-anchor="middle" font-size="10" fill="#fff">燕池 · 国立昆明师院纪念标柱</text>
+      <text x="225" y="480" text-anchor="middle" font-size="11" fill="#7a3c30" font-weight="700">刚毅坚卓 · 教育史上的长征 · 学以报国</text>
+    </svg>
+    <div class="cap">▲ 西南联大旧址布局示意：校门 → 民主草坪 → "一二·一"四烈士墓 → 纪念碑（三绝碑）→ 原教室（铁皮顶）→ 西南联大博物馆 → 三校亭/梅园/燕池等 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格与营造特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格与营造特色</h2></div>
+  <ul>
+    <li><strong>校门石牌坊</strong>：两根粗大石柱支撑横匾，书"国立西南联合大学"八大字（<a href="https://www.iesdouyin.com/share/video/7651052173278711059">据抖音</a>）。</li>
+    <li><strong>铁皮顶原教室</strong>：现存唯一原校舍建筑，土坯墙、铁皮屋顶；战时下雨铁皮叮当作响，留下"静坐听雨"典故（<a href="http://m.toutiao.com/group/7689056179816792622/">据中国青年网</a>、<a href="https://www.ynnu.edu.cn/info/1067/10521.htm">据云南师范大学</a>）。</li>
+    <li><strong>"火腿椅"</strong>：原教室60多把质朴木椅，右侧有火腿形扶手板，学生可落座直接在板上书写笔记（<a href="http://m.toutiao.com/group/7689056179816792622/">据中国青年网</a>）。</li>
+    <li><strong>西南联大纪念碑（"三绝碑"）</strong>：质地墨石，由首、座、身和拱券亭组成；碑额"国立西南联合大学纪念碑"11字由闻一多题写（<a href="http://www.kmwh.gov.cn/c/2020-05-07/4264960.shtml">据昆明市五华区人民政府</a>、<a href="https://m.ctrip.com/webapp/you/community/detail?articleId=342964630">据携程</a>）。</li>
+    <li><strong>燕池/民主草坪</strong>：燕池沿当年日军轰炸留下的炮坑而建；民主草坪原为联大图书馆前大草坪，师生常于此演讲聚会（<a href="https://www.iesdouyin.com/share/video/7525293239809920290">据抖音</a>）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 西南联大原教室（铁皮顶）</strong>：现存唯一原校舍，土坯墙铁皮顶，"停课赏雨""静坐听雨"典故发生地；室内60多把"火腿椅"（<a href="http://m.toutiao.com/group/7689056179816792622/">据中国青年网</a>）。</li>
+    <li><strong>② 国立西南联合大学纪念碑（"三绝碑"）</strong>：冯友兰撰文、闻一多篆额、罗庸书丹，碑文完整记录联大西迁办学历程，背面镌刻抗战从军学生名录（<a href="https://m.ctrip.com/webapp/you/community/detail?articleId=342964630">据携程</a>）。</li>
+    <li><strong>③ "一二·一"运动四烈士墓与石雕火炬纪念柱</strong>：镌刻闻一多撰《一二·一运动始末记》的石雕火炬纪念柱、李公朴与闻一多衣冠冢（<a href="http://www.kmwh.gov.cn/zzms/c/2021-06-11/5232362.shtml">据昆明市五华区人民政府</a>、<a href="https://m.yunnan.cn/system/2019/07/12/030324958.shtml">据云南网</a>）。</li>
+    <li><strong>④ 从军学生题名碑</strong>：校舍北侧镌刻抗战以来联大从军学生834人姓名，联大从军学生共1100余人、约占学生总数14%（<a href="http://m.toutiao.com/group/7689056179816792622/">据中国青年网</a>）。</li>
+    <li><strong>⑤ 西南联大博物馆《刚毅坚卓——西南联大历史展》</strong>：目前国内唯一全面集中展示西南联大历史的展览（<a href="https://bwg.ynnu.edu.cn/info/1029/2457.htm">据云南师范大学西南联大博物馆</a>）。</li>
+    <li><strong>⑥ 民主草坪/燕池/三校亭/梅园</strong>：联大图书馆前大草坪、沿日军轰炸炮坑而建的燕池、纪念北大清华南开的"三校亭"（<a href="https://www.iesdouyin.com/share/video/7525293239809920290">据抖音</a>、<a href="http://www.kmwh.gov.cn/zzms/c/2021-06-11/5232362.shtml">据昆明市五华区人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:44%"><col style="width:18%"><col style="width:16%"></colgroup>
+    <thead><tr><th>位置</th><th>内容</th><th>年代/书者</th><th>看点</th></tr></thead>
+    <tbody>
+      <tr><td>校门横匾</td><td>"国立西南联合大学"八大字（黑底白字石牌坊）</td><td>近代</td><td>旧址标志（<a href="https://www.iesdouyin.com/share/video/7651052173278711059">据抖音</a>）</td></tr>
+      <tr><td>博物馆入口</td><td>"刚毅坚卓"四字</td><td>联大校训</td><td>联大精神核心（<a href="https://www.ynnu.edu.cn/info/1067/10521.htm">据云南师范大学</a>）</td></tr>
+      <tr><td>纪念碑碑额</td><td>"国立西南联合大学纪念碑"11字</td><td>闻一多题写</td><td>"三绝碑"之一（<a href="http://www.kmwh.gov.cn/c/2020-05-07/4264960.shtml">据昆明市五华区人民政府</a>）</td></tr>
+      <tr><td>石雕火炬纪念柱</td><td>《一二·一运动始末记》</td><td>闻一多撰</td><td>一二·一运动纪念（<a href="https://m.yunnan.cn/system/2019/07/12/030324958.shtml">据云南网</a>）</td></tr>
+      <tr><td>校舍北侧题名碑</td><td>抗战从军学生834人姓名</td><td>抗战时期</td><td>投笔从戎记录（<a href="http://m.toutiao.com/group/7689056179816792622/">据中国青年网</a>）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约1—1.5小时）</strong>：</p>
+  <ol>
+    <li>由<strong>校门</strong>（"国立西南联合大学"石牌坊）进入，先览旧址全景；</li>
+    <li>至<strong>民主草坪</strong>，感受联大师生演讲聚会的民主气息；</li>
+    <li>到<strong>"一二·一"运动四烈士墓</strong>，看石雕火炬纪念柱与李公朴、闻一多衣冠冢；</li>
+    <li>细读<strong>国立西南联合大学纪念碑</strong>（三绝碑）与背面从军学生题名碑；</li>
+    <li>进<strong>西南联大原教室</strong>（铁皮顶、火腿椅），遥想"静坐听雨"；</li>
+    <li>参观<strong>西南联大博物馆</strong>《刚毅坚卓——西南联大历史展》；</li>
+    <li>最后经三校亭/梅园、燕池，顺览国立昆明师范学院纪念标柱等遗存。</li>
+  </ol>
+  <div class="tip"><span class="t">时间紧张备选</span>　直奔<strong>纪念碑 + 原教室 + 博物馆</strong>，约40分钟。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：西南联大在昆明办学8年，是抗战内迁高校中名望最高、影响力最大者，创造了世界高等教育史上的奇迹；旧址是联大在滇八年办学的校本部所在地与历史见证（<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">据云南师范大学</a>）。</li>
+    <li><strong>科学·教育价值</strong>：培养了2位诺奖得主、8位"两弹一星"功勋、175位院士，是传承西南联大精神与爱国主义教育的主要场所（<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">据云南师范大学</a>）。</li>
+    <li><strong>保护现状</strong>：2006年国保；2020年以来教育部资助复旦文博系与昆明市联合开展"西南联大文化遗产"系统性研究；2023年恢复对外开放，免费预约参观（<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">据云南师范大学</a>、<a href="https://bwg.ynnu.edu.cn/cgzn.htm">据云南师范大学西南联大博物馆</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区一二一大街298号，云南师范大学一二·一西南联大校区内。</li>
+    <li><strong>开放时间</strong>：每周二至周日9:00—16:30开放（周一闭馆，国家法定节假日正常开放），闭馆前半小时停止入场（<a href="https://bwg.ynnu.edu.cn/cgzn.htm">据云南师范大学西南联大博物馆</a>）。</li>
+    <li><strong>门票</strong>：<strong>免费</strong>，实行预约制（<a href="https://bwg.ynnu.edu.cn/cgzn.htm">据云南师范大学西南联大博物馆</a>）。</li>
+    <li><strong>预约方式</strong>：通过"西南联大博物馆"微信公众号预约小程序网上预约，审核通过后凭预约信息进校；暂不接受现场预约和电话预约（<a href="https://m.yunnan.cn/system/2026/05/14/034008386.shtml">据云南网</a>）。</li>
+    <li><strong>讲解</strong>：定时讲解团队约9:10、14:10，散客约10:30、15:30；团体预约电话0871-65516087。</li>
+    <li><strong>交通</strong>：可乘地铁3号线至潘家湾站后前往；一二一大街公交便利。</li>
+    <li><strong>提示</strong>：入校需凭预约信息进校参观；旧址为爱国主义教育场所，请保持肃穆、勿大声喧哗。信息更新于2026年，以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>云南师范大学西南联大博物馆《西南联大旧址及博物馆简介》：<a href="https://bwg.ynnu.edu.cn/info/1003/1778.htm">bwg.ynnu.edu.cn</a></li>
+      <li>云南师范大学《高质量教育答卷：人民日报海外版整版关注西南联大史迹群》（2025-06-16）：<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">ynnu.edu.cn</a></li>
+      <li>昆明市五华区人民政府《在央视〈今日中国〉"瞰"五华红色足迹》（2021-06-11）：<a href="http://www.kmwh.gov.cn/zzms/c/2021-06-11/5232362.shtml">kmwh.gov.cn</a></li>
+      <li>昆明市五华区人民政府《五华高品质核心区实力——人文五华》（2020-05-07）：<a href="http://www.kmwh.gov.cn/c/2020-05-07/4264960.shtml">kmwh.gov.cn</a></li>
+      <li>中国青年网《青春华章·学以报国：探访西南联大旧址》（2026-09-23）：<a href="http://m.toutiao.com/group/7689056179816792622/">toutiao.com</a></li>
+      <li>云南师范大学西南联大博物馆《参观指南》：<a href="https://bwg.ynnu.edu.cn/cgzn.htm">bwg.ynnu.edu.cn</a></li>
+      <li>云南网《走进云南师范大学，与西南联大"云击掌"》（2026-05-14）：<a href="https://m.yunnan.cn/system/2026/05/14/034008386.shtml">m.yunnan.cn</a></li>
+      <li>云南师范大学西南联大博物馆《馆讯：西南联大历史展入选推介名单》（2025-08-03）：<a href="https://bwg.ynnu.edu.cn/info/1029/2457.htm">bwg.ynnu.edu.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">刚毅坚卓 · 学以报国</div>
+  <div style="margin-top:6px;">信息来自官网、政府、报纸、文物局等官方权威渠道 · 布局示意图以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>
+<!-- （注：内容由AI生成） -->

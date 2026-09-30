@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昆明袁嘉谷旧居深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M20 14 L44 14 L44 50 L20 50 Z M26 22 L38 22 L38 40 L26 40 Z' fill='%23c05a1e'/%3E%3Cpath d='M20 14 L32 6 L44 14 Z' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省省级文物保护单位 · 近现代重要史迹 · 名人旧居</div>
+    <h1>昆明袁嘉谷旧居</h1>
+    <p class="sub">位于昆明市五华区<strong>翠湖北路5号（近翠湖）</strong>，云南历史上唯一状元袁嘉谷自建合院（名"澍园"），坐北朝南、走马转角楼合院式建筑，建于1920年，<strong>云南省省级文物保护单位</strong>（<a href="https://www.km.gov.cn/c/2024-04-15/4850327.shtml">据昆明市政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>袁嘉谷旧居</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省省级文物保护单位</strong>（第八批，2019年公布）；此前曾列入首批保护历史建筑</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（名人旧居）</td></tr>
+      <tr><td>位置</td><td>昆明市五华区翠湖北路5号，近翠湖（五华区政府曾标"51号"）</td></tr>
+      <tr><td>始建年代</td><td>1920年（1919年动工），袁嘉谷自建合院，名"澍园"</td></tr>
+      <tr><td>规模</td><td>占地面积510平方米，建筑面积756平方米，坐北朝南</td></tr>
+      <tr><td>叠加身份</td><td>昆明市首批保护历史建筑（2002年）；修缮后开放展示手稿、书法及教育事迹</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>建园</strong>：1919年动工、1920年建成，袁嘉谷自建合院，名"澍园"，位于翠湖旁、经正书院故地附近（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2579350.shtml">据五华区政府</a>、据昆明市博物馆）。</li>
+    <li><strong>名士栖居</strong>：袁嘉谷（云南历史上唯一状元、经济特科状元）在此生活18年（1920年至1937年逝世），是云南近代教育文化的见证（据本地宝、据新浪）。</li>
+    <li><strong>产权变迁</strong>：新中国成立后，旧居被云南大学收购，曾用作教职工和学生宿舍（据本地宝）。</li>
+    <li><strong>修缮开放</strong>：2022年、2024年云南大学自筹经费修缮，2024年修缮工程顺利通过初验；修缮后开放，展示手稿、书法及教育事迹（<a href="https://m.kmmuseum.com/info.asp?id=1928">据昆明市博物馆</a>、据新浪）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>旧居为坐北朝南的走马转角楼合院式建筑。</p>
+  <ul>
+    <li><strong>院落格局</strong>：合院式建筑，由正房、东西厢房和倒座房构成（据新浪、据抖音线索）。</li>
+    <li><strong>正房制式</strong>：北面正房五间，明间和次间为三层、单檐歇山顶；梢间和其他三面皆为两层、硬山顶（据五华区政府）。</li>
+    <li><strong>回廊走马</strong>：各层朝天井方向均设走廊，一二层构成回廊；东侧厢房下部明间为门厅，二楼外侧有走廊，形成走马转角楼格局（据五华区政府、据抖音线索）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">袁嘉谷旧居 · 布局示意</text>
+      <g font-size="9">
+        <rect x="150" y="44" width="140" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">大门（东厢房门厅）</text>
+        <rect x="150" y="78" width="140" height="24" rx="4" fill="#f6ead0" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="93" text-anchor="middle" fill="#8a4a1f" font-weight="700">天井</text>
+        <rect x="110" y="110" width="220" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="123" text-anchor="middle" fill="#8a4a1f" font-weight="700">北面正房（五间）</text>
+        <text x="220" y="136" text-anchor="middle" fill="#8a4a1f" font-size="8.5">明间·次间三层 · 单檐歇山顶</text>
+        <rect x="70" y="152" width="120" height="26" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="130" y="168" text-anchor="middle" fill="#8a4a1f" font-weight="700">西厢房（两层·硬山顶）</text>
+        <rect x="250" y="152" width="120" height="26" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="310" y="168" text-anchor="middle" fill="#8a4a1f" font-weight="700">东厢房（两层·硬山顶）</text>
+        <text x="220" y="196" text-anchor="middle" fill="#8a6a40" font-size="8.5">一二层回廊 · 二层走马转角楼相连</text>
+        <text x="220" y="210" text-anchor="middle" fill="#8a6a40" font-size="8.5">外墙二楼半圆拱顶窗（中西合璧）</text>
+        <text x="220" y="228" text-anchor="middle" font-size="8.5" fill="#8a6a40">坐北朝南 · 占地510㎡ · 建筑面积756㎡ · 按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 袁嘉谷旧居布局示意：大门（东厢房门厅）→ 天井 → 北面正房（五间·明间次间三层·歇山顶）· 东西厢房（两层·硬山顶）· 一二层回廊 · 二层走马转角楼 · 外墙半圆拱顶窗 · 坐北朝南，占地510㎡、建筑面积756㎡ · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>走马转角楼合院</strong>：坐北朝南，二层以回廊走马相连，昆明传统民居典型（据五华区政府、据抖音线索）。</li>
+    <li><strong>歇山与硬山顶</strong>：正房明间次间三层单檐歇山顶，梢间及厢房、倒座两层硬山顶，制式分明（据五华区政府）。</li>
+    <li><strong>中西合璧</strong>：设计融合中西元素，外墙二楼对外的开窗为半圆拱顶，带西式韵味（据本地宝）。</li>
+    <li><strong>清末民初民居特征</strong>：具有清末民初昆明民居建筑的典型特征，建筑艺术价值较高（据昆明市政府）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 正房歇山顶三层楼</strong>：北面正房明间、次间三层单檐歇山顶，为全宅最高制式（据五华区政府）。</li>
+    <li><strong>② 回廊与走马转角楼</strong>：各层朝天井设走廊、一二层构成回廊，二层走马相连，感受传统民居动线（据五华区政府）。</li>
+    <li><strong>③ 半圆拱顶窗</strong>：外墙二楼半圆拱顶开窗，中西合璧细节（据本地宝）。</li>
+    <li><strong>④ 门厅与天井</strong>：东厢房下部明间为门厅，由天井入正房，院落序列分明（据五华区政府）。</li>
+    <li><strong>⑤ 状元文脉</strong>：袁嘉谷状元生平、手稿书法与教育事迹展示（据新浪、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>旧居展示</strong>：修缮后开放展示袁嘉谷手稿、书法及教育事迹，为省爱国主义教育基地（据抖音线索，具体以现场为准）。</li>
+    <li><strong>状元人文</strong>：袁嘉谷为云南历史上唯一状元（经济特科一等第一名），旧居承载"大魁天下"文脉（据新浪、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约60—90分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市五华区翠湖北路5号袁嘉谷旧居</strong>；</li>
+    <li>经东厢房门厅入内，抵天井；</li>
+    <li>仰望北面正房，识别三层歇山顶与两侧两层硬山顶制式；</li>
+    <li>沿一二层回廊、走马转角楼探访各厢房，细看半圆拱顶窗；</li>
+    <li>参观袁嘉谷手稿、书法与教育事迹展示后，出馆沿翠湖漫步（据五华区政府、据昆明市博物馆、据新浪）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　旧居现为省级文保单位、省爱国主义教育基地，由云南大学管护；参观以现场/官方最新公告为准（据昆明市博物馆、据新浪）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：云南历史上唯一状元袁嘉谷自建住宅，其在此生活18年，见证云南近代教育与文化（据昆明市政府、据本地宝）。</li>
+    <li><strong>建筑价值</strong>：走马转角楼合院、歇山/硬山顶制式、中西合璧细节，具清末民初昆明民居典型特征（据昆明市政府、据五华区政府）。</li>
+    <li><strong>保护现状</strong>：2019年公布为省级文保单位；云南大学自筹经费修缮，2024年通过初验，修缮后开放展示（据昆明市博物馆）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区翠湖北路5号（近翠湖）。</li>
+    <li><strong>开放状态</strong>：旧居修缮后开放，展示手稿、书法及教育事迹；具体开放时间、预约方式以官方最新公告为准（据昆明市博物馆、据新浪）。</li>
+    <li><strong>交通</strong>：位于翠湖北路，临近翠湖公园，交通便利（据本地宝）。</li>
+    <li><strong>提示</strong>：旧居为文物建筑，请文明参观、爱护设施，具体安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市人民政府关于省十四届人大二次会议第903号建议办理意见的函：<a href="https://www.km.gov.cn/c/2024-04-15/4850327.shtml">km.gov.cn</a></li>
+      <li>昆明市博物馆《省级文保单位昆明袁嘉谷旧居修缮工程顺利通过初验》：<a href="https://m.kmmuseum.com/info.asp?id=1928">kmmuseum.com</a></li>
+      <li>昆明市五华区人民政府《袁嘉谷旧居》：<a href="http://www.kmwh.gov.cn/c/2018-05-29/2579350.shtml">kmwh.gov.cn</a></li>
+      <li>昆明市自然资源和规划局《袁嘉谷故居（第一批保护历史建筑）》：<a href="https://zrzygh.km.gov.cn/c/2020-05-18/3533659.shtml">zrzygh.km.gov.cn</a></li>
+      <li>昆明本地宝《翠湖袁嘉谷旧居介绍》：<a href="https://m.km.bendibao.com/xiuxian/100670.shtm">m.km.bendibao.com</a></li>
+      <li>新浪《袁嘉谷昆明旧居》：<a href="https://www.sina.cn/news/detail/5160817121560490.html">sina.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">大魁天下 · 文脉长存</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

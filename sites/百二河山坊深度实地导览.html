@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>百二河山坊深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a7220'/%3E%3Cpath d='M18 14 L46 14 L46 20 L18 20 Z M22 20 L42 20 L42 50 L22 50 Z M18 32 L46 32 M18 42 L46 42 M26 20 L26 50 M38 20 L38 50' fill='%23c09b1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c09b1e;--brick-deep:#8a7220;--brick-soft:#d8b84a;
+    --gold:#b58a2e;--stone:#f2e8cf;--stone-2:#faf6ec;--paper:#fdfaf3;--line:#e6d9b0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f6f0dd;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6d98a;
+    border:1px solid rgba(230,217,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#ded3ae;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#f8efcf;}
+  .hero .sub a{color:#e6d98a;border-bottom-color:rgba(230,217,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6d98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f0da;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#e0d3a4;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#cfc49a;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6d98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">宜宾市市级文物保护单位 · 古建筑 · 明代石质牌坊</div>
+    <h1>百二河山坊</h1>
+    <p class="sub">位于宜宾市翠屏区<strong>合江门街道匡时街与交通街交界口</strong>（水东门叙州城址上方），明崇祯戊寅年（1638年）建的仿木结构石质牌坊，宜宾市中心城区仅存明代古石坊，<strong>宜宾市市级文物保护单位</strong>（2002年5月公布，保护范围本体外延3米）（<a href="https://www.yibin.gov.cn/xxgk/zcfg/szfwj_45/ysfh/202307/t20230717_1882463_zzb.html">据宜宾市人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>百二河山坊（"百二河山"石牌坊）</td></tr>
+      <tr><td>保护级别</td><td><strong>宜宾市市级文物保护单位</strong>（2002年5月宜宾市人民政府公布；保护范围文物本体向外延伸3米）</td></tr>
+      <tr><td>类别</td><td>古建筑（明代石质牌坊）</td></tr>
+      <tr><td>位置</td><td>宜宾市翠屏区合江门街道，匡时街与交通街交界口（水东门叙州城址上方）</td></tr>
+      <tr><td>年代</td><td>建于明崇祯戊寅年（1638年）</td></tr>
+      <tr><td>形制</td><td>仿木结构重楼四柱三开间石质牌坊</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>始建</strong>：据嘉庆版《宜宾县志》记载，"百二河山"坊建于明崇祯戊寅年（1638年），为仿木结构重楼四柱三开间形制（<a href="https://www.cuiping.gov.cn/cpwl/tswh/202510/t20251027_2162711.html">据翠屏区人民政府</a>）。</li>
+    <li><strong>释义</strong>："百二河山"之名源自《史记·高祖本纪》，田肯献策时形容秦地"带河山之险"，意为以两万精兵可御百万入侵者，喻山河险固、易守难攻（据翠屏区人民政府、据中国旅游新闻网）。</li>
+    <li><strong>定级</strong>：2002年5月宜宾市人民政府公布为市级文物保护单位（据翠屏区人民政府、据宜宾市人民政府）。</li>
+    <li><strong>现状</strong>：距今近400年，为宜宾市中心城区仅存的一座明代古石坊（据中共宜宾市委党史研究室）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>牌坊坐东朝西，位于三江口宜宾城匡时街和交通街交界口（<a href="http://dfz.yibin.gov.cn/ybdq/ybss/202207/t20220726_1754955.html">据中共宜宾市委党史研究室</a>）。</p>
+  <ul>
+    <li><strong>形制</strong>：四柱三间，以夹杆石柱为承重主体，明间与次间形成高低错落的空间层次（据翠屏区人民政府）。</li>
+    <li><strong>尺度</strong>：通高7.2米、宽7.62米，檐下出三跳斗拱六铺作，明间设四攒（据翠屏区人民政府）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a7220">百二河山坊 · 布局示意</text>
+      <g font-size="9">
+        <rect x="60" y="44" width="100" height="26" rx="4" fill="#f2e8cf" stroke="#c09b1e" stroke-width="2"/>
+        <text x="110" y="61" text-anchor="middle" fill="#8a7220" font-weight="700">匡时街 / 交通街</text>
+        <rect x="170" y="40" width="200" height="58" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <text x="270" y="58" text-anchor="middle" fill="#fff" font-weight="700">百二河山坊（坐东朝西）</text>
+        <text x="270" y="74" text-anchor="middle" fill="#ffe9b8" font-size="8">四柱三间 · 通高7.2米 · 宽7.62米</text>
+        <text x="270" y="88" text-anchor="middle" fill="#ffe9b8" font-size="8">三跳斗拱六铺作 · 明间四攒</text>
+        <rect x="170" y="112" width="200" height="28" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="270" y="130" text-anchor="middle" fill="#8a7220" font-weight="700">水东门 · 叙州城址</text>
+        <text x="220" y="180" text-anchor="middle" font-size="8.5" fill="#8a7a40">按公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 百二河山坊布局示意：匡时街/交通街 → 百二河山坊（坐东朝西·四柱三间·通高7.2米·宽7.62米·三跳斗拱六铺作·明间四攒）→ 水东门·叙州城址 · 按公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>石质仿木结构</strong>：四柱三开间，青石条打造，顶端被开凿成蘑菇云状，颇具艺术气质（据中国旅游新闻网、据翠屏区人民政府）。</li>
+    <li><strong>斗拱</strong>：檐下出三跳斗拱六铺作，明间设四攒，展现明代石作工艺的精湛（据翠屏区人民政府）。</li>
+    <li><strong>空间层次</strong>：夹杆石柱为承重主体，明间与次间高低错落（据翠屏区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 明代石作工艺</strong>：仿木结构重楼四柱三开间，三跳斗拱六铺作，明间四攒（据翠屏区人民政府）。</li>
+    <li><strong>② 蘑菇云状坊顶</strong>：青石条顶端开凿成蘑菇云状（据中国旅游新闻网）。</li>
+    <li><strong>③ 仅存明代古石坊</strong>：宜宾市中心城区仅存的一座明代古石坊（据中共宜宾市委党史研究室）。</li>
+    <li><strong>④ 题刻"百二河山"</strong>：牌坊主题题刻与"带河山之险"的历史释义（据翠屏区人民政府、据中国旅游新闻网）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>坊额"百二河山"</strong>：牌坊主额题"百二河山"四字，取"以二万精兵可御百万之敌"之意（据中国旅游新闻网、据翠屏区人民政府）。</li>
+    <li><strong>石坊题刻</strong>：具体坊额与题记细节待现场观览（据翠屏区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约15—30分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>宜宾市翠屏区合江门街道匡时街与交通街交界口</strong>；</li>
+    <li>观<strong>百二河山坊</strong>整体四柱三开间、重楼形制与坐东朝西朝向；</li>
+    <li>细看<strong>蘑菇云状坊顶、三跳斗拱六铺作</strong>与<strong>"百二河山"坊额</strong>；</li>
+    <li>登<strong>水东门叙州城址</strong>，俯瞰三江口风光后离场（据中共宜宾市委党史研究室、据翠屏区人民政府）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　牌坊位于街区交通口，观览以现场为准（据翠屏区人民政府）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：宜宾市中心城区仅存的明代古石坊，具纪念意义（据中共宜宾市委党史研究室、据翠屏区人民政府）。</li>
+    <li><strong>艺术价值</strong>：明代石作工艺与仿木结构斗拱的代表作（据翠屏区人民政府）。</li>
+    <li><strong>保护现状</strong>：市级文物保护单位，2023年公布保护范围（文物本体向外延伸3米）（据宜宾市人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：四川省宜宾市翠屏区合江门街道匡时街与交通街交界口（水东门上方）。</li>
+    <li><strong>开放状态</strong>：位于街区的石坊，可自由观览，具体以现场及官方公告为准（据翠屏区人民政府）。</li>
+    <li><strong>交通</strong>：位于三江口宜宾城，毗邻水东门、合江门广场，可步行前往（据中共宜宾市委党史研究室）。</li>
+    <li><strong>提示</strong>：市级文保单位，参观时请爱护石坊，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>宜宾市人民政府《关于公布叙州城城墙旧址等24处市级文物保护单位保护范围的通知》：<a href="https://www.yibin.gov.cn/xxgk/zcfg/szfwj_45/ysfh/202307/t20230717_1882463_zzb.html">yibin.gov.cn</a></li>
+      <li>翠屏区人民政府《"百二河山"石坊连接古今》：<a href="https://www.cuiping.gov.cn/cpwl/tswh/202510/t20251027_2162711.html">cuiping.gov.cn</a></li>
+      <li>翠屏区人民政府《合江门里的明代石坊：读懂"百二河山"的百年风骨》：<a href="https://www.cuiping.gov.cn/cpwl/tswh/202605/t20260518_2227927.html">cuiping.gov.cn</a></li>
+      <li>中共宜宾市委党史研究室《明代真迹"百二河山"坊》：<a href="http://dfz.yibin.gov.cn/ybdq/ybss/202207/t20220726_1754955.html">dfz.yibin.gov.cn</a></li>
+      <li>中国旅游新闻网《僰道遗韵》：<a href="http://www.ctnews.com.cn/paper/content/202504/01/content_101716.html">ctnews.com.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">山河险固 · 明代石坊</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

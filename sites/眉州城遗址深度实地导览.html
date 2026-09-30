@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>眉州城遗址深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M18 20 L20 46 L30 48 L44 46 L46 24 L44 44 Z' fill='%23c05a1e'/%3E%3Crect x='26' y='30' width='14' height='14' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">四川省省级文物保护单位 · 古遗址 · 城址</div>
+    <h1>眉州城遗址</h1>
+    <p class="sub">位于眉山市东坡区<strong>眉州城区（古城东南角文脉核心区）</strong>，是宋代西南地区府州级城市的典型代表、四川盆地宋元明清叠加型城址典型，为古今重叠型城址，孕育三苏文化的重要载体，<strong>四川省省级文物保护单位</strong>（<a href="http://www.ncha.gov.cn/art/2026/3/28/art_722_201847.html">据国家文物局</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>眉州城遗址</td></tr>
+      <tr><td>保护级别</td><td><strong>四川省省级文物保护单位</strong>（第十批）</td></tr>
+      <tr><td>类别</td><td>古遗址（城址）</td></tr>
+      <tr><td>位置</td><td>四川省眉山市东坡区眉州城区（眉州古城东南角一带）</td></tr>
+      <tr><td>始建</td><td>始建年代不详：城址自唐末成形，宋元明清历代叠压，城市格局几乎未变（详见「二、历史沿革」）</td></tr>
+      <tr><td>遗址性质</td><td>宋代西南地区府州级城市典型代表，四川盆地宋元明清叠加型城址典型，古今重叠型城址</td></tr>
+      <tr><td>考古概况</td><td>发现并清理宋至明清时期遗址300余处，出土文物1000余件</td></tr>
+      <tr><td>历史意义</td><td>从唐末到明清城市格局几乎未变，国内古城遗址中极为珍贵，孕育三苏文化的重要载体</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>考古发现</strong>：2023年至2024年，在配合城市更新项目开展的"考古前置"工作中，考古人员发现眉州城遗址——一处典型的古今叠压型遗址，唐宋以后眉州城的格局与历史被封存其中（<a href="http://m.toutiao.com/group/7650467803451752969/">据封面新闻</a>）。</li>
+    <li><strong>考古调查</strong>：四川省文物考古研究院对眉州古城墙及其周边区域进行全面考古调查，勘探发现眉州城宋至明清遗址、建筑基址群及河堤河道遗址（<a href="http://www.ncha.gov.cn/art/2026/5/7/art_723_202454.html">据国家文物局</a>）。</li>
+    <li><strong>考古发掘</strong>：发现并清理宋至明清时期遗址300余处，出土文物1000余件，证实眉州城东南角为文脉核心区域（据国家文物局）。</li>
+    <li><strong>定级保护</strong>：眉州城遗址列为四川省省级文物保护单位（第十批）（据封面新闻）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>眉州城遗址考古以复原研究为主要目的，还原宋代府州级城市布局（据国家文物局）。</p>
+  <ul>
+    <li><strong>主要遗存</strong>：发现河堤河道、宋至明清时期遗址、建筑基址群、古井和过水涵洞等多处遗存（<a href="http://www.ncha.gov.cn/art/2026/3/28/art_722_201847.html">据国家文物局</a>）。</li>
+    <li><strong>文脉核心区</strong>：眉州古城东南角曾建有书院、文昌宫、文庙、武庙、奎星楼、折桂楼与学署等大量文化性建筑，为眉州文脉核心区域（据川观新闻）。</li>
+    <li><strong>展示方式</strong>：过水涵洞遗址上方架设架空玻璃平台，可透过平台窥见遗址原貌（据人民日报）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">眉州城遗址 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="50" width="280" height="28" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="68" text-anchor="middle" fill="#8a4a1f" font-weight="700">考古区入口</text>
+        <rect x="80" y="84" width="280" height="28" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="102" text-anchor="middle" fill="#8a4a1f" font-weight="700">河堤河道遗址</text>
+        <rect x="80" y="118" width="280" height="28" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="136" text-anchor="middle" fill="#8a4a1f" font-weight="700">建筑基址群 · 古井</text>
+        <rect x="80" y="152" width="280" height="28" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="170" text-anchor="middle" fill="#8a4a1f" font-weight="700">过水涵洞遗址（架空玻璃平台）</text>
+        <text x="220" y="198" text-anchor="middle" fill="#8a6a40" font-size="8.5">眉州古城东南角 · 文脉核心区（书院·文庙·奎星楼故址）</text>
+        <text x="220" y="214" text-anchor="middle" fill="#8a6a40" font-size="8.5">宋代府州级城市典型 · 宋元明清叠加型城址</text>
+        <text x="220" y="232" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 眉州城遗址布局示意：考古区入口 → 河堤河道遗址 → 建筑基址群·古井 → 过水涵洞遗址（架空玻璃平台）· 位于眉州古城东南角文脉核心区 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、考古/遗存特征 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>考古/遗存特征</h2></div>
+  <ul>
+    <li><strong>古今叠压</strong>：眉州城是罕见的古今重叠型城址，从唐末到明清的城市格局几乎未变，为国内古城遗址中所罕见（据眉山网）。</li>
+    <li><strong>河堤河道</strong>：发现河堤及河道遗址1处，展示古人"临水设城、城水共生"的营城理念（据新华网、据环球网）。</li>
+    <li><strong>建筑基址群</strong>：发掘出建筑基址群，其中在城墙边发现奎星阁部分柱础与地基（据新华网、据人民日报）。</li>
+    <li><strong>多重复合功能</strong>：建筑遗迹揭示该地区多重复合功能，生动展现宋代以来府州级城市的布局与社会生活图景（据国家文物局）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 过水涵洞遗址</strong>：上方架设架空玻璃平台，可透过平台窥见遗址原貌（据人民日报）。</li>
+    <li><strong>② 河堤河道遗址</strong>：古代眉州关键水利设施遗存，展示"因势导利、城水共生"营城理念（据环球网、据新华网）。</li>
+    <li><strong>③ 奎星阁柱础地基</strong>：城墙边发掘出奎星阁部分柱础与地基，象征眉州文运（据人民日报）。</li>
+    <li><strong>④ 建筑基址群与古井</strong>：考古清理出的建筑基址、古井等遗存（据国家文物局）。</li>
+    <li><strong>⑤ 宋至明清文化遗存</strong>：清理出宋至明清遗址300余处、出土文物1000余件（据国家文物局）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>奎星阁故墟</strong>：象征眉州文运的奎星阁，考古发掘出部分柱础与地基（据人民日报、据新华网）。</li>
+    <li><strong>遗址说明标识</strong>：各遗存设考古展示设施与说明（据国家文物局）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约60—90分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>眉山市东坡区眉州城区眉州城遗址</strong>（眉州古城东南角文脉核心区）；</li>
+    <li>观<strong>河堤河道遗址</strong>，了解"临水设城"营城理念；</li>
+    <li>细看<strong>建筑基址群与古井</strong>遗存；</li>
+    <li>至<strong>过水涵洞遗址</strong>，透过架空玻璃平台窥看遗址原貌；</li>
+    <li>回望眉州古城东南角文脉核心区（书院·文庙·奎星楼故址）后离场（据国家文物局、据人民日报）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　眉州城遗址为宋代府州级城市典型代表、宋元明清叠加型城址，是孕育三苏文化的重要载体；现为省级文保单位，参观以官方开放安排为准（据国家文物局、据川观新闻）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：眉州城遗址为宋代西南地区府州级城市典型代表，是孕育三苏文化的重要载体，承载眉山2300余年城市记忆（据国家文物局、据川观新闻）。</li>
+    <li><strong>科学价值</strong>：从唐末到明清城市格局几乎未变，为国内古城遗址中所罕见，具有极高考古与城市史研究价值（据眉山网）。</li>
+    <li><strong>保护现状</strong>：列为四川省省级文物保护单位（第十批）；眉州古城墙遗址公园以"考古优先、最小干预、活态传承"理念进行展示（据封面新闻、据人民网四川频道）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：四川省眉山市东坡区眉州城区（眉州古城东南角一带）。</li>
+    <li><strong>开放状态</strong>：遗址与眉州古城墙遗址公园区域相关联，具体开放范围、参观方式以文物主管部门官方最新公告为准（据国家文物局）。</li>
+    <li><strong>交通</strong>：位于眉山城区东南，城内交通便利（据中国网）。</li>
+    <li><strong>提示</strong>：遗址为省级文物，请勿进入未开放考古区域、爱护遗存；具体参观安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>国家文物局《考古探源 赓续文脉——眉山获批国家历史文化名城的"考古实践"》：<a href="http://www.ncha.gov.cn/art/2026/3/28/art_722_201847.html">ncha.gov.cn</a></li>
+      <li>国家文物局《四川眉山：坚持保护第一推动眉州古城墙活态传承》：<a href="http://www.ncha.gov.cn/art/2026/5/7/art_723_202454.html">ncha.gov.cn</a></li>
+      <li>人民日报《诗书写就一城风雅》：<a href="http://paper.people.com.cn/rmrb/pc/content/202609/09/content_30179997.html">paper.people.com.cn</a></li>
+      <li>封面新闻《第十批省保背后的田野答卷》：<a href="http://m.toutiao.com/group/7650467803451752969/">m.toutiao.com</a></li>
+      <li>川观新闻《眉州古城墙遗址公园开放 千年城墙成"活态博物馆"》：<a href="https://cbgc.scol.com.cn/news/7284369">cbgc.scol.com.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">遗址能言 · 一城千年</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

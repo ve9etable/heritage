@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>梁思成林徽因旧居深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M14 44 L50 44 L44 54 L20 54 Z' fill='%23f0d9a8'/%3E%3Crect x='20' y='16' width='24' height='28' fill='%23c05a1e'/%3E%3Cpath d='M20 16 L28 8 L36 16' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 近现代重要史迹 · 名人故居</div>
+    <h1>梁思成林徽因旧居</h1>
+    <p class="sub">位于昆明市盘龙区<strong>龙泉镇（龙泉街道）棕皮营村</strong>，是建筑大师梁思成、林徽因<strong>一生中唯一亲手设计并建造的房屋</strong>，1939年建造、1940年春完工，为《中国建筑史》孕育之地，<strong>云南省文物保护单位</strong>（<a href="http://ent.people.com.cn/n1/2025/0105/c1012-40395561.html">据人民网</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>梁思成林徽因旧居（梁林旧居）</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省文物保护单位</strong></td></tr>
+      <tr><td>类别</td><td>近现代重要史迹（名人故居·纪念建筑）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市盘龙区龙泉镇（龙泉街道）棕皮营村（龙头街，靠近金汁河）</td></tr>
+      <tr><td>始建年代</td><td>1939年设计建造，1940年春完工</td></tr>
+      <tr><td>面积</td><td>两大间青瓦平房约80平方米；另一口径建筑面积约130余平方米</td></tr>
+      <tr><td>历史意义</td><td>梁思成、林徽因一生中唯一一座为自己设计并亲手建造的房屋，《中国建筑史》孕育之地</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>避难到滇</strong>：1938年1月，为躲避战乱，梁思成、林徽因来到昆明（据今日头条/昆明发布）。</li>
+    <li><strong>自建居所</strong>：1939年夏至1940年春，梁、林夫妻在棕皮营村借用当地村民土地，亲自设计、运料、砌砖盖瓦，建起两大间青瓦平房，主屋三间、对面一间为厨房等附属用房（<a href="http://ent.people.com.cn/n1/2025/0105/c1012-40395561.html">据人民网</a>、据云南宣传网）。</li>
+    <li><strong>营造学社调查</strong>：留昆期间，梁思成和林徽因带领中国营造学社成员，对昆明圆通寺、东寺塔、西寺塔、金殿、真庆观大殿等50多处古建筑作了全面调查，这是昆明有史以来第一次对古建筑进行系统普查（<a href="https://m.yunnan.cn/system/2026/02/03/033858183.shtml">据云南网</a>）。</li>
+    <li><strong>修缮开放</strong>：2017年启动修缮，后辟为纪念馆常态化开放、可预约参观（据昆明市文联、据今日头条）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>旧居为梁氏夫妇亲建的青瓦平房院落，融合云南传统民居"一颗印"格局（据腾讯网、据抖音）。</p>
+  <ul>
+    <li><strong>主屋</strong>：三间正房坐西向东，长12米、宽7米，每间约28平方米；西侧为客厅，中间为书房和卧室，东侧为女儿卧室及林徽因母亲房间（据新浪博客、据抖音）。</li>
+    <li><strong>耳房</strong>：正房南侧并排一矮小偏厦，为哲学家金岳霖假期来住的卧室（据抖音、据今日头条）。</li>
+    <li><strong>附属用房</strong>：主屋对面两间青瓦房为厨房、佣人房，中间隔一通道，自然形成小庭院（据今日头条）。</li>
+    <li><strong>环境</strong>：院内绿树成荫、繁花点缀，一侧辟出小块菜园（据腾讯网）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 270" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">梁思成林徽因旧居 · 布局示意</text>
+      <g font-size="9">
+        <rect x="90" y="48" width="260" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="65" text-anchor="middle" fill="#8a4a1f" font-weight="700">前院 · 圆桌藤椅 · 菜园</text>
+        <rect x="90" y="80" width="260" height="38" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="95" text-anchor="middle" fill="#8a4a1f" font-weight="700">主屋 · 三间正房（坐西向东）</text>
+        <text x="220" y="111" text-anchor="middle" fill="#8a6a40" font-size="8">西客厅 · 中书卧室 · 东卧室</text>
+        <rect x="110" y="124" width="220" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="141" text-anchor="middle" fill="#8a4a1f" font-weight="700">南侧耳房 · 金岳霖卧室</text>
+        <rect x="90" y="156" width="260" height="28" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="174" text-anchor="middle" fill="#8a4a1f" font-weight="700">对面 · 厨房/佣人房（通道相隔）</text>
+        <rect x="90" y="190" width="260" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="207" text-anchor="middle" fill="#8a4a1f" font-weight="700">后院 · 绿树环绕</text>
+        <text x="220" y="236" text-anchor="middle" fill="#8a6a40" font-size="8.5">云南传统民居 · 一颗印格局 · 土坯墙木构架青瓦</text>
+      </g>
+      <text x="220" y="256" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 梁思成林徽因旧居布局示意：前院（圆桌藤椅·菜园）→ 主屋三间正房（西客厅·中书卧室·东卧室）→ 南侧金岳霖耳房 → 对面厨房/佣人房（通道相隔·小庭院）→ 后院 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>云南传统民居</strong>：融合云南传统民居精髓——条石筑基、土坯垒墙、木构架梁、青瓦覆顶；最具特色的麟尾屋脊在蓝天映衬下划出优雅弧线（据腾讯网）。</li>
+    <li><strong>一颗印格局</strong>：白墙青瓦主房坐西朝东，与三间厢房围合成典型云南"一颗印"民居格局（据抖音）。</li>
+    <li><strong>中西结合</strong>：卧室铺木地板，客厅砌小壁炉，简约中处处透露"设计师品味"（据中国新闻网、据抖音）。</li>
+    <li><strong>朴素实用</strong>：因条件有限，房子并不高大华丽，却处处可见设计巧思（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 三间正房</strong>：西客厅、中间书房与卧室、东侧女儿卧室及林母房间，陈列当年家具（据抖音、据新浪博客）。</li>
+    <li><strong>② 金岳霖耳房</strong>：正房南侧矮小偏厦，为哲学家金岳霖居住（据抖音、据今日头条）。</li>
+    <li><strong>③ 主屋细节</strong>：土坯墙、木构架、筒瓦屋顶、麟尾屋脊；卧室木地板、客厅小壁炉（据腾讯网、据中国新闻网）。</li>
+    <li><strong>④ 手稿书信展陈</strong>：屋内陈列梁思成、林徽因的手稿、书信、照片等（据抖音）。</li>
+    <li><strong>⑤ 院落环境</strong>：前院树荫圆桌藤椅、绿树繁花、菜园，遥想战时学术沙龙（据腾讯网、据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>旧居牌匾/铭牌</strong>：旧居门口立有标识，说明其为省级文物保护单位及梁林生平（据云南网）。</li>
+    <li><strong>文物标识碑</strong>：作为省级文保单位，设有保护标识（据中新网）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约40—60分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市盘龙区龙泉镇（龙泉街道）棕皮营村</strong>（乘地铁2号线至龙头街站，步行约400米）；</li>
+    <li>入<strong>前院</strong>（树荫圆桌藤椅·菜园·班瑁猫）；</li>
+    <li>观<strong>三间正房</strong>（西客厅·中书卧室·东卧室）；</li>
+    <li>细看<strong>金岳霖耳房</strong>与主屋对面<strong>厨房/佣人房</strong>（通道·小庭院）；</li>
+    <li>细品<strong>手稿书信照片</strong>等展陈，遥想战时学术沙龙后离场（据腾讯网、据抖音）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　梁思成林徽因旧居为梁氏夫妇一生唯一自建房屋，融合云南传统民居与西式壁炉；现常态化开放、可预约参观（据中新网、据今日头条）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：旧居为梁思成、林徽因一生唯一亲手设计建造的居所，是《中国建筑史》孕育之地；留昆期间梁林带领中国营造学社对昆明50多处古建筑作系统普查，开启昆明古建研究（据人民网、据云南网）。</li>
+    <li><strong>建筑价值</strong>：融合云南传统民居"一颗印"格局与西式设计元素，为近代民居建筑代表（据腾讯网、据抖音）。</li>
+    <li><strong>保护现状</strong>：列为云南省文物保护单位，2017年启动修缮，后辟为纪念馆常态化开放、可预约参观（据昆明市文联、据今日头条）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市盘龙区龙泉镇（龙泉街道）棕皮营村（龙头街）。</li>
+    <li><strong>开放状态</strong>：现已常态化开放，可预约参观；具体以旧居及文物主管部门官方最新公告为准（据今日头条）。</li>
+    <li><strong>交通</strong>：乘地铁2号线至龙头街站，步行约400米即达（据抖音）。</li>
+    <li><strong>提示</strong>：参观请保持安静、爱护文物与展陈；具体开放时间、预约方式以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>人民网《留住茶马古镇上学术名家的足迹》：<a href="http://ent.people.com.cn/n1/2025/0105/c1012-40395561.html">ent.people.com.cn</a></li>
+      <li>中国新闻网《云南这个古镇，何以成为西南联大"院士之乡"》：<a href="https://wap.chinanews.com/wap/detail/chs/zw/10283378.shtml">wap.chinanews.com</a></li>
+      <li>云南网《梁思成、林徽因旧居来了一批"小主人"》：<a href="https://m.yunnan.cn/system/2026/02/03/033858183.shtml">m.yunnan.cn</a></li>
+      <li>腾讯网《梁思成林徽因旧居每一处细节都凝结意趣》：<a href="http://news.qq.com/rain/a/20250519A02IDX00">news.qq.com</a></li>
+      <li>昆明市文学艺术界联合会《梁思成林徽因旧居启动修缮》：<a href="http://wl.km.gov.cn/c/2017-01-22/1692287.shtml">wl.km.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">一间青瓦屋 · 半部建筑史</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黑龙宫深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M10 32 Q20 20 32 32 T54 32 L54 44 L10 44 Z' fill='%23f0d9a8'/%3E%3Ccircle cx='32' cy='28' r='6' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 古建筑 · 道教宫观（龙王庙）</div>
+    <h1>黑龙宫</h1>
+    <p class="sub">位于昆明市盘龙区<strong>黑龙潭公园</strong>内、紧靠黑龙潭边，俗称<strong>"下观"</strong>，与龙泉观（上观）合称黑龙潭古建筑群；始建于明洪武二十七年（1394年），供奉龙王，传说黑龙潜潭、掌管兴云降雨，为<strong>滇池流域现存最古老的道教宫观之一</strong>（<a href="https://m.baike.com/wiki/%E9%BB%91%E9%BE%99%E6%BD%AD/19381852">据抖音百科</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>黑龙宫（昆明黑龙宫），俗称"下观"，与龙泉观（上观）合称黑龙潭古建筑群</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省重点文物保护单位</strong>（黑龙潭古建筑群组成部分）</td></tr>
+      <tr><td>类别</td><td>古建筑（道教宫观·龙王庙）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市盘龙区黑龙潭公园内（龙泉山五老峰山麓，紧靠龙潭边）</td></tr>
+      <tr><td>始建年代</td><td>明洪武二十七年（1394年），明景泰四年（1454年）世袭黔国公沐氏重修</td></tr>
+      <tr><td>格局</td><td>三进四院（一说一进两院）</td></tr>
+      <tr><td>叠加身份</td><td>滇池流域现存最古老的道教宫观之一</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>文脉溯源</strong>：清道光年间云贵总督阮元依据《汉书·地理志》"益州有黑水祠"记载考证，黑龙潭古建筑群历史可追溯至汉代黑水祠（据抖音）。</li>
+    <li><strong>营建</strong>：黑龙宫始建于明洪武二十七年（1394年），由黔国公沐氏主持建造，明景泰四年（1454年）世袭黔国公沐氏重修（<a href="https://m.baike.com/wiki/%E9%BB%91%E9%BE%99%E6%BD%AD/19381852">据抖音百科</a>、据携程）。</li>
+    <li><strong>龙神信仰</strong>：紧靠龙潭边建祠供奉龙王，传说黑龙潜于潭中、掌管兴云降雨，故称黑龙潭（据抖音）。</li>
+    <li><strong>历史变迁</strong>：1966年"文化大革命"中塑像全毁；历代由沐氏家族持续修缮，现存明清碑刻、楹联及道教八卦装饰（据抖音百科、据携程）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>黑龙宫紧靠黑龙潭边，为临潭而建的古朴殿宇，三进四院（据抖音百科、据抖音）。</p>
+  <ul>
+    <li><strong>正殿</strong>：供奉敕封云贵总督黑龙大帝（龙王）（据抖音）。</li>
+    <li><strong>配殿</strong>：供水族等塑像；东侧偏殿供奉天父地母，西侧偏殿供奉龙母娘娘（据抖音百科、据抖音）。</li>
+    <li><strong>外院</strong>：置有香炉，正反两面刻八卦图，两个侧面刻北斗七星图，为道教驱魔避邪之用（<a href="http://ly.sz.bendibao.com/gdlyjd/jd16819.html">据深圳本地宝</a>）。</li>
+    <li><strong>里院天井</strong>：水池中有形态逼真的戏水黑龙雕塑，传说为云南掌管兴云播雨的都龙王（<a href="http://ly.sz.bendibao.com/gdlyjd/jd16819.html">据深圳本地宝</a>）。</li>
+    <li><strong>通道两侧</strong>：左右分别供奉文龙王等（据抖音）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">黑龙宫（下观）· 布局示意</text>
+      <g font-size="9">
+        <rect x="90" y="52" width="260" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="69" text-anchor="middle" fill="#8a4a1f" font-weight="700">黑龙潭畔（一清一浑双潭）</text>
+        <rect x="90" y="84" width="260" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="101" text-anchor="middle" fill="#8a4a1f" font-weight="700">黑龙宫山门 · 外院（八卦香炉）</text>
+        <rect x="90" y="116" width="260" height="32" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="132" text-anchor="middle" fill="#8a4a1f" font-weight="700">正殿 · 龙王（黑龙大帝）</text>
+        <text x="220" y="143" text-anchor="middle" fill="#8a6a40" font-size="8">范承勋题咏碑记</text>
+        <rect x="90" y="154" width="260" height="28" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="172" text-anchor="middle" fill="#8a4a1f" font-weight="700">配殿 · 水族 · 天父地母 · 龙母娘娘</text>
+        <rect x="90" y="188" width="260" height="28" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="206" text-anchor="middle" fill="#8a4a1f" font-weight="700">里院天井 · 戏水黑龙雕塑</text>
+        <text x="220" y="232" text-anchor="middle" fill="#8a6a40" font-size="8.5">临潭观龙王 · 兴云降雨传说</text>
+        <text x="220" y="250" text-anchor="middle" font-size="8.5" fill="#8a6a40">顺道上山 → 龙泉观（上观）</text>
+      </g>
+      <text x="220" y="266" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 黑龙宫（下观）布局示意：黑龙潭畔 → 山门外院（八卦香炉）→ 正殿（龙王·黑龙大帝·范承勋碑记）→ 配殿（水族·天父地母·龙母娘娘）→ 里院天井（戏水黑龙雕塑）· 顺道上山为龙泉观（上观） · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>临潭宫观</strong>：紧靠黑龙潭边、临潭而建的古朴殿宇，三进院落规整雅致（据抖音）。</li>
+    <li><strong>道教装饰</strong>：外院香炉刻八卦图、北斗七星图等道教符号，驱魔避邪（据深圳本地宝）。</li>
+    <li><strong>古建碑刻</strong>：现存明清时期碑刻、楹联及道教八卦装饰（据携程）。</li>
+    <li><strong>格局多样</strong>：一说三进四院、一说一进两院，正殿供奉龙王与雷神等司雨神灵（据携程、据抖音百科）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 范承勋题咏碑记</strong>：龙宫正殿墙上镶有清康熙年间云贵总督范承勋游黑龙潭题咏碑记（<a href="https://m.km.bendibao.com/tour/45579.shtm">据本地宝</a>、据抖音百科）。</li>
+    <li><strong>② 戏水黑龙雕塑</strong>：里院天井水池中形态逼真的戏水黑龙雕塑，为云南"都龙王"（<a href="http://ly.sz.bendibao.com/gdlyjd/jd16819.html">据深圳本地宝</a>）。</li>
+    <li><strong>③ 八卦香炉</strong>：外院香炉刻八卦图与北斗七星图（<a href="http://ly.sz.bendibao.com/gdlyjd/jd16819.html">据深圳本地宝</a>）。</li>
+    <li><strong>④ 龙王正殿</strong>：供奉敕封云贵总督黑龙大帝，配殿供龙母娘娘、天父地母及水族塑像（据抖音）。</li>
+    <li><strong>⑤ 黑龙潭奇观</strong>：一清一浑两潭、两水相连却泾渭分明、"鱼不往来"（据携程）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>范承勋游黑龙潭题咏碑记</strong>：清康熙年间云贵总督范承勋所题，镶于正殿墙上（<a href="https://m.km.bendibao.com/tour/45579.shtm">据本地宝</a>、据抖音百科）。</li>
+    <li><strong>道教八卦装饰</strong>：香炉八卦图、北斗七星图（<a href="http://ly.sz.bendibao.com/gdlyjd/jd16819.html">据深圳本地宝</a>）。</li>
+    <li><strong>清代总督石匾</strong>：正殿有清代云南总督题写的石匾（<a href="https://www.travelchinaguide.com/attraction/yunnan/kunming/black_dragon.htm">据TravelChinaGuide</a>）。</li>
+    <li><strong>林则徐题联诗文</strong>：民族英雄林则徐任云贵总督期间曾到访黑龙潭，留下题联与诗文，园内设林则徐文化院（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约30—45分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市盘龙区黑龙潭公园</strong>（乘公交至黑龙潭站）；</li>
+    <li>观<strong>黑龙潭</strong>一清一浑双潭奇观（两水相连·鱼不往来）；</li>
+    <li>入<strong>黑龙宫（下观）</strong>，观外院八卦香炉；</li>
+    <li>观<strong>正殿</strong>（龙王·黑龙大帝）与<strong>配殿</strong>（水族·天父地母·龙母娘娘）；</li>
+    <li>细观<strong>范承勋题咏碑记</strong>与里院天井<strong>戏水黑龙雕塑</strong>；</li>
+    <li>顺道上山观<strong>龙泉观（上观）</strong>后离场（据抖音百科、据深圳本地宝）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　黑龙宫为黑龙潭公园下观，与龙泉观（上观）合称滇中第一古祠古建筑群；临潭观龙王，遥想兴云降雨传说（据抖音、据携程）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：黑龙宫为滇池流域现存最古老的道教宫观之一，历史可追溯至汉代黑水祠，与龙泉观合称"滇中第一古祠"（据携程、据抖音）。</li>
+    <li><strong>艺术价值</strong>：三进四院古建筑格局、明清碑刻楹联与道教八卦装饰并存，戏水黑龙雕塑工艺逼真（据抖音百科、据深圳本地宝）。</li>
+    <li><strong>保护现状</strong>：2003年黑龙潭古建筑群（含龙泉观）公布为省级文保单位；现为黑龙潭公园的重要组成部分、免费开放（据抖音、据携程）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市盘龙区黑龙潭公园内（龙泉山五老峰山麓）。</li>
+    <li><strong>开放状态</strong>：位于黑龙潭公园内，随公园开放，<strong>免费</strong>（据抖音）；具体以黑龙潭公园及文物主管部门官方最新公告为准。</li>
+    <li><strong>交通</strong>：位于昆明北郊，乘公交至黑龙潭站（据抖音、据同程）。</li>
+    <li><strong>提示</strong>：观为省级文物与道教活动场所，参观请保持肃穆；具体开放时间、门票以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>抖音百科《黑龙潭》：<a href="https://m.baike.com/wiki/%E9%BB%91%E9%BE%99%E6%BD%AD/19381852">m.baike.com</a></li>
+      <li>昆明本地宝《黑龙宫》：<a href="https://m.km.bendibao.com/tour/45579.shtm">m.km.bendibao.com</a></li>
+      <li>康辉旅游《云南昆明黑龙潭》：<a href="http://www.thyoo.com/sight/sight-1957.html">thyoo.com</a></li>
+      <li>深圳本地宝《昆明黑龙潭》：<a href="http://ly.sz.bendibao.com/gdlyjd/jd16819.html">ly.sz.bendibao.com</a></li>
+      <li>TravelChinaGuide《Black Dragon Pool》：<a href="https://www.travelchinaguide.com/attraction/yunnan/kunming/black_dragon.htm">travelchinaguide.com</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">临潭观龙 · 兴云降雨</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

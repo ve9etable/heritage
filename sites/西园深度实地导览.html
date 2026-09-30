@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西园深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M10 40 L20 30 L30 40 L40 30 L54 40 L54 50 L10 50 Z' fill='%23f0d9a8'/%3E%3Crect x='24' y='22' width='16' height='18' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 近现代重要史迹 · 名人别墅</div>
+    <h1>西园（西园别墅）</h1>
+    <p class="sub">位于昆明市西山区<strong>碧鸡镇（苏家村/龙门村）滇池草海边、西山脚下</strong>，原为民国时期云南省政府主席<strong>卢汉</strong>的私人别墅，始建于1943年，纯法式园林式建筑，为昆明至今保存较为完好的法式建筑物，<strong>云南省文物保护单位</strong>（<a href="https://m.km.bendibao.com/tour/45365.shtm">据昆明本地宝</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>西园（西园别墅）</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省文物保护单位</strong>（2012年1月7日第七批省级）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹（名人别墅·法式建筑）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市西山区碧鸡镇（苏家村/龙门村）旁的滇池草海边、西山脚下</td></tr>
+      <tr><td>始建年代</td><td>1943年，原为民国时期云南省政府主席卢汉的私人别墅</td></tr>
+      <tr><td>历史意义</td><td>卢汉在昆明的第三个公馆，见证滇池周边风云与抗战岁月</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>建造</strong>：1943年，原为民国时期云南省主席卢汉的私人别墅，是其在昆明的第三个公馆（<a href="https://m.km.bendibao.com/tour/45365.shtm">据昆明本地宝</a>、据抖音）。</li>
+    <li><strong>让与飞虎队</strong>：别墅建好之初还未入住，主人就把它让给飞虎队用作疗养院，以显示对盟军的重视（据抖音）。</li>
+    <li><strong>捐给政府</strong>：新中国成立后，卢汉将西园别墅捐给政府；数十年间先后接待过多位贵宾（据抖音）。</li>
+    <li><strong>定级保护</strong>：2012年1月7日被云南省人民政府公布为第七批省级文物保护单位（据西山区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>西园背靠西山、面临滇池草海，为纯法式风格园林式建筑（据昆明本地宝、据抖音）。</p>
+  <ul>
+    <li><strong>大门</strong>：仿法国凯旋门式样，为园区标志性入口（据昆明本地宝）。</li>
+    <li><strong>甬道</strong>：进门有一条路直通别墅，两旁柏树林立，形成林荫大道（据昆明本地宝）。</li>
+    <li><strong>主体建筑</strong>：两层法式别墅，白色建筑与碧水蓝天相映衬（据昆明本地宝、据抖音）。</li>
+    <li><strong>环境</strong>：位于半岛与山脚边公路旁的滇池草海之滨，背山面水，兼具风水与防空考量（据抖音）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">西园（西园别墅）· 布局示意</text>
+      <g font-size="9">
+        <path d="M120 52 L320 52 L320 70 L120 70 Z" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="65" text-anchor="middle" fill="#8a4a1f" font-weight="700">凯旋门式大门</text>
+        <rect x="150" y="82" width="140" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="98" text-anchor="middle" fill="#8a4a1f" font-weight="700">柏树林荫甬道</text>
+        <rect x="120" y="118" width="200" height="40" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="134" text-anchor="middle" fill="#8a4a1f" font-weight="700">两层法式别墅（白色墙体）</text>
+        <text x="220" y="150" text-anchor="middle" fill="#8a6a40" font-size="8">纯法式建筑格局</text>
+        <text x="220" y="180" text-anchor="middle" fill="#8a6a40" font-size="8.5">背靠西山 · 面临滇池草海</text>
+        <text x="220" y="198" text-anchor="middle" fill="#8a6a40" font-size="8.5">昆明至今保存较完好的法式建筑物</text>
+      </g>
+      <text x="220" y="222" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 西园（西园别墅）布局示意：凯旋门式大门 → 柏树林荫甬道 → 两层法式别墅（白色墙体）· 背靠西山、面临滇池草海 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>纯法式</strong>：纯法式风格建筑格局，显示当年主人的新潮品位（据抖音）。</li>
+    <li><strong>凯旋门式大门</strong>：大门仿法国凯旋门式样，园区入口气势庄重（据昆明本地宝）。</li>
+    <li><strong>两层法式别墅</strong>：主体为两层法式建筑，白色墙体（据昆明本地宝、据抖音）。</li>
+    <li><strong>园林式布局</strong>：柏树夹道的林荫甬道，为典型西方园林式建筑（据昆明本地宝）。</li>
+    <li><strong>价值评述</strong>：为昆明市至今保存较为完好的法式建筑物，建筑风格独特（据昆明本地宝）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 凯旋门式大门</strong>：仿法国凯旋门式样的园区入口，庄重典雅（据昆明本地宝）。</li>
+    <li><strong>② 柏树林荫甬道</strong>：大门直通别墅的甬道，两旁柏树林立（据昆明本地宝）。</li>
+    <li><strong>③ 两层法式别墅</strong>：白色墙体、纯法式建筑格局，为昆明保存较完好的法式建筑（据昆明本地宝、据抖音）。</li>
+    <li><strong>④ 滇池草海环境</strong>：背靠西山、面临滇池草海，白色建筑与碧水蓝天相映衬（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>文物标识碑</strong>：作为省级文保单位，设有保护标识与说明（据西山区人民政府）。</li>
+    <li><strong>旧址说明</strong>：园区标识说明西园为卢汉别墅及抗战相关史迹（据西山区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（视开放情况而定）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市西山区碧鸡镇（苏家村/龙门村）滇池草海边</strong>；</li>
+    <li>观园外<strong>凯旋门式大门</strong>；</li>
+    <li>沿柏树林荫甬道近观<strong>两层法式别墅</strong>；</li>
+    <li>远眺<strong>滇池草海</strong>，遥想卢汉与抗战岁月后离场（据昆明本地宝、据抖音）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　西园目前<strong>尚未对外开放、常年大门紧闭</strong>，外部可远观其法式建筑与园林风貌；具体开放安排以官方最新公告为准（据抖音）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：西园为卢汉在昆明的第三个公馆，见证滇池周边风云与抗战岁月（据抖音）。</li>
+    <li><strong>建筑价值</strong>：纯法式风格园林式建筑，为昆明保存较为完好的法式建筑物（据昆明本地宝）。</li>
+    <li><strong>保护现状</strong>：2012年列为云南省文物保护单位；新中国成立后卢汉捐给政府，现由相关部门管理（据西山区人民政府、据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市西山区碧鸡镇（苏家村/龙门村）旁的滇池草海边，西山脚下。</li>
+    <li><strong>开放状态</strong>：目前尚未对外开放、常年大门紧闭，可外部远观；具体开放时间、参观方式以西园及文物主管部门官方最新公告为准（据抖音）。</li>
+    <li><strong>交通</strong>：位于西山脚下、滇池草海之滨，临近西山风景区（据昆明本地宝、据抖音）。</li>
+    <li><strong>提示</strong>：西园为省级文物，请勿擅闯，参观以官方开放安排为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>西山区人民政府《西山区文物保护单位名录（2023）》：<a href="http://www.kmxs.gov.cn/c/2023-11-22/6769982.shtml">kmxs.gov.cn</a></li>
+      <li>昆明本地宝《老昆明不能不知道的那些历史文物景点》：<a href="https://m.km.bendibao.com/tour/45365.shtm">m.km.bendibao.com</a></li>
+      <li>昆明市人民政府《昆明市第五批市级文物保护单位》：<a href="https://www.km.gov.cn/c/2011-01-24/3776125.shtml">km.gov.cn</a></li>
+      <li>西山区人民政府《政协西山区九届四次会议第196号提案答复》：<a href="http://www.kmxs.gov.cn/c/2020-11-30/4739994.shtml">kmxs.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">凯旋门式大门 · 法式西园忆卢汉</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

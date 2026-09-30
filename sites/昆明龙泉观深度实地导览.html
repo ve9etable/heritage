@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昆明龙泉观深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M32 12 L52 22 L52 42 L32 52 L12 42 L12 22 Z' fill='%23f0d9a8'/%3E%3Cpath d='M32 22 L44 28 L44 38 L32 44 L20 38 L20 28 Z' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 古建筑 · 道教宫观</div>
+    <h1>昆明龙泉观</h1>
+    <p class="sub">位于昆明市盘龙区<strong>黑龙潭公园</strong>内，俗称<strong>"上观"</strong>，与黑龙宫（下观）合称道教古建筑群；文脉可溯至汉代黑水祠，明洪武年间营建，为<strong>云南道教长春派祖庭、滇中第一古祠</strong>，<strong>云南省重点文物保护单位</strong>（<a href="https://zh.daoinfo.org/index.php?title=%E6%98%86%E6%98%8E%E9%BE%8D%E6%B3%89%E8%A7%82&variant=zh-hans">据道教文化中心资料库</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>龙泉观（昆明龙泉观），俗称"上观"，与黑龙宫（下观）合称道教古建筑群</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省重点文物保护单位</strong></td></tr>
+      <tr><td>类别</td><td>古建筑（道教宫观）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市盘龙区黑龙潭公园内（茨坝镇蓝桉路1号）</td></tr>
+      <tr><td>始建年代</td><td>文脉可溯至汉代黑水祠；明洪武二十七年（1394年）沐英主持修建龙神祠与道院，形成上下两观</td></tr>
+      <tr><td>格局</td><td>5进13院所大小院落，依山而建、顺山势由南向北层层升高</td></tr>
+      <tr><td>叠加身份</td><td>云南道教长春派祖庭、滇中第一古祠、滇中最完整的明清道教建筑群之一</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>文脉溯源</strong>：龙泉观文脉可溯至汉代黑水祠，唐代建寺植梅，开启人景交融（据抖音）。</li>
+    <li><strong>明代营建</strong>：明洪武二十七年、二十八年（1394年、1395年），镇守云南的沐英修建龙神祠供奉龙王（即今黑龙宫），又在一旁山上修建道院供奉张天师，建成上下两观；徐日暹为第一任道长（据携程、据景天下）。</li>
+    <li><strong>开宗立派</strong>：明永乐年间，长春真人刘渊然被谪云南，在龙泉观修道，留下"万物滋生"四字符章刻碑（据景天下）。</li>
+    <li><strong>清代重修</strong>：现存建筑主体为清光绪八年（1882年）重修后的格局（<a href="https://www.sina.cn/news/detail/5282085720821941.html">据新浪</a>）。</li>
+    <li><strong>修缮保护</strong>：2009年云南省道教协会对龙泉观进行大规模修缮，2016年工程全面完成（<a href="https://www.meipian.cn/5p4k8ic1">据美篇</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>龙泉观（上观）依山而建，占地约30余亩，为5进13院格局，整个建筑群顺山势由南向北层层升高（据抖音百科、据美篇）。</p>
+  <ul>
+    <li><strong>第一层·紫极玄都山门</strong>：拱形石牌坊上写"紫极玄都"四字，为观之入口（<a href="https://zh.daoinfo.org/index.php?title=%E6%98%86%E6%98%8E%E9%BE%8D%E6%B3%89%E8%A7%82&variant=zh-hans">据道教文化中心</a>、据同程）。</li>
+    <li><strong>第二层·雷神殿</strong>：进山门即见，配殿齐全（据抖音百科）。</li>
+    <li><strong>第三层·北极殿（祖师殿）</strong>：侧为斗姆阁（据抖音百科）。</li>
+    <li><strong>第四层·玉皇殿</strong>：居中殿宇（据抖音百科）。</li>
+    <li><strong>第五层·三清殿</strong>：最高层主殿，配殿和厢房重重（据抖音百科）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">昆明龙泉观（上观）· 布局示意</text>
+      <g font-size="9">
+        <path d="M40,50 L400,50 L400,255 L40,255 Z" fill="none" stroke="#c05a1e" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="220" y="45" text-anchor="middle" fill="#8a4a1f">昆明黑龙潭公园 · 依山而建 · 顺山势层层升高</text>
+        <rect x="100" y="60" width="220" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="77" text-anchor="middle" fill="#8a4a1f" font-weight="700">第一层 · "紫极玄都"石牌坊山门</text>
+        <rect x="100" y="94" width="220" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="110" text-anchor="middle" fill="#8a4a1f" font-weight="700">第二层 · 雷神殿</text>
+        <rect x="100" y="126" width="220" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="143" text-anchor="middle" fill="#8a4a1f" font-weight="700">第三层 · 北极殿（祖师殿 · 斗姆阁）</text>
+        <rect x="100" y="160" width="220" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="176" text-anchor="middle" fill="#8a4a1f" font-weight="700">第四层 · 玉皇殿</text>
+        <rect x="100" y="192" width="220" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="208" text-anchor="middle" fill="#8a4a1f" font-weight="700">第五层 · 三清殿</text>
+        <text x="210" y="221" text-anchor="middle" fill="#8a6a40" font-size="8">清代彩绘 · 八卦藻井</text>
+      </g>
+      <text x="220" y="246" text-anchor="middle" font-size="9" fill="#8a6a40">山门"紫极玄都" → 雷神殿 → 北极殿 → 玉皇殿 → 三清殿；唐梅·宋柏·明茶·元杉</text>
+      <text x="220" y="268" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 昆明龙泉观（上观）布局示意：紫极玄都山门 → 雷神殿 → 北极殿（祖师殿·斗姆阁）→ 玉皇殿 → 三清殿，顺山势层层升高；观内唐梅·宋柏·明茶·元杉 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>山地道教建筑群</strong>：滇中保存最完整、规模较大的明代山地道教建筑群，依山而建、5进13院格局（据美篇）。</li>
+    <li><strong>沿轴线布局</strong>：由下而上依山坡正脊中轴线建成，布局严谨、气势恢宏（据道教文化中心）。</li>
+    <li><strong>殿宇抬升</strong>：祖师殿、玉皇殿等殿宇沿山势抬升，红墙青瓦错落有致（据抖音）。</li>
+    <li><strong>三清殿彩绘</strong>：清代彩绘与八卦藻井堪称艺术珍品（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 三清殿</strong>：清代彩绘鲜亮、八卦藻井精美，为观内艺术珍品（据抖音）。</li>
+    <li><strong>② "万物滋生"碑</strong>：明永乐年间长春真人刘渊然手书四字，符章龙蛇飞舞、一笔呵成，因光线折射凹字看似凸字（据景天下）。</li>
+    <li><strong>③ 紫极玄都石牌坊</strong>：山门拱形石牌坊"紫极玄都"，古朴庄重（<a href="https://zh.daoinfo.org/index.php?title=%E6%98%86%E6%98%8E%E9%BE%8D%E6%B3%89%E8%A7%82&variant=zh-hans">据道教文化中心</a>、据同程）。</li>
+    <li><strong>④ 雷神殿·祖师殿·玉皇殿</strong>：五进十三院主体殿宇，沿轴线层层升高（据抖音百科）。</li>
+    <li><strong>⑤ 唐梅、宋柏、明茶、元杉</strong>：观内古树名木，唐梅为黑龙潭名景（据抖音、据抖音百科）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>"紫极玄都"匾/牌坊</strong>：山门拱形石牌坊书"紫极玄都"四字（据同程）。</li>
+    <li><strong>"万物滋生"碑</strong>：刘渊然所书四字符章碑，一笔呵成、龙蛇飞舞（据景天下）。</li>
+    <li><strong>明清碑刻数十通</strong>：观内留存数十通明清碑刻，历史文化价值很高（据美篇）。</li>
+    <li><strong>主殿石匾</strong>：黑龙宫正殿有清代云南总督题写的石匾（据TravelChinaGuide）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约40—60分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市盘龙区黑龙潭公园</strong>（乘公交至黑龙潭站）；</li>
+    <li>观<strong>黑龙潭</strong>龙潭与<strong>黑龙宫</strong>（下观·龙王殿·水族塑像）；</li>
+    <li>沿林荫道上山至<strong>龙泉观（上观）</strong>；</li>
+    <li>经<strong>"紫极玄都"石牌坊</strong>山门；</li>
+    <li>依次观<strong>雷神殿→北极殿（祖师殿·斗姆阁）→玉皇殿→三清殿</strong>（清代彩绘·八卦藻井）；</li>
+    <li>观<strong>"万物滋生"碑</strong>与<strong>唐梅、宋柏、明茶、元杉</strong>后下山（<a href="https://www.sina.cn/news/detail/5282085720821941.html">据新浪</a>、据同程）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　龙泉观为云南道教长春派祖庭、滇中第一古祠，五进十三院依山而建，宜沿轴线层层细赏（据美篇、据抖音）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：龙泉观文脉可溯至汉代黑水祠，为云南道教长春派祖庭、滇中第一古祠，承载滇中数百年历史文化积淀（据抖音、据美篇）。</li>
+    <li><strong>艺术价值</strong>：明代山地道教建筑群保存完整，三清殿清代彩绘与八卦藻井为艺术珍品，唐梅宋柏等古树名木与明清碑刻并重（据美篇、据抖音）。</li>
+    <li><strong>保护现状</strong>：2009年云南省道教协会大规模修缮，2016年工程全面完成；现为云南省重点文物保护单位、黑龙潭公园的重要组成部分（据抖音、据美篇）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市盘龙区黑龙潭公园内（茨坝镇蓝桉路1号）。</li>
+    <li><strong>开放状态</strong>：位于黑龙潭公园内，随公园开放；具体以黑龙潭公园及文物主管部门官方最新公告为准（据新浪）。</li>
+    <li><strong>交通</strong>：市内乘公交至黑龙潭站下车；位于昆明北部（据新浪、据同程）。</li>
+    <li><strong>提示</strong>：观为省级文物与道教活动场所，参观请保持肃穆；具体开放时间、门票以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>新浪新闻《重返昆明龙泉观》：<a href="https://www.sina.cn/news/detail/5282085720821941.html">sina.cn</a></li>
+      <li>道教文化中心资料库《昆明龙泉观》：<a href="https://zh.daoinfo.org/index.php?title=%E6%98%86%E6%98%8E%E9%BE%8D%E6%B3%89%E8%A7%82&variant=zh-hans">zh.daoinfo.org</a></li>
+      <li>美篇《昆明市黑龙潭公园龙泉观专辑》：<a href="https://www.meipian.cn/5p4k8ic1">meipian.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">紫极玄都 · 万物滋生</div>
+  <div style="margin-top:6px;">信息来自官方与权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

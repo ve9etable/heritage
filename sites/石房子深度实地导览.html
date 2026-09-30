@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>石房子深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M14 44 L50 44 L44 54 L20 54 Z' fill='%23f0d9a8'/%3E%3Crect x='20' y='18' width='24' height='26' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 近现代重要史迹 · 名人故居</div>
+    <h1>石房子（北京路石房子·李公馆）</h1>
+    <p class="sub">位于昆明市盘龙区<strong>北京路与尚义街交汇处的茶花公园内</strong>，系1937年爱国将领<strong>李鸿谟</strong>私人建造的园林式宅院，因外墙青石垒砌故称"石房子"；为中西合璧民国建筑典型，见证龙云、卢汉等云南政要风云际会与昆明和平起义，<strong>云南省文物保护单位</strong>（<a href="https://zh.unionpedia.org/i/%E5%8C%97%E4%BA%AC%E8%B7%AF%E7%9F%B3%E6%88%BF%E5%AD%90">据联盟百科</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>石房子（北京路石房子，即李公馆）</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省文物保护单位</strong></td></tr>
+      <tr><td>类别</td><td>近现代重要史迹（名人故居·纪念建筑）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市盘龙区北京路与尚义街交汇处的茶花公园内</td></tr>
+      <tr><td>始建年代</td><td>民国二十六年（1937年），由李鸿谟私人建造</td></tr>
+      <tr><td>核心数据</td><td>占地面积523平方米，砖木结构、中西合璧</td></tr>
+      <tr><td>历史渊源</td><td>位于清乾隆御史钱沣（钱南园）故居遗址，1926年袁嘉谷立"清御史钱南园先生故里碑"</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>建造</strong>：1937年，滇军将领、时任滇黔绥靖公署交际处主任和云南省警务处处长兼省会警察局局长的李鸿谟（李希尧）私人建造园林式宅院，因外墙青石垒砌故称"石房子"（<a href="https://zh.unionpedia.org/i/%E5%8C%97%E4%BA%AC%E8%B7%AF%E7%9F%B3%E6%88%BF%E5%AD%90">据联盟百科</a>、据腾讯网）。</li>
+    <li><strong>风云际会</strong>：因主人地位与好客、兼府内中西厨师技艺高超，石房子成为以龙云、卢汉为首的云南政要集会的重要场所；蒋介石、宋子文等国民党显宦及来华助战的史迪威、陈纳德将军都曾在此受到接待（据本地宝、据携程）。</li>
+    <li><strong>历史转折</strong>：昆明和平起义前，不少重要决策在此酝酿；起义成功后，卢汉在石房子宴请解放军将领陈赓、宋任穷（据腾讯网、据抖音）。</li>
+    <li><strong>建国后</strong>：1951年后这里成为昆明市人民政府驻地，近年辟为茶花公园，石房子成为茶室（据腾讯网、据携程）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>石房子为中西合璧的两层建筑，位于茶花公园内（据联盟百科、据美篇）。</p>
+  <ul>
+    <li><strong>两座小楼</strong>：为一幢两座小楼组成的"〈"形两层楼建筑，砖混结构，顶角为前厅（据腾讯网）。</li>
+    <li><strong>前庭</strong>：房前种有几株铁树（据抖音）。</li>
+    <li><strong>露天网球场</strong>：庭院设有当年昆明高档网球场，军政人士常在此聚会（据美篇）。</li>
+    <li><strong>功能分区</strong>：一层前厅、会客空间，二层居室；现辟为茶室（据腾讯网、据携程）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">石房子（李公馆）· 布局示意</text>
+      <g font-size="9">
+        <rect x="90" y="52" width="260" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="69" text-anchor="middle" fill="#8a4a1f" font-weight="700">茶花公园（北京路·尚义街交汇处）</text>
+        <rect x="90" y="84" width="260" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="101" text-anchor="middle" fill="#8a4a1f" font-weight="700">前庭 · 铁树 · 钱南园先生故里碑</text>
+        <rect x="90" y="116" width="260" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="132" text-anchor="middle" fill="#8a4a1f" font-weight="700">"〈"形两座小楼（两层）</text>
+        <text x="220" y="144" text-anchor="middle" fill="#8a6a40" font-size="8">一层前厅·会客 · 二层居室 · 青石垒砌</text>
+        <rect x="90" y="156" width="260" height="28" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="174" text-anchor="middle" fill="#8a4a1f" font-weight="700">庭院 · 露天网球场（当年军政聚会地）</text>
+        <text x="220" y="204" text-anchor="middle" fill="#8a6a40" font-size="8.5">中西合璧 · 青石垒砌 · 法式石墙 · 中式飞檐</text>
+      </g>
+      <text x="220" y="224" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 石房子（李公馆）布局示意：茶花公园 → 前庭（铁树·钱南园故里碑）→ "〈"形两座小楼（一层前厅·会客，二层居室·青石垒砌）→ 庭院露天网球场 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>中西合璧</strong>：中式歇山顶/琉璃瓦挑檐大屋顶，搭配法式石墙玻璃窗、西式门窗与廊柱（据携程、据美篇）。</li>
+    <li><strong>青石垒砌</strong>：外墙整体采用天然毛粗石（青石）垒砌，凹凸不平，为典型的法式别墅风格（据美篇、据携程）。</li>
+    <li><strong>滇式元素</strong>：木栏杆露台为传统滇式建筑，"八面风"设计融入昆明传统（据美篇）。</li>
+    <li><strong>价值评述</strong>：硬朗石头墙体搭配中式飞檐，是中西合璧民国建筑的典型代表（据美篇）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 青石垒砌外墙</strong>：天然毛粗石外墙，法式别墅风格与中式飞檐结合（据美篇）。</li>
+    <li><strong>② 钱南园先生故里碑</strong>：1926年袁嘉谷所立，纪念清乾隆御史钱南园（钱沣）（据抖音）。</li>
+    <li><strong>③ 法式门窗廊柱</strong>：中式琉璃瓦挑檐与法式石墙玻璃窗、西式廊柱结合（据携程）。</li>
+    <li><strong>④ 历史风云印迹</strong>：石房子为龙云、卢汉等云南政要集会地，见证昆明和平起义与建国初期历史（据本地宝、据腾讯网）。</li>
+    <li><strong>⑤ 茶花公园环境</strong>：石房子现居茶花公园内，与现代高楼形成鲜明对照（据抖音、据美篇）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>"清御史钱南园先生故里碑"</strong>：1926年云南状元袁嘉谷立，位于石房子房前（据抖音）。</li>
+    <li><strong>建筑铭牌</strong>：昆明市自然资源和规划局列入"第二批保护历史建筑（2006）"名录（<a href="https://zrzygh.km.gov.cn/c/2020-05-18/3533625.shtml">据昆明市自然资源和规划局</a>）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约30—45分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市盘龙区北京路与尚义街交汇处茶花公园</strong>；</li>
+    <li>观公园内<strong>石房子外立面</strong>（青石垒砌·法式石墙·中式飞檐）；</li>
+    <li>观房前<strong>铁树</strong>与<strong>钱南园故里碑</strong>；</li>
+    <li>细看<strong>法式门窗、琉璃瓦挑檐、木栏杆露台</strong>等建筑细节；</li>
+    <li>环庭院（当年网球场）漫步，遥想龙云、卢汉等政要风云际会后离场（据联盟百科、据美篇）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　石房子为中西合璧民国建筑典型代表，青石垒砌、法式石墙与中式飞檐结合；现辟为茶室，可静坐细品老昆明建筑之美（据美篇、据携程）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：石房子为爱国将领李鸿谟的私人府邸，是龙云、卢汉等云南政要集会场所，见证昆明和平起义与建国初期重要历史，为近代史的重要实物见证（据腾讯网、据本地宝）。</li>
+    <li><strong>建筑价值</strong>：中西合璧民国建筑典型代表，青石垒砌法式别墅风格与中式屋顶融合（据美篇）。</li>
+    <li><strong>保护现状</strong>：列为云南省文物保护单位，被昆明市自然资源和规划局列入第二批保护历史建筑（2006年）；现为茶室对外开放（据美篇、据昆明市自然资源和规划局）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市盘龙区北京路与尚义街交汇处茶花公园内。</li>
+    <li><strong>开放状态</strong>：现为茶室，可在营业时间进入；具体以石房子及文物主管部门官方最新公告为准（据携程）。</li>
+    <li><strong>交通</strong>：位于昆明市中心北京路，公交/地铁可达（据抖音）。</li>
+    <li><strong>提示</strong>：石房子为省级文物，参观时请爱护建筑；具体开放时间以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>联盟百科《北京路石房子》：<a href="https://zh.unionpedia.org/i/%E5%8C%97%E4%BA%AC%E8%B7%AF%E7%9F%B3%E6%88%BF%E5%AD%90">zh.unionpedia.org</a></li>
+      <li>腾讯网《漫步法式风情！昆明不容错过几座民国老房子》：<a href="https://view.inews.qq.com/k/20240419A06K3900">view.inews.qq.com</a></li>
+      <li>昆明市自然资源和规划局《石房子（第二批保护历史建筑2006）》：<a href="https://zrzygh.km.gov.cn/c/2020-05-18/3533625.shtml">zrzygh.km.gov.cn</a></li>
+      <li>昆明本地宝《昆明必去古宅餐厅》：<a href="http://km.bendibao.com/meishi/20161011/46707.shtm">km.bendibao.com</a></li>
+      <li>美篇《昆明一座石房子 藏满近代风云史》：<a href="https://www.meipian.cn/5p5km05m">meipian.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">石垒青墙 · 风云际会</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

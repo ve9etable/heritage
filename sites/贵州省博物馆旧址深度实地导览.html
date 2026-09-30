@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>贵州省博物馆旧址深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M18 12 L46 12 L46 52 L18 52 Z M18 12 L32 5 L46 12 Z M24 22 L40 22 L40 40 L24 40 Z' fill='%23c05a1e'/%3E%3Ccircle cx='32' cy='31' r='4' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">贵州省省级文物保护单位 · 近现代重要史迹 · 博物馆馆舍旧址</div>
+    <h1>贵州省博物馆旧址</h1>
+    <p class="sub">位于贵阳市云岩区<strong>北京路168号</strong>，1953年筹建、1958年开馆，苏式风格馆舍，现为贵州美术馆，<strong>贵州省省级文物保护单位</strong>（<a href="https://www.liuzhi.gov.cn/newsite/zwgk_5753282/zdlyxxgk/whlycyfzjwwbh_5753561/202211/t20221101_76978320.html">据六枝特区名单</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>贵州省博物馆旧址（现为贵州美术馆）</td></tr>
+      <tr><td>保护级别</td><td><strong>贵州省省级文物保护单位</strong>（第五批，2015年公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（博物馆馆舍旧址）</td></tr>
+      <tr><td>位置</td><td>贵阳市云岩区北京路168号</td></tr>
+      <tr><td>年代</td><td>1953年筹建，1958年正式开馆</td></tr>
+      <tr><td>建筑</td><td>苏式风格建筑，1958年建成；总建筑面积3808平方米，砖混结构</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>筹建</strong>：1953年贵州省博物馆筹备委员会成立，几经选址后于1957年决定在北京路修建（<a href="http://m.toutiao.com/group/7419825613806092854/">据天眼新闻</a>）。</li>
+    <li><strong>开馆</strong>：1958年正式开馆，为贵州综合性博物馆（据贵州省政府、据人民网）。</li>
+    <li><strong>发展</strong>：老馆占地总面积1.93万平方米，是唯一系统反映贵州史前文化、古代文明及少数民族文化的综合性博物馆（<a href="http://culture.people.com.cn/n/2013/0701/c172318-22030572.html">据人民网</a>）。</li>
+    <li><strong>迁建</strong>：2013年6月28日新馆动工，2016年搬迁至观山湖区林城东路107号（据贵州省博物馆）。</li>
+    <li><strong>定级保护</strong>：2015年5月公布旧址为贵州省第五批省级文物保护单位（据STELE、据抖音线索）。</li>
+    <li><strong>再利用</strong>：2017年9月旧址经改扩建后作为贵州美术馆重新开放（据抖音线索、据STELE）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>旧址位于北京路168号，1958年建成的苏式风格馆舍（<a href="http://stele.geogv.org/zhcn/geo/4eb679de3ed846e28bb6725d80d62b2b">据STELE</a>）。</p>
+  <ul>
+    <li><strong>格局</strong>：总建筑面积3808平方米，砖混结构，屋盖为木屋架、石棉瓦；陈列楼共2层，层高4.8米，总高11.2米（<a href="http://m.toutiao.com/group/7419825613806092854/">据天眼新闻</a>）。</li>
+    <li><strong>现状</strong>：改扩建后作为贵州美术馆使用，延续展览功能（据抖音线索、据STELE）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">贵州省博物馆旧址 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="44" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">北京路168号 · 入口</text>
+        <rect x="120" y="78" width="200" height="44" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="94" text-anchor="middle" fill="#8a4a1f" font-weight="700">苏式风格陈列楼（二层）</text>
+        <text x="220" y="110" text-anchor="middle" fill="#8a4a1f" font-size="8.5">砖混结构 · 层高4.8米 · 总高11.2米</text>
+        <rect x="120" y="130" width="200" height="26" rx="4" fill="#f6ead0" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="146" text-anchor="middle" fill="#8a4a1f" font-weight="700">改扩建展厅 · 现贵州美术馆</text>
+        <text x="220" y="196" text-anchor="middle" font-size="8.5" fill="#8a6a40">1958年开馆 · 贵阳市十大建筑之一 · 按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 贵州省博物馆旧址布局示意：北京路168号入口 → 苏式风格陈列楼（二层·砖混结构·层高4.8米·总高11.2米）→ 改扩建展厅（现贵州美术馆）· 1958年开馆 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>苏式风格</strong>：1958年建成的苏式风格建筑，为典型的二十世纪五十年代公共建筑形态（据抖音线索、据STELE）。</li>
+    <li><strong>结构细部</strong>：砖混结构、木屋架、石棉瓦屋盖，陈列楼二层、总高11.2米（据天眼新闻）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 苏式馆舍</strong>：1958年建成的苏式风格陈列楼，贵阳市十大建筑之一（据天眼新闻）。</li>
+    <li><strong>② 砖混结构细部</strong>：木屋架、石棉瓦屋盖与二层陈列楼形制（据天眼新闻）。</li>
+    <li><strong>③ 旧址再利用</strong>：改扩建后作为贵州美术馆，见证省博从老馆到新馆的迁建史（据抖音线索、据STELE）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>建筑题记</strong>：旧址以建筑本体与展览功能为价值主体，未见公开之独立楹联匾额题刻（据天眼新闻、据STELE）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约30—60分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>贵阳市云岩区北京路168号贵州省博物馆旧址（贵州美术馆）</strong>；</li>
+    <li>观<strong>苏式风格陈列楼</strong>外立面与砖混结构形制；</li>
+    <li>入内参观现<strong>贵州美术馆</strong>改扩建展厅；</li>
+    <li>了解省博自1958年老馆到新馆的迁建史后离场（据天眼新闻、据STELE）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　旧址现为贵州美术馆，开放参观以美术馆开放安排及现场规定为准（据抖音线索、据STELE）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：1958年开馆的贵州省综合性博物馆老馆，见证贵州文物事业与文博事业发展（据贵州省政府、据人民网）。</li>
+    <li><strong>建筑价值</strong>：二十世纪五十年代苏式风格建筑样本，贵阳市代表性建筑（据天眼新闻、据抖音线索）。</li>
+    <li><strong>保护现状</strong>：2015年公布为省级文保单位，2017年改扩建为贵州美术馆利用开放（据STELE、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：贵州省贵阳市云岩区北京路168号。</li>
+    <li><strong>开放状态</strong>：旧址现为贵州美术馆，改扩建后重新开放（据抖音线索、据STELE）；具体开放时间、预约方式以官方最新公告为准。</li>
+    <li><strong>交通</strong>：位于贵阳市云岩区北京路（据六枝特区名单、据天眼新闻）。</li>
+    <li><strong>提示</strong>：省级文保单位，参观时请爱护文物建筑，具体安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>六枝特区人民政府《贵州省省级文物保护单位名单》：<a href="https://www.liuzhi.gov.cn/newsite/zwgk_5753282/zdlyxxgk/whlycyfzjwwbh_5753561/202211/t20221101_76978320.html">liuzhi.gov.cn</a></li>
+      <li>STELE中国遗产地图《贵州省博物馆旧址》：<a href="http://stele.geogv.org/zhcn/geo/4eb679de3ed846e28bb6725d80d62b2b">stele.geogv.org</a></li>
+      <li>天眼新闻《老照片看贵州|贵阳市十大建筑之一——贵州省博物馆》：<a href="http://m.toutiao.com/group/7419825613806092854/">toutiao.com</a></li>
+      <li>人民网《贵州省博物馆新馆建设工程正式启动实施》：<a href="http://culture.people.com.cn/n/2013/0701/c172318-22030572.html">people.com.cn</a></li>
+      <li>贵州省人民政府《贵州省博物馆简介》：<a href="https://www.guizhou.gov.cn/yycj/bwg/">guizhou.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">苏式旧馆 · 文博肇基</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

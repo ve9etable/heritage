@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>云南大学会泽院（全国重点文物保护单位）深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236b1f17'/%3E%3Crect x='18' y='22' width='28' height='26' fill='%23b8745a'/%3E%3Cpath d='M22 48 L42 48 L38 56 L26 56 Z' fill='%23e6c98a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;--brick:#8a2a20;--brick-deep:#6b1f17;
+    --brick-soft:#a85046;--gold:#a8823c;--stone:#e9e3d8;--stone-2:#f4f0e8;
+    --paper:#fbf9f4;--line:#d9d2c4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  li > ul{margin:6px 0 6px 20px;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f3ea;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--gold);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#c9c0ae;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">全国重点文物保护单位 · 近现代史迹 · 深度实地导览</div>
+    <h1>云南大学会泽院</h1>
+    <p class="sub">云南大学会泽院位于云南省昆明市五华区翠湖北路2号云南大学东陆校区内，是云南大学的标志性建筑，也是<strong>全国重点文物保护单位（2019年10月第八批）</strong>。它由留法建筑大师张邦翰设计，<strong>1923年4月20日奠基、1924年12月18日落成</strong>，为云南大学前身东陆大学的第一栋建筑，堪称中西融合、古今汇通的经典（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>云南大学会泽院（位于云南大学东陆校区/东陆园内）</td></tr>
+      <tr><td>保护级别</td><td><strong>全国重点文物保护单位</strong>（2019年10月国务院公布第八批；2018年11月为省保、入选"中国二十世纪建筑遗产"）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（法式 / 中西融合建筑）</td></tr>
+      <tr><td>地址</td><td>云南省昆明市五华区翠湖北路2号，云南大学东陆校区内</td></tr>
+      <tr><td>始建</td><td>1923年4月20日奠基，1924年12月18日落成</td></tr>
+      <tr><td>规模</td><td>主楼长77.58米、宽22.63米、高17米，地上2层局部3层、地下局部1层，建筑面积3953.49平方米；另有九五台阶、喷水池、《会泽唐公创办东陆大学记》铜碑（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）</td></tr>
+      <tr><td>叠加身份</td><td>云南大学标志性建筑、云南近代建筑典型作品、云南大学历史博物馆所在地、中国二十世纪建筑遗产</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>明清贡院旧址</strong>：云南贡院为明代十五所贡院之一，明弘治十二年（1499）由长春观旁迁至今云南大学所在地；贡院中心建筑明远楼后改建为会泽院（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>东陆大学创立</strong>：1922年7月，时任云南省督军兼省长唐继尧首倡创办私立东陆大学，选址明清云南贡院原址；1922年12月8日宣告成立（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>会泽院兴建</strong>：确定在贡院明远楼原址兴建东陆大学本部会泽院，由留法归来的建筑大师张邦翰设计、杨克嵘组织施工；1923年4月20日举行开学典礼与会泽院奠基典礼，1924年12月18日落成，以唐继尧别名"会泽唐公"之"会泽"命名（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>、<a href="https://xsw.ynu.edu.cn/info/1010/1846.htm">据云南大学校史网</a>）。</li>
+    <li><strong>名师云集</strong>：冯友兰、顾颉刚、姜亮夫、刘文典、费孝通、严济慈等先后在会泽院执教，32位院士曾在会泽院授课；董泽、熊庆来、李广田等历任校长长期在此办公（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>革命见证</strong>：1925年"五卅"运动、1926年"三一八"惨案后，东陆大学学生从会泽院出发声援；抗战期间云南大学三次遭日机轰炸，会泽院两次中弹仍巍然屹立；1948年"七一五""反美扶日"爱国民主运动中，学生据守会泽院与反动军警斗争（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>定级保护</strong>：2018年11月入选第三批"中国二十世纪建筑遗产"；2019年10月7日国务院公布为全国重点文物保护单位（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>当代利用</strong>：2020年12月云南大学历史博物馆在会泽院开馆，展出云南500年教育史（<a href="http://www.chinanews.com.cn/cul/2020/12-30/9374966.shtml">据中国新闻网</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>会泽院<strong>坐北朝南，位于云南大学中轴线上</strong>，正大门、九十五级台阶、会泽院、革命烈士纪念碑、至公堂、怀周楼共同构成云南大学建筑群的中轴线，会泽院为核心和主体，体现中国传统对称式规划（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。建筑利用地势呈平面对称，南向翠湖、视野开阔，入门经95级石阶、3个平台才到高耸门廊（<a href="https://m.ctrip.com/webapp/you/community/detail?articleId=66970086">据携程</a>）。</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 540" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="320" y="22" font-size="12" fill="#8a7b66">翠湖 · 南 →</text>
+      <!-- 校门 -->
+      <rect x="160" y="40" width="120" height="20" rx="3" fill="#5a554c" stroke="#3f3a33" stroke-width="1.2"/>
+      <text x="220" y="54" text-anchor="middle" font-size="11" fill="#fff">云南大学正门（南门）</text>
+      <line x1="220" y1="60" x2="220" y2="82" stroke="#b08a4a" stroke-width="2"/>
+      <!-- 九五台阶 -->
+      <path d="M120 92 L320 92 L300 122 L140 122 Z" fill="#c9bda0" stroke="#a89880" stroke-width="1.2"/>
+      <text x="220" y="112" text-anchor="middle" font-size="11" fill="#6b5f45">九五台阶（95级青石台阶 · "九五飞龙在天"）</text>
+      <!-- 喷水池 -->
+      <ellipse cx="220" cy="150" rx="60" ry="14" fill="#7f9fc0" opacity="0.7" stroke="#4a6fa5" stroke-width="1.2"/>
+      <text x="220" y="182" text-anchor="middle" font-size="10" fill="#4a6fa5">中段平台 · 西式喷水池</text>
+      <line x1="220" y1="196" x2="220" y2="218" stroke="#b08a4a" stroke-width="2"/>
+      <!-- 会泽院 -->
+      <rect x="70" y="218" width="300" height="88" rx="6" fill="#b8745a" stroke="#8a2a20" stroke-width="2"/>
+      <rect x="70" y="218" width="300" height="22" fill="#a85046" stroke="none"/>
+      <text x="220" y="234" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">会泽院（主楼）</text>
+      <!-- 罗马柱 -->
+      <rect x="80" y="244" width="12" height="56" fill="#e9dfcc" stroke="#b0875a" stroke-width="1"/>
+      <rect x="140" y="244" width="12" height="56" fill="#e9dfcc" stroke="#b0875a" stroke-width="1"/>
+      <rect x="268" y="244" width="12" height="56" fill="#e9dfcc" stroke="#b0875a" stroke-width="1"/>
+      <rect x="348" y="244" width="12" height="56" fill="#e9dfcc" stroke="#b0875a" stroke-width="1"/>
+      <text x="220" y="278" text-anchor="middle" font-size="10" fill="#fff">四根罗马圆柱 · 叶型浮雕 · 铜碑 · 历史博物馆</text>
+      <line x1="220" y1="306" x2="220" y2="330" stroke="#b08a4a" stroke-width="2"/>
+      <!-- 中轴建筑群 -->
+      <rect x="60" y="330" width="100" height="40" rx="5" fill="#6f8f52" stroke="#51683a" stroke-width="1.2"/>
+      <text x="110" y="354" text-anchor="middle" font-size="10" fill="#fff">革命烈士纪念碑</text>
+      <rect x="180" y="330" width="100" height="40" rx="5" fill="#6f8f52" stroke="#51683a" stroke-width="1.2"/>
+      <text x="230" y="354" text-anchor="middle" font-size="10" fill="#fff">至公堂</text>
+      <rect x="300" y="330" width="100" height="40" rx="5" fill="#6f8f52" stroke="#51683a" stroke-width="1.2"/>
+      <text x="350" y="354" text-anchor="middle" font-size="10" fill="#fff">怀周楼</text>
+      <!-- 周边 -->
+      <rect x="30" y="400" width="120" height="38" rx="5" fill="#b0875a" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="90" y="422" text-anchor="middle" font-size="10" fill="#fff">钟楼 · 映秋院</text>
+      <rect x="170" y="400" width="120" height="38" rx="5" fill="#b0875a" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="230" y="422" text-anchor="middle" font-size="10" fill="#fff">熊庆来李广田故居</text>
+      <rect x="310" y="400" width="110" height="38" rx="5" fill="#b0875a" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="365" y="422" text-anchor="middle" font-size="10" fill="#fff">理科三馆 · 银杏道</text>
+      <text x="220" y="470" text-anchor="middle" font-size="11" fill="#7a3c30" font-weight="700">会泽百家 · 至公天下 · 云大精神</text>
+    </svg>
+    <div class="cap">▲ 会泽院布局示意：云南大学正门 → 九五台阶（中段西式喷水池）→ 会泽院（罗马柱、铜碑、历史博物馆）→ 中轴线纪念碑/至公堂/怀周楼 → 钟楼/映秋院/故居/银杏道等 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格与营造特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格与营造特色</h2></div>
+  <ul>
+    <li><strong>中西融合法式建筑</strong>：设计师张邦翰（留法）提议"其建筑采中西法式，存古而不泥于古，尚新而不专于新"，既仿照巴黎大学建筑特点，又传承中式建筑风格（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>立面构图</strong>：建筑立面为横五段、竖三段构图，底层基座层块石勒脚，以青石腰线上部隔，二层拱形砖，外墙转角及门窗四周以细凿青石宽窄交替纹镶砌；白色方形石砌装饰在红砖墙底色映衬下，均衡庄重（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>罗马柱与细节</strong>：大楼正面4根巨型罗马圆柱，柱顶为叶型浮雕，铁门装饰纹样华丽；四壁嵌罗马式红砖（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>、<a href="https://xsw.ynu.edu.cn/info/1010/1846.htm">据云南大学校史网</a>）。</li>
+    <li><strong>依山就势选址</strong>："地处拱辰门之右，背负城墙，南临翠海，居高瞰下，势若踞虎"，充分利用地形（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>科学构造</strong>：建筑内巧妙运用力、热、声、光诸原理，室内空气对流自然调节，采光充溢、音响阔达，无需扩声吸音设备（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 九五台阶</strong>：九十五级青石台阶，寓意《易经·乾卦》"九五飞龙在天"；是升堂入室、接受高等教育的肇始象征，近百年来历届毕业生都在此合影（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>② 喷水池</strong>：九五台阶中段平台的西式喷水池，与会泽院融为一体、依山顺势（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>③ 会泽院门廊与罗马柱</strong>：正面4根巨型罗马圆柱、柱顶叶型浮雕、华丽铁门，宏伟壮观（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>④ 《会泽唐公创办东陆大学记》铜碑</strong>：镶于会泽院大厅内墙，记述东陆大学建校始末和办学宗旨（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>⑤ 云南大学历史博物馆</strong>：设于会泽院内，含"会泽院老教室场景复原"展厅，展现云南500年教育史（<a href="http://www.chinanews.com.cn/cul/2020/12-30/9374966.shtml">据中国新闻网</a>、<a href="https://xsw.ynu.edu.cn/info/1002/1462.htm">据云南大学校史网</a>）。</li>
+    <li><strong>⑥ 周边建筑群</strong>：至公堂、映秋院、钟楼、云南第一天文点、熊庆来李广田故居、理科三馆、银杏道等共同构成云南大学独特建筑群（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:44%"><col style="width:18%"><col style="width:16%"></colgroup>
+    <thead><tr><th>位置</th><th>内容</th><th>年代</th><th>看点</th></tr></thead>
+    <tbody>
+      <tr><td>会泽院大厅</td><td>《会泽唐公创办东陆大学记》铜碑</td><td>1927年</td><td>记建校始末与办学宗旨（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）</td></tr>
+      <tr><td>云大精神</td><td>"会泽百家、至公天下"</td><td>近代</td><td>办学理念（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）</td></tr>
+      <tr><td>会泽院前</td><td>九五台阶、西式喷水池</td><td>1924年</td><td>入口景观（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约1—2小时）</strong>：</p>
+  <ol>
+    <li>由云南大学<strong>正门（南门）</strong>进入，先览九五台阶全景；</li>
+    <li>沿<strong>九五台阶</strong>拾级而上，细看中段西式喷水池；</li>
+    <li>至台阶尽头的<strong>会泽院</strong>，观正门罗马柱、铁门与门廊；</li>
+    <li>若开放，进入大厅细读<strong>《会泽唐公创办东陆大学记》铜碑</strong>及<strong>历史博物馆</strong>（"会泽院老教室场景复原"）；</li>
+    <li>顺览中轴线上<strong>革命烈士纪念碑、至公堂、怀周楼</strong>；</li>
+    <li>再访<strong>钟楼、映秋院、熊庆来李广田故居、理科三馆</strong>及<strong>银杏道</strong>（10—11月金黄）。</li>
+  </ol>
+  <div class="tip"><span class="t">时间紧张备选</span>　直奔<strong>九五台阶 + 会泽院门廊 + 历史博物馆</strong>，约40分钟。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：作为东陆大学第一栋建筑，会泽院见证了云南贡院科举应试教育终结、中国西南边疆现代高等教育由此开端，是近现代中西方建筑艺术在西南边疆融合发展的文物见证（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>科学·艺术价值</strong>：规模宏大、设计精巧、建材精良、工艺考究，32位院士曾在此授课，培养10余万高层次人才（<a href="http://www.news.ynu.edu.cn/info/1095/26902.htm">据云南大学新闻网</a>、<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>保护现状</strong>：2018年省保/二十世纪建筑遗产，2019年国保；历经百年风雨仍巍然屹立；云南大学精心保护、管理和使用，会泽院现为历史博物馆（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区翠湖北路2号，云南大学东陆校区内。</li>
+    <li><strong>校园开放</strong>：云南大学自2024年2月1日起面向社会全面开放校园，每天8:00—20:00；社会公众通过"平安云大"微信公众号预约，持本人身份证原件在门禁闸机人证核验后步行入校（<a href="https://m.gmw.cn/2024-01/31/content_1303649267.htm">据光明网</a>、<a href="http://yn.people.com.cn/GB/news/yunnan/395358/396816/index.html">据人民网</a>）。</li>
+    <li><strong>历史博物馆开放</strong>：每周五、周六下午14:30—17:00为公众开放时间，学校师生可自行前往；东陆校史讲解队于15:00、16:00提供讲解（寒暑假开放时间另行通知）（<a href="http://www.dlzx.ynu.edu.cn/info/1008/1114.htm">据云南大学东陆校区管理中心</a>）。</li>
+    <li><strong>门票</strong>：<strong>免费</strong>（需预约入校）。</li>
+    <li><strong>提示</strong>：会泽院为文物保护单位，主体建筑部分区域不开放入内，可在门口拍照、外围广场参观；博物馆开放以官方最新公告为准。信息更新于2026年，以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>央广网《云南大学会泽院：采中西法式兼存古尚新》（2019-11-19）：<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">cnr.cn</a></li>
+      <li>云南大学新闻网《云南大学历史博物馆开馆》：<a href="http://www.news.ynu.edu.cn/info/1095/26902.htm">news.ynu.edu.cn</a></li>
+      <li>云南大学校史网《杨克嵘》：<a href="https://xsw.ynu.edu.cn/info/1010/1846.htm">xsw.ynu.edu.cn</a></li>
+      <li>中国新闻网《云南大学历史博物馆开馆 展现边疆500年教育史》（2020-12-30）：<a href="http://www.chinanews.com.cn/cul/2020/12-30/9374966.shtml">chinanews.com.cn</a></li>
+      <li>云南大学校史网《云南大学历史博物馆开馆》：<a href="https://xsw.ynu.edu.cn/info/1002/1462.htm">xsw.ynu.edu.cn</a></li>
+      <li>光明网《云南大学发布最新公告！》（2024-01-31）：<a href="https://m.gmw.cn/2024-01/31/content_1303649267.htm">m.gmw.cn</a></li>
+      <li>云南大学东陆校区管理中心《云南大学历史博物馆参观须知》：<a href="http://www.dlzx.ynu.edu.cn/info/1008/1114.htm">dlzx.ynu.edu.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">会泽百家 · 至公天下</div>
+  <div style="margin-top:6px;">信息来自官网、政府、报纸、文物局等官方权威渠道 · 布局示意图以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>
+<!-- （注：内容由AI生成） -->

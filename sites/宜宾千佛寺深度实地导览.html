@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宜宾千佛寺深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a7220'/%3E%3Cpath d='M20 12 L44 12 L44 18 L20 18 Z M18 22 L46 22 L46 54 L18 54 Z M14 26 L50 26 L50 32 L14 32 Z M14 40 L50 40 L50 46 L14 46 Z' fill='%23c09b1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c09b1e;--brick-deep:#8a7220;--brick-soft:#d8b84a;
+    --gold:#b58a2e;--stone:#f2e8cf;--stone-2:#faf6ec;--paper:#fdfaf3;--line:#e6d9b0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f6f0dd;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6d98a;
+    border:1px solid rgba(230,217,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#ded3ae;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#f8efcf;}
+  .hero .sub a{color:#e6d98a;border-bottom-color:rgba(230,217,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6d98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f0da;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#e0d3a4;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#cfc49a;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6d98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">宜宾市市级文物保护单位 · 石窟寺及石刻 · 唐代摩崖造像</div>
+    <h1>宜宾千佛寺</h1>
+    <p class="sub">位于宜宾市翠屏区<strong>翠屏山后山</strong>，因千佛台得名，台上浮雕石佛千余尊，千佛岩摩崖造像为<strong>宜宾市市级文物保护单位</strong>（第一批，宜府函〔1998〕7号公布，保护范围文物本体向外延伸5米）（<a href="http://www.yibin.gov.cn/xxgk/ybsrmzfgb/gongbao/1460/1478/1478.pdf">据宜宾市人民政府公报</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>千佛寺（千佛台/千佛岩摩崖造像）</td></tr>
+      <tr><td>保护级别</td><td><strong>宜宾市市级文物保护单位</strong>（千佛岩摩崖造像，第一批，宜府函〔1998〕7号公布；保护范围文物本体向外延伸5米）</td></tr>
+      <tr><td>类别</td><td>石窟寺及石刻（唐代摩崖造像）+ 古建筑（寺院）</td></tr>
+      <tr><td>位置</td><td>宜宾市翠屏区翠屏山（后山古树密林中）</td></tr>
+      <tr><td>年代</td><td>千佛台始建于唐代，历代重建维修</td></tr>
+      <tr><td>得名</td><td>因千佛台而得名，台上浮雕石佛众多、千佛千面</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>始建</strong>：千佛台始建于唐代，历代（宋、明、清及现代）均有重建和维修（<a href="https://m.ctrip.com/webapp/you/community/detail?articleId=251053615&hidePublishButton=true&hideTitle=true&allianceid=7144873&sid=263483165">据携程</a>、据抖音）。</li>
+    <li><strong>寺院</strong>：千佛寺依山而建，位于翠屏山后山，背靠翠屏主峰、面朝岷江，为"山林禅院"格局（据抖音）。</li>
+    <li><strong>定级保护</strong>：千佛岩摩崖造像列为市级文物保护单位（第一批，宜府函〔1998〕7号），2023年公布保护范围为文物本体向外延伸5米（据宜宾市人民政府公报、据宜宾市人民政府）。</li>
+    <li><strong>现状</strong>：寺院主要建筑（千佛殿、观音殿、地藏殿、罗汉堂、达摩殿等）历代修葺，现仍开放（据Trip.com、据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>千佛寺依山就势而建，整个建筑建于千佛岩之上（<a href="https://www.iesdouyin.com/share/video/7061068355364457732">据抖音</a>）。</p>
+  <ul>
+    <li><strong>中轴线</strong>：寺中轴线上依次有千佛殿、天王殿、地藏殿、大雄宝殿、观音殿、七佛殿（据抖音）。</li>
+    <li><strong>附设</strong>：各游览路线附近修建凉亭、台阁与茶园展示区，供游客休息（据Trip.com、据抖音）。</li>
+    <li><strong>千佛台</strong>：一方傍崖、三方垂立，上有浮雕石佛1131尊，千佛千面、栩栩如生（据抖音）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 230" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a7220">宜宾千佛寺 · 布局示意（依山·自下而上）</text>
+      <g font-size="9">
+        <rect x="60" y="40" width="90" height="24" rx="4" fill="#f2e8cf" stroke="#c09b1e" stroke-width="2"/>
+        <text x="105" y="55" text-anchor="middle" fill="#8a7220" font-weight="700">翠屏山后山入口</text>
+        <rect x="170" y="40" width="210" height="24" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="275" y="55" text-anchor="middle" fill="#8a7220" font-weight="700">山门 · 天王殿</text>
+        <rect x="60" y="78" width="120" height="30" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="120" y="91" text-anchor="middle" fill="#8a7220" font-weight="700">千佛殿</text>
+        <text x="120" y="103" text-anchor="middle" fill="#8a7220" font-size="8">千佛台 · 浮雕石佛1131尊</text>
+        <rect x="200" y="78" width="180" height="30" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="290" y="91" text-anchor="middle" fill="#8a7220" font-weight="700">地藏殿</text>
+        <text x="290" y="103" text-anchor="middle" fill="#8a7220" font-size="8">大雄宝殿 · 观音殿 · 七佛殿</text>
+        <rect x="60" y="124" width="320" height="30" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <text x="220" y="138" text-anchor="middle" fill="#fff" font-weight="700">千佛碑林 · 书法石刻 · 凉亭台阁·茶园展示区</text>
+        <text x="220" y="150" text-anchor="middle" fill="#ffe9b8" font-size="8">翠屏晚钟（宜宾八景）</text>
+        <text x="220" y="200" text-anchor="middle" font-size="8.5" fill="#8a7a40">依山而建 · 按公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 宜宾千佛寺布局示意（依山·自下而上）：翠屏山后山入口 → 山门·天王殿 → 千佛殿（千佛台·浮雕石佛1131尊）→ 地藏殿·大雄宝殿·观音殿·七佛殿 → 千佛碑林·书法石刻·凉亭台阁·茶园展示区（翠屏晚钟）· 依山而建 · 按公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑/文物特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑/文物特色</h2></div>
+  <ul>
+    <li><strong>千佛台摩崖造像</strong>：唐代始建的千佛台，一方傍崖三方垂立，浮雕石佛1131尊，形态各异、祥和庄严，为川南重要佛教造像遗存（据抖音、据携程）。</li>
+    <li><strong>依山寺院建筑</strong>：中轴线纵列诸殿，随山势层层抬高，附凉亭台阁、茶园展厅（据抖音、据Trip.com）。</li>
+    <li><strong>大雄宝殿</strong>：殿内释迦牟尼佛一手持降魔印、一手持说法印，两旁十八罗汉；梁架为老构、搭拱式建筑（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 千佛台（千佛岩）摩崖造像</strong>：浮雕石佛1131尊，千佛千面，宜宾市级文保单位本体（据抖音、据宜宾市人民政府）。</li>
+    <li><strong>② 中轴线诸殿</strong>：千佛殿、天王殿、地藏殿、大雄宝殿、观音殿、七佛殿，依山层层抬升（据抖音）。</li>
+    <li><strong>③ 大雄宝殿</strong>：释迦牟尼佛与十八罗汉，搭拱式老构梁架（据抖音）。</li>
+    <li><strong>④ 千佛碑林与石刻书法</strong>：千佛寺内多有书法石刻作品（据抖音）。</li>
+    <li><strong>⑤ 翠屏晚钟</strong>：宜宾八景之一，相传钟声已响1200年（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>千佛碑林</strong>：石阶旁有千佛碑林，寺内多有带禅意的书法石刻作品（据抖音）。</li>
+    <li><strong>题咏</strong>：北宋黄庭坚曾在此留句"山绕楼台钟鼓晚，翠屏深处古禅关"（据携程）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约40—70分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>宜宾市翠屏山</strong>，沿后山古道上行至千佛寺（据抖音、据Trip.com）；</li>
+    <li>入<strong>山门/天王殿</strong>，沿中轴线向上，依次观<strong>千佛殿（千佛台）—地藏殿—大雄宝殿—观音殿—七佛殿</strong>；</li>
+    <li>驻足<strong>千佛台</strong>细看浮雕石佛1131尊，赏<strong>千佛碑林</strong>书法石刻；</li>
+    <li>体验<strong>翠屏晚钟</strong>（若开放）后，沿游道经凉亭台阁、茶园展示区下山离场（据抖音、据Trip.com）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　寺院布局与看点据公开资料整理，具体以现场导览牌为准（据抖音、据Trip.com）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：唐代始建的千佛台与千佛寺，为川南重要佛教丛林与叙州文脉高地，传承完整（据抖音、据携程）。</li>
+    <li><strong>文物价值</strong>：千佛岩摩崖造像为市级文物保护单位，浮雕石佛1131尊具较高历史艺术价值（据抖音、据宜宾市人民政府）。</li>
+    <li><strong>保护现状</strong>：千佛岩摩崖造像列为市级文保，2023年公布保护范围（文物本体向外延伸5米）（据宜宾市人民政府公报）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：四川省宜宾市翠屏区翠屏山（后山）。</li>
+    <li><strong>开放状态</strong>：千佛寺为开放寺院，具体开放时间、门票与预约以官方最新公告为准（据Trip.com）。</li>
+    <li><strong>交通</strong>：位于翠屏山景区内，可登山或乘景区设施前往（据Trip.com）。</li>
+    <li><strong>提示</strong>：市级文保单位，参观时请爱护石刻与建筑，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>宜宾市人民政府公报（2023年第5期）·千佛岩摩崖造像保护范围：<a href="http://www.yibin.gov.cn/xxgk/ybsrmzfgb/gongbao/1460/1478/1478.pdf">yibin.gov.cn</a></li>
+      <li>宜宾市人民政府《关于公布叙州城城墙旧址等24处市级文物保护单位保护范围的通知》：<a href="https://www.yibin.gov.cn/xxgk/zcfg/szfwj_45/ysfh/202307/W020230717560558563111.pdf">yibin.gov.cn</a></li>
+      <li>Trip.com《千佛寺门票·预约、开放时间》：<a href="https://hk.trip.com/travel-guide/attraction/yibin/qianfo-temple-105238523?scene=gsDestination">trip.com</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">翠屏深处 · 千佛千面</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

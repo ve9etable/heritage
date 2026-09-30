@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大观楼（全国重点文物保护单位）深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236b1f17'/%3E%3Cpolygon points='32,10 12,26 52,26' fill='%23e6c98a'/%3E%3Crect x='20' y='26' width='24' height='28' rx='2' fill='%23b7ae9c'/%3E%3Crect x='18' y='54' width='28' height='4' fill='%23b8745a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;--brick:#8a2a20;--brick-deep:#6b1f17;
+    --brick-soft:#a85046;--gold:#a8823c;--stone:#e9e3d8;--stone-2:#f4f0e8;
+    --paper:#fbf9f4;--line:#d9d2c4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  li > ul{margin:6px 0 6px 20px;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f3ea;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--gold);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#c9c0ae;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">全国重点文物保护单位 · 古建筑 · 中国四大历史文化名楼</div>
+    <h1>大观楼</h1>
+    <p class="sub">位于滇池北岸，清康熙二十九年（1690年）始建，因清乾隆年间布衣寒士孙髯翁撰写180字"天下第一长联"而与黄鹤楼、岳阳楼、滕王阁齐名，是<strong>全国重点文物保护单位（2013年第七批）</strong>（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5135963.shtml">据昆明市西山区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>大观楼</td></tr>
+      <tr><td>保护级别</td><td><strong>全国重点文物保护单位</strong>（2013年国务院公布第七批；1983年云南省重点文物保护单位；2006年国家AAAA级旅游景区）</td></tr>
+      <tr><td>类别</td><td>古建筑（木结构楼阁式建筑）</td></tr>
+      <tr><td>地址</td><td>云南省昆明市西山区大观公园内（大观路284号），位于滇池北岸、昆明城西2公里处</td></tr>
+      <tr><td>始建</td><td>清康熙二十九年（1690年），初为二层，道光八年（1828年）增为三层</td></tr>
+      <tr><td>规模</td><td>单体木结构楼阁式建筑，坐北向南，立于占地402平方米的两级石台基上；楼阁本体长方形，面阔17米、进深10米、占地170平方米；楼高三层18米，三层檐黄色琉璃瓦四角攒尖顶</td></tr>
+      <tr><td>叠加身份</td><td>与黄鹤楼、岳阳楼、滕王阁齐名的中国四大历史文化名楼，藏"天下第一长联"</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>初建</strong>：明初沐英建"西园"；清康熙二十一年（1690年）创建大观楼，后相继建澄碧堂、催耕馆、涌月亭、牧梦亭、观稼堂等（<a href="http://www.kmxs.gov.cn/c/2022-03-18/5852549.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>增层</strong>：道光八年（1828年）云南按察使翟觐光重修，将二层增建为三层（<a href="http://www.kmxs.gov.cn/c/2024-06-12/6861752.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>御赐匾额</strong>：咸丰五年（1855年）咸丰帝题赐"拔浪千层"匾（一说咸丰三年1853，据西山区政府大观公园页）（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>毁于兵燹</strong>：咸丰七年（1857年）大观楼及其它楼台亭榭毁于兵燹（<a href="http://www.kmxs.gov.cn/c/2024-06-12/6861752.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>重建</strong>：同治三年（1864年）云南提督马如龙主持重建，历时两年，现存大观楼即同治三年重建；光绪九年（1883年）总督岑毓英重修（<a href="http://www.kmxs.gov.cn/c/2024-06-12/6861752.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>长联</strong>：清乾隆年间布衣寒士孙髯翁撰180字长联，由名士陆树堂书写刊刻；光绪九年（1883年）重修时请名士赵潘重书孙髯翁长联刊刻悬挂（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>、据抖音百科）。</li>
+    <li><strong>定级保护</strong>：1983年省级文保单位 → 2013年国务院公布为第七批全国重点文物保护单位（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5135963.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>当代修缮</strong>：2025年历时一年保护修缮后于10月1日重新开放，秉承文物最小干预原则"修旧如故"（<a href="https://m.chinanews.com/wap/detail/chs/zw/10492857.shtml">据中国新闻网</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>大观楼位于大观公园内，公园以近华浦为中心。明初沐英建"西园"，清代相继建澄碧堂、催耕馆、涌月亭、牧梦亭、观稼堂等建筑群荟萃园中，近华浦成为"万里云山一水楼"的湖山胜境（<a href="http://www.kmxs.gov.cn/c/2022-03-18/5852549.shtml">据昆明市西山区人民政府</a>、据昆明文旅）。大观楼为单体木结构楼阁，坐北向南，立于占地402平方米的两级石台基之上，楼高三层18米，三层檐黄色琉璃瓦四角攒尖顶（<a href="http://www.kmxs.gov.cn/c/2024-06-12/6861752.shtml">据昆明市西山区人民政府</a>）。</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a7b66">大观楼 · 布局示意</text>
+      <!-- 湖 -->
+      <rect x="20" y="200" width="400" height="90" rx="6" fill="#c9d6dd"/>
+      <text x="60" y="245" font-size="10" fill="#5a7a8c">滇池</text>
+      <!-- 台基 -->
+      <rect x="140" y="180" width="160" height="24" rx="2" fill="#8a7b66"/>
+      <text x="220" y="196" text-anchor="middle" font-size="9" fill="#f3ede2">两级石台基（占地402平方米）</text>
+      <!-- 楼阁 -->
+      <rect x="170" y="90" width="100" height="90" rx="4" fill="#b7ae9c" stroke="#8a7b66" stroke-width="2"/>
+      <line x1="170" y1="120" x2="270" y2="120" stroke="#8a7b66" stroke-width="1.5"/>
+      <line x1="170" y1="150" x2="270" y2="150" stroke="#8a7b66" stroke-width="1.5"/>
+      <polygon points="166,90 274,90 250,64 190,64" fill="#e6c98a"/>
+      <rect x="208" y="70" width="24" height="8" rx="1" fill="#6b1f17"/>
+      <text x="220" y="108" text-anchor="middle" font-size="9" fill="#4a4438">大观楼（三层18米）</text>
+      <text x="220" y="134" text-anchor="middle" font-size="8" fill="#5a554c">四角攒尖顶 · 黄色琉璃瓦</text>
+      <text x="220" y="164" text-anchor="middle" font-size="8" fill="#5a554c">天下第一长联</text>
+      <!-- 园林建筑 -->
+      <rect x="40" y="140" width="80" height="22" rx="3" fill="#c9c0ae" stroke="#8a7b66"/>
+      <text x="80" y="155" text-anchor="middle" font-size="8" fill="#4a4438">催耕馆</text>
+      <rect x="320" y="140" width="80" height="22" rx="3" fill="#c9c0ae" stroke="#8a7b66"/>
+      <text x="360" y="155" text-anchor="middle" font-size="8" fill="#4a4438">涌月亭</text>
+      <rect x="40" y="170" width="80" height="22" rx="3" fill="#c9c0ae" stroke="#8a7b66"/>
+      <text x="80" y="185" text-anchor="middle" font-size="8" fill="#4a4438">牧梦亭</text>
+      <rect x="320" y="170" width="80" height="22" rx="3" fill="#c9c0ae" stroke="#8a7b66"/>
+      <text x="360" y="185" text-anchor="middle" font-size="8" fill="#4a4438">观稼堂</text>
+      <text x="220" y="300" text-anchor="middle" font-size="9" fill="#8a7b66">大观公园入口 → 近华浦园林区 → 大观楼（临滇池北岸）</text>
+    </svg>
+    <div class="cap">▲ 大观楼布局示意：大观公园入口 → 近华浦园林区（澄碧堂、涌月亭、牧梦亭、观稼堂等）→ 大观楼（三层18米·四角攒尖顶·临滇池北岸）→ 登楼览滇池 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格与营造特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格与营造特色</h2></div>
+  <ul>
+    <li><strong>三重檐四角攒尖顶</strong>：大观楼为单体木结构楼阁式建筑，坐北向南，三层18米，三层檐黄色琉璃瓦四角攒尖顶；云南传统古建筑，平面呈方形、入口在南北向（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5135963.shtml">据昆明市西山区人民政府</a>、<a href="http://www.kmxs.gov.cn/c/2024-06-12/6861752.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>四根通柱支撑</strong>：整个建筑以四根通柱作支撑点，除一楼墙体外均为木结构；楼内两侧各设双跑木楼梯登楼（<a href="http://www.kmxs.gov.cn/c/2024-06-12/6861752.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>地方"五墨"彩绘</strong>：上绘有地方特色的雅五墨彩绘，挑檐檩枋头木雕为象头或花卉图形，体现中原文化与边疆民族文化交融（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>云南园林建筑风格</strong>：屋面不似北方古建厚重雄健，又不似南方古建轻盈秀雅，介于二者之间；翼角刀把头似龙口含珠（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5135963.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>游廊与梅花窗</strong>：二楼北、东、南三方外设游廊，二、三楼窗棂皆为梅花窗（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① "天下第一长联"</strong>：清乾隆年间孙髯翁撰180字长联（上下联各90字），被誉为"古今第一长联"，毛泽东评价"从古未有，别创一格"（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>、据昆明文旅）。</li>
+    <li><strong>② 大观楼本体</strong>：三层18米木结构楼阁，三重檐四角攒尖顶、黄色琉璃瓦，云南传统古建筑典范（<a href="http://www.kmxs.gov.cn/c/2024-06-12/6861752.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>③ 匾额楹联20余幅</strong>：李漱泉书"大观楼"、李维述题"真大观也"、宋湘书"千秋怀抱三杯酒，万里云山一水楼"、咸丰御赐"拔浪千层"、郭沫若《登楼即事》等（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>④ 登楼览滇池</strong>：面临滇池、背靠昆明旧城，可揽湖光山色之胜，被誉为"省城第一名胜"（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>⑤ 清代园林建筑群</strong>：催耕馆、涌月亭、牧梦亭、观稼堂等荟萃园中（<a href="http://www.kmxs.gov.cn/c/2022-03-18/5852549.shtml">据昆明市西山区人民政府</a>、据昆明文旅）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:26%"><col style="width:44%"><col style="width:30%"></colgroup>
+    <thead><tr><th>位置</th><th>内容</th><th>作者/年代</th></tr></thead>
+    <tbody>
+      <tr><td>楼前/一楼</td><td>"天下第一长联"（孙髯翁180字）</td><td>孙髯翁撰，赵潘重书刊刻</td></tr>
+      <tr><td>一楼南门</td><td>"大观楼"匾</td><td>李漱泉书</td></tr>
+      <tr><td>一楼北门</td><td>"真大观也"匾</td><td>李维述题书</td></tr>
+      <tr><td>一楼</td><td>"千秋怀抱三杯酒，万里云山一水楼"</td><td>清宋湘撰书</td></tr>
+      <tr><td>二楼正中</td><td>"拔浪千层"匾</td><td>咸丰帝御赐</td></tr>
+      <tr><td>三楼室内</td><td>《登楼即事》</td><td>郭沫若题书</td></tr>
+      <tr><td>楼内</td><td>《重建大观楼碑记》</td><td>光绪二十年（1894）舒藻撰文</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约2—3小时）</strong>：</p>
+  <ol>
+    <li>入园后先览<strong>近华浦园林区</strong>，经催耕馆、涌月亭、牧梦亭等清代建筑群；</li>
+    <li>至<strong>大观楼前</strong>，细读"天下第一长联"（孙髯翁180字长联）；</li>
+    <li>观一楼南门"大观楼"匾、北门"真大观也"匾及宋湘联；</li>
+    <li>经双跑木楼梯登楼，仰观<strong>地方"五墨"彩绘</strong>与象头木雕；</li>
+    <li>二楼观<strong>"拔浪千层"</strong>御匾、三楼观<strong>郭沫若《登楼即事》</strong>；</li>
+    <li>于顶层<strong>凭栏眺滇池</strong>，揽"五百里滇池"湖山胜景；</li>
+    <li>出楼读楼内《重建大观楼碑记》，感受历史变迁。</li>
+  </ol>
+  <div class="tip"><span class="t">时间紧张备选</span>　直奔<strong>长联 + 大观楼本体 + 登楼览滇池</strong>，约1小时。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：大观楼因孙髯翁"天下第一长联"而与黄鹤楼、岳阳楼、滕王阁并称中国四大历史文化名楼；300多年间积累众多诗词楹联，是滇中古建筑珍品（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>艺术价值</strong>：三层木结构楼阁、地方"五墨"彩绘、象头木雕，体现中原文化与边疆民族文化交融，景观艺术价值突出（<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">据昆明市西山区人民政府</a>）。</li>
+    <li><strong>保护现状</strong>：2013年国保；2025年历时一年保护修缮后重新开放，以传统形制、材料、工艺最大化原样修缮，保持文物原真性"修旧如故"（<a href="https://m.chinanews.com/wap/detail/chs/zw/10492857.shtml">据中国新闻网</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市西山区大观公园内（大观路284号）（<a href="https://www.kunming.cn/zhuanti/xwzt/mlmldgl/?HPPROTID=73680655">据昆明信息港</a>）。</li>
+    <li><strong>开放时间</strong>：大观公园一般7:00—19:00开放（据昆明信息港，以官方最新为准）。</li>
+    <li><strong>门票</strong>：大观公园门票约26元/人次（据昆明信息港，以官方最新为准）；登大观楼是否有单独要求以现场为准。</li>
+    <li><strong>交通</strong>：乘4、22、52、95、100、104、124、131、183路等公交可抵达大观公园（<a href="https://www.kunming.cn/zhuanti/xwzt/mlmldgl/?HPPROTID=73680655">据昆明信息港</a>）。</li>
+    <li><strong>提示</strong>：大观楼2025年修缮后重新开放，为全国重点文物，请文明参观、勿触摸匾额长联。开放时间、门票等易变信息以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市西山区人民政府《大观楼（简介）》（2024-06-12）：<a href="http://www.kmxs.gov.cn/c/2024-06-12/6861752.shtml">kmxs.gov.cn</a></li>
+      <li>昆明市西山区人民政府《历史底蕴一·大观楼》（2021-05-07）：<a href="http://www.kmxs.gov.cn/c/2021-05-07/5136137.shtml">kmxs.gov.cn</a></li>
+      <li>昆明市西山区人民政府《大观公园·景点荟萃》（2021-05-07）：<a href="http://www.kmxs.gov.cn/c/2021-05-07/5135963.shtml">kmxs.gov.cn</a></li>
+      <li>昆明市西山区人民政府《大观公园景区》（2022-03-18）：<a href="http://www.kmxs.gov.cn/c/2022-03-18/5852549.shtml">kmxs.gov.cn</a></li>
+      <li>昆明信息港《大观楼》：<a href="https://www.kunming.cn/zhuanti/xwzt/mlmldgl/?HPPROTID=73680655">kunming.cn</a></li>
+      <li>中国新闻网《昆明大观楼修缮后重新开放 再现中华名楼历史风貌》（2025-10-01）：<a href="https://m.chinanews.com/wap/detail/chs/zw/10492857.shtml">chinanews.com</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">五百里滇池奔来眼底 · 数千年往事注到心头</div>
+  <div style="margin-top:6px;">信息来自官网、政府、报纸、文物局等官方权威渠道 · 布局示意图以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>
+<!-- （注：内容由AI生成） -->

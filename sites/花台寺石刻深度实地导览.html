@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花台寺石刻深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a7220'/%3E%3Cpath d='M14 16 L50 20 L50 24 L14 20 Z M18 26 L46 28 L46 32 L18 30 Z M22 36 L42 37 L42 41 L22 40 Z M26 46 L38 47 L38 51 L26 50 Z' fill='%23c09b1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c09b1e;--brick-deep:#8a7220;--brick-soft:#d8b84a;
+    --gold:#b58a2e;--stone:#f2e8cf;--stone-2:#faf6ec;--paper:#fdfaf3;--line:#e6d9b0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f6f0dd;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6d98a;
+    border:1px solid rgba(230,217,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#ded3ae;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#f8efcf;}
+  .hero .sub a{color:#e6d98a;border-bottom-color:rgba(230,217,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6d98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f0da;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#e0d3a4;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#cfc49a;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6d98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">宜宾市市级文物保护单位 · 石窟寺及石刻 · 唐代石刻遗存</div>
+    <h1>花台寺石刻</h1>
+    <p class="sub">位于宜宾市翠屏区<strong>冠英街（戎州桥北岸桥头向北80米）</strong>，唐代花台寺遗址的石刻，城区唯一摩崖石刻，残存唐代浮雕与1200年放生池石刻，<strong>宜宾市市级文物保护单位</strong>（<a href="https://gpx.ccgp-sichuan.gov.cn/gpx-bid-file/ZF_JGBM_000008/zone/2024/12/15/project/gpx-template/8a69f5c59b28204d019b2b0561836a45.pdf?accessCode=abfa35afe19043a3b01cb69548cec293">据四川政府采购网</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>花台寺石刻</td></tr>
+      <tr><td>保护级别</td><td><strong>宜宾市市级文物保护单位</strong></td></tr>
+      <tr><td>类别</td><td>石窟寺及石刻（唐代石刻·摩崖造像遗存）</td></tr>
+      <tr><td>位置</td><td>宜宾市翠屏区大观楼街道冠英社区冠英街（戎州桥北岸桥头向北80米）</td></tr>
+      <tr><td>年代</td><td>花台寺始建于唐代元和五年（810年），石刻为唐代遗存</td></tr>
+      <tr><td>现状</td><td>石壁已残、大像无存，存清代卷棚顶水榭殿与放生池</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>建寺</strong>：张九宗任戎州刺史时于元和五年（810）修建花台寺，并撰《修花台寺记》一文（<a href="https://c.m.163.com/news/a/GPOG4TTS0514AU89.html">据网易</a>）。</li>
+    <li><strong>冲毁</strong>：建寺32年后，唐朝会昌二年（842）金沙江涨大水淹没寺庙，唯有石刻幸存；此后寺庙几经毁坏与重建，石刻延续至今（据中国旅游新闻网、据网易）。</li>
+    <li><strong>著录</strong>：南宋《方舆胜览》载"花台寺……东殿石壁，露立大像，其地内外，石间嵌有万佛"（据宜宾本地宝）。</li>
+    <li><strong>现存</strong>：现石壁已残、大像无存，四周尚有菩萨、佛像、宝树、楼阁等浮雕（已风化模糊）；现存一殿为清代重建的卷棚顶水榭殿，水池建于清道光年间、解放前为"放生池"（据宜宾本地宝）。</li>
+    <li><strong>保护修缮</strong>：近年列为市级文物保护单位，曾采购石刻保护修缮服务（据四川政府采购网）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>花台寺石刻位于冠英街，为城区内唯一摩崖石刻（<a href="https://c.m.163.com/news/a/GPOG4TTS0514AU89.html">据网易</a>）。</p>
+  <ul>
+    <li><strong>格局</strong>：寺内有具1200年历史的放生池，池中有一方历经5个朝代、与水池同龄的石刻（据中国旅游新闻网）。</li>
+    <li><strong>现存</strong>：一殿为清代重建的卷棚顶水榭殿，水池建于清道光年间、解放前为"放生池"（据宜宾本地宝）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a7220">花台寺石刻 · 布局示意</text>
+      <g font-size="9">
+        <rect x="60" y="44" width="90" height="26" rx="4" fill="#f2e8cf" stroke="#c09b1e" stroke-width="2"/>
+        <text x="105" y="61" text-anchor="middle" fill="#8a7220" font-weight="700">冠英街入口</text>
+        <rect x="170" y="44" width="210" height="26" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="275" y="61" text-anchor="middle" fill="#8a7220" font-weight="700">花台寺遗址</text>
+        <rect x="120" y="88" width="200" height="34" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="220" y="102" text-anchor="middle" fill="#8a7220" font-weight="700">卷棚顶水榭殿（清代重建）</text>
+        <text x="220" y="116" text-anchor="middle" fill="#8a7220" font-size="8">放生池（清道光年间建）·池中历经5朝石刻</text>
+        <rect x="120" y="132" width="200" height="28" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <text x="220" y="150" text-anchor="middle" fill="#fff" font-weight="700">残存唐代浮雕石壁（菩萨·佛像·宝树·楼阁）</text>
+        <text x="220" y="200" text-anchor="middle" font-size="8.5" fill="#8a7a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 花台寺石刻布局示意：冠英街入口 → 花台寺遗址 → 卷棚顶水榭殿（清代重建）·放生池（清道光年间建）·池中历经5朝石刻 → 残存唐代浮雕石壁（菩萨·佛像·宝树·楼阁）· 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑/文物特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑/文物特色</h2></div>
+  <ul>
+    <li><strong>唐代石刻浮雕</strong>：石壁四周有菩萨、佛像、宝树、楼阁等浮雕，原"石间嵌有万佛"，现多风化模糊（据宜宾本地宝）。</li>
+    <li><strong>水榭殿</strong>：现存一殿为清代重建、卷棚顶水榭殿形制（据宜宾本地宝）。</li>
+    <li><strong>放生池与池中石刻</strong>：1200年历史的放生池，池中一方历经5个朝代的石刻（据中国旅游新闻网）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 残存唐代浮雕</strong>：菩萨、佛像、宝树、楼阁浮雕，宜宾城区唯一摩崖石刻（据宜宾本地宝、据网易）。</li>
+    <li><strong>② 放生池与池中石刻</strong>：具1200年历史、历经5个朝代的石刻（据中国旅游新闻网）。</li>
+    <li><strong>③ 清代水榭殿</strong>：卷棚顶水榭殿，为清代重建遗迹（据宜宾本地宝）。</li>
+    <li><strong>④ 唐代花台寺史迹</strong>：见证戎州唐代佛教与金沙江水文变迁（据网易、据中国旅游新闻网）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>池中石刻</strong>：放生池中一方历经5个朝代、与水池同龄的石刻（据中国旅游新闻网）。</li>
+    <li><strong>摩崖浮雕</strong>：石壁残存的菩萨、佛像、宝树、楼阁浮雕（据宜宾本地宝）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约20—40分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>宜宾市翠屏区冠英街花台寺石刻</strong>；</li>
+    <li>观<strong>清代卷棚顶水榭殿</strong>；</li>
+    <li>细看<strong>放生池</strong>及其中的<strong>历经5朝石刻</strong>；</li>
+    <li>沿石壁看残存<strong>唐代浮雕</strong>，了解花台寺唐代史迹后离场（据宜宾本地宝、据中国旅游新闻网）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　石刻为摩崖遗存，现场观览以实际情况为准（据宜宾本地宝）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：唐代花台寺遗存石刻，见证戎州唐代佛教与金沙江涨水毁寺史实（据网易、据中国旅游新闻网）。</li>
+    <li><strong>文物价值</strong>：宜宾城区唯一摩崖石刻，石间嵌有万佛的唐代浮雕遗存（据网易、据宜宾本地宝）。</li>
+    <li><strong>保护现状</strong>：列为市级文物保护单位，近年实施石刻保护修缮（据四川政府采购网）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：四川省宜宾市翠屏区大观楼街道冠英社区冠英街。</li>
+    <li><strong>开放状态</strong>：位于冠英街街区，具体开放与观览安排以现场及官方公告为准（据四川政府采购网）。</li>
+    <li><strong>交通</strong>：位于戎州桥北岸桥头向北80米，翠屏区老城区冠英街（据四川政府采购网）。</li>
+    <li><strong>提示</strong>：市级文保单位，参观时请爱护石刻文物，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>四川政府采购网《宜宾花台寺石刻保护修缮服务采购》：<a href="https://gpx.ccgp-sichuan.gov.cn/gpx-bid-file/ZF_JGBM_000008/zone/2024/12/15/project/gpx-template/8a69f5c59b28204d019b2b0561836a45.pdf?accessCode=abfa35afe19043a3b01cb69548cec293">gpx.ccgp-sichuan.gov.cn</a></li>
+      <li>中国旅游新闻网《黔阳春隐、僰道遗韵》：<a href="http://www.ctnews.com.cn/paper/att/202504/01/02980f70-046e-4018-8aa7-119cd6e92b2d.pdf">ctnews.com.cn</a></li>
+      <li>宜宾本地宝《宜宾花台寺石刻简介》：<a href="http://yb.bendibao.com/jingdian/huataisishike/content/">yb.bendibao.com</a></li>
+      <li>网易新闻《冠英街这坨石头，大有来头！城区唯一摩崖石刻》：<a href="https://c.m.163.com/news/a/GPOG4TTS0514AU89.html">163.com</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">唐代遗刻 · 千年放生池</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

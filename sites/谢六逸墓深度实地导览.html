@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>谢六逸墓深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M26 14 L38 14 L38 20 L26 20 Z M32 20 L32 44 M20 44 L44 44 L44 52 L20 52 Z' fill='%23c05a1e'/%3E%3Ccircle cx='32' cy='38' r='5' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">贵州省省级文物保护单位 · 近现代重要史迹 · 名人墓</div>
+    <h1>谢六逸墓</h1>
+    <p class="sub">位于贵阳市<strong>黔灵公园八角岩西麓半山中华圣公会墓地</strong>，墓座东向西、封土约3×2.5×1.5米，墓前立"谢公六逸之墓"碑，纪念中国新闻教育开拓者、文学家谢六逸，<strong>贵州省省级文物保护单位</strong>（<a href="https://www.guizhou.gov.cn/zwgk/zcfg/szfwj/qff/202106/t20210629_70477311.html">据贵州省人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>谢六逸墓</td></tr>
+      <tr><td>保护级别</td><td><strong>贵州省省级文物保护单位</strong>（第六批增补，2021年公布）；此前1999年为贵阳市市级文保单位</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（名人墓）</td></tr>
+      <tr><td>位置</td><td>贵阳市黔灵公园（黔灵山）八角岩西麓半山中华圣公会墓地</td></tr>
+      <tr><td>墓主</td><td>谢六逸（1898—1945），贵阳人，文学家、新闻学家、教育家，中国新闻教育开拓者</td></tr>
+      <tr><td>墓葬形制</td><td>墓座东向西，封土长约3米、宽约2.5米、高约1.5米，墓前有碑</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、墓主谢六逸生平 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>墓主谢六逸生平</h2></div>
+  <ul>
+    <li><strong>早年</strong>：1898年生于贵阳指月街官宦书香之家，19岁考取官费生留学日本，入早稻田大学攻读政治经济科（<a href="http://www.gz.chinanews.com.cn/yjzy/2025-11-08/doc-ihewhxyt4629096.shtml">据中新网</a>、据贵州省委党校）。</li>
+    <li><strong>复旦任教</strong>：1926年任复旦大学中国文学系主任，并创设复旦大学新闻系，开中国新闻教育之先河（据贵州省委党校、据澎湃新闻）。</li>
+    <li><strong>回乡抗战</strong>：1938年回到贵阳，牵头成立抗敌文协贵州分会，主编抗战文艺，并助力文通书局（据贵州省委党校、据抖音线索）。</li>
+    <li><strong>病逝安葬</strong>：1945年8月8日积劳成疾病逝于贵阳，葬于黔灵山基督教公墓（据贵阳市文旅局、据中新网）。</li>
+    <li><strong>定级保护</strong>：1999年列为贵阳市市级文保单位；2021年由省政府公布为贵州省第六批省级文保单位（增补）（据贵阳市文旅局、据贵州省人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>墓位于黔灵公园八角岩西麓半山，属中华圣公会墓地（基督教公墓），与梅光迪先生之墓比邻（<a href="https://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959441.html">据贵阳市文旅局</a>、据抖音百科）。</p>
+  <ul>
+    <li><strong>形制</strong>：墓座东向西，封土长约3米、宽约2.5米、高约1.5米（据贵阳市文旅局）。</li>
+    <li><strong>碑刻</strong>：墓前有碑，上刻"中华民国三十四年四月吉日"，中部刻"谢公六逸之墓"，左下刻"男：开荣，女：开志，华、德、明、新奉祀"（据贵阳市文旅局）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">谢六逸墓 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="44" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">黔灵公园 · 八角岩西麓半山</text>
+        <rect x="80" y="78" width="280" height="30" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="97" text-anchor="middle" fill="#8a4a1f" font-weight="700">中华圣公会墓地（基督教公墓）</text>
+        <rect x="120" y="116" width="200" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="129" text-anchor="middle" fill="#8a4a1f" font-weight="700">谢六逸墓（坐东向西·封土3×2.5×1.5m）</text>
+        <text x="220" y="143" text-anchor="middle" fill="#8a4a1f" font-size="8.5">墓前立"谢公六逸之墓"碑 · 与梅光迪墓比邻</text>
+        <text x="220" y="200" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 谢六逸墓布局示意：黔灵公园八角岩西麓半山 → 中华圣公会墓地（基督教公墓）→ 谢六逸墓（坐东向西·封土3×2.5×1.5m·墓前"谢公六逸之墓"碑·与梅光迪墓比邻）· 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、墓葬形制 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>墓葬形制</h2></div>
+  <ul>
+    <li><strong>封土墓</strong>：墓座东向西，封土长约3米、宽约2.5米、高约1.5米（据贵阳市文旅局）。</li>
+    <li><strong>墓前石碑</strong>：墓碑刻"谢公六逸之墓"，上款"中华民国三十四年四月吉日"，下款子女奉祀名（据贵阳市文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① "谢公六逸之墓"墓碑</strong>：墓前石碑，民国三十四年（1945年）立，记墓主与奉祀（据贵阳市文旅局）。</li>
+    <li><strong>② 八角岩墓地环境</strong>：处黔灵山八角岩西麓半山，与梅光迪墓比邻（据贵阳市文旅局、据抖音百科）。</li>
+    <li><strong>③ 名人纪念地</strong>：纪念中国新闻教育开拓者谢六逸，贵阳十大名人之一（据中新网、据云村寨）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>墓碑题刻</strong>：墓前石碑刻"谢公六逸之墓"，上刻"中华民国三十四年四月吉日"，左下刻子女奉祀名（<a href="https://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959441.html">据贵阳市文旅局</a>）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约20—30分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>贵阳市黔灵公园</strong>，循八角岩西麓半山方向；</li>
+    <li>至<strong>中华圣公会墓地</strong>（基督教公墓）区域；</li>
+    <li>寻<strong>谢六逸墓</strong>，观封土形制与"谢公六逸之墓"墓碑；</li>
+    <li>顺访比邻之<strong>梅光迪墓</strong>及周边名人墓后离场（据贵阳市文旅局、据抖音百科）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　墓地处黔灵山半山，环境清幽，凭吊名人、缅怀文脉（据贵阳市文旅局）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：谢六逸是中国新闻教育开拓者、著名文学家，其墓是近现代重要史迹与贵阳文化名人纪念地（据中新网、据澎湃新闻）。</li>
+    <li><strong>文化价值</strong>：2005年列入"贵阳十大名人"，墓为后人凭吊文脉之所（据中新网、据云村寨）。</li>
+    <li><strong>保护现状</strong>：1999年市级→2021年升为贵州省第六批省级文保单位（增补），现位于黔灵公园景区内（据贵州省人民政府、据贵阳市文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：贵州省贵阳市黔灵公园八角岩西麓半山中华圣公会墓地。</li>
+    <li><strong>开放状态</strong>：墓位于黔灵公园景区内，随公园开放，凭吊参观以景区安排为准（据贵阳市文旅局、据搜狐线索）。</li>
+    <li><strong>交通</strong>：位于黔灵山公园内，循八角岩西麓半山方向可达（据贵阳市文旅局）。</li>
+    <li><strong>提示</strong>：省级文保单位，凭吊时请爱护墓园、保持安静，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>贵州省人民政府《关于公布第六批省级文物保护单位（增补）的通知》：<a href="https://www.guizhou.gov.cn/zwgk/zcfg/szfwj/qff/202106/t20210629_70477311.html">guizhou.gov.cn</a></li>
+      <li>贵阳市文化和旅游局《谢六逸墓》：<a href="https://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959441.html">wlj.guiyang.gov.cn</a></li>
+      <li>中新网贵州《贵州肖像·历史人物：中国一代文化名人谢六逸》：<a href="http://www.gz.chinanews.com.cn/yjzy/2025-11-08/doc-ihewhxyt4629096.shtml">gz.chinanews.com.cn</a></li>
+      <li>澎湃新闻《中国新闻学教育开拓者——贵阳人谢六逸》：<a href="https://www.thepaper.cn/newsDetail_forward_29287517">thepaper.cn</a></li>
+      <li>贵州数字出版云村寨《贵阳的文学艺术家》：<a href="https://www.yuncunzhai.com/article/198702.jhtml">yuncunzhai.com</a></li>
+      <li>中共贵州省委党校《谢六逸：抗战烽烟里的文化脊梁》：<a href="https://www.gzdx.gov.cn/mhxl/19121">gzdx.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">一代报人 · 黔灵风骨</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

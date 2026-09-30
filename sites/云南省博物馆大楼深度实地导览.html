@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>云南省博物馆大楼深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M16 46 L48 46 L48 58 L16 58 Z' fill='%23f0d9a8'/%3E%3Crect x='24' y='14' width='16' height='34' fill='%23c05a1e'/%3E%3Cpath d='M24 18 L32 8 L40 18' fill='%23c05a1e'/%3E%3Ccircle cx='32' cy='6' r='2' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 近现代重要史迹 · 文化教育建筑</div>
+    <h1>云南省博物馆大楼（老馆）</h1>
+    <p class="sub">位于昆明市五华区<strong>五一路118号</strong>，是一座仿苏式建筑，1958年始建、1962年6月完工，为云南省国庆10周年献礼的十大建筑之一，<strong>"凸"字形立面、12根圆形石柱、俄罗斯式尖塔、顶部红星</strong>，通高65米，昆明市最重要的标志性建筑之一，<strong>云南省文物保护单位</strong>（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505642.shtml">据昆明市五华区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>云南省博物馆大楼（云南省博物馆老馆）</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省文物保护单位</strong></td></tr>
+      <tr><td>类别</td><td>近现代重要史迹（文化教育建筑及附属物）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市五华区五一路118号</td></tr>
+      <tr><td>始建年代</td><td>1958年始建，1962年6月完工，建筑面积6400平方米</td></tr>
+      <tr><td>建筑特色</td><td>仿苏式建筑，"凸"字形立面、12根圆形石柱、俄罗斯式尖塔、顶部红星，通高65米</td></tr>
+      <tr><td>历史意义</td><td>云南省为国庆10周年献礼的十大建筑之一，昆明市最重要的标志性建筑之一</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>建造</strong>：1958年始建，原定为军事博物馆，是云南省为国庆10周年献礼的十大建筑之一（据澎湃新闻、据昆明市五华区人民政府）。</li>
+    <li><strong>竣工启用</strong>：1962年6月竣工后作为云南省博物馆使用（据澎湃新闻）。</li>
+    <li><strong>标志建筑</strong>：上世纪50年代末修建的重要公共建筑，是昆明市最重要的标志性建筑之一（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505642.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>保护定级</strong>：列为云南省文物保护单位，被昆明市自然资源和规划局列入第二批保护历史建筑（2006年）（据昆明市自然资源和规划局）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>大楼为仿苏式建筑，立面总体呈"凸"字形（据昆明市五华区人民政府）。</p>
+  <ul>
+    <li><strong>下部大厅</strong>：舒展呈弧形，前廊设12根圆形石柱（据昆明市五华区人民政府）。</li>
+    <li><strong>中部塔楼</strong>：凸起二台方形塔楼，上立俄罗斯式尖塔，顶部置红星，模仿莫斯科克里姆林宫标志（据昆明市五华区人民政府、据澎湃新闻）。</li>
+    <li><strong>整体高度</strong>：通高65米，主楼七层（据昆明市五华区人民政府、据澎湃新闻）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">云南省博物馆大楼 · 立面示意</text>
+      <g font-size="9">
+        <text x="220" y="48" text-anchor="middle" fill="#8a4a1f" font-weight="700">红星</text>
+        <polygon points="220,56 224,68 232,72 224,76 220,88 216,76 208,72 216,68" fill="#c05a1e"/>
+        <rect x="196" y="90" width="48" height="22" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="104" text-anchor="middle" fill="#8a4a1f" font-weight="700">俄罗斯式尖塔</text>
+        <rect x="188" y="114" width="64" height="30" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="130" text-anchor="middle" fill="#8a4a1f" font-weight="700">方形塔楼</text>
+        <rect x="150" y="146" width="140" height="34" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="162" text-anchor="middle" fill="#8a4a1f" font-weight="700">主楼七层</text>
+        <text x="220" y="174" text-anchor="middle" fill="#8a6a40" font-size="8">立面呈"凸"字形</text>
+        <rect x="110" y="182" width="220" height="28" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="200" text-anchor="middle" fill="#8a4a1f" font-weight="700">弧形前廊 · 12根圆形石柱</text>
+        <text x="220" y="226" text-anchor="middle" fill="#8a6a40" font-size="8.5">仿苏式建筑 · 通高65米 · 建筑面积6400平方米</text>
+      </g>
+      <text x="220" y="242" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 云南省博物馆大楼立面示意：弧形前廊（12根圆形石柱）→ 主楼七层 → 方形塔楼 → 俄罗斯式尖塔 → 顶部红星 · 立面呈"凸"字形 · 通高65米 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>仿苏式建筑</strong>：整座大楼为上世纪50年代典型仿苏式公共建筑（据昆明市五华区人民政府）。</li>
+    <li><strong>"凸"字形立面</strong>：下部大厅舒展呈弧形，前廊设12根圆形石柱（据昆明市五华区人民政府）。</li>
+    <li><strong>俄罗斯式尖塔</strong>：中部凸起方形塔楼，上立俄罗斯式尖塔，顶部红星模仿莫斯科克里姆林宫标志（据澎湃新闻）。</li>
+    <li><strong>气势雄伟</strong>：通高65米，造型别致，气势雄伟（据昆明市五华区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 弧形前廊与12根石柱</strong>：下部大厅舒展呈弧形，前廊整齐排列12根圆形石柱（据昆明市五华区人民政府）。</li>
+    <li><strong>② 方形塔楼与俄罗斯式尖塔</strong>：中部凸起二台方形塔楼，上立俄罗斯式尖塔（据昆明市五华区人民政府）。</li>
+    <li><strong>③ 顶部红星</strong>：塔楼顶部红星模仿莫斯科克里姆林宫标志，为仿苏式建筑标志性元素（据澎湃新闻）。</li>
+    <li><strong>④ "凸"字形立面</strong>：整座建筑立面总体呈"凸"字形，通高65米，气势雄伟（据昆明市五华区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>馆名标识</strong>：大楼作为省博物馆老馆，立面设有馆名标识（据昆明市五华区人民政府）。</li>
+    <li><strong>文物标识碑</strong>：作为省级文保单位，设有保护标识与说明（据昆明市五华区文物管理所）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（视开放情况而定）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市五华区五一路118号</strong>；</li>
+    <li>观大楼<strong>弧形前廊与12根圆形石柱</strong>；</li>
+    <li>仰观<strong>方形塔楼、俄罗斯式尖塔与顶部红星</strong>；</li>
+    <li>远望整座"凸"字形立面，感受仿苏式建筑的雄伟气势后离场（据昆明市五华区人民政府、据澎湃新闻）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　云南省博物馆大楼为上世纪50年代末修建的重要公共建筑，是昆明最重要的标志性建筑之一；云南省博物馆现已迁至广福路新馆，老馆参观以官方最新公告为准（据昆明市五华区人民政府、据云南省博物馆）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：大楼为云南省为国庆10周年献礼的十大建筑之一，1962年起作为省博物馆使用，见证云南文博事业发展（据昆明市五华区人民政府、据澎湃新闻）。</li>
+    <li><strong>建筑价值</strong>：仿苏式公共建筑典型代表，"凸"字形立面、俄罗斯式尖塔、红星标志，具有较高历史纪念价值和建筑艺术价值（据昆明市五华区人民政府）。</li>
+    <li><strong>保护现状</strong>：列为云南省文物保护单位，列入第二批保护历史建筑（2006年）（据昆明市自然资源和规划局）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区五一路118号。</li>
+    <li><strong>开放状态</strong>：云南省博物馆已迁至官渡区广福路6393号新馆；老馆大楼参观以博物馆及文物主管部门官方最新公告为准（据云南省博物馆、据昆明市五华区人民政府）。</li>
+    <li><strong>交通</strong>：位于昆明市中心五一路，公交可达（据澎湃新闻）。</li>
+    <li><strong>提示</strong>：大楼为省级文物，参观时请爱护建筑；具体开放安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市五华区人民政府《云南省博物馆大楼（省级）》：<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505642.shtml">kmwh.gov.cn</a></li>
+      <li>昆明市五华区文物管理所《各级文物保护单位》：<a href="http://www.kmswhqbwzg.cn/m/Whgjww.go?titlee=%E4%BA%91%E5%8D%97%E7%9C%81%E5%8D%9A%E7%89%A9%E9%A6%86%E5%A4%A7%E6%A5%BC&genree=%E8%BF%91%E7%8E%B0%E4%BB%A3%E9%87%8D%E8%A6%81%E5%8F%B2%E8%AE%B0%E5%8F%8A%E4%BB%A3%E8%A1%A8%E6%80%A7%E5%BB%BA%E7%AD%91&sgenree=%E6%96%87%E5%8C%96%E6%95%99%E8%82%B2%E5%BB%BA%E7%AD%91%E5%8F%8A%E9%99%84%E5%B1%9E%E7%89%A9">kmswhqbwzg.cn</a></li>
+      <li>澎湃新闻《时光昆明｜昆明文化地标》：<a href="http://m.toutiao.com/group/7552812117812920867/">m.toutiao.com</a></li>
+      <li>昆明市自然资源和规划局《省博物馆（第二批保护历史建筑2006）》：<a href="https://zrzygh.km.gov.cn/c/2020-05-18/3533623.shtml">zrzygh.km.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">凸字楼台 · 红星照昆滇</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

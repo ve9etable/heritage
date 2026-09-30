@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冠英街古民居深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a7220'/%3E%3Cpath d='M16 14 L48 14 L48 20 L16 20 Z M18 24 L46 24 L46 50 L18 50 Z M14 30 L50 30 L50 36 L14 36 Z M24 20 L24 50 M40 20 L40 50' fill='%23c09b1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c09b1e;--brick-deep:#8a7220;--brick-soft:#d8b84a;
+    --gold:#b58a2e;--stone:#f2e8cf;--stone-2:#faf6ec;--paper:#fdfaf3;--line:#e6d9b0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f6f0dd;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6d98a;
+    border:1px solid rgba(230,217,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#ded3ae;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#f8efcf;}
+  .hero .sub a{color:#e6d98a;border-bottom-color:rgba(230,217,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6d98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f0da;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#e0d3a4;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#cfc49a;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6d98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">宜宾市市级文物保护单位 · 清末及民国古民居 · 省级历史文化街区</div>
+    <h1>冠英街古民居</h1>
+    <p class="sub">位于宜宾市翠屏区<strong>三江口合江门广场附近</strong>，清末及民国川南传统民居，街长204米，两进/三进四合院、青砖风火墙，<strong>宜宾市市级文物保护单位</strong>（2002年5月公布，另为四川省第二批历史文化街区）（<a href="https://www.cuiping.gov.cn/cpwl/wldt/202003/t20200327_1257725.html">据翠屏区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>冠英街古民居（冠英古街，原名"观音阁街"）</td></tr>
+      <tr><td>保护级别</td><td><strong>宜宾市市级文物保护单位</strong>（冠英街民居，2002年5月宜宾市人民政府公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（清末及民国古民居）</td></tr>
+      <tr><td>位置</td><td>宜宾市翠屏区，三江口宜宾城区合江门广场附近、戎州大桥北桥头</td></tr>
+      <tr><td>街况</td><td>街长204米、宽3.5米，青石板路</td></tr>
+      <tr><td>叠加身份</td><td>四川省第二批历史文化街区（2010年）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>建街</strong>：冠英街建于明代，因街东北部建"观音阁"得名"观音阁街"，清代香火不断、成为城中佛教重要场所（<a href="http://dfz.yibin.gov.cn/ybdq/ybss/201902/t20190225_607253.html">据中共宜宾市委党史研究室</a>）。</li>
+    <li><strong>鼎盛</strong>：清末民初建成后，鼎盛时期有40多个院子，住盐商、药材商、银行家等知名商人（据宜宾市人民政府）。</li>
+    <li><strong>更名</strong>：1940年以"观音阁"谐音取名冠英街并沿用至今（据宜宾市人民政府、据翠屏区人民政府）。</li>
+    <li><strong>保护定级</strong>：20世纪60年代列为县级市文物保护单位；2002年5月公布为市级文物保护单位（据四川新闻网、据翠屏区人民政府）。</li>
+    <li><strong>历史文化街区</strong>：2010年冠英古街入选四川省第二批历史文化街区（据宜宾市人民政府）。</li>
+    <li><strong>修缮利用</strong>：2020年翠屏区政府对冠英街进行改造修缮，2021年起部分民居活化利用（据翠屏区人民政府、据宜宾市住建局）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>冠英街为东西南北走向的晚清民国古街，位于合江门广场西南侧（<a href="https://www.cuiping.gov.cn/cpwl/wldt/202003/t20200327_1257725.html">据翠屏区人民政府</a>）。</p>
+  <ul>
+    <li><strong>街道</strong>：长204米、宽3.5米的青石板路，两侧为保存较好的清末及民国古民居（据中共宜宾市委党史研究室、据宜宾市人民政府）。</li>
+    <li><strong>院落</strong>：多为两进或三进的四合院（复四合院），北侧多平房、南侧多一楼一底楼房（据翠屏区人民政府、据四川新闻网）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a7220">冠英街古民居 · 布局示意</text>
+      <g font-size="9">
+        <rect x="60" y="44" width="110" height="26" rx="4" fill="#f2e8cf" stroke="#c09b1e" stroke-width="2"/>
+        <text x="115" y="61" text-anchor="middle" fill="#8a7220" font-weight="700">合江门广场</text>
+        <rect x="190" y="44" width="110" height="26" rx="4" fill="#f2e8cf" stroke="#c09b1e" stroke-width="2"/>
+        <text x="245" y="61" text-anchor="middle" fill="#8a7220" font-weight="700">戎州大桥北桥头</text>
+        <rect x="60" y="86" width="320" height="34" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="220" y="100" text-anchor="middle" fill="#8a7220" font-weight="700">冠英街 · 青石板路（长204米 · 宽3.5米）</text>
+        <text x="220" y="114" text-anchor="middle" fill="#8a7220" font-size="8">两侧两进/三进四合院 · 北平房 · 南一楼一底</text>
+        <rect x="60" y="128" width="150" height="28" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <text x="135" y="146" text-anchor="middle" fill="#fff" font-weight="700">10号 · 33号 · 35号（复四合院）</text>
+        <rect x="230" y="128" width="150" height="28" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <text x="305" y="146" text-anchor="middle" fill="#fff" font-weight="700">26号民居 · 14号院</text>
+        <text x="220" y="200" text-anchor="middle" font-size="8.5" fill="#8a7a40">街两端：明代古城墙 · 唐代花台寺石刻 · 按公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 冠英街古民居布局示意：合江门广场 → 戎州大桥北桥头 → 冠英街·青石板路（长204米·宽3.5米，两侧两进/三进四合院·北平房·南一楼一底）→ 10号·33号·35号复四合院 / 26号民居·14号院 → 街两端明代古城墙·唐代花台寺石刻 · 按公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>川南传统民居</strong>：硬山式小青瓦屋面、青砖风火墙（几字形、八字形）、花格棂窗、木板墙，为典型川南民居（据澎湃新闻、据四川新闻网、据宜宾市人民政府）。</li>
+    <li><strong>结构</strong>：多为穿斗结构，35号后厅为抬梁式建筑；屋顶小青瓦覆顶（据宜宾市人民政府、据四川新闻网）。</li>
+    <li><strong>院制</strong>：多为两进/三进复四合院，走马转角，临街为悬山式石柱墙斗门，门设石门墩及小石狮（据宜宾市人民政府、据网易、据携程）。</li>
+    <li><strong>装饰</strong>：室内照壁、雀替、撑拱、窗棂等构件镂空或浮雕、描金赋彩（据网易）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 保存最完整的古民居（10号、33号、35号）</strong>：均由前、中、后厅组成复四合院，占地536、317、247平方米（<a href="https://www.yibin.gov.cn/bsfw/fwzx/wtxx/ggwhss/201511/t20151123_72519.html">据宜宾市人民政府</a>）。</li>
+    <li><strong>② 风火墙与雕花窗棂</strong>：几字形、八字形青砖风火墙，花格棂窗、木板墙，门窗雕刻精致（据澎湃新闻、据翠屏区人民政府）。</li>
+    <li><strong>③ 石柱大门与门楼</strong>：临街石柱墙斗门，石朝门、栅子门，门外石门墩及小石狮（据网易、据携程）。</li>
+    <li><strong>④ 历史建筑实例</strong>：冠英街26号民居（明末清初川南民居）、14号院（民国宅院）（据宜宾市住建局）。</li>
+    <li><strong>⑤ 街区两端古迹</strong>：明代古城墙与唐代花台寺石刻与之相映（据翠屏区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>门额匾额</strong>：街中一街户门额塑"墨庄遗庆"横匾（据新浪博客）。</li>
+    <li><strong>石狮与石门墩</strong>：临街门外设石门墩及小石狮石像（据网易）。</li>
+    <li><strong>街端古迹</strong>：街区两端有明代古城墙与唐代花台寺石刻（据翠屏区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约40—70分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>宜宾市翠屏区合江门广场/戎州大桥北桥头</strong>，入冠英街（据宜宾市人民政府）；</li>
+    <li>沿<strong>青石板路</strong>自东向西，观两侧<strong>两进/三进四合院</strong>与<strong>青砖风火墙</strong>、小青瓦屋面；</li>
+    <li>重点看<strong>10号、33号、35号</strong>保存最完整的复四合院及<strong>26号民居、14号院</strong>（据宜宾市人民政府、据宜宾市住建局）；</li>
+    <li>细赏<strong>石柱大门、雕花窗棂</strong>与门额题匾，至街两端看<strong>明代古城墙、唐代花台寺石刻</strong>后离场（据翠屏区人民政府、据网易）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　街区改造后部分院落为餐饮、文创、非遗体验等活化利用，具体以现场为准（据宜宾市住建局、据抖音）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：市区内保存较为完整的晚清民国古街，在地方民居建筑和民国史研究中具重要参考价值（据翠屏区人民政府）。</li>
+    <li><strong>建筑价值</strong>：川南传统民居典范，穿斗结构、风火墙、雕花窗棂等保存完好（据澎湃新闻、据四川新闻网）。</li>
+    <li><strong>保护现状</strong>：市级文物保护单位 + 省级历史文化街区；2019—2020年修缮、2021年活化利用（据翠屏区人民政府、据宜宾市住建局）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：四川省宜宾市翠屏区合江门广场附近冠英街（戎州大桥北桥头）。</li>
+    <li><strong>开放状态</strong>：冠英古街为开放街区，可自由穿行，个别院落为商业/文创空间，具体以现场及官方公告为准（据翠屏区人民政府、据宜宾市住建局）。</li>
+    <li><strong>交通</strong>：位于宜宾老城区三江口合江门，可乘公交至合江门/戎州大桥附近（据宜宾市人民政府）。</li>
+    <li><strong>提示</strong>：市级文保单位，参观时请爱护古建，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>翠屏区人民政府《冠英街建设项目（一期）文物保护本体修缮工程通过专家验收》：<a href="https://www.cuiping.gov.cn/cpwl/wldt/202003/t20200327_1257725.html">cuiping.gov.cn</a></li>
+      <li>中共宜宾市委党史研究室《经历了100多年繁华的冠英街》：<a href="http://dfz.yibin.gov.cn/ybdq/ybss/201902/t20190225_607253.html">dfz.yibin.gov.cn</a></li>
+      <li>宜宾市人民政府《今年下半年 与冠英古街"重逢"！》：<a href="https://www.yibin.gov.cn/xxgk/jryb/tpbd/202004/t20200430_1269677.html">yibin.gov.cn</a></li>
+      <li>宜宾市人民政府《宜宾合江门 打造文化历史古街》：<a href="https://www.yibin.gov.cn/bsfw/fwzx/wtxx/ggwhss/201511/t20151123_72519.html">yibin.gov.cn</a></li>
+      <li>翠屏区人民政府《看懂冠英古街》：<a href="https://www.cuiping.gov.cn/zjcp/tpcp/202201/t20220104_1687964_wap.html">cuiping.gov.cn</a></li>
+      <li>四川新闻网宜宾频道《冠英街：坐落江边的"人间烟火"》：<a href="https://yb.newssc.org/system/20250217/003572118.html">yb.newssc.org</a></li>
+      <li>宜宾市住房和城乡建设局《宜宾市第二批历史建筑建议名单公示》：<a href="http://jsj.yibin.gov.cn/tzgg/202310/t20231008_1911672.html">jsj.yibin.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">三江合江 · 川南民居典范</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

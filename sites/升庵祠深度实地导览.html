@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>升庵祠（杨升庵祠）深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M16 18 L48 18 L48 50 L16 50 Z' fill='%23f0d9a8'/%3E%3Cpath d='M16 24 L32 20 L48 24 Z' fill='%23c05a1e'/%3E%3Crect x='26' y='20' width='12' height='4' rx='1' fill='%238a4a1f'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 古建筑 · 纪念建筑</div>
+    <h1>升庵祠（杨升庵祠）</h1>
+    <p class="sub">位于昆明市西山区<strong>碧鸡街道高峣村</strong>（西山森林公园内、滇池之滨），原为<strong>"碧峣精舍"</strong>，明万历年间改建为纪念明代状元<strong>杨升庵</strong>之祠，1987年公布为<strong>云南省重点文物保护单位</strong>，现为杨升庵纪念馆（<a href="http://www.kmxs.gov.cn/c/2022-07-15/6068039.shtml">据西山区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>升庵祠（杨升庵祠），现为杨升庵纪念馆</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省重点文物保护单位</strong>（1987年12月21日公布）</td></tr>
+      <tr><td>类别</td><td>古建筑（纪念建筑）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市西山区碧鸡街道高峣村（西山森林公园内、滇池之滨）</td></tr>
+      <tr><td>始建年代</td><td>原为"碧峣精舍"（毛氏私家庭院），明万历年间改建为纪念杨慎之祠</td></tr>
+      <tr><td>纪念人物</td><td>杨慎（杨升庵，1488—1559），明代状元，因"大礼议"被贬流放云南35年，终老滇地</td></tr>
+      <tr><td>叠加身份</td><td>省级爱国主义教育基地、西山国家级风景名胜区人文景观</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>碧峣精舍</strong>：升庵祠原为"碧峣精舍"，系高峣人毛氏的私家庭院（<a href="http://www.kmxs.gov.cn/c/2022-07-15/6068039.shtml">据西山区人民政府</a>）。</li>
+    <li><strong>杨慎入主</strong>：1537年（明嘉靖十六年），杨升庵买下碧峣精舍，改造为"紫翠山房"，在此读书、著书、讲学（据抖音、据云南网）。</li>
+    <li><strong>建祠纪念</strong>：明万历年间，后人将其旧居改建为纪念杨慎的"太史祠"，供奉其塑像；咸丰年间重修后，因杨慎号升庵而定名"升庵祠"（据云南网、据抖音百科）。</li>
+    <li><strong>历代重修</strong>：清康熙二十八年（1689年）、光绪七年（1881年）两次重修；民国初年，李根源、蔡锷驾舟到祠拜访并同宿于祠（<a href="https://m.yunnan.cn/system/2020/08/18/030893443.shtml">据云南网</a>）。</li>
+    <li><strong>设馆与定级</strong>：1986年昆明市政府依原貌修复；1987年重修设立"杨升庵纪念馆"，原普贤寺部分设"徐霞客纪念馆"；1987年12月21日公布为云南省重点文物保护单位，1989年10月正式开馆（<a href="https://m.yunnan.cn/system/2020/08/18/030893443.shtml">据云南网</a>、据昆明西山发布）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>升庵祠依山势而建，背靠西山、面临滇池，主体建筑由<strong>两个坐西向东的四合院并联组成</strong>，南面是升庵祠，北面是现作为徐霞客纪念馆的普贤寺旧址（<a href="http://www.kmxs.gov.cn/c/2022-07-15/6068039.shtml">据西山区人民政府</a>）。</p>
+  <ul>
+    <li><strong>门楼</strong>：大门口有一对斑驳的石狮子，历经风雨依然威严挺立（<a href="https://m.yunnan.cn/system/2025/08/26/033606874.shtml">据云南网</a>）。</li>
+    <li><strong>大殿</strong>：单檐歇山共五间，长19.8米、宽10米，占地200平方米（据美篇）。</li>
+    <li><strong>天井</strong>：相传有杨升庵所植的一对香椽树（据美篇）。</li>
+    <li><strong>正殿及两侧厢房</strong>：设"杨升庵纪念馆"展览（<a href="https://m.yunnan.cn/system/2020/08/18/030893443.shtml">据云南网</a>）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">升庵祠 · 布局示意</text>
+      <g font-size="9">
+        <path d="M40,50 L400,50 L400,255 L40,255 Z" fill="none" stroke="#c05a1e" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="220" y="45" text-anchor="middle" fill="#8a4a1f">昆明西山森林公园 · 滇池之滨 · 高峣村</text>
+        <rect x="100" y="60" width="220" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="77" text-anchor="middle" fill="#8a4a1f" font-weight="700">升庵祠大门（一对石狮）</text>
+        <rect x="60" y="98" width="320" height="46" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="114" text-anchor="middle" fill="#8a4a1f" font-weight="700">四合院 · 升庵祠（坐西向东）</text>
+        <text x="210" y="132" text-anchor="middle" fill="#8a6a40" font-size="8">大殿（单檐歇山·塑像）· 配殿 · 天井（香椽树）· 厢房</text>
+        <rect x="60" y="156" width="320" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="172" text-anchor="middle" fill="#8a4a1f" font-weight="700">杨升庵纪念馆（7部分生平展）</text>
+        <text x="210" y="186" text-anchor="middle" fill="#8a6a40" font-size="8">坎坷经历 · 充军云南 · 德惠边疆 · 炳耀南天等</text>
+        <rect x="60" y="202" width="320" height="28" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="220" text-anchor="middle" fill="#8a4a1f" font-weight="700">北侧 · 普贤寺旧址（徐霞客纪念馆）</text>
+      </g>
+      <text x="220" y="246" text-anchor="middle" font-size="9" fill="#8a6a40">大门（石狮）→ 四合院·升庵祠（大殿·天井·厢房）→ 北侧普贤寺旧址（徐霞客纪念馆）</text>
+      <text x="220" y="268" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 升庵祠布局示意：大门（石狮）→ 四合院·升庵祠（大殿·天井·香椽树·厢房）→ 北侧普贤寺旧址（徐霞客纪念馆），两院并联 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>中式庭院</strong>：三院三殿的中式庭院，背靠西山、面临滇池，旁有清泉，花木繁盛、幽雅秀丽（据抖音百科）。</li>
+    <li><strong>土木结构</strong>：升庵祠为土木结构建筑，由门楼、大殿、配殿等构成（据抖音）。</li>
+    <li><strong>大殿梁架</strong>：单檐歇山五间，梁架为六架式斗式结构，檐下为斗拱，六抹隔扇门，腰串板上雕有如意花草和暗八仙图案，彩画一新、富丽堂皇（据美篇）。</li>
+    <li><strong>并联四合院</strong>：主体为两个坐西向东的四合院并联组成，格局谨严（<a href="http://www.kmxs.gov.cn/c/2022-07-15/6068039.shtml">据西山区人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 杨升庵纪念馆</strong>：展览由"坎坷经历""光彩人生""充军云南""漂游天涯""德惠边疆""伟业丰功""炳耀南天"7部分组成，记录杨升庵在云南的数十年时光（<a href="https://m.yunnan.cn/system/2020/08/18/030893443.shtml">据云南网</a>）。</li>
+    <li><strong>② 大殿塑像</strong>：大殿供奉杨升庵塑像（据抖音）。</li>
+    <li><strong>③ 香椽树</strong>：天井相传为杨升庵所植的一对香椽树（据美篇）。</li>
+    <li><strong>④ 大殿斗拱木作</strong>：单檐歇山五间，六架式斗式结构、斗拱与隔扇门，腰串板雕如意花草和暗八仙图案（据美篇）。</li>
+    <li><strong>⑤ 徐霞客纪念馆</strong>：北面普贤寺旧址现为徐霞客纪念馆，纪念徐霞客与云南渊源（<a href="http://www.kmxs.gov.cn/c/2022-07-15/6068039.shtml">据西山区人民政府</a>、据昆明信息港）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>诗碑林立</strong>：三院三殿的庭院里古木森森、诗碑林立（据昆明西山发布）。</li>
+    <li><strong>石狮</strong>：大门口一对斑驳的石狮子，历经风雨依然威严挺立（<a href="https://m.yunnan.cn/system/2025/08/26/033606874.shtml">据云南网</a>）。</li>
+    <li><strong>塑像与题刻</strong>：祠内供奉杨升庵塑像，并有多处纪念杨慎的诗文题刻（据抖音、据作家网）。</li>
+    <li>注：祠内具体楹联匾额条目以现场为准。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约40—60分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市西山区碧鸡街道高峣村</strong>（西山森林公园内，公交94路至高峣站步行约800米）；</li>
+    <li>观<strong>升庵祠大门</strong>石狮；</li>
+    <li>入<strong>四合院</strong>，观天井<strong>香椽树</strong>；</li>
+    <li>观<strong>大殿</strong>（杨升庵塑像·斗拱隔扇门·木作雕饰）；</li>
+    <li>参观<strong>杨升庵纪念馆</strong>（7部分生平展）；</li>
+    <li>北侧<strong>徐霞客纪念馆</strong>（普贤寺旧址）后离场（<a href="http://www.kmxs.gov.cn/c/2022-07-15/6068039.shtml">据西山区人民政府</a>、据云南网）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　升庵祠为纪念明代状元杨慎流放云南35年、终老滇地的纪念建筑，宜静观其生平展览与园林古木（<a href="https://m.yunnan.cn/system/2020/08/18/030893443.shtml">据云南网</a>）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：升庵祠纪念明代状元、因"大礼议"被贬流放云南35年的杨升庵，是研究杨慎生平与滇文化的重要史迹（<a href="https://m.yunnan.cn/system/2020/08/18/030893443.shtml">据云南网</a>）。</li>
+    <li><strong>艺术价值</strong>：大殿单檐歇山、斗式梁架、斗拱隔扇门与暗八仙雕饰，为清代重修保存的古建木作精品（据美篇）。</li>
+    <li><strong>保护现状</strong>：1987年公布为云南省重点文保；1987年重修设杨升庵纪念馆、徐霞客纪念馆，1989年开馆；现由昆明市升庵祠文物管理所管理，坚持免费开放（<a href="https://m.yunnan.cn/system/2020/08/18/030893443.shtml">据云南网</a>、据昆明市文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市西山区碧鸡街道高峣村（西山森林公园内）。</li>
+    <li><strong>开放时间</strong>：据全国博物馆年度报告，开放时间为周二至周日9:00—17:00（周一闭馆）；具体以升庵祠文物管理所及官方最新公告为准（据全国博物馆年度报告信息系统）。</li>
+    <li><strong>门票</strong>：免费开放（<a href="http://m.whhlyj.km.gov.cn/c/2026-03-03/5061061.shtml">据昆明市文旅局</a>）。</li>
+    <li><strong>交通</strong>：乘公交94路至"高峣"站，沿西山景区方向步行约800米；或地铁3号线至终点高峣站步行约1公里（据昆明西山发布、据去哪儿）。</li>
+    <li><strong>提示</strong>：祠为省级文物，参观请保持肃穆；具体开放时间、区域以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市西山区人民政府《云南省文物保护单位：升庵祠》：<a href="http://www.kmxs.gov.cn/c/2022-07-15/6068039.shtml">kmxs.gov.cn</a></li>
+      <li>云南网《滇池之滨升庵祠》：<a href="https://m.yunnan.cn/system/2020/08/18/030893443.shtml">m.yunnan.cn</a></li>
+      <li>云南网《清风文苑 | 游升庵祠》：<a href="https://m.yunnan.cn/system/2025/08/26/033606874.shtml">m.yunnan.cn</a></li>
+      <li>昆明市文化和旅游局《昆明市聂耳墓文物管理所（昆明市升庵祠文物管理所）预算公开》：<a href="http://m.whhlyj.km.gov.cn/c/2026-03-03/5061061.shtml">whhlyj.km.gov.cn</a></li>
+      <li>全国博物馆年度报告信息系统《昆明杨升庵纪念馆》：<a href="http://nb.ncha.gov.cn/museumdetail.html?msg=d447fc22aa3e442d86cd053b0686f771&nianfen=2022">nb.ncha.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">太史遗风 · 炳耀南天</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国人民解放军莅昆纪念门深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a7220'/%3E%3Cpath d='M12 40 L52 40 L52 46 L12 46 Z M14 30 L26 30 L26 52 L14 52 Z M32 24 L44 24 L44 52 L32 52 Z M50 22 L56 22 L56 52 L50 52 Z' fill='%23c09b1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c09b1e;--brick-deep:#8a7220;--brick-soft:#d8b84a;
+    --gold:#b58a2e;--stone:#f2e8cf;--stone-2:#faf6ec;--paper:#fdfaf3;--line:#e6d9b0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f6f0dd;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6d98a;
+    border:1px solid rgba(230,217,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#ded3ae;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#f8efcf;}
+  .hero .sub a{color:#e6d98a;border-bottom-color:rgba(230,217,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6d98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f0da;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#e0d3a4;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#cfc49a;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6d98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">昆明市市级文物保护单位 · 近现代重要史迹 · 革命纪念建筑</div>
+    <h1>中国人民解放军莅昆纪念门</h1>
+    <p class="sub">位于昆明市盘龙区<strong>拓东路云南省体育局办公大楼前</strong>（原拓东体育场大门），1950年1月由昆明地区营造商业联合会为欢迎解放军入昆而筑献，由六个长方体门柱呈"一"字排列组成，<strong>昆明市市级文物保护单位</strong>（2011年第五批公布）（<a href="http://kmds.km.gov.cn/c/2018-08-21/2715580.shtml">据昆明市委党史研究室</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>中国人民解放军莅昆纪念门</td></tr>
+      <tr><td>保护级别</td><td><strong>昆明市市级文物保护单位</strong>（2011年昆明市第五批公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（革命纪念建筑）</td></tr>
+      <tr><td>位置</td><td>昆明市盘龙区拓东路云南省体育局办公大楼前（原拓东体育场大门）</td></tr>
+      <tr><td>年代</td><td>建于1950年1月</td></tr>
+      <tr><td>形制</td><td>由六个长方体门柱呈"一"字排列组成</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>背景</strong>：1949年12月9日，国民党云南省政府主席、云南绥靖公署主任卢汉响应中国共产党的号召率部起义，实现昆明和平解放（<a href="http://kmds.km.gov.cn/c/2018-08-21/2715580.shtml">据昆明市委党史研究室</a>）。</li>
+    <li><strong>筑门</strong>：1950年1月，为举行欢迎人民解放军莅昆大会，由昆明地区营造商业联合会筑献（据昆明信息港、据昆明市委党史研究室）。</li>
+    <li><strong>入城</strong>：1950年2月20日，陈赓、宋任穷率部进驻昆明；2月22日在拓东体育场召开昆明各界人士大会，军民经纪念门入场（据昆明信息港、据昆明市委党史研究室）。</li>
+    <li><strong>定级</strong>：2011年市政府确定为市级文物保护单位（据昆明市人民政府、据昆明市纪委市监委）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>中国人民解放军莅昆纪念门位于拓东路云南省体育局办公大楼前，为原拓东体育场大门（<a href="http://kmds.km.gov.cn/c/2018-08-21/2715580.shtml">据昆明市委党史研究室</a>、据昆明市纪委市监委）。</p>
+  <ul>
+    <li><strong>门柱</strong>：六个长方体门柱呈"一"字横排，造型简洁大方；门柱临街一面设绿化带（据昆明市纪委市监委、据昆明信息港）。</li>
+    <li><strong>碑铭</strong>：居中东侧门柱内侧镶嵌有碑铭，上刻"欢迎人民解放大军莅昆纪念"等字（据昆明市纪委市监委）。</li>
+    <li><strong>位移</strong>：因城市建设需要，纪念门在原址稍向西移动，外形未变（据昆明市纪委市监委）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a7220">中国人民解放军莅昆纪念门 · 布局示意</text>
+      <g font-size="9">
+        <rect x="60" y="44" width="320" height="26" rx="4" fill="#f2e8cf" stroke="#c09b1e" stroke-width="2"/>
+        <text x="220" y="61" text-anchor="middle" fill="#8a7220" font-weight="700">拓东路 · 云南省体育局办公大楼前（原拓东体育场大门）</text>
+        <rect x="70" y="86" width="46" height="52" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <rect x="124" y="86" width="46" height="52" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <rect x="178" y="86" width="46" height="52" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <rect x="232" y="86" width="46" height="52" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <rect x="286" y="86" width="46" height="52" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <text x="93" y="120" text-anchor="middle" fill="#fff" font-weight="700">门</text>
+        <text x="147" y="120" text-anchor="middle" fill="#fff" font-weight="700">门</text>
+        <text x="201" y="120" text-anchor="middle" fill="#ffe9b8" font-size="7.5" font-weight="700">碑铭</text>
+        <text x="255" y="120" text-anchor="middle" fill="#fff" font-weight="700">门</text>
+        <text x="309" y="120" text-anchor="middle" fill="#fff" font-weight="700">门</text>
+        <text x="220" y="154" text-anchor="middle" font-size="8.5" fill="#8a7a40">六个长方体门柱呈"一"字排列 · 居中东侧门柱内侧嵌碑铭</text>
+        <text x="220" y="172" text-anchor="middle" font-size="8.5" fill="#8a7a40">门柱与空地共安置5块石质碑刻</text>
+        <text x="220" y="188" text-anchor="middle" font-size="8.5" fill="#8a7a40">按公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 中国人民解放军莅昆纪念门布局示意：拓东路·云南省体育局办公大楼前（原拓东体育场大门）→ 六个长方体门柱呈"一"字排列（居中东侧门柱内侧嵌碑铭"欢迎人民解放大军莅昆纪念"）· 门柱与空地共安置5块石质碑刻 · 按公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑特色（近现代纪念建筑）</h2></div>
+  <ul>
+    <li><strong>形制</strong>：六个长方体门柱"一"字排列，造型简洁大方（据昆明市纪委市监委）。</li>
+    <li><strong>材质</strong>：水泥柱，保留黄色粉刷（据昆明信息港）。</li>
+    <li><strong>碑铭</strong>：中东侧门柱内侧镶嵌青石碑铭，刻"欢迎人民解放大军莅昆纪念"（据昆明市纪委市监委）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 六柱门坊</strong>：六个长方体门柱呈"一"字排列的原拓东体育场大门（据昆明市纪委市监委）。</li>
+    <li><strong>② 碑铭</strong>：中东侧门柱内侧镶嵌的"欢迎人民解放大军莅昆纪念"碑铭（据昆明市纪委市监委）。</li>
+    <li><strong>③ 石质碑刻</strong>：门柱上和前面空地安置的5块石质碑刻，述昆明解放史（据昆明市纪委市监委）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>"欢迎人民解放大军莅昆纪念"碑铭</strong>：居中东侧门柱内侧镶嵌（据昆明市纪委市监委）。</li>
+    <li><strong>石质碑刻</strong>：纪念门门柱上和前面空地共安置5块石质碑刻，记录解放军莅昆、昆明和平解放史实（据昆明市纪委市监委）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约20—30分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市盘龙区拓东路云南省体育局办公大楼前</strong>；</li>
+    <li>观<strong>六个长方体门柱呈"一"字排列</strong>的纪念门，看中东侧门柱内侧<strong>"欢迎人民解放大军莅昆纪念"碑铭</strong>；</li>
+    <li>读门柱与空地<strong>5块石质碑刻</strong>，了解1950年2月解放军入城、拓东体育场欢迎大会与昆明和平解放史事后离场（据昆明市委党史研究室、据昆明市纪委市监委）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　纪念门现为云南省体育局大门，位于闹市区，观览便利（据昆明信息港）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：昆明人民欢迎解放军莅临昆明、欢庆昆明和平解放的历史见证（据昆明信息港）。</li>
+    <li><strong>纪念意义</strong>：1950年2月陈赓、宋任穷率部进驻昆明，纪念门为入城历史节点（据昆明市委党史研究室、据昆明市纪委市监委）。</li>
+    <li><strong>保护现状</strong>：市级文保单位（2011年）；已划保护范围与建设控制地带（据昆明市人民政府、据昆明市纪委市监委）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市盘龙区拓东路云南省体育局办公大楼前。</li>
+    <li><strong>开放状态</strong>：纪念门位于拓东路旁，为露天纪念建筑，可随时观览，具体以现场及官方公告为准（据昆明信息港）。</li>
+    <li><strong>交通</strong>：位于昆明市区拓东路，毗邻昆明市博物馆，可乘公交或地铁步行前往（据昆明信息港）。</li>
+    <li><strong>提示</strong>：市级文保单位，参观时请文明守礼，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市委党史研究室《解放军莅昆纪念门旧址》：<a href="http://kmds.km.gov.cn/c/2018-08-21/2715580.shtml">kmds.km.gov.cn</a></li>
+      <li>昆明市纪委市监委《昆明红色记忆之解放军莅昆》：<a href="http://jw.km.gov.cn/c/2023-05-15/4731799.shtml">jw.km.gov.cn</a></li>
+      <li>昆明市人民政府《关于公布第五批市级文物保护单位的通知》：<a href="https://www.km.gov.cn/c/2011-01-24/3776125.shtml">km.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">六柱一门 · 见证昆明解放</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

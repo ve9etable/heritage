@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>法华寺石窟深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M10 44 L32 10 L54 44 Z' fill='%23f0d9a8'/%3E%3Crect x='18' y='44' width='28' height='10' rx='2' fill='%23c05a1e'/%3E%3Ccircle cx='32' cy='30' r='4' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 石窟寺及石刻 · 宋（大理国）石窟群</div>
+    <h1>法华寺石窟（安宁）</h1>
+    <p class="sub">位于昆明安宁市城东洛阳山，开凿于<strong>宋（大理国）时期</strong>，是云南继剑川石钟山石窟后时代较早的<strong>第二大石窟群</strong>；以整山红砂岩就地雕凿的<strong>释迦涅槃卧佛</strong>（长4.3米）与十八罗汉著称，1965年公布为<strong>云南省重点文物保护单位</strong>（<a href="http://news.cctv.com/2016/10/11/ARTI0hu4byls11IJI8zBIVhl161011.shtml">据央视网</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>法华寺石窟（原名"睡佛寺"）</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省省级重点文物保护单位</strong>（1965年云南省人民政府公布）</td></tr>
+      <tr><td>类别</td><td>石窟寺及石刻（宋·大理国时期佛教石窟群）</td></tr>
+      <tr><td>地址</td><td>云南省昆明市安宁市城东5公里小桃花村洛阳山（青龙山），距昆明市区约30公里</td></tr>
+      <tr><td>年代</td><td>开凿于宋（大理国）时期，蒙元时期仍有余绪</td></tr>
+      <tr><td>规模</td><td>共4组29窟、造像21尊，多为一龛一佛，有4窟无造像</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>开凿年代</strong>：法华寺石窟开凿于宋（大理国）时期，为云南继剑川石钟山石窟后时代较早的第二大石窟群（<a href="http://news.cctv.com/2016/10/11/ARTI0hu4byls11IJI8zBIVhl161011.shtml">据央视网</a>）。</li>
+    <li><strong>历史地位</strong>：曾为滇中地区佛教胜地，原名睡佛寺；中国古代少数民族地区为数不多的石窟艺术之一，也是研究云南省佛教文化的重要资料（据抖音百科、据中国新闻网）。</li>
+    <li><strong>定级保护</strong>：1965年被云南省人民政府公布为省级重点文物保护单位（<a href="http://news.cctv.com/2016/10/11/ARTI0hu4byls11IJI8zBIVhl161011.shtml">据央视网</a>）。</li>
+    <li><strong>保护动态</strong>：2016年佛像损毁引发社会关注；据2021年报道，法华寺石窟抢救性保护工程年内开工（<a href="https://view.inews.qq.com/a/20210418A016CL00">据腾讯网</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>法华寺石窟依洛阳山红砂石绝壁修建，造像分别刻于<strong>东、南两岩</strong>（另有"西岩"之说），从东崖至南崖共4组29窟（<a href="http://www.rmzxb.com.cn/c/2016-10-19/1091085.shtml?n2m=1">据人民政协网</a>、据抖音百科）。岩下石壁刻"晚照"二字（清康熙时所加）（<a href="http://www.rmzxb.com.cn/c/2016-10-19/1091085.shtml?n2m=1">据人民政协网</a>）。</p>
+  <ul>
+    <li><strong>第一处</strong>：雕地藏菩萨及观音造像（<a href="https://view.inews.qq.com/a/20210418A016CL00">据腾讯网</a>）；</li>
+    <li><strong>第二处</strong>：十八罗汉，分列上、中、下三层（<a href="https://view.inews.qq.com/a/20210418A016CL00">据腾讯网</a>）；</li>
+    <li><strong>第三处</strong>：原有造像三窟，有一窟雕佛及菩萨像（<a href="https://view.inews.qq.com/a/20210418A016CL00">据腾讯网</a>）；</li>
+    <li><strong>第四处</strong>：雕释迦苦行、牧女献乳、青牛负经、释迦摩尼涅槃等佛教造像以及禹王碑（据抖音百科）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">法华寺石窟 · 布局示意（洛阳山崖壁）</text>
+      <g font-size="9">
+        <path d="M40,60 L400,60 L400,250 L40,250 Z" fill="none" stroke="#c05a1e" stroke-width="3"/>
+        <text x="220" y="50" text-anchor="middle" fill="#8a4a1f" font-weight="700">洛阳山红砂岩绝壁（东崖 · 南崖）</text>
+        <text x="60" y="84" text-anchor="start" fill="#8a6a40">自东崖至南崖 · 共4组29窟</text>
+        <rect x="90" y="96" width="120" height="26" rx="3" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="150" y="113" text-anchor="middle" fill="#8a4a1f" font-weight="700">第一处 · 地藏菩萨·观音</text>
+        <rect x="90" y="128" width="120" height="34" rx="3" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="150" y="142" text-anchor="middle" fill="#8a4a1f" font-weight="700">第二处 · 十八罗汉</text>
+        <text x="150" y="154" text-anchor="middle" fill="#8a6a40" font-size="8">上中下三层 · "晚照"题字</text>
+        <rect x="90" y="168" width="120" height="24" rx="3" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="150" y="184" text-anchor="middle" fill="#8a4a1f" font-weight="700">第三处 · 三窟造像</text>
+        <rect x="90" y="198" width="120" height="34" rx="3" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="150" y="212" text-anchor="middle" fill="#8a4a1f" font-weight="700">第四处 · 卧佛（涅槃像）</text>
+        <text x="150" y="224" text-anchor="middle" fill="#8a6a40" font-size="8">长4.3米 · 整山红砂岩凿刻</text>
+        <text x="260" y="120" text-anchor="start" fill="#8a6a40" font-size="8">释迦苦行 · 牧女献乳</text>
+        <text x="260" y="136" text-anchor="start" fill="#8a6a40" font-size="8">青牛负经 · 禹王碑</text>
+      </g>
+      <text x="220" y="262" text-anchor="middle" font-size="9" fill="#8a6a40">第一处地藏·观音 → 第二处十八罗汉 → 第三处三窟 → 第四处卧佛（涅槃像）</text>
+      <text x="220" y="282" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 法华寺石窟布局示意：洛阳山红砂岩绝壁（东崖·南崖），自东崖依次为地藏菩萨·观音 → 十八罗汉（三层·"晚照"题字）→ 三窟造像 → 卧佛（涅槃像）；崖壁间另有释迦苦行·牧女献乳·青牛负经·禹王碑 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格与营造特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格与营造特色</h2></div>
+  <ul>
+    <li><strong>红砂岩摩崖凿刻</strong>：石窟雕凿于红砂岩质崖面，依山岩绝壁修建，为南诏·大理国时期石窟艺术（据抖音、据腾讯网）。</li>
+    <li><strong>卧佛（涅槃像）</strong>：南岩（西岩）主体为一尊长4.3米的释迦摩尼涅槃像，整山红砂岩就地雕凿，头南面东，天庭饱满、两耳垂肩、右手微托后脑、静睡于石枕之上，曲肱半睡神态安详，通身袈裟、卷起成珠的头发衣纹古朴舒展，为石窟最大佛像（<a href="https://fo.ifeng.com/a/20141204/40892770_0.shtml">据凤凰网</a>、据抖音百科）。</li>
+    <li><strong>多题材造像</strong>：涵盖地藏菩萨、观音、十八罗汉、释迦苦行、牧女献乳、青牛负经、释迦涅槃及禹王碑等，多为一龛一佛（据抖音百科、据人民政协网）。</li>
+    <li><strong>"法华晚照"</strong>：安宁八景之一，每当天气晴和，晚照映于石壁，为石窟一大景观（据新浪网）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 卧佛（涅槃佛）</strong>：长4.3米（一说4.25米），整山红砂岩就地雕凿，衣纹古朴舒展，虽历千年风化仍保存完整，是石窟最具代表性的造像（据携程、据凤凰网）。</li>
+    <li><strong>② 十八罗汉</strong>：分列上、中、下三层的十八罗汉造像，各自姿态各异、栩栩如生（<a href="http://news.cctv.com/2016/10/11/ARTI0hu4byls11IJI8zBIVhl161011.shtml">据央视网</a>）。</li>
+    <li><strong>③ 地藏菩萨与观音造像</strong>：第一处石窟的核心造像（<a href="https://view.inews.qq.com/a/20210418A016CL00">据腾讯网</a>）。</li>
+    <li><strong>④ "晚照"题字</strong>：石窟下石壁"晚照"二字，为清康熙时所加，与"法华晚照"安宁八景相映（<a href="http://www.rmzxb.com.cn/c/2016-10-19/1091085.shtml?n2m=1">据人民政协网</a>）。</li>
+    <li><strong>⑤ 释迦苦行与涅槃题材</strong>：释迦苦行、牧女献乳、青牛负经等佛教故事造像及禹王碑（据抖音百科）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>"晚照"摩崖题字</strong>：石窟下石壁刻"晚照"二字，清康熙时所加，为"安宁八景·法华晚照"所在（<a href="http://www.rmzxb.com.cn/c/2016-10-19/1091085.shtml?n2m=1">据人民政协网</a>）。</li>
+    <li><strong>禹王碑</strong>：第四处石刻中镌有禹王碑，为石窟石刻重要遗存（据抖音百科）。</li>
+    <li><strong>石窟简介碑</strong>：山脚石碑刻有法华寺石窟简介，记述宋元时期石窟造像概况（<a href="http://www.rmzxb.com.cn/c/2016-10-19/1091085.shtml?n2m=1">据人民政协网</a>）。</li>
+    <li><strong>造像题刻</strong>：窟内佛教造像题材多样，含释迦苦行、牧女献乳、青牛负经等故事刻（据抖音百科）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约60—90分钟）</strong>：</p>
+  <ol>
+    <li>自<strong>昆明市区</strong>出发，驱车约半小时至<strong>安宁市城东小桃花村洛阳山</strong>；</li>
+    <li>至山脚观<strong>法华寺石窟简介碑</strong>；</li>
+    <li>沿崖壁先观<strong>第一处·地藏菩萨及观音造像</strong>；</li>
+    <li>次观<strong>第二处·十八罗汉</strong>（上中下三层·"晚照"题字）；</li>
+    <li>再观<strong>第三处·三窟造像</strong>；</li>
+    <li>至<strong>第四处·卧佛（释迦涅槃像）</strong>，观长4.3米涅槃大佛；</li>
+    <li>观<strong>释迦苦行、牧女献乳、青牛负经等造像与禹王碑</strong>；</li>
+    <li>于晴日傍晚可赏"法华晚照"景观（<a href="http://news.cctv.com/2016/10/11/ARTI0hu4byls11IJI8zBIVhl161011.shtml">据央视网</a>、据腾讯网）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　法华寺石窟为云南第二大石窟群，卧佛、十八罗汉为必看，部分造像已受损，观瞻时请共同保护文物（据央视网、据凤凰网）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：开凿于宋（大理国）时期，是云南继剑川石钟山石窟后时代较早的第二大石窟群，填补南诏·大理国时期考古空白，具有较高历史与艺术价值（<a href="http://news.cctv.com/2016/10/11/ARTI0hu4byls11IJI8zBIVhl161011.shtml">据央视网</a>、据抖音）。</li>
+    <li><strong>艺术价值</strong>：中国古代少数民族地区为数不多的石窟艺术，红砂岩摩崖凿刻，卧佛、十八罗汉等造像衣纹古朴、神态各异，是研究云南早期佛教文化传播的重要例证（据中国新闻网、据抖音）。</li>
+    <li><strong>保护现状</strong>：1965年公布为省级重点文保；部分造像因历史原因受损（罗汉头部多缺失）；2021年抢救性保护工程年内开工（<a href="http://news.cctv.com/2016/10/11/ARTI0hu4byls11IJI8zBIVhl161011.shtml">据央视网</a>、<a href="https://view.inews.qq.com/a/20210418A016CL00">据腾讯网</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市安宁市城东5公里小桃花村洛阳山（青龙山），距昆明市区约30公里。</li>
+    <li><strong>开放状态</strong>：石窟遗迹位于山林崖壁间，可参观瞻仰；具体开放与保护要求以安宁市文物主管部门官方公告为准。</li>
+    <li><strong>交通</strong>：自昆明驱车约半小时可达；具体路线与停车信息以官方最新发布为准。</li>
+    <li><strong>提示</strong>：石窟依山崖而凿，部分造像受损，观瞻时请勿触摸、攀爬佛像与崖壁；山路行走注意安全；部分文物细节以现场为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>央视网《昆明版"龙门石窟"毁损引关注》：<a href="http://news.cctv.com/2016/10/11/ARTI0hu4byls11IJI8zBIVhl161011.shtml">news.cctv.com</a></li>
+      <li>人民政协网《云南千年石窟受损严重》：<a href="http://www.rmzxb.com.cn/c/2016-10-19/1091085.shtml?n2m=1">rmzxb.com.cn</a></li>
+      <li>中国新闻网《网曝云南一石窟佛像遭集体砍头》：<a href="http://www.chinanews.com.cn/m/sh/2016/10-10/8026767.shtml">chinanews.com.cn</a></li>
+      <li>腾讯网《安宁法华寺石窟抢救性保护工程年内开工》：<a href="https://view.inews.qq.com/a/20210418A016CL00">view.inews.qq.com</a></li>
+      <li>凤凰网《法华寺石窟现状寂寥凄凉》：<a href="https://fo.ifeng.com/a/20141204/40892770_0.shtml">fo.ifeng.com</a></li>
+      <li>新浪网《揭开尘封看法华》：<a href="http://bj.sina.com.cn/t/17107.shtml">bj.sina.com.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">法华晚照 · 妙香佛国</div>
+  <div style="margin-top:6px;">信息来自官网、政府、报纸、文物局等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

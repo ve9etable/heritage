@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三苏祠（全国重点文物保护单位）深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236b1f17'/%3E%3Cpath d='M16 42 32 16 48 42z' fill='%23e6c98a'/%3E%3Crect x='24' y='38' width='16' height='12' fill='%23b8745a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;
+    --ink-2:#5a554c;
+    --brick:#8a2a20;
+    --brick-deep:#6b1f17;
+    --brick-soft:#a85046;
+    --gold:#a8823c;
+    --stone:#e9e3d8;
+    --stone-2:#f4f0e8;
+    --paper:#fbf9f4;
+    --line:#d9d2c4;
+    --green:#3f5246;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);
+  }
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{
+    display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;
+  }
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:640px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{
+    display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;
+  }
+  .sec-no{
+    font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);
+    flex:0 0 auto;
+  }
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  li > ul{margin:6px 0 6px 20px;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{
+    background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;
+  }
+  tbody td, th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f3ea;}
+  @media(max-width:600px){
+    .tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+    table{min-width:560px;}
+  }
+
+  .tip{
+    background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);
+  }
+  .tip .t{font-weight:700;color:var(--gold);letter-spacing:1px;}
+
+  .fig{
+    background:var(--paper);border:1px solid var(--line);border-radius:6px;
+    padding:20px 16px;margin:16px 0;
+  }
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#c9c0ae;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<!-- ===== 顶栏 ===== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">全国重点文物保护单位 · 古建筑 · 深度实地导览</div>
+    <h1>三苏祠</h1>
+    <p class="sub">三苏祠，位于四川省眉山市东坡区纱縠行，是北宋著名文学家苏洵、苏轼、苏辙三父子的故居，南宋改宅为祠，是历代名人雅士拜谒三苏的文化圣地。现为<strong>全国重点文物保护单位（第六批，2006年）</strong>、<strong>国家一级博物馆（2024年）</strong>、国家AAAA级旅游景区（<a href="http://www.sscbwg.cn/about/">据眉山三苏祠博物馆官方"走进苏祠"</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>眉山三苏祠博物馆（三苏祠）</td></tr>
+      <tr><td>保护级别</td><td><strong>全国重点文物保护单位</strong>（第六批，2006年国务院公布；1980年即列为四川省重点文保）</td></tr>
+      <tr><td>类别</td><td>古建筑（清代园林式文人祠堂）</td></tr>
+      <tr><td>地址</td><td>眉山市东坡区纱縠行南段</td></tr>
+      <tr><td>始建</td><td>南宋改宅为祠；清康熙四年（1665）在原址模拟重建</td></tr>
+      <tr><td>规模</td><td>占地约百余亩（<a href="http://scdfz.sc.gov.cn/whzh/slzc1/content_97665">据四川省情网</a>），祠堂总面积约86亩</td></tr>
+      <tr><td>叠加身份</td><td>国家一级博物馆、国家AAAA级景区、四川省爱国主义教育基地、中国古典园林精粹</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>宋元改宅为祠</strong>：原为三苏故居，南宋改为祠堂，元代延祐三年（1316）正式以故居改建祠堂祭祀三苏（<a href="http://www.sscbwg.cn/about/">据博物馆官方"苏祠历史"</a>）。</li>
+    <li><strong>明清兴废</strong>：明洪武二十九年（1396）重修故宅；明末毁于兵燹，仅存五碑一钟；清康熙四年（1665）眉州知州赵蕙芽主持重建飨殿、启贤堂、来凤轩、瑞莲亭等主体建筑（<a href="http://www.sscbwg.cn/about/">据官方"苏祠历史"</a>）。</li>
+    <li><strong>清代增建</strong>：嘉庆十八年（1813）辟木假山堂；同治十年（1871）修大厅及砖墙；光绪元年（1875）张之洞倡导建云屿楼、抱月亭；光绪二十四年（1898）重建披风榭（<a href="http://www.sscbwg.cn/about/">据官方"苏祠历史"</a>）。</li>
+    <li><strong>近现代</strong>：民国年间扩建，1936年更名"三苏公园"；1959年成立三苏纪念馆；1980年列为省保，2006年列为国保。</li>
+    <li><strong>当代</strong>：2013年"4·20"地震后闭馆实施灾后抢救保护工程，2016年4月重新开放；2022年6月8日习近平总书记考察三苏祠（<a href="https://wwj.sc.gov.cn/scwwj/wbyw/2022/6/9/21baf5386ab945d68e23bcb96fb94b80.shtml">据四川省文物局</a>）；2024年评为国家一级博物馆。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>三苏祠<strong>坐北朝南</strong>，构建在三面环水的一座半岛上，红墙环抱、绿水萦绕，形成"三分水二分竹"的岛居特色。<strong>中轴线上自南向北组成三进四合院</strong>：<strong>前厅（大门）→ 飨殿 → 启贤堂 → 木假山堂 → 来凤轩</strong>，东西厢房在左右均衡基础上又有自由变化，形成不严整对称格局；东西两侧为瑞莲池，池上建楼、亭、榭五座（<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">据三苏祠博物馆·三苏遗迹综述</a>）。</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 640" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="360" y="22" font-size="12" fill="#8a7b66">北 ↑</text>
+      <rect x="110" y="36" width="220" height="52" rx="6" fill="#4f6b4a" stroke="#3a5036" stroke-width="1.5"/>
+      <text x="220" y="58" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">来凤轩（原南轩）</text>
+      <text x="220" y="76" text-anchor="middle" font-size="10" fill="#e6f0df">苏家兄弟读书处 · 第三进</text>
+      <line x1="220" y1="88" x2="220" y2="112" stroke="#b08a4a" stroke-width="2"/>
+      <rect x="120" y="112" width="200" height="48" rx="6" fill="#7a6a8f" stroke="#5d5070" stroke-width="1.5"/>
+      <text x="220" y="134" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">木假山堂</text>
+      <text x="220" y="150" text-anchor="middle" font-size="10" fill="#ece4f2">启贤堂后檐 · 嘉庆十八年辟</text>
+      <line x1="220" y1="160" x2="220" y2="184" stroke="#b08a4a" stroke-width="2"/>
+      <rect x="120" y="184" width="200" height="52" rx="6" fill="#8f5f3c" stroke="#6b4527" stroke-width="1.5"/>
+      <text x="220" y="206" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">启贤堂</text>
+      <text x="220" y="224" text-anchor="middle" font-size="10" fill="#ffe6cd">供苏家始祖苏味道 · 第二进</text>
+      <line x1="220" y1="236" x2="220" y2="260" stroke="#b08a4a" stroke-width="2"/>
+      <rect x="110" y="260" width="220" height="58" rx="6" fill="#b0392b" stroke="#8a2a20" stroke-width="2"/>
+      <text x="220" y="284" text-anchor="middle" font-size="14" fill="#fff" font-weight="700">飨殿（正殿·第一进）</text>
+      <text x="220" y="302" text-anchor="middle" font-size="10" fill="#ffd9d0">三苏塑像 · "是父是子"匾 · 杨庆远长联</text>
+      <line x1="220" y1="318" x2="220" y2="342" stroke="#b08a4a" stroke-width="2"/>
+      <rect x="120" y="342" width="200" height="46" rx="6" fill="#6f8f52" stroke="#51683a" stroke-width="1.5"/>
+      <text x="220" y="364" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">前厅（大门）</text>
+      <text x="220" y="380" text-anchor="middle" font-size="10" fill="#e6f2d8">"文献一家"匾 · 张鹏翮联</text>
+      <line x1="220" y1="388" x2="220" y2="410" stroke="#b08a4a" stroke-width="2"/>
+      <rect x="170" y="410" width="100" height="30" rx="15" fill="#e8d8b8" stroke="#b0392b" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <text x="220" y="431" text-anchor="middle" font-size="12" fill="#7a3c30" font-weight="700">南大门（入口）</text>
+      <rect x="10" y="300" width="70" height="38" rx="5" fill="#b0875a" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="45" y="324" text-anchor="middle" font-size="11" fill="#fff">瑞莲亭</text>
+      <rect x="10" y="360" width="70" height="38" rx="5" fill="#6f8f52" stroke="#51683a" stroke-width="1.2"/>
+      <text x="45" y="384" text-anchor="middle" font-size="11" fill="#fff">苏宅古井</text>
+      <rect x="360" y="300" width="70" height="38" rx="5" fill="#4f6b4a" stroke="#3a5036" stroke-width="1.2"/>
+      <text x="395" y="324" text-anchor="middle" font-size="11" fill="#fff">披风榭</text>
+      <rect x="360" y="360" width="70" height="38" rx="5" fill="#7a6a8f" stroke="#5d5070" stroke-width="1.2"/>
+      <text x="395" y="384" text-anchor="middle" font-size="11" fill="#fff">云屿楼</text>
+    </svg>
+    <div class="cap">▲ 中轴布局与看点示意：前厅 → 飨殿 → 启贤堂 → 木假山堂 → 来凤轩；东西配瑞莲亭、苏宅古井、披风榭、云屿楼等 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格与营造特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格与营造特色</h2></div>
+  <p>三苏祠是<strong>清代园林式文人祠堂</strong>，建筑为木结构、青瓦屋顶、穿斗或抬梁式构架，风格朴素庄重，体现清代川西地区祠庙建筑特色（<a href="https://historytourism.scu.edu.cn/info/1015/5930.htm">据四川大学历史文化学院田野考察报告</a>）。</p>
+  <ul>
+    <li><strong>祭祀类建筑</strong>：前厅、飨殿、木假山堂、云屿楼、披风榭、抱月亭、百坡亭、消寒馆。</li>
+    <li><strong>故居类建筑（遗迹）</strong>：瑞莲亭、苏宅古井、启贤堂、来凤轩（<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">据三苏祠博物馆</a>）。</li>
+    <li><strong>园林格局</strong>：三分水、二分竹，红墙环抱、绿水萦绕，楼台亭榭古朴典雅，是蜀中古典园林精粹（<a href="https://www.cchfound.com/product/4011.html">据华夏文化遗产基金会</a>）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 前厅（大门）</strong>：建于同治九年（1860），门楣悬道光十四年（1834）眉州知州洪运开书"<strong>文献一家</strong>"匾；门枋对联"<strong>一门父子三词客，千古文章四大家</strong>"，为清雍正时武英殿大学士张鹏翮撰文、宣统二年四川盐茶使赵藩书写（<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">据博物馆"三苏遗迹"综述</a>）。</li>
+    <li><strong>② 飨殿（正殿·第一进）</strong>：建于康熙四年（1665），面阔三间、前后出廊，殿内供奉三苏父子塑像；殿前匾额"<strong>是父是子</strong>""文章气节""文峰鼎峙"三架，其中光绪年间眉州州判杨庆远所撰长联最著名（<a href="http://paper.people.com.cn/hwbwap/html/2024-09/03/content_26078522.htm">据人民日报海外版</a>）。</li>
+    <li><strong>③ 启贤堂（第二进）</strong>：建于康熙四年，堂内供奉苏家始祖苏味道及祖先牌位，是"家有五亩园"的中心地（<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">据博物馆</a>）。</li>
+    <li><strong>④ 木假山堂</strong>：嘉庆十八年（1813）辟修于启贤堂后檐，珍藏苏氏木假山及文人题咏。</li>
+    <li><strong>⑤ 来凤轩（第三进）</strong>：原名南轩，是苏家兄弟读书处，与回廊组成第三进四合院。</li>
+    <li><strong>⑥ 故居遗迹</strong>：<strong>苏宅古井</strong>（苏家唯一故宅遗迹，井水清冽不竭）、<strong>瑞莲亭</strong>（"苏祠瑞莲"为眉州八景之首）、大门两株银杏、荔枝树、黄荆树等（<a href="http://www.sscbwg.cn/about/">据博物馆"馆长推荐"</a>）。</li>
+    <li><strong>⑦ 碑廊与博物馆区</strong>：三苏碑林藏《醉翁亭记》《丰乐亭记》拓本、《前赤壁赋》《西园雅集图》等珍贵碑刻（<a href="https://m.baike.com/wiki/%E4%B8%89%E8%8B%8F%E7%A5%A0%E5%8D%9A%E7%89%A9%E9%A6%86/10340632">据三苏祠博物馆</a>）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:15%"><col style="width:40%"><col style="width:20%"><col style="width:25%"></colgroup>
+    <thead><tr><th>位置</th><th>内容</th><th>年代/作者</th><th>看点</th></tr></thead>
+    <tbody>
+      <tr><td>大门</td><td>"北宋高文名父子，南州胜迹古祠堂"</td><td>清末</td><td>点题之作（<a href="http://scdfz.sc.gov.cn/whzh/slzc1/content_97665">据四川省情网</a>）</td></tr>
+      <tr><td>前厅门楣</td><td>"文献一家"匾</td><td>道光十四年（1834）洪运开书</td><td>颂三苏文章传家（<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">据博物馆</a>）</td></tr>
+      <tr><td>前厅门枋</td><td>"一门父子三词客，千古文章四大家"</td><td>张鹏翮撰、赵藩书</td><td>千古名联，称颂三苏文名（<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">据博物馆</a>）</td></tr>
+      <tr><td>飨殿</td><td>"是父是子""文章气节""文峰鼎峙"</td><td>清</td><td>三架匾额（<a href="http://paper.people.com.cn/hwbwap/html/2024-09/03/content_26078522.htm">据人民日报海外版</a>）</td></tr>
+      <tr><td>飨殿</td><td>杨庆远长联"宦迹渺难寻……父子兄弟依然风雨共名山"</td><td>光绪年间杨庆远</td><td>祠内最著名长联（<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">据博物馆</a>）</td></tr>
+      <tr><td>飨殿</td><td>"养气"匾及跋文</td><td>乾隆年间张兑和书</td><td>殿内匾额（<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">据博物馆</a>）</td></tr>
+      <tr><td>碑廊</td><td>《醉翁亭记》《丰乐亭记》拓本等</td><td>历代</td><td>苏轼书法碑刻（<a href="https://m.baike.com/wiki/%E4%B8%89%E8%8B%8F%E7%A5%A0%E5%8D%9A%E7%89%A9%E9%A6%86/10340632">据博物馆</a>）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约2—3小时）</strong>：</p>
+  <ol>
+    <li>从<strong>南大门</strong>进入，先看大门银杏与"北宋高文名父子"联；</li>
+    <li>进<strong>前厅</strong>读"文献一家"匾与张鹏翮名联；</li>
+    <li>至<strong>飨殿</strong>瞻仰三苏塑像，细读"是父是子"匾与杨庆远长联；</li>
+    <li>沿中轴北上：<strong>启贤堂 → 木假山堂 → 来凤轩</strong>；</li>
+    <li>折向东侧看<strong>苏宅古井、瑞莲亭</strong>，西侧看<strong>披风榭、云屿楼</strong>；</li>
+    <li>最后参观<strong>三苏纪念馆</strong>与<strong>碑廊</strong>（式苏轩展厅）系统了解三苏生平。</li>
+  </ol>
+  <div class="tip"><span class="t">时间紧张备选</span>　直奔<strong>前厅 + 飨殿 + 苏宅古井</strong>，约40分钟看完核心。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：三苏父子故宅，是研究北宋文豪家族与巴蜀文化的圣地，2022年习近平总书记考察并高度评价（<a href="https://wwj.sc.gov.cn/scwwj/wbyw/2022/6/9/21baf5386ab945d68e23bcb96fb94b80.shtml">据四川省文物局</a>）。</li>
+    <li><strong>科学·艺术价值</strong>：清代川西祠庙建筑与古典园林的结合典范，"三分水二分竹"布局为中国古典园林精粹（<a href="https://www.cchfound.com/product/4011.html">据华夏文化遗产基金会</a>）。</li>
+    <li><strong>保护现状</strong>：1980年省保、2006年国保；2013年"4·20"地震后实施灾后抢救保护工程（第三届全国优秀文物维修工程），2016年重新开放（<a href="http://www.sscbwg.cn/about/">据官方"苏祠历史"</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>开放时间</strong>：每日 9:00—18:00 开放，17:30 停止售票入馆；每周一（法定节假日除外）三苏纪念馆、式苏轩展厅闭馆检修（<a href="http://www.sscbwg.cn/tour/">据官网"参观游览"</a>）。</li>
+    <li><strong>门票</strong>：全价 40 元/人，学生等半票 20 元；三苏纪念馆实名制免费预约；年满60周岁老人、未成年人、军人免费（<a href="http://www.sscbwg.cn/tour/">据官网"参观游览"</a>）（<a href="https://www.ms.gov.cn/info/4815/1200604.htm">据眉山市政府</a>）。</li>
+    <li><strong>交通</strong>：公交"三苏祠西站、三苏祠南站"可达；自驾导航至三苏祠停车场（<a href="http://www.sscbwg.cn/">据官网</a>）。</li>
+    <li><strong>联系</strong>：票务 028-35081994；讲解 028-38220186；投诉 028-38235658。</li>
+    <li><strong>提示</strong>：实行"人证合一"入园，请携带身份证；信息更新于2026年，以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>眉山三苏祠博物馆《走进苏祠》：<a href="http://www.sscbwg.cn/about/">sscbwg.cn/about/</a></li>
+      <li>眉山三苏祠博物馆《参观游览》：<a href="http://www.sscbwg.cn/tour/">sscbwg.cn/tour/</a></li>
+      <li>眉山三苏祠博物馆《三苏遗迹综述》：<a href="https://files.mssswhyjy.com/sansu/yzyj/mobileList">files.mssswhyjy.com</a></li>
+      <li>眉山三苏祠博物馆官网首页：<a href="http://www.sscbwg.cn/">sscbwg.cn</a></li>
+      <li>四川省文物局《跟着总书记长见识|三苏祠》：<a href="https://wwj.sc.gov.cn/scwwj/wbyw/2022/6/9/21baf5386ab945d68e23bcb96fb94b80.shtml">wwj.sc.gov.cn</a></li>
+      <li>四川省情网《什么是三苏祠？》：<a href="http://scdfz.sc.gov.cn/whzh/slzc1/content_97665">scdfz.sc.gov.cn</a></li>
+      <li>人民日报海外版《传承千年文脉 厚植家国情怀》：<a href="http://paper.people.com.cn/hwbwap/html/2024-09/03/content_26078522.htm">paper.people.com.cn</a></li>
+      <li>眉山市人民政府《眉山市A级旅游景区门票减免政策清单》：<a href="https://www.ms.gov.cn/info/4815/1200604.htm">ms.gov.cn</a></li>
+      <li>四川省文化和旅游厅《走进千古三苏祠》：<a href="https://wlt.sc.gov.cn/scwlt/hydt/2022/6/11/1297cb471c8142878a8928bf05a528b7.shtml">wlt.sc.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">一门父子三词客，千古文章四大家</div>
+  <div style="margin-top:6px;">信息来自官网、政府、报纸、文物局等官方权威渠道 · 布局示意图以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

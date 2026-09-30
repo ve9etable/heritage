@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周钟岳旧居深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M16 48 L48 48 L48 52 L16 52 Z M20 48 L20 22 L30 16 L38 20 L38 48 Z' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省省级文物保护单位 · 近现代重要史迹 · 名人旧居</div>
+    <h1>周钟岳旧居</h1>
+    <p class="sub">位于昆明市五华区<strong>翠湖北路18号</strong>，民国时期中西合璧风格民居，砖木结构、硬山顶、三层（高约12米）、平面呈"凹"字形，为云南著名书法家、方志学家周钟岳旧居，<strong>云南省省级文物保护单位</strong>（<a href="https://m.yunnan.cn/system/2019/02/28/030213496.shtml">据云南省政府第八批省保名单</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>周钟岳旧居</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省省级文物保护单位</strong>（第八批，2019年公布）；此前2011年列为市级文保单位</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（名人旧居）</td></tr>
+      <tr><td>位置</td><td>昆明市五华区翠湖北路18号</td></tr>
+      <tr><td>始建年代</td><td>民国初年</td></tr>
+      <tr><td>建筑概况</td><td>民国时期中西合璧民居，砖木结构、瓦屋顶硬山建筑，共三层，高约12米，平面呈"凹"字形</td></tr>
+      <tr><td>人物</td><td>周钟岳，云南剑川白族，云南著名书法家、方志学家，历任云南省长、国民政府内政部长、考试院副院长等</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>购宅居住</strong>：此房系周钟岳购自张家，抗日战争以前，周钟岳一家已在此居住多年（据五华区政府）。</li>
+    <li><strong>抗战遭遇</strong>：抗战期间周钟岳赴重庆任职；1940年10月13日，建筑被日机炸弹击中，抗战胜利后重新做了较大修缮（据抖音线索）。</li>
+    <li><strong>名人栖居</strong>：1939年底，西南联大物理系教授吴大猷等曾在此借住（据抖音线索，待核实）。</li>
+    <li><strong>定级保护</strong>：2011年列为市级文保单位；2019年公布为云南省第八批省级文保单位（据昆明市政府、据云南省政府第八批省保名单）。</li>
+    <li><strong>活化利用</strong>：纳入翠湖片区博物馆群落建设，计划作为云南地方志专题展览馆（据五华区政府）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>旧居为民国时期中西合璧风格的三层砖木民居。</p>
+  <ul>
+    <li><strong>平面形制</strong>：平面布局呈"凹"字形，中间三间带两柱外走廊，两侧突出部分正面为三面体（据五华区政府）。</li>
+    <li><strong>屋顶制式</strong>：砖木结构、瓦屋顶硬山建筑，坡面悬山屋顶两侧前部形成半圆攒尖顶，美观而简洁（据五华区政府）。</li>
+    <li><strong>楼高体量</strong>：共三层，高约12米，为翠湖边一处三层民国别墅式建筑（据五华区政府、据抖音线索）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">周钟岳旧居 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="46" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="63" text-anchor="middle" fill="#8a4a1f" font-weight="700">大门（翠湖北路18号）</text>
+        <rect x="80" y="80" width="280" height="92" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="102" text-anchor="middle" fill="#8a4a1f" font-weight="700">凹字形三层砖木楼房（高约12米）</text>
+        <text x="220" y="120" text-anchor="middle" fill="#8a4a1f" font-size="8.5">中间三间 · 带两柱外走廊</text>
+        <text x="220" y="138" text-anchor="middle" fill="#8a4a1f" font-size="8.5">两侧突出三面体 · 半圆攒尖顶</text>
+        <text x="220" y="156" text-anchor="middle" fill="#8a4a1f" font-size="8.5">硬山顶 · 瓦屋顶 · 中西合璧</text>
+        <rect x="80" y="180" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="197" text-anchor="middle" fill="#8a4a1f" font-weight="700">翠湖（近旁）· 博物馆群落片区</text>
+        <text x="220" y="228" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 周钟岳旧居布局示意：大门（翠湖北路18号）→ 凹字形三层砖木楼房（高约12米·中间三间带两柱外走廊·两侧突出三面体·半圆攒尖顶·硬山顶·中西合璧）· 近翠湖、属博物馆群落片区 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>中西合璧</strong>：民国时期中西合璧风格，砖木结构、瓦屋顶硬山建筑（据五华区政府）。</li>
+    <li><strong>"凹"字形平面</strong>：中间三间带两柱外走廊，两侧突出部分正面为三面体，空间别致（据五华区政府）。</li>
+    <li><strong>半圆攒尖顶</strong>：坡面悬山屋顶两侧前部形成半圆攒尖顶，美观简洁（据五华区政府）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 凹字形三层楼</strong>：民国中西合璧三层砖木建筑，高约12米，为翠湖旁独栋小三层（据五华区政府、据抖音线索）。</li>
+    <li><strong>② 中间外走廊</strong>：中间三间带两柱外走廊，两侧突出三面体，立面别致（据五华区政府）。</li>
+    <li><strong>③ 半圆攒尖顶</strong>：悬山屋顶两侧前部的半圆攒尖顶，中西合璧细节（据五华区政府）。</li>
+    <li><strong>④ 抗战印记</strong>：1940年遭日机轰炸、胜利后重修的抗战历史记忆（据抖音线索）。</li>
+    <li><strong>⑤ 地方志专题展览</strong>：计划作为云南地方志专题展览馆（据五华区政府）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>旧居展示</strong>：周钟岳为云南著名书法家，旧居承载其书法、方志学成就（据抖音线索、据五华区政府）。</li>
+    <li><strong>展览馆建设</strong>：计划作为云南地方志专题展览馆，展示周钟岳生平与地方志成就（据五华区政府）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约60—90分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市五华区翠湖北路18号周钟岳旧居</strong>；</li>
+    <li>观沿街立面，识别凹字形、外走廊与半圆攒尖顶；</li>
+    <li>经中间外走廊入内，探访三层砖木楼房空间；</li>
+    <li>细看中西合璧建筑细节，遥想抗战时期历史；</li>
+    <li>参观地方志/周钟岳主题展示后，沿翠湖漫步（据五华区政府、据抖音线索）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　旧居现为省级文保单位，纳入翠湖片区博物馆群落；具体开放安排以官方最新公告为准（据五华区政府）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：云南著名书法家、方志学家周钟岳旧居，见证民国云南政坛与文化（据抖音线索、据五华区政府）。</li>
+    <li><strong>建筑价值</strong>：民国中西合璧风格，凹字形平面、外走廊、半圆攒尖顶，建筑艺术价值较高（据五华区政府）。</li>
+    <li><strong>保护现状</strong>：2019年公布为省级文保单位，纳入翠湖片区博物馆群落建设，计划作为云南地方志专题展览馆（据昆明市政府、据五华区政府）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区翠湖北路18号。</li>
+    <li><strong>开放状态</strong>：旧居纳入翠湖片区博物馆群落建设，计划作为地方志专题展览馆；具体开放时间、预约方式以官方最新公告为准（据五华区政府）。</li>
+    <li><strong>交通</strong>：位于翠湖北路，临近翠湖公园，交通便利（据城市吧）。</li>
+    <li><strong>提示</strong>：旧居为文物建筑，请文明参观、爱护设施，具体安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市五华区人民政府《周钟岳旧居》：<a href="http://www.kmwh.gov.cn/c/2018-05-29/2579346.shtml">kmwh.gov.cn</a></li>
+      <li>云南网《云南公布第八批省级文物保护单位》（含周钟岳旧居）：<a href="https://m.yunnan.cn/system/2019/02/28/030213496.shtml">m.yunnan.cn</a></li>
+      <li>昆明市人民政府《关于公布第五批市级文物保护单位的通知》：<a href="https://www.km.gov.cn/c/2011-01-24/3776125.shtml">km.gov.cn</a></li>
+      <li>昆明市人民政府《第五批市级文物保护单位保护范围划定方案》（含周钟岳旧居）：<a href="https://www.km.gov.cn/c/2012-12-20/3773170.shtml">km.gov.cn</a></li>
+      <li>昆明市五华区人民政府《关于政协提案的答复》（翠湖博物馆群落·周钟岳旧居展览馆）：<a href="http://www.kmwh.gov.cn/c/2018-09-14/4025914.shtml">kmwh.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">方志留墨 · 旧居存文</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

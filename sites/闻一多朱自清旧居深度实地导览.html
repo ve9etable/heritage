@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>闻一多朱自清旧居深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M14 50 L50 50 L50 54 L14 54 Z' fill='%23f0d9a8'/%3E%3Cpath d='M18 50 L18 30 L32 18 L46 30 L46 50 Z' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省省级文物保护单位 · 近现代重要史迹 · 名人旧居</div>
+    <h1>闻一多朱自清旧居</h1>
+    <p class="sub">位于昆明市盘龙区<strong>龙泉宝云片区闻一多公园内（司家营17号，现61号）</strong>，为清华文科研究所旧址，云南清末民初典型"一颗印"民居，闻一多、朱自清等西南联大名家在此治学栖居，<strong>云南省省级文物保护单位</strong>（<a href="https://yn.yunnan.cn/system/2019/02/28/030213294.shtml">据云南省政府公布第八批省保</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>闻一多、朱自清旧居</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省省级文物保护单位</strong>（第八批，2019年公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（名人旧居）</td></tr>
+      <tr><td>位置</td><td>昆明市盘龙区龙泉宝云片区，闻一多公园内，司家营17号（现61号）</td></tr>
+      <tr><td>叠加身份</td><td>清华文科研究所旧址；西南联大名人旧居；抗战文化遗产</td></tr>
+      <tr><td>始建年代</td><td>云南清末民初典型"一颗印"民居</td></tr>
+      <tr><td>规模</td><td>占地约370平方米</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>设所治学</strong>：1941年9月，清华大学文科研究所设于司家营，闻一多任所长，朱自清等教授在此治学；这所老房子同时是清华文科研究所旧址（<a href="http://ent.people.com.cn/n1/2025/0105/c1012-40395561.html">据人民网</a>、据云南网统战地标报道）。</li>
+    <li><strong>名士栖居</strong>：西南联大时期，闻一多一家在此居住、交游论学；这里见证了抗战烽火中一批学术名家在昆明的治学生活（据云南师范大学、据人民网）。</li>
+    <li><strong>保护修缮</strong>：旧居内部完成场景复原，面向社会公众开放；2019年3月申报为云南省第八批省级文物保护单位（<a href="http://www.kmpl.gov.cn/c/2019-12-10/3789152.shtml">据盘龙区人民政府</a>）。</li>
+    <li><strong>公园活化</strong>：结合旧居建设闻一多公园，以红烛亭、闻一多诗墙等历史文化元素命名园林建筑，融文化旅游、休闲游憩为一体（据云南网）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>旧居为云南清末民初典型的"一颗印"民居，位于闻一多公园内。</p>
+  <ul>
+    <li><strong>建筑形制</strong>：由正房、厢房、倒座组成四合院，外观方方正正，像一颗印章，是昆明传统"一颗印"民居的典型（<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">据云南师范大学</a>、据云南网统战地标报道）。</li>
+    <li><strong>围合结构</strong>：由正房、厢房和入口门墙围合而成（据清华校友总会）。</li>
+    <li><strong>公园配套</strong>：园内建有红烛亭、闻一多诗墙、健身步道等（据云南网）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">闻一多朱自清旧居 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="46" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="63" text-anchor="middle" fill="#8a4a1f" font-weight="700">闻一多公园入口</text>
+        <rect x="80" y="80" width="132" height="26" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="146" y="95" text-anchor="middle" fill="#8a4a1f" font-weight="700">红烛亭</text>
+        <rect x="228" y="80" width="132" height="26" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="294" y="95" text-anchor="middle" fill="#8a4a1f" font-weight="700">闻一多诗墙</text>
+        <rect x="130" y="114" width="180" height="58" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="134" text-anchor="middle" fill="#8a4a1f" font-weight="700">闻一多、朱自清旧居</text>
+        <text x="220" y="152" text-anchor="middle" fill="#8a4a1f" font-size="8.5">"一颗印"四合院（正房·厢房·倒座）</text>
+        <rect x="80" y="180" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="197" text-anchor="middle" fill="#8a4a1f" font-weight="700">公园健身步道</text>
+        <text x="220" y="228" text-anchor="middle" font-size="8.5" fill="#8a6a40">占地约370平方米 · 按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 闻一多朱自清旧居布局示意：闻一多公园入口 → 红烛亭·闻一多诗墙 → 闻一多、朱自清旧居（"一颗印"四合院：正房—厢房—倒座）→ 公园健身步道 · 占地约370平方米 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>"一颗印"民居</strong>：云南清末民初典型民居，正房、厢房、倒座围合成四合院，外观方正如印章（据人民网、据云南师范大学）。</li>
+    <li><strong>山墙围合</strong>：由正房、厢房和入口门墙围合，形成内向封闭、冬暖夏凉的居住空间（据清华校友总会）。</li>
+    <li><strong>保护完整</strong>：被视为龙泉宝云片区保存较完整的名人旧居之一（据光明网）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 清华文科研究所旧址门牌</strong>：大门旁"清华文科研究所旧址"木牌，点明这里曾是联大名师治学之所（据人民网）。</li>
+    <li><strong>② "一颗印"四合院</strong>：正房、厢房、倒座围合的传统民居形制，方正如印章（据云南师范大学、据云南网）。</li>
+    <li><strong>③ 内部场景复原</strong>：旧居内部完成场景复原，还原闻一多、朱自清在此治学栖居的实景（据盘龙区人民政府）。</li>
+    <li><strong>④ 红烛亭与闻一多诗墙</strong>：公园内以"红烛"（闻一多诗篇）命名、刻诗墙的文化景观点（据云南网）。</li>
+    <li><strong>⑤ 闻一多公园</strong>：结合旧居打造的文化休闲空间，含健身步道（据云南网）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>"清华文科研究所旧址"门牌</strong>：旧居大门旁暗黄色木牌，为最显著的纪念标识（据人民网）。</li>
+    <li><strong>闻一多诗墙</strong>：公园内以闻一多诗文刻写的诗墙（据云南网）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约60—90分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市盘龙区龙泉宝云片区闻一多公园</strong>；</li>
+    <li>入园先观<strong>红烛亭、闻一多诗墙</strong>，感受纪念氛围；</li>
+    <li>参观<strong>闻一多、朱自清旧居</strong>（一颗印四合院：正房—厢房—倒座），留意"清华文科研究所旧址"门牌；</li>
+    <li>细看<strong>内部场景复原</strong>，遥想联大名师治学栖居岁月；</li>
+    <li>沿<strong>公园步道</strong>漫步，回望抗战文化遗存后离场（据人民网、据云南网、据盘龙区人民政府）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　旧居现为省级文保单位、抗战文化遗产，与梁思成林徽因旧居等同属龙泉宝云片区的西南联大名人旧居群落（据光明网）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：清华文科研究所旧址，闻一多、朱自清等西南联大名家治学栖居之所，见证抗战时期学术南迁与昆明人文重地（据人民网、据中国青年网）。</li>
+    <li><strong>建筑价值</strong>：云南清末民初"一颗印"民居典型，是昆明传统民居与名人旧居结合的代表（据云南师范大学、据清华校友总会）。</li>
+    <li><strong>保护现状</strong>：2019年公布为云南省第八批省级文保单位，旧居完成场景复原并开放；纳入龙泉古镇名人旧居保护与活化利用体系（据盘龙区人民政府、据光明网）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市盘龙区龙泉宝云片区闻一多公园内，司家营17号（现61号）。</li>
+    <li><strong>开放状态</strong>：闻一多公园及旧居面向社会公众开放（据盘龙区人民政府、据云南网）。</li>
+    <li><strong>交通</strong>：位于昆明北市区宝云片区（据云南网）。</li>
+    <li><strong>提示</strong>：具体开放时间、门票与预约方式以闻一多公园/文保单位官方最新公告为准，文明参观、爱护文物。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>人民网《留住茶马古镇上学术名家的足迹》：<a href="http://ent.people.com.cn/n1/2025/0105/c1012-40395561.html">ent.people.com.cn</a></li>
+      <li>云南省政府公布第八批省级文物保护单位（云南网）：<a href="https://yn.yunnan.cn/system/2019/02/28/030213294.shtml">yn.yunnan.cn</a></li>
+      <li>盘龙区人民政府关于旧居申报省保的答复：<a href="http://www.kmpl.gov.cn/c/2019-12-10/3789152.shtml">kmpl.gov.cn</a></li>
+      <li>云南师范大学（人民日报客户端）关于西南联大史迹群的报道：<a href="https://www.ynnu.edu.cn/info/1078/10423.htm">ynnu.edu.cn</a></li>
+      <li>清华校友总会《司家营，闻一多、朱自清和清华文科研究所》：<a href="https://www.tsinghua.org.cn/info/1952/16615.htm">tsinghua.org.cn</a></li>
+      <li>光明网《留住茶马古镇上学术名家的足迹》：<a href="https://news.gmw.cn/2025-01/05/content_37778064.htm">news.gmw.cn</a></li>
+      <li>昆明信息港《盘龙区创新文化遗产活化利用》：<a href="https://www.kunming.cn/info/c/2020-01-02/12792582.shtml">kunming.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">前脚跨出大门，后脚就不准备再跨进大门</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

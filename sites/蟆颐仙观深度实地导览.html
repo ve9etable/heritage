@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蟆颐仙观深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M20 16 L44 16 L44 40 L20 40 Z M26 20 L38 20 L38 26 L26 26 Z M26 30 L38 30 L38 36 L26 36 Z' fill='%23c05a1e'/%3E%3Cpath d='M20 40 L44 40 L40 52 L24 52 Z' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">四川省省级文物保护单位 · 古建筑 · 道教宫观</div>
+    <h1>蟆颐仙观</h1>
+    <p class="sub">位于眉山市东坡区<strong>崇礼镇蟆颐山（与市区隔岷江相望）</strong>，正名重瞳观、俗称蟆颐观，始建于唐、为蜀中三大名观之一，三苏文脉宝地，古"眉州八景"占其二，<strong>四川省省级文物保护单位</strong>（<a href="https://wwj.sc.gov.cn/scwwj/mss/2020/12/11/7269dc14644c433db3c42e2b51e3cfb7.shtml">据四川省文物局</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>蟆颐山重瞳观（俗称"蟆颐观"，又名"蟆颐仙观"）</td></tr>
+      <tr><td>保护级别</td><td><strong>四川省省级文物保护单位</strong>（第六批，2002年公布）</td></tr>
+      <tr><td>类别</td><td>古建筑（道教宫观）</td></tr>
+      <tr><td>位置</td><td>眉山市东坡区崇礼镇蟆颐村4组，与市区隔岷江相望</td></tr>
+      <tr><td>始建年代</td><td>始建于唐（一说南北朝开山、唐开元年间），距今约1600余年</td></tr>
+      <tr><td>规模</td><td>占地约380亩</td></tr>
+      <tr><td>身份</td><td>国家AAA级旅游景区、三苏遗址遗迹、蜀中三大名观之一</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>始建</strong>：始建于唐，为蜀中三大名观之一；因山形酷似蛤蟆微鼓两颐而得名"蟆颐"，因供奉四目仙翁（陆修静，目有重瞳）而得名"重瞳观"（<a href="https://wwj.sc.gov.cn/scwwj/mss/2020/12/11/7269dc14644c433db3c42e2b51e3cfb7.shtml">据四川省文物局</a>、据东坡区政府）。</li>
+    <li><strong>名家渊缘</strong>：唐末尔朱真人、杨太虚得道于此；苏洵早年于观内求子，后得苏轼、苏辙；陆游、范成大等文人墨客曾游历题咏（据东坡区政府、据国际在线、据澎湃新闻）。</li>
+    <li><strong>兴废重修</strong>：明末毁于兵火，清康熙年间重修；大殿重建于明代成化十三年（1477年）（据四川省文物局、据四川省情网）。</li>
+    <li><strong>定级保护</strong>：2002年12月公布为四川省第六批省级文物保护单位（据四川省文物局、据澎湃新闻）。</li>
+    <li><strong>保护修缮</strong>：2021年投入700余万元完成重瞳观保护维修（据四川省文物局）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>观依蟆颐山而建，林峦奇秀、江水碧透，古"眉州八景"独占其二："蟆颐晚照""江乡夜月"（<a href="https://wwj.sc.gov.cn/scwwj/mss/wbzs_whyc_2.shtml">据四川省文物局</a>）。</p>
+  <ul>
+    <li><strong>空间序列</strong>：沿中轴线一路往上的传统宫观布局，山门—台阶—大殿—各殿（据携程线索、据四川省文物局）。</li>
+    <li><strong>殿宇格局</strong>：现存重瞳殿、文昌殿、儒易斋、慈航殿、太岁殿、南极殿、张仙殿、道德经碑亭等（据四川省文物局、据中国作家网线索）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">蟆颐仙观 · 布局示意</text>
+      <g font-size="9">
+        <rect x="120" y="44" width="200" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">山门（清代·庑殿如意斗拱）</text>
+        <rect x="120" y="76" width="200" height="20" rx="4" fill="#f6ead0" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="90" text-anchor="middle" fill="#8a4a1f" font-weight="700">台阶</text>
+        <rect x="120" y="102" width="200" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="115" text-anchor="middle" fill="#8a4a1f" font-weight="700">重瞳殿（明成化重建·核心）</text>
+        <text x="220" y="129" text-anchor="middle" fill="#8a4a1f" font-size="8.5">单檐歇山 · 面阔三间</text>
+        <rect x="80" y="144" width="140" height="28" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="150" y="162" text-anchor="middle" fill="#8a4a1f" font-weight="700">文昌殿·儒易斋·慈航殿</text>
+        <rect x="228" y="144" width="140" height="28" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="298" y="162" text-anchor="middle" fill="#8a4a1f" font-weight="700">太岁殿·南极殿·张仙殿</text>
+        <rect x="120" y="180" width="200" height="26" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="197" text-anchor="middle" fill="#8a4a1f" font-weight="700">道德经碑亭 → 老人泉（题刻）</text>
+        <text x="220" y="228" text-anchor="middle" font-size="8.5" fill="#8a6a40">占地约380亩 · 沿中轴线一路向上 · 按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 蟆颐仙观布局示意：山门（清代·庑殿如意斗拱）→ 台阶 → 重瞳殿（明成化重建·核心·单檐歇山面阔三间）→ 文昌殿·儒易斋·慈航殿·太岁殿·南极殿·张仙殿 → 道德经碑亭·老人泉（题刻）· 占地约380亩，沿中轴线一路向上 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>山门（清代）</strong>：抬梁结构、庑殿屋面、檐下如意斗拱，为川滇传统样式（<a href="https://wwj.sc.gov.cn/scwwj/mss/wbzs_whyc_2.shtml">据四川省文物局</a>）。</li>
+    <li><strong>重瞳殿（明代）</strong>：大殿于明成化十三年（1477）重建，平面方形、屋面高耸、用料粗大、彩绘线条流畅、雕刻精美；单檐歇山式木结构，面阔三间（据四川省文物局、据携程线索）。</li>
+    <li><strong>遗存</strong>：名碑2通、清碑1通，古树86棵；老人泉及周边题刻为清代留存（据四川省文物局、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 清代山门</strong>：抬梁结构、庑殿屋面、檐下如意斗拱，川滇传统样式少见（据四川省文物局）。</li>
+    <li><strong>② 重瞳殿（明代古建）</strong>：明成化十三年重建，单檐歇山、面阔三间，梁架结构保存完好，为研究明清建筑不可多得的实物遗存（据四川省文物局、据携程线索）。</li>
+    <li><strong>③ 老人泉及题刻</strong>：康熙年间书写的老人泉及周边题刻（据抖音线索）。</li>
+    <li><strong>④ 碑刻遗存</strong>：观内名碑2通、清碑1通，含《重瞳观新修殿宇碑记》（据四川省文物局、据Trip.com线索）。</li>
+    <li><strong>⑤ 三苏文脉</strong>：苏洵求子、苏轼兄弟游学地，承载"蟆颐晚照""江乡夜月"古眉州八景（据东坡区政府、据四川省文物局）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>老人泉题刻</strong>：康熙年间书写的老人泉及周边题刻（据抖音线索）。</li>
+    <li><strong>碑刻</strong>：观内名碑2通、清碑1通，大殿附《重瞳观新修殿宇碑记》（据四川省文物局、据Trip.com线索）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约90—120分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>眉山市东坡区崇礼镇蟆颐山（与市区隔岷江相望）</strong>；</li>
+    <li>过<strong>清代山门</strong>，细看庑殿屋面与如意斗拱；</li>
+    <li>登台阶至<strong>重瞳殿</strong>（明代重建·核心），观梁架、斗拱与赭红墙体；</li>
+    <li>依次探访<strong>文昌殿、慈航殿、太岁殿、南极殿、张仙殿、儒易斋</strong>等；</li>
+    <li>至<strong>道德经碑亭</strong>赏碑刻，访<strong>老人泉</strong>及题刻，寻三苏文脉后离场（据四川省文物局、据携程线索）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　蟆颐山免费开放，沿中轴线一路向上即可；观内以道教宫观与三苏文化见长（据携程线索、据央广网）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：蜀中三大名观之一、三苏遗址遗迹，唐末得道者与三苏、陆游等名家渊缘深厚（据东坡区政府、据国际在线）。</li>
+    <li><strong>建筑价值</strong>：清代山门抬梁庑殿如意斗拱、明代重瞳殿，为研究明清建筑不可多得的实物遗存（据四川省文物局、据国际在线）。</li>
+    <li><strong>保护现状</strong>：2002年公布为省级文保单位，2021年投入700余万元完成保护维修，为国家AAA级旅游景区（据四川省文物局、据央广网）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：四川省眉山市东坡区崇礼镇蟆颐村4组（与市区隔岷江相望）。</li>
+    <li><strong>开放状态</strong>：蟆颐山景区免费开放（据携程线索、据央广网）。</li>
+    <li><strong>交通</strong>：位于崇礼镇蟆颐山，与眉山城区隔岷江相望（据东坡区政府）。</li>
+    <li><strong>提示</strong>：观为省级文物，请文明参观、爱护古建碑刻，具体开放安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>四川省文物局《蟆颐山重瞳观》：<a href="https://wwj.sc.gov.cn/scwwj/mss/2020/12/11/7269dc14644c433db3c42e2b51e3cfb7.shtml">wwj.sc.gov.cn</a></li>
+      <li>四川省文物局《旧地浮新生，重瞳观保护维修换新颜》：<a href="https://wwj.sc.gov.cn/scwwj/szdt/2023/3/6/c6969f2b91c94221a1de33066fcafa26.shtml">wwj.sc.gov.cn</a></li>
+      <li>四川省文物局《眉山市·蟆颐山重瞳观》：<a href="https://wwj.sc.gov.cn/scwwj/mss/wbzs_whyc_2.shtml">wwj.sc.gov.cn</a></li>
+      <li>东坡区委区政府《蟆颐问道》：<a href="https://www.dp.gov.cn/info/1502/34910.htm">dp.gov.cn</a></li>
+      <li>四川省情网《得天独厚的陈沟村和美丽传奇的蟆颐村》：<a href="http://scdfz.sc.gov.cn/whzh/slzc1/content_38439">scdfz.sc.gov.cn</a></li>
+      <li>澎湃新闻《保护三苏遗址遗迹从此有法可依》：<a href="https://m.thepaper.cn/baijiahao_4238602">thepaper.cn</a></li>
+      <li>央广网《眉山蟆颐山：创新引领 探索文旅融合新方式》：<a href="https://sc.cnr.cn/scpd/szlb/20241114/t20241114_526975367.shtml">sc.cnr.cn</a></li>
+      <li>国际在线《省级文物保护利用优秀项目，眉山+1！》：<a href="https://sc.cri.cn/2024-06-11/82137969-3945-c4a6-5e66-538cb132ca08.html">sc.cri.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">蟆颐晚照 · 江乡夜月</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

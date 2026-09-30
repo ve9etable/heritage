@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大觉精舍深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M24 10 L40 10 L40 20 L44 20 L44 24 L20 24 L20 20 L24 20 Z M22 26 L42 26 L42 54 L22 54 Z M28 30 L28 54 M36 30 L36 54 M22 26 L18 32 L18 54 L24 54' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">贵州省省级文物保护单位 · 近现代重要史迹 · 私家佛堂建筑群</div>
+    <h1>大觉精舍</h1>
+    <p class="sub">俗称<strong>华家阁楼</strong>，位于贵阳市云岩区<strong>电台街</strong>，1923年建，华之鸿私家供佛禅院，五层八角攒尖顶佛阁、梓木榫卯工艺，<strong>贵州省省级文物保护单位</strong>（<a href="http://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959429.html">据贵阳文旅局</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>大觉精舍（俗称"华家阁楼""华家大院"）</td></tr>
+      <tr><td>保护级别</td><td><strong>贵州省省级文物保护单位</strong>（第四批，2006年6月6日公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（私家佛堂·禅院建筑群）</td></tr>
+      <tr><td>位置</td><td>贵阳市云岩区电台街116号（一说188号）</td></tr>
+      <tr><td>年代</td><td>创建于民国十二年（1923年）／民国十三年（1924年），华之鸿出资建</td></tr>
+      <tr><td>建筑</td><td>坐东向西，由山门、南/北厢楼、藏经楼及五层八角阁楼组成，占地约5300平方米</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>兴建</strong>：民国初年贵阳实业家、时任贵州省财政司司长的华之鸿，在贵阳东门和北门城墙转角处建私家供佛禅院，即大觉精舍（<a href="http://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959429.html">据贵阳文旅局</a>、据贵州省政协）。</li>
+    <li><strong>道场</strong>：建成后由天曦法师主理道场，有60多位僧人修行，民国时期一度为贵阳佛教中心之一（据抖音线索）。</li>
+    <li><strong>广播电台</strong>：抗战时期贵阳广播电台租用藏经楼办公，1960年初维修时小青瓦换为琉璃瓦、电台迁出（据贵阳档案方志、据360地图）。</li>
+    <li><strong>定级保护</strong>：1981年5月列为贵阳市市级文物保护单位，2006年6月6日公布为第四批省级文物保护单位（据贵阳文旅局、据贵阳档案方志）。</li>
+    <li><strong>修缮开放</strong>：2024—2025年经历史上第五次修缮后焕新开放，引入茶馆茶咖、古琴传习、非遗工坊等业态，为文保单位里的"非遗综合体"（据贵阳日报、据贵阳市文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>精舍坐东向西，由山门、南/北厢楼、藏经楼和五层阁楼等组成（<a href="https://m.thepaper.cn/newsDetail_forward_27050107">据澎湃</a>）。</p>
+  <ul>
+    <li><strong>格局</strong>：主楼为中心，与阁楼相对有藏经楼及两厢，均为两层木结构，以曲栏回廊上下连通（据新浪博客、据贵阳文旅局）。</li>
+    <li><strong>动线</strong>：自西向东依次为山门、藏经楼、南/北厢楼、阁楼（据保护修缮方案）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">大觉精舍 · 布局示意</text>
+      <g font-size="9">
+        <rect x="60" y="44" width="70" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="95" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">山门</text>
+        <rect x="150" y="44" width="90" height="26" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="195" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">藏经楼</text>
+        <rect x="60" y="92" width="130" height="24" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="125" y="107" text-anchor="middle" fill="#8a4a1f" font-weight="700">南厢楼</text>
+        <rect x="250" y="92" width="130" height="24" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="315" y="107" text-anchor="middle" fill="#8a4a1f" font-weight="700">北厢楼</text>
+        <rect x="150" y="128" width="140" height="40" rx="4" fill="#c05a1e" stroke="#8a4a1f" stroke-width="2"/>
+        <text x="220" y="143" text-anchor="middle" fill="#fff" font-weight="700">五层八角佛阁（中心）</text>
+        <text x="220" y="157" text-anchor="middle" fill="#ffe4d6" font-size="8">五重檐 · 八面开窗 · 攒尖顶</text>
+        <text x="220" y="210" text-anchor="middle" font-size="8.5" fill="#8a6a40">坐东向西 · 曲栏回廊上下连通 · 梓木榫卯</text>
+        <text x="220" y="226" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 大觉精舍布局示意：电台街入口 → 山门 → 藏经楼 → 庭院（南/北厢楼左右对称）→ 中心五层八角佛阁（五重檐·八面开窗·攒尖顶）· 坐东向西 · 曲栏回廊上下连通 · 梓木榫卯 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>五层八角攒尖顶佛阁</strong>：中心为五层五重檐八角攒尖顶木结构阁楼，高约25—30米，八角翘檐、八面开窗，底层为砖木结构、二层以上全为实木（据新浪博客、据贵阳文旅局）。</li>
+    <li><strong>梓木工艺</strong>：请四川掌墨师以梓木建五层五重檐木构奇观，门窗梁柱全是梓木，柱基及月台望柱、栏板有浮雕或透雕花纹；通体用传统穿斗榫卯工艺搭建（据抖音线索、据贵阳文旅局）。</li>
+    <li><strong>地位</strong>：为贵阳近代最优秀的木结构建筑群，与文昌阁、王伯群故居并称"贵阳三景"（据新浪博客、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 五层八角佛阁</strong>：中心主楼，五重翘檐层层收束、八面开窗翼角高挑，可俯视全城（据贵州省政协、据贵阳文旅局）。</li>
+    <li><strong>② 藏经楼与两厢</strong>：与佛阁相对、以曲栏回廊上下连通的木结构建筑（据新浪博客）。</li>
+    <li><strong>③ 梓木与榫卯工艺</strong>：门窗梁柱梓木、柱基月台浮雕透雕、穿斗榫卯，近代木结构精品（据贵阳文旅局、据抖音线索）。</li>
+    <li><strong>④ 华家史迹</strong>：老贵阳"华家的银子"之华家现存贵阳唯一一处场馆遗迹（据贵阳市文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>庭院古树</strong>：历经岁月，庭院内两棵大树依然翠绿繁茂，常有人树下品茶看书（据贵阳档案方志）。</li>
+    <li><strong>建筑题记</strong>：精舍以建筑本体与佛阁为价值主体，具体楹联匾额题刻待修缮开放后以现场为准（据贵阳档案方志、据贵阳文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约40—60分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>贵阳市云岩区电台街大觉精舍</strong>；</li>
+    <li>过<strong>山门</strong>，观<strong>藏经楼</strong>与左右对称<strong>厢楼</strong>；</li>
+    <li>细看中心<strong>五层八角佛阁</strong>的五重翘檐、八面开窗与梓木柱基月台；</li>
+    <li>在庭院古树下品茶赏物，了解华家"华家银子"的家族史与修缮活用后离场（据贵阳文旅局、据新浪博客）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　精舍2025年修缮后焕新开放，现为"非遗综合体"，含茶馆茶咖、古琴传习、非遗工坊等业态，可入内参观（据贵阳市文旅局）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：华之鸿私家供佛禅院，见证华氏家族与贵阳近代史；抗战时期曾是贵州广播电台办公地（据贵阳文旅局、据贵阳档案方志）。</li>
+    <li><strong>建筑价值</strong>：贵阳近代最优秀木结构建筑群，与文昌阁、王伯群故居并称"贵阳三景"（据新浪博客、据抖音线索）。</li>
+    <li><strong>保护现状</strong>：2006年公布为省级文保单位；2024—2025年第五次修缮后活化利用为非遗复合业态，修建如旧（据贵阳日报、据贵阳市文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：贵州省贵阳市云岩区电台街116号。</li>
+    <li><strong>开放状态</strong>：大觉精舍2025年修缮后焕新开放，为文保单位里的"非遗综合体"，具体开放时间、业态与预约以官方最新公告为准（据贵阳日报、据贵阳市文旅局）。</li>
+    <li><strong>交通</strong>：位于贵阳老城区电台街，一边连文昌阁、一边连华家阁楼（据抖音线索、据贵阳高新区）。</li>
+    <li><strong>提示</strong>：省级文保单位，参观时请爱护文物古建，具体安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>贵阳市文化和旅游局《贵阳大觉精舍》：<a href="http://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959429.html">wlj.guiyang.gov.cn</a></li>
+      <li>贵州省人民政府《关于公布第四批省级文物保护单位的通知》：<a href="https://www.guizhou.gov.cn/zwgk/zfgb/gzszfgb/200606/t20060606_70515550.html?isMobile=true">guizhou.gov.cn</a></li>
+      <li>中国人民政治协商会议贵州省委员会《大觉精舍背后的贵阳故事》：<a href="https://www.gzszx.gov.cn/gzzxb/web/doc/detail/d_1447744434602016">gzszx.gov.cn</a></li>
+      <li>澎湃新闻《"祛斑、护肤、养颜"贵阳地标大觉精舍开启"全身保养"模式》：<a href="https://m.thepaper.cn/newsDetail_forward_27050107">thepaper.cn</a></li>
+      <li>贵阳档案方志信息网《电台街口"大觉精舍"的前世今生》：<a href="http://gydafzxx.cn/home/new/info.html?id=1748&catId=67">gydafzxx.cn</a></li>
+      <li>贵阳日报《大觉精舍第五次修缮焕新》：<a href="https://rb.gywb.cn/epaper/gyrb/res/2025-08/06/A08/gyrbgyrb20250806A08.pdf">rb.gywb.cn</a></li>
+      <li>贵阳市文化和旅游局《新场景 新展陈 新驿站》：<a href="http://wlj.guiyang.gov.cn/xwdt/bmdt/202510/t20251009_88677105.html">wlj.guiyang.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">华家银子 · 五层佛阁凌霄汉</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

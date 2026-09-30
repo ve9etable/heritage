@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>云南贡院深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M14 20 L32 12 L50 20 L50 28 L14 28 Z' fill='%23f0d9a8'/%3E%3Cpath d='M20 34 L44 34 L44 50 L20 50 Z' fill='%23f0d9a8'/%3E%3Crect x='18' y='52' width='28' height='5' rx='2' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 科举遗址 · 古建筑</div>
+    <h1>云南贡院</h1>
+    <p class="sub">坐落于昆明市五华区<strong>云南大学东陆校区</strong>内，明清两代云贵科举乡试核心场所，始建于明景泰四年（1453年）、弘治十二年（1499年）迁建今址，1987年公布为<strong>云南省重点文物保护单位</strong>，其中<strong>会泽院</strong>2019年公布为<strong>全国重点文物保护单位</strong>（<a href="https://edu.yunnan.cn/cms_udf/2025/yngy/index.shtml">据云南网</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>云南贡院（坐落于云南大学东陆校区内）</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省重点文物保护单位</strong>（1987年第三批省级）；其中<strong>会泽院</strong>2019年10月7日公布为<strong>全国重点文物保护单位</strong></td></tr>
+      <tr><td>类别</td><td>古建筑（科举遗址）/ 近现代重要史迹</td></tr>
+      <tr><td>位置</td><td>云南省昆明市五华区翠湖北路2号云南大学东陆校区内</td></tr>
+      <tr><td>始建年代</td><td>明景泰四年（1453年）初建；明弘治十二年（1499年）迁建至今址</td></tr>
+      <tr><td>建筑群</td><td>至公堂、东号舍（贡院原物），及会泽院、映秋院、钟楼等民国建筑</td></tr>
+      <tr><td>叠加身份</td><td>全国现存历史最悠久的科举考试遗址之一、云南大学东陆校区核心历史景观</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>初建</strong>：云南贡院始建于明景泰四年（1453年），原址在昆明长春路、威远街一带（<a href="https://edu.yunnan.cn/cms_udf/2025/yngy/index.shtml">据云南网</a>、据抖音）。</li>
+    <li><strong>迁建</strong>：明弘治十二年（1499年）迁建至今址"背负城墙，面临翠湖"，即今云南大学东陆校区（<a href="https://edu.yunnan.cn/cms_udf/2025/yngy/index.shtml">据云南网</a>）。</li>
+    <li><strong>科举考场</strong>：作为明清两代云贵地区科举乡试的核心场所，每三年举办乡试（<a href="https://edu.yunnan.cn/cms_udf/2025/yngy/index.shtml">据云南网</a>）。</li>
+    <li><strong>重大事件</strong>：南明时期为永历帝"滇都"皇宫；清嘉庆二十四年（1819年）林则徐任主考主持云南乡试；1946年闻一多在至公堂主持李公朴追悼会（据抖音、据携程）。</li>
+    <li><strong>废科举办学</strong>：1905年科举制度废除；1922年唐继尧捐资创办东陆大学（云南大学前身），1923年在明远楼原址建会泽院（<a href="http://www.kmwh.gov.cn/c/2022-10-27/6278038.shtml">据五华区人民政府</a>）。</li>
+    <li><strong>定级保护</strong>：1987年云南贡院公布为第三批省级重点文物保护单位；1988年至公堂按原样落架重修；2019年会泽院公布为全国重点文保（据人民网、据五华区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>云南贡院坐落于云南大学东陆校区，与民国建筑交融，形成"贡院—大学"双重历史格局（据云南网、据美篇）。</p>
+  <ul>
+    <li><strong>中轴线</strong>：正大门、九十五级台阶、会泽院、革命烈士纪念碑、至公堂、怀周楼共同构成云南大学建筑群中轴线（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>贡院原物</strong>：至公堂（中心大堂）、东号舍（东文场残余）为贡院原物（<a href="https://edu.yunnan.cn/cms_udf/2025/yngy/index.shtml">据云南网</a>）。</li>
+    <li><strong>牌坊</strong>：至公堂南面左右有牌坊，左为"腾蛟"坊、右为"起凤"坊（据抖音）。</li>
+    <li><strong>原址变迁</strong>：明远楼拆除建为会泽院，衡鉴堂拆除建为图书馆（据抖音）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">云南贡院（云南大学东陆校区）· 布局示意</text>
+      <g font-size="9">
+        <path d="M40,50 L400,50 L400,255 L40,255 Z" fill="none" stroke="#c05a1e" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="220" y="45" text-anchor="middle" fill="#8a4a1f">云南大学东陆校区 · 翠湖北路2号 · 面临翠湖</text>
+        <rect x="110" y="58" width="200" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="75" text-anchor="middle" fill="#8a4a1f" font-weight="700">校门（旧贡院"起凤坊"·"为国求贤"）</text>
+        <rect x="110" y="92" width="200" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="108" text-anchor="middle" fill="#8a4a1f" font-weight="700">九十五级台阶</text>
+        <rect x="110" y="124" width="200" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="140" text-anchor="middle" fill="#8a4a1f" font-weight="700">会泽院（原明远楼址 · 法式）</text>
+        <text x="210" y="153" text-anchor="middle" fill="#8a6a40" font-size="8">全国重点文保 · 现历史博物馆</text>
+        <rect x="110" y="166" width="200" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="182" text-anchor="middle" fill="#8a4a1f" font-weight="700">革命烈士纪念碑</text>
+        <rect x="110" y="198" width="200" height="34" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="214" text-anchor="middle" fill="#8a4a1f" font-weight="700">至公堂（贡院核心）</text>
+        <text x="210" y="227" text-anchor="middle" fill="#8a6a40" font-size="8">乾隆题联 · 雕花门窗 · 东侧存东号舍</text>
+      </g>
+      <text x="220" y="246" text-anchor="middle" font-size="9" fill="#8a6a40">校门 → 九十五级台阶 → 会泽院 → 纪念碑 → 至公堂（东号舍）</text>
+      <text x="220" y="268" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 云南贡院布局示意：校门（旧贡院"起凤坊"）→ 九十五级台阶 → 会泽院（原明远楼址）→ 革命烈士纪念碑 → 至公堂（贡院核心·东侧存东号舍）→ 怀周楼 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>至公堂（中式大殿）</strong>：坐北朝南，南北两面雕花门窗、金碧彩绘，庄重典雅，面积564平方米（据抖音）。</li>
+    <li><strong>会泽院（法式建筑）</strong>：砖木、砖石、钢筋混凝土混合结构，楼长近78米、宽23米；建筑立面横五段、竖三段构图，块石勒脚、青石腰封、红墙矩窗；风格深受法国文艺复兴晚期建筑影响，为云南近代建筑典型作品（<a href="http://www.kmwh.gov.cn/c/2022-10-27/6278038.shtml">据五华区人民政府</a>、据抖音）。</li>
+    <li><strong>号舍（考棚）</strong>：原建于至公堂东西两侧，作为考生居住和考试之所（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 至公堂</strong>：贡院核心建筑，白墙黄瓦、雕梁画栋，雕花门窗金碧彩绘，庄重典雅（据抖音、据美篇）。</li>
+    <li><strong>② 东号舍（贡院考棚）</strong>：始建于明弘治十二年，是考生居住和考试之所，原分列至公堂东西两侧，现仅存东侧一排（据抖音）。</li>
+    <li><strong>③ 会泽院</strong>：云南大学标志性建筑，法式风格，抗战时曾两次中弹依然屹立，现为云南大学历史博物馆（<a href="http://www.kmwh.gov.cn/c/2022-10-27/6278038.shtml">据五华区人民政府</a>、据抖音）。</li>
+    <li><strong>④ 九十五级台阶</strong>：与"会泽院"共同构成云南大学校徽意象，为中轴线起点景观（据抖音）。</li>
+    <li><strong>⑤ 革命烈士纪念碑</strong>：位于会泽院与至公堂之间，见证云南大学光荣革命传统（据人民网）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>至公堂楹联</strong>：堂前内联由清乾隆皇帝题联（据抖音）。</li>
+    <li><strong>牌坊</strong>：至公堂南面左右有"腾蛟"坊、"起凤"坊（据抖音）。</li>
+    <li><strong>校门匾额</strong>：云大校门由旧贡院"起凤坊"改建，门楣保留"为国求贤"四字（据云南大学校史网）。</li>
+    <li><strong>亮瓦采光</strong>：至公堂屋顶安了很多亮瓦以改善采光（据人民网）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约40—60分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>云南大学东陆校区</strong>（翠湖北路，提前预约免费进入）；</li>
+    <li>观<strong>校门</strong>（由旧贡院"起凤坊"改建·"为国求贤"）；</li>
+    <li>上<strong>九十五级台阶</strong>，观<strong>会泽院</strong>（原明远楼址·法式建筑·现历史博物馆）；</li>
+    <li>至<strong>革命烈士纪念碑</strong>；</li>
+    <li>观<strong>至公堂</strong>（贡院核心·乾隆题联·雕花门窗）；</li>
+    <li>绕至公堂东侧看<strong>东号舍</strong>（贡院考棚遗迹）后离场（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>、据抖音）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　云南贡院为全国现存历史最悠久的科举考试遗址之一，贡院原物与民国建筑交融，宜静观至公堂与东号舍（<a href="https://edu.yunnan.cn/cms_udf/2025/yngy/index.shtml">据云南网</a>）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：云南贡院为明清两代云贵科举乡试核心场所，是我国现存历史最悠久的科举考试遗址之一，见证云南现代高等教育的起源与发展（<a href="https://edu.yunnan.cn/cms_udf/2025/yngy/index.shtml">据云南网</a>）。</li>
+    <li><strong>艺术价值</strong>：至公堂中式雕花金碧彩绘与会泽院法式建筑并存，为"存古尚新"的近代建筑典范（<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">据央广网</a>）。</li>
+    <li><strong>保护现状</strong>：1987年云南贡院公布为省级重点文保，1988年至公堂按原样落架重修；2019年会泽院公布为全国重点文保（据人民网、据五华区人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区翠湖北路2号云南大学东陆校区。</li>
+    <li><strong>开放状态</strong>：位于云南大学校园内，一般提前预约后可免费进入参观（据抖音）；具体以云南大学官方最新公告为准。</li>
+    <li><strong>交通</strong>：位于翠湖之畔，市内公交/地铁可达（以官方最新交通信息为准）。</li>
+    <li><strong>提示</strong>：贡院为省级文物（会泽院为国保），校园参观请注意教学秩序；具体预约方式、开放区域以云南大学官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市五华区人民政府《云南大学会泽院（省级）》：<a href="http://www.kmwh.gov.cn/c/2022-10-27/6278038.shtml">kmwh.gov.cn</a></li>
+      <li>云南网《云南贡院》：<a href="https://edu.yunnan.cn/cms_udf/2025/yngy/index.shtml">edu.yunnan.cn</a></li>
+      <li>央广网《云南大学会泽院采中西法式兼存古尚新》：<a href="https://www.cnr.cn/yn/cyn/20191119/t20191119_524863213.shtml">cnr.cn</a></li>
+      <li>人民网《云南大学至公堂轶事》：<a href="http://cpc.people.com.cn/BIG5/n/2013/0505/c87228-21367159.html">cpc.people.com.cn</a></li>
+      <li>云南大学校史网《大学校园环境之翘楚》：<a href="http://xsw.ynu.edu.cn/info/1003/1126.htm">xsw.ynu.edu.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">会泽百家 · 至公天下</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

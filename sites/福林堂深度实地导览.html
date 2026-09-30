@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福林堂（全国重点文物保护单位）深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236b1f17'/%3E%3Ccircle cx='26' cy='26' r='10' fill='%23e6c98a'/%3E%3Cpath d='M40 40 L36 24 L48 32 Z' fill='%23b8745a'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;--brick:#8a2a20;--brick-deep:#6b1f17;
+    --brick-soft:#a85046;--gold:#a8823c;--stone:#e9e3d8;--stone-2:#f4f0e8;
+    --paper:#fbf9f4;--line:#d9d2c4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  li > ul{margin:6px 0 6px 20px;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f3ea;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--gold);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#c9c0ae;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">全国重点文物保护单位 · 近现代史迹 · 深度实地导览</div>
+    <h1>福林堂</h1>
+    <p class="sub">福林堂位于云南省昆明市五华区光华街31号（文明街与光华街交叉口），始创于<strong>清咸丰七年（1857）</strong>，是云南现存最古老的药店，也是<strong>全国重点文物保护单位（2013年第七批）</strong>和中华老字号。其三层木楼呈独特的"八面风"转角铺面，雕梁画栋、古色古香（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>福林堂（光华街老店）</td></tr>
+      <tr><td>保护级别</td><td><strong>全国重点文物保护单位</strong>（2013年国务院公布第七批；1990年为盘龙区区级文保单位，2003年为昆明市级文保单位）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（传统商业建筑/老字号药店）</td></tr>
+      <tr><td>地址</td><td>云南省昆明市五华区光华街31号（文明街与光华街交叉口、文庙直街交叉处）</td></tr>
+      <tr><td>始建</td><td>清咸丰七年（1857）创建；现商铺为1902年在原址重建</td></tr>
+      <tr><td>规模</td><td>占地306.7平方米（老店口径）；据省文物考古所修缮资料，商铺、楼梯间、医务用房总占地约210.4平方米、建筑面积约464.3平方米（<a href="https://m.kunming.cn/news/c/2015-01-09/3801448.shtml">据昆明信息港</a>、<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>）</td></tr>
+      <tr><td>叠加身份</td><td>中华老字号（2006年商务部认定）、云南现存最古老药店、昆明历史文化名城重要标志</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>创建</strong>：福林堂始创于清咸丰七年（1857），由湖北黄冈人李玉卿创立，是云南现存最古老的药店之一（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）。</li>
+    <li><strong>"簸箕堂"</strong>：初创时只有一间铺面，前面看病卖药、后面切药制药，因面积狭小人称"簸箕堂"；李玉卿效法三国董奉，为穷苦百姓治病不收诊费，只求重病愈者在后堂植杏树三棵、轻者一棵，时间一长遂成杏林，故取名"福林堂"，意即"福泽杏林"（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）。</li>
+    <li><strong>传承发展</strong>：传至李复初时医术医德广得赞誉，福林堂逐渐成为民国时期昆明最负盛名的中药店之一（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）。</li>
+    <li><strong>公私合营</strong>：1956年福林堂与昆明200多家中小药店公私合营，成立昆明市药材公司（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）。</li>
+    <li><strong>定级保护</strong>：1990年盘龙区公布为区级文保单位；2003年昆明市公布为市级文保单位；2013年国务院公布为全国重点文物保护单位（<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>）。</li>
+    <li><strong>修缮开馆</strong>：2014年修缮并新增近130件中医药文化文物、20余幅老照片展示，2015年1月举行国保揭牌仪式，全面对外开放（<a href="https://m.kunming.cn/news/c/2015-01-09/3801448.shtml">据昆明信息港</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>福林堂老店坐落于昆明市中心<strong>文庙直街与光华街交叉处</strong>（文明街与光华街交叉口），店铺位于街道交叉口正中，两翼分别向光华街和文明街延伸，形成独特的<strong>"八面风"转角铺面</strong>（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>、据抖音百科）。商铺平面依街势而建成<strong>扇形</strong>，楼梯间与医务用房相连向东，平面呈一字形（<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>）。整栋三层楼为土木结构，进深两间、前檐临街面阔五间，一层明间为大门，次间、稍间为槛墙，上置木玻璃窗。</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="120" y="22" font-size="12" fill="#8a7b66">光华街 →</text>
+      <text x="340" y="22" font-size="12" fill="#8a7b66">文明街 ↓</text>
+      <!-- 交叉口 -->
+      <rect x="180" y="90" width="40" height="40" fill="#c9bda0" opacity="0.5"/>
+      <!-- 店铺扇形 -->
+      <path d="M160 100 Q220 40 280 100 L300 160 L140 160 Z" fill="#e0b84f" stroke="#a8823c" stroke-width="2"/>
+      <text x="220" y="118" text-anchor="middle" font-size="12" fill="#5a3c10" font-weight="700">福林堂"八面风"转角楼</text>
+      <text x="220" y="140" text-anchor="middle" font-size="9.5" fill="#6b5f45">三层木楼 · 扇形平面 · 伞把柱</text>
+      <text x="220" y="156" text-anchor="middle" font-size="9.5" fill="#6b5f45">一层：大门/药柜柜台/坐诊</text>
+      <!-- 两翼 -->
+      <text x="128" y="176" text-anchor="middle" font-size="9" fill="#4a5f35">向西沿光华街延伸</text>
+      <text x="312" y="176" text-anchor="middle" font-size="9" fill="#4a5f35">向东沿文明街延伸</text>
+      <!-- 向东医务用房 -->
+      <rect x="220" y="210" width="140" height="50" rx="5" fill="#b0875a" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="290" y="232" text-anchor="middle" font-size="10" fill="#fff">向东连接</text>
+      <text x="290" y="248" text-anchor="middle" font-size="10" fill="#fff">楼梯间 · 医务用房</text>
+      <!-- 二层三层 -->
+      <rect x="70" y="210" width="120" height="50" rx="5" fill="#c0a888" stroke="#8a663f" stroke-width="1.2"/>
+      <text x="130" y="232" text-anchor="middle" font-size="10" fill="#4a3a22">二、三层</text>
+      <text x="130" y="248" text-anchor="middle" font-size="10" fill="#4a3a22">库房 · 加工作坊</text>
+      <text x="220" y="300" text-anchor="middle" font-size="11" fill="#7a3c30" font-weight="700">福泽杏林 · 1857</text>
+    </svg>
+    <div class="cap">▲ 福林堂布局示意：光华街/文明街交叉口 → "八面风"转角店铺（店门居中，两翼沿街延伸）→ 一层药柜柜台（抓药/坐诊）→ 二、三层库房与加工作坊 → 向东连接楼梯间与医务用房 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格与营造特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格与营造特色</h2></div>
+  <ul>
+    <li><strong>"八面风"转角楼</strong>：店铺位于街口正中，两翼沿光华街与文明街延伸，可兼占两条街的地利，是商家梦寐以求的"八面风"铺面（据抖音百科）。</li>
+    <li><strong>扇形平面与"伞把柱"</strong>：商铺平面依街势呈扇形（四分之一伞形），室内中部设一通至正脊顶的中柱（"伞把柱"）承接各层木承重大梁传递的楼面荷载，最大限度拓展室内空间，是百年前匠心之作（<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>、据今日头条"秀拥五华"）。</li>
+    <li><strong>土木结构雕梁画栋</strong>：三层土木结构楼房，青瓦硬山顶、单檐青色筒板瓦，两硬山垂直相交，前檐口为"伞檐"弧形；雕花封檐板、坠脚均有雕花，外檐施地方彩画（<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>）。</li>
+    <li><strong>精美木雕</strong>：封檐有精心雕塑的牡丹朝阳、二龙戏凤、鲤鱼翻身，外沿楼裙有栩栩如生的松鼠葡萄、琴棋书画雕刻，一派古色古香（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>、<a href="https://m.kunming.cn/news/c/2015-01-09/3801448.shtml">据昆明信息港</a>）。</li>
+    <li><strong>剑川外墙木雕工艺</strong>：典型剑川外墙木雕工艺，具有鲜明的地域和时代特色（据携程）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① "八面风"转角铺面</strong>：位于光华街与文明街交叉口，三层木楼呈伞状八面铺面，是昆明老街地标（<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>）。</li>
+    <li><strong>② 店名匾额与对联</strong>：名士陈荣昌题"福林堂"三字烫金悬匾；对联"遵法炮制生熟饮片，精工修合丸散膏丹"；封檐书"云南药圃，川广云贵，地道药材，参茸燕桂，丸散膏丹"（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）。</li>
+    <li><strong>③ 传统药柜与器具</strong>：店内保留大量传统药柜、研钵、戥子等器具，工匠以铡刀切药、撵槽碾药（据携程、昆明信息港）。</li>
+    <li><strong>④ 中医药文化文物展</strong>：修缮后新增近130件中医药文化文物、20余幅老照片，含拓板、药兽等百年文物（<a href="https://m.kunming.cn/news/c/2015-01-09/3801448.shtml">据昆明信息港</a>）。</li>
+    <li><strong>⑤ 传统炮制展示与包药体验</strong>：四方纸花线包药体验、中药饮片炮制展示（<a href="https://m.kunming.cn/news/c/2015-01-09/3801448.shtml">据昆明信息港</a>）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:44%"><col style="width:18%"><col style="width:16%"></colgroup>
+    <thead><tr><th>位置</th><th>内容</th><th>年代</th><th>看点</th></tr></thead>
+    <tbody>
+      <tr><td>店门</td><td>"福林堂"匾额（陈荣昌题）</td><td>清末</td><td>烫金悬匾（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）</td></tr>
+      <tr><td>门柱</td><td>"遵法炮制生熟饮片，精工修合丸散膏丹"</td><td>清末</td><td>炮制训言（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）</td></tr>
+      <tr><td>封檐</td><td>"云南药圃，川广云贵，地道药材，参茸燕桂，丸散膏丹"</td><td>清末</td><td>五组20字（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）</td></tr>
+      <tr><td>店内</td><td>"本店药料选辨最精，参茸燕桂必择其优；饮片丸散精益求精，药真价实包换来回"</td><td>—</td><td>店内楹联（<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约30分钟—1小时）</strong>：</p>
+  <ol>
+    <li>至光华街与文明街交叉口，先览"八面风"转角楼全景与雕花封檐；</li>
+    <li>细看店门上方的<strong>"福林堂"匾额</strong>与门柱、封檐<strong>对联题字</strong>；</li>
+    <li>入店堂，观<strong>传统药柜、戥子、铡刀、撵槽</strong>等制药器具；</li>
+    <li>参观店内<strong>中医药文化文物展</strong>（拓板、药兽等百年文物）；</li>
+    <li>视现场安排，体验<strong>传统炮制展示、四方纸花线包药</strong>；</li>
+    <li>出店后顺逛光华街、文明街、甬道街等昆明老街建筑群。</li>
+  </ol>
+  <div class="tip"><span class="t">时间紧张备选</span>　直奔<strong>"八面风"楼外观 + 店堂药柜与匾额</strong>，约20分钟。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：福林堂始创于1857年，是云南现存最古老、最负盛名、规模最大的老字号中药店，一个半世纪以来店址未变、保持古色古香传统风格，见证昆明中医药文化传承（<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>）。</li>
+    <li><strong>建筑艺术价值</strong>：建筑平面布置及结构设计合理精巧，外观造型独特，文化景观效果极佳，是昆明历史文化老街上的地标建筑、昆明历史文化名城的重要标志（<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>）。</li>
+    <li><strong>保护现状</strong>：1990年区保、2003年市保、2013年国保；2014年修缮并新增文物展陈，全面对外开放；中药炮制技艺为市级非遗（<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">据云南省文物考古研究所</a>、<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">据昆明市政协</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区光华街31号（文明街与光华街交叉口）。</li>
+    <li><strong>开放</strong>：修缮后全面对外开放，店内可抓药、问诊，并展示传统炮制项目（<a href="https://m.kunming.cn/news/c/2015-01-09/3801448.shtml">据昆明信息港</a>）。</li>
+    <li><strong>门票</strong>：<strong>免费</strong>（进店参观免费）。</li>
+    <li><strong>提示</strong>：福林堂为仍在营业的老字号药店，参观时注意店内秩序；具体开放与活动安排以现场为准。信息更新于2026年，以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市政协《【昆明老字号】福林堂：福泽杏林 与古为新》（2024-08-30）：<a href="http://www.kmszx.gov.cn/c/2024-08-30/4893079.shtml">kmszx.gov.cn</a></li>
+      <li>云南省文物考古研究所《福林堂修缮工程》（2019-08-14）：<a href="http://www.ynkgs.cn/view/ynkgMO/2/55/view/1813.html">ynkgs.cn</a></li>
+      <li>昆明信息港《福林堂全国重点文物保护单位在五华区光华街揭牌》（2015-01-09）：<a href="https://m.kunming.cn/news/c/2015-01-09/3801448.shtml">kunming.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">福泽杏林 · 1857</div>
+  <div style="margin-top:6px;">信息来自官网、政府、报纸、文物局等官方权威渠道 · 布局示意图以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>
+<!-- （注：内容由AI生成） -->

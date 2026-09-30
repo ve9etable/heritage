@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>唐继尧墓深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M18 34 A14 14 0 1 0 46 34 Z' fill='%23f0d9a8'/%3E%3Crect x='16' y='38' width='32' height='10' rx='2' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省文物保护单位 · 近现代重要史迹 · 名人墓葬</div>
+    <h1>唐继尧墓</h1>
+    <p class="sub">位于昆明市五华区<strong>圆通山昆明动物园内</strong>，为民国时期云南军政领导人唐继尧之墓，俗称<strong>"唐坟"</strong>；1930年动工、1932年竣工，石砌圆丘、中西合璧，1987年公布为<strong>云南省重点文物保护单位</strong>（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>唐继尧墓，俗称"唐坟"</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省重点文物保护单位</strong>（1987年公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（名人墓葬）</td></tr>
+      <tr><td>位置</td><td>云南省昆明市五华区圆通山昆明动物园内（靠近东大门、樱花大道附近）</td></tr>
+      <tr><td>建造年代</td><td>1930年动工，1932年竣工</td></tr>
+      <tr><td>规模</td><td>总占地面积1500平方米，墓冢石砌圆丘，高约6米、直径16米</td></tr>
+      <tr><td>墓主人</td><td>唐继尧（云南会泽人，1908年毕业于日本陆军士官学校，曾任贵州都督，1913—1927年执掌云南，护国运动领导人）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>建墓</strong>：1930年在圆通山西北梅园（唐继尧故居"唐家花园"一带）修建规模宏大的唐继尧墓，1932年竣工，历时两年（据五华区文物管理所、据抖音）。</li>
+    <li><strong>墓主人</strong>：唐继尧为云南会泽人，1908年毕业于日本陆军士官学校，回国后曾任云南陆军讲武堂教官、贵州都督，1913年至1927年执掌云南，参与领导护国运动、护法战争，为"云南王"（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>、据抖音）。</li>
+    <li><strong>下野病逝</strong>：1927年，龙云等四位镇守使联合兵谏，唐继尧被迫下野，同年5月23日病逝（据抖音）。</li>
+    <li><strong>定级保护</strong>：1987年公布为云南省文物保护单位；昆明市人民政府提案答复中明确"位于昆明动物园内的唐继尧墓现已公布为省级文物保护单位"（<a href="https://www.km.gov.cn/c/2020-08-31/3645869.shtml">据昆明市人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>唐继尧墓为<strong>中西合璧石砌圆丘式</strong>大型陵墓，坐北朝南，占地1500平方米（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>）。</p>
+  <ul>
+    <li><strong>墓冢</strong>：石砌圆丘，高约6米、直径16米。</li>
+    <li><strong>墓前碑阁</strong>：由14根欧式古典石柱组成7个平顶墓厦，总宽达16.70米；正中墓厦凸出，廊柱浮雕具有欧式风格（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>）。</li>
+    <li><strong>神道</strong>：墓前建有神道，两侧立有石狮、华表（石阙）、石标等石雕，周围植松、柏、梅、竹（据抖音、据五华区文物管理所）。</li>
+    <li><strong>平台与围栏</strong>：神道末端有石台阶，石台阶后建有上下两层平台，平台四周有石质围栏，围栏后为碑阁（据抖音）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">唐继尧墓 · 布局示意</text>
+      <g font-size="9">
+        <path d="M40,50 L400,50 L400,255 L40,255 Z" fill="none" stroke="#c05a1e" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="220" y="45" text-anchor="middle" fill="#8a4a1f">昆明圆通山动物园内 · 樱花大道附近</text>
+        <rect x="100" y="58" width="220" height="28" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="76" text-anchor="middle" fill="#8a4a1f" font-weight="700">神道 · 石狮 · 华表（石阙）· 石雕 · 松柏梅竹</text>
+        <rect x="130" y="96" width="160" height="24" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="112" text-anchor="middle" fill="#8a4a1f" font-weight="700">石台阶 → 上下两层平台（石围栏）</text>
+        <rect x="100" y="132" width="220" height="40" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="148" text-anchor="middle" fill="#8a4a1f" font-weight="700">碑阁 · 14根欧式石柱 · 7平顶墓厦</text>
+        <text x="210" y="162" text-anchor="middle" fill="#8a6a40" font-size="8">墓碑"会泽唐公蓂赓墓" · 两侧八块碑刻 · 墓联</text>
+        <path d="M210,172 L210,186" stroke="#c05a1e" stroke-width="2"/>
+        <ellipse cx="210" cy="204" rx="70" ry="32" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="210" y="200" text-anchor="middle" fill="#8a4a1f" font-weight="700">墓冢</text>
+        <text x="210" y="214" text-anchor="middle" fill="#8a6a40" font-size="8">石砌圆丘 · 高约6米 · 直径16米</text>
+      </g>
+      <text x="220" y="246" text-anchor="middle" font-size="9" fill="#8a6a40">神道 → 石台阶 → 平台（围栏）→ 碑阁 → 墓冢</text>
+      <text x="220" y="268" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+    </svg>
+    <div class="cap">▲ 唐继尧墓布局示意：神道（石狮·华表·石雕·松柏梅竹）→ 石台阶 → 上下两层平台（石围栏）→ 碑阁（14根欧式石柱·7平顶墓厦·墓碑）→ 石砌圆丘墓冢 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>中西合璧</strong>：集希腊式、威尼斯式、哥特式与中国传统建筑艺术风格于一体，为国内规模较大的近代名人陵墓（据抖音）。</li>
+    <li><strong>欧式墓厦</strong>：14根欧式古典石柱组成7个平顶墓厦，廊柱浮雕具有欧式风格，极为精美（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>）。</li>
+    <li><strong>中式圆丘</strong>：墓冢为石砌圆丘形制，周植松、柏、梅、竹，兼具中式陵园气象（据五华区文物管理所、据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 墓冢圆丘</strong>：石砌圆丘，高约6米、直径16米，为墓的主体（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>）。</li>
+    <li><strong>② 欧式碑阁</strong>：14根欧式古典石柱组成7个平顶墓厦，总宽16.70米，正中墓厦凸出、廊柱浮雕精美（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>）。</li>
+    <li><strong>③ 墓碑与碑刻</strong>：墓碑楷书"会泽唐公蓂赓墓"（高约2.68米、宽1.05米）；两侧墓厦依次退缩，各嵌4块碑刻，记载唐继尧被推为护国军务院抚军长文书、大总统授勋令、护法战争任职文件及墓表等内容（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>、据抖音）。</li>
+    <li><strong>④ 神道石雕</strong>：神道两旁立有石狮、华表（石阙）、石标等石雕，气势壮观（据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>墓碑</strong>：楷书"会泽唐公蓂赓墓"，为墓前主碑（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>）。</li>
+    <li><strong>墓联</strong>：正中墓碑两侧有对联"功业须当垂永久，风云常为护储胥"（据抖音）。</li>
+    <li><strong>碑刻八块</strong>：两侧墓厦各嵌4块碑刻，内容含唐继尧被推为护国军务院抚军长文书、大总统授勋令、护法战争期间任职文件与墓表等，概括其一生的历史功绩（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>、据抖音）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约20—30分钟）</strong>：</p>
+  <ol>
+    <li>购昆明动物园门票入圆通山，沿樱花大道前往墓区（靠近东大门）；</li>
+    <li>观<strong>神道</strong>两旁石狮、华表、石雕及松柏梅竹；</li>
+    <li>经<strong>石台阶</strong>上<strong>上下两层平台</strong>（四周石质围栏）；</li>
+    <li>至<strong>碑阁</strong>，观14根欧式石柱、7平顶墓厦及墓碑"会泽唐公蓂赓墓"；</li>
+    <li>细看两侧<strong>八块碑刻</strong>与<strong>墓联</strong>；</li>
+    <li>观<strong>石砌圆丘墓冢</strong>后离场（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>、据携程）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　唐继尧墓为国内规模较大的近代名人陵墓、中西合璧建筑精品，宜静观其碑刻与欧式墓厦（据抖音、据携程）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：唐继尧墓是研究民国初年云南地方史、护国运动与近代名人墓葬的重要史迹，镌刻着墓主在护国运动等时期的历史功绩（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">据五华区人民政府</a>、据抖音）。</li>
+    <li><strong>艺术价值</strong>：集希腊式、威尼斯式、哥特式与中国传统建筑艺术风格于一体，为国内名人墓中的建筑精品（据抖音）。</li>
+    <li><strong>保护现状</strong>：1987年公布为省级文物保护单位；昆明市五华区已将唐继尧相关文化遗迹逐步归入翠湖周边历史文化片区规划（<a href="https://www.km.gov.cn/c/2020-08-31/3645869.shtml">据昆明市人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区圆通山昆明动物园内（靠近东大门、樱花大道附近）。</li>
+    <li><strong>开放时间</strong>：位于昆明动物园内，一般与动物园同步开放（约08:00—18:00）；具体以昆明动物园及文物主管部门官方最新公告为准（据携程）。</li>
+    <li><strong>门票</strong>：包含在昆明动物园门票内（成人票约20元）；具体票价以动物园官方最新公告为准（据携程）。</li>
+    <li><strong>交通</strong>：位于昆明市区圆通山，市内公交/地铁可达（以官方最新交通信息为准）。</li>
+    <li><strong>提示</strong>：墓葬为省级文物，参观时请保持肃穆；具体开放时间、门票以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市五华区人民政府《唐继尧墓（省级）》：<a href="http://www.kmwh.gov.cn/c/2018-05-29/2505629.shtml">kmwh.gov.cn</a></li>
+      <li>昆明市人民政府《对省政协十二届三次会议第398号提案的答复》：<a href="https://www.km.gov.cn/c/2020-08-31/3645869.shtml">km.gov.cn</a></li>
+      <li>昆明市五华区文物管理所《圆通山历史》：<a href="http://www.kmswhqbwzg.cn/Wenbh.go">kmswhqbwzg.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">功业垂永久 · 风云护储胥</div>
+  <div style="margin-top:6px;">信息来自官网、政府、文物局等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蔡希陶旧居深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M18 30 L32 14 L46 30 Z M22 30 L22 50 L42 50 L42 30 Z' fill='%23c05a1e'/%3E%3Crect x='26' y='34' width='12' height='16' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省省级文物保护单位 · 近现代重要史迹 · 名人旧居</div>
+    <h1>蔡希陶旧居</h1>
+    <p class="sub">位于昆明市盘龙区<strong>龙泉路610号中科院昆明植物研究所内（黑龙潭公园旁）</strong>，为严济慈、蔡希陶旧居，抗战时期两位科学大师先后在此居住办公，云南农林植物研究所遗存，<strong>云南省省级文物保护单位</strong>（<a href="https://yn.yunnan.cn/system/2019/02/28/030213294.shtml">据云南省政府公布第八批省保</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>严济慈、蔡希陶旧居（常称"蔡希陶旧居"）</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省省级文物保护单位</strong>（第八批，2019年公布）；曾入选区级、市级文保单位</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（名人旧居）</td></tr>
+      <tr><td>位置</td><td>昆明市盘龙区龙泉路610号，中科院昆明植物研究所内（黑龙潭公园旁）</td></tr>
+      <tr><td>产权与管护</td><td>产权归属中科院昆明植物研究所，文物由盘龙区博物馆管理</td></tr>
+      <tr><td>叠加身份</td><td>九三学社传统教育基地；云南农林植物研究所抗战时期遗存</td></tr>
+      <tr><td>始建年代</td><td>民国时期砖木结构平房</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>设所抗战</strong>：1938年7月，北平静生生物调查所与云南省教育厅签约，云南农林植物研究所在抗战烽火中成立，暂以黑龙潭龙泉公园为所址（<a href="http://kib.cas.cn/djycxwh_index/jyjd/wszt/202106/P020210624648937287883.pdf">据中科院昆明植物研究所历史沿革</a>）。</li>
+    <li><strong>名士栖居</strong>：抗战时期，著名物理学家严济慈（中国现代物理学开拓者之一、时任北平研究院物理研究所所长）和著名植物学家蔡希陶（云南植物科学界一代奠基人、西双版纳热带植物园创建者）先后在此居住和办公（<a href="http://m.toutiao.com/group/6662180482005860877/">据昆明发布</a>、据九三学社）。</li>
+    <li><strong>定级保护</strong>：旧居因系近现代重要史迹及代表性建筑，先后入选区级、市级、省级文物保护单位（据九三学社）。</li>
+    <li><strong>现状利用</strong>：四周树木环绕，保存完好，内部为适应展览要求略有改动；作为教育基地开展纪念与科普（据盘龙区文保简介、据九三学社）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>旧居位于中科院昆明植物研究所内（黑龙潭公园旁），四周树木环绕。</p>
+  <ul>
+    <li><strong>建筑形制</strong>：单体砖木结构西式平房，平面呈"L"形（据盘龙区文保简介）。</li>
+    <li><strong>房屋结构</strong>：坐西向东，三开间，进深两间，南侧突出一间，总面积约100多平方米；建于一坡地之上，设三段15级台阶缓缓而上（据抖音百科线索，仅供参考）。</li>
+    <li><strong>门窗立面</strong>：大门两扇，门前有石阶；左山面开一窗，右侧墙面开两窗（据盘龙区文保简介）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">蔡希陶旧居 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="48" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="65" text-anchor="middle" fill="#8a4a1f" font-weight="700">中科院昆明植物研究所大门（龙泉路610号）</text>
+        <rect x="130" y="84" width="180" height="62" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="102" text-anchor="middle" fill="#8a4a1f" font-weight="700">严济慈、蔡希陶旧居</text>
+        <text x="220" y="118" text-anchor="middle" fill="#8a4a1f" font-size="8.5">L形砖木平房 · 坐西向东三开间</text>
+        <text x="220" y="134" text-anchor="middle" fill="#8a4a1f" font-size="8.5">门前石阶 · 大门两扇 · 南侧突出间</text>
+        <text x="220" y="156" text-anchor="middle" fill="#8a6a40" font-size="8.5">四周树木环绕</text>
+        <rect x="80" y="168" width="132" height="26" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="146" y="184" text-anchor="middle" fill="#8a4a1f" font-weight="700">黑龙潭公园（相邻）</text>
+        <rect x="228" y="168" width="132" height="26" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="294" y="184" text-anchor="middle" fill="#8a4a1f" font-weight="700">昆明植物园（山茶花园·蔡碑）</text>
+        <text x="220" y="228" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 蔡希陶旧居布局示意：植物研究所大门（龙泉路610号）→ 严济慈蔡希陶旧居（L形砖木平房：门前石阶·大门 → 坐西向东三开间 → 南侧突出间）· 四周树木环绕 · 邻近黑龙潭公园、昆明植物园 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>西式平房</strong>：单体砖木结构西式平房，平面呈"L"形，灰瓦屋顶、褐色门窗、白色墙体，外观朴素（据盘龙区文保简介、据昆明发布）。</li>
+    <li><strong>坡地而筑</strong>：房屋建于坡地，设三段台阶缓缓而上，因地制宜（据抖音百科线索，仅供参考）。</li>
+    <li><strong>保存完好</strong>：四周树木环绕，建筑主体保存完好，内部仅因展览略有改动（据盘龙区文保简介）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① "L"形西式平房</strong>：单体砖木结构，平面呈"L"形，抗战时期科学大师栖居办公之所（据盘龙区文保简介）。</li>
+    <li><strong>② 门前石阶与门窗</strong>：大门两扇、门前石阶，左山面一窗、右侧两窗，立面朴素可辨（据盘龙区文保简介）。</li>
+    <li><strong>③ 抗战科研史迹</strong>：云南农林植物研究所抗战时期遗存，严济慈、蔡希陶先后在此办公居住（据中科院昆明植物研究所、据昆明发布）。</li>
+    <li><strong>④ 黑龙潭人文环境</strong>：旧居位于黑龙潭公园旁，四周树木环绕，环境清幽（据昆明发布、据中科院昆明分院）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>故居纪念展示</strong>：旧居内部为适应展览要求进行了适当改造，用于展示纪念内容（据盘龙区文保简介、据九三学社）。</li>
+    <li><strong>植物园纪念景观</strong>：昆明植物园东园山茶花园中，立有蔡希陶墓碑（据中科院昆明分院），与旧居相呼应。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约60—90分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>中科院昆明植物研究所（龙泉路610号）</strong>，经大门入内；</li>
+    <li>到南侧办公区寻<strong>严济慈、蔡希陶旧居</strong>（L形砖木平房）；</li>
+    <li>观门前石阶、大门与门窗立面，细看西式平房形制；</li>
+    <li>参观室内纪念展示，了解严济慈、蔡希陶抗战时期科研栖居往事；</li>
+    <li>出馆沿四周树木漫步，就近可游黑龙潭公园（唐梅宋柏、元茶明杉）后离场（据盘龙区文保简介、据昆明发布、据中科院昆明分院）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　旧居位于科研单位内部，具体参观范围、进入方式以中科院昆明植物研究所/盘龙区博物馆官方最新安排为准（据九三学社）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：云南农林植物研究所抗战时期遗存，严济慈、蔡希陶先后在此居住办公，见证中国现代物理与植物学开拓者在滇的科研岁月（据昆明发布、据中科院昆明植物研究所）。</li>
+    <li><strong>科学价值</strong>：蔡希陶为云南植物科学界一代奠基人、西双版纳热带植物园创建者，旧居是其抗战科研足迹的重要见证（据昆明发布）。</li>
+    <li><strong>保护现状</strong>：入选省级文物保护单位，产权归中科院昆明植物研究所、由盘龙区博物馆管理，保存完好，作为教育基地开放（据九三学社、据盘龙区文保简介）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市盘龙区龙泉路610号，中科院昆明植物研究所内（黑龙潭公园旁）。</li>
+    <li><strong>开放状态</strong>：旧居为纪念展示用途，具体开放时间、参观方式以中科院昆明植物研究所/盘龙区博物馆官方最新公告为准（据九三学社、据昆明发布）。</li>
+    <li><strong>交通</strong>：位于昆明北郊龙泉山下，黑龙潭公园旁（据中科院昆明分院）。</li>
+    <li><strong>提示</strong>：位于科研单位内，请遵守园区管理规定，文明参观、爱护文物。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>云南省政府公布第八批省级文物保护单位（云南网）：<a href="https://yn.yunnan.cn/system/2019/02/28/030213294.shtml">yn.yunnan.cn</a></li>
+      <li>九三学社《解丽平赴昆明严济慈、蔡希陶旧居调研》：<a href="https://www.93.gov.cn/lshm-jyjj/768768.html">93.gov.cn</a></li>
+      <li>昆明发布《探访昆明名人故居：与我们擦肩而过的大师们》：<a href="http://m.toutiao.com/group/6662180482005860877/">m.toutiao.com</a></li>
+      <li>昆明市人民政府《第五批市级文物保护单位保护范围划定方案》（含严济慈蔡希陶旧居）：<a href="https://www.km.gov.cn/c/2012-12-20/3773170.shtml">km.gov.cn</a></li>
+      <li>中科院昆明植物研究所《1938—2018年历史沿革》：<a href="http://kib.cas.cn/djycxwh_index/jyjd/wszt/202106/P020210624648937287883.pdf">kib.cas.cn</a></li>
+      <li>中科院昆明分院《黑龙潭往事》：<a href="http://www.kmb.cas.cn/mtsm/202110/t20211012_6221226.html">kmb.cas.cn</a></li>
+      <li>昆明市盘龙区人民政府《历史文化遗产保护对象调查评估情况公示》：<a href="http://www.kmpl.gov.cn/upload/resources/file/2023/03/31/3029123.pdf">kmpl.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">原本山川 · 极命草木</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

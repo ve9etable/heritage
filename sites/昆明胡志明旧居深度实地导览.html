@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昆明胡志明旧居深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M20 16 L44 16 L44 50 L20 50 Z M26 16 L26 50 M38 16 L38 50 Z' fill='%23c05a1e'/%3E%3Cpath d='M20 16 L32 8 L44 16 Z' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">云南省省级文物保护单位 · 近现代重要史迹 · 名人旧居</div>
+    <h1>昆明胡志明旧居</h1>
+    <p class="sub">位于昆明市五华区<strong>华山南路89—93号</strong>，胡志明1940年在昆明开展革命活动的居所，砖木结构三层楼房、两面坡中式屋顶、面阔三间，中越友谊见证，<strong>云南省省级文物保护单位</strong>（<a href="https://www.km.gov.cn/c/2023-03-27/4708863.shtml">据昆明市政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>昆明胡志明旧居</td></tr>
+      <tr><td>保护级别</td><td><strong>云南省省级文物保护单位</strong>（第八批，2019年公布）；此前2011年列为市级文保单位</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（名人旧居）</td></tr>
+      <tr><td>位置</td><td>昆明市五华区华山南路89—93号</td></tr>
+      <tr><td>年代</td><td>1940年胡志明在昆明开展革命活动时的居所</td></tr>
+      <tr><td>规模</td><td>坐南朝北，占地面积263.01平方米，砖木结构三层楼房，两面坡中式屋顶，面阔三间</td></tr>
+      <tr><td>意义</td><td>中越友谊见证；胡志明在云南开展革命活动的重要实物见证、其在昆明唯一保存完整的旧居</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>栖居昆明</strong>：1940年2月至10月，胡志明在昆明开展革命活动，以南来盛面包师身份为掩护，会见越南革命者、商议革命大事，华山南路的读书生活出版社为其常住地（<a href="http://www.chinanews.com.cn/sh/2024/09-14/10286588.shtml">据中新网</a>、据五华区政府）。</li>
+    <li><strong>定级保护</strong>：2011年公布为市级文保单位，2019年公布为省级文保单位（据昆明市政府、据五华区政府）。</li>
+    <li><strong>修缮布展</strong>：为落实滇越省际会晤机制共识，五华区开展修缮保护与陈列布展，突出庄重简朴、恢复风貌（据人民网）。</li>
+    <li><strong>开放参观</strong>：2023年3月24日正式向公众免费开放（据云南省人民政府、据昆明市政府）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>旧居为华山南路中段的一栋老式三层砖木楼房。</p>
+  <ul>
+    <li><strong>建筑形制</strong>：砖木结构三层楼房，两面坡中式屋顶，面阔三间，坐南朝北（据昆明市政府、据五华区政府）。</li>
+    <li><strong>展陈格局</strong>：以"胡志明在昆明"为主题，展出胡志明多次访问昆明的图片、中文手稿和彼时河内华侨史料（据中新网、据携程线索）。</li>
+    <li><strong>布展方式</strong>：结合立体化图文、展柜展品与灯光氛围营造，重现胡志明在昆抗战、秘密开展革命活动的事迹（据人民网）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">昆明胡志明旧居 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="46" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="63" text-anchor="middle" fill="#8a4a1f" font-weight="700">大门（华山南路89—93号）</text>
+        <rect x="80" y="80" width="280" height="62" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="102" text-anchor="middle" fill="#8a4a1f" font-weight="700">三层砖木楼房（坐南朝北·面阔三间）</text>
+        <text x="220" y="120" text-anchor="middle" fill="#8a4a1f" font-size="8.5">两面坡中式屋顶 · 占地面阔三间</text>
+        <text x="220" y="138" text-anchor="middle" fill="#8a4a1f" font-size="8.5">占地约263㎡</text>
+        <rect x="80" y="150" width="280" height="40" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="168" text-anchor="middle" fill="#8a4a1f" font-weight="700">各层"胡志明在昆明"主题展</text>
+        <text x="220" y="183" text-anchor="middle" fill="#8a4a1f" font-size="8.5">图片 · 中文手稿 · 河内华侨史料</text>
+        <text x="220" y="228" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 昆明胡志明旧居布局示意：大门（华山南路89—93号）→ 三层砖木楼房（坐南朝北·面阔三间·两面坡中式屋顶·占地约263㎡）→ 各层"胡志明在昆明"主题展（图片·中文手稿·河内华侨史料）· 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>砖木三层楼房</strong>：砖木结构三层，坐南朝北，是华山南路中段老式民居建筑（据昆明市政府、据五华区政府）。</li>
+    <li><strong>两面坡中式屋顶</strong>：两面坡中式屋顶、面阔三间，具昆明传统民居风貌（据昆明市政府、据云南省人民政府）。</li>
+    <li><strong>保存完整</strong>：为胡志明在昆明唯一保存完整的旧居（据中新网）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 三层砖木楼房</strong>：胡志明1940年在昆革命活动居所，坐南朝北、面阔三间（据昆明市政府、据五华区政府）。</li>
+    <li><strong>② "胡志明在昆明"主题展</strong>：展出胡志明多次访昆图片、中文手稿、河内华侨史料（据中新网）。</li>
+    <li><strong>③ 革命活动史迹</strong>：以南来盛面包师身份为掩护、会见越南革命者、号召越侨拥护中国抗日的史迹（据中新网、据云南网）。</li>
+    <li><strong>④ 中越友谊见证</strong>：作为中越传统友谊象征，多国观众前来参访（据云南省人民政府、据云南网）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>旧居陈列</strong>：以立体化图文、展柜展品与灯光氛围，呈现胡志明在昆革命事迹（据人民网）。</li>
+    <li><strong>历史照片与手稿</strong>：展出胡志明多次访昆图片、中文手稿等（据中新网）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约45—60分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市五华区华山南路89—93号昆明胡志明旧居</strong>；</li>
+    <li>观临街立面，识别三层砖木楼房与两面坡中式屋顶；</li>
+    <li>入内逐层参观"胡志明在昆明"主题展（图片·手稿·史料）；</li>
+    <li>细看革命活动史迹与中越友谊相关内容后离场（据昆明市政府、据中新网、据人民网）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　旧居2023年3月24日起免费向公众开放，为云南省文保单位、中越友谊见证（据云南省人民政府、据中新网）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：胡志明在昆明唯一保存完整的旧居，是其云南革命活动的重要实物见证（据人民网、据中新网）。</li>
+    <li><strong>友谊价值</strong>：中越两国深厚传统友谊的见证，凝聚老一辈革命家敢于斗争的创业初心（据云南省人民政府）。</li>
+    <li><strong>保护现状</strong>：2019年公布为省级文保单位，2022年起修缮布展，2023年3月正式免费开放（据昆明市政府、据云南省人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区华山南路89—93号。</li>
+    <li><strong>开放状态</strong>：2023年3月24日起向公众<strong>免费开放</strong>；开放时间以官方最新公告为准（据云南省人民政府、据昆明市政府）。</li>
+    <li><strong>交通</strong>：位于华山南路中段，近翠湖一带，交通便利（据中新网）。</li>
+    <li><strong>提示</strong>：旧居为文物建筑，请文明参观、爱护展品，具体安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市人民政府《昆明胡志明旧居对公众开放》：<a href="https://www.km.gov.cn/c/2023-03-27/4708863.shtml">km.gov.cn</a></li>
+      <li>云南省人民政府《昆明胡志明旧居正式开放》：<a href="https://www.yn.gov.cn/yngk/lyyn/lytj/202303/t20230325_256893.html">yn.gov.cn</a></li>
+      <li>昆明市五华区人民政府《昆明胡志明旧居向公众开放》：<a href="http://www.kmwh.gov.cn/c/2023-05-10/6633926.shtml">kmwh.gov.cn</a></li>
+      <li>人民网云南频道《昆明胡志明旧居：红色印迹见证友谊》：<a href="http://yn.people.com.cn/n2/2023/1217/c378439-40681151.html">yn.people.com.cn</a></li>
+      <li>人民网云南频道《胡志明昆明旧居年内完成修缮布展》：<a href="http://yn.people.com.cn/n2/2022/0816/c372456-40081947.html">yn.people.com.cn</a></li>
+      <li>中新网《昆明胡志明旧居正式免费向公众开放》：<a href="https://www.chinanews.com.cn/gj/2023/03-25/9978528.shtml">chinanews.com.cn</a></li>
+      <li>央视网《昆明胡志明旧居向公众开放》：<a href="https://business.cctv.cn/2023/03/24/ARTIiyZwlIZVOTLPAmWwqaLF230324.shtml">business.cctv.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">红色印迹 · 见证友谊</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>贵州省政法大楼旧址深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M18 16 L46 16 L44 52 L20 52 Z M24 16 L26 52 M40 16 L38 52 M24 30 L40 30 M24 40 L40 40' fill='%23c05a1e'/%3E%3Cpath d='M20 12 L32 6 L44 12 Z' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">贵州省省级文物保护单位 · 近现代重要史迹 · 办公楼旧址</div>
+    <h1>贵州省政法大楼旧址</h1>
+    <p class="sub">位于贵阳市云岩区<strong>延安西路2号</strong>，1955年建、1956年竣工，为省人民检察院等政法机关办公旧址，四层大楼、仿罗马柱门廊、五六十年代风格，<strong>贵州省省级文物保护单位</strong>（<a href="https://www.liuzhi.gov.cn/newsite/zwgk_5753282/zdlyxxgk/whlycyfzjwwbh_5753561/202211/t20221101_76978320.html">据六枝特区名单</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>贵州省政法大楼旧址（名录名"贵阳贵州省政法大楼旧址"）</td></tr>
+      <tr><td>保护级别</td><td><strong>贵州省省级文物保护单位</strong>（第五批，2015年公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（办公楼旧址）</td></tr>
+      <tr><td>位置</td><td>贵阳市云岩区延安西路2号</td></tr>
+      <tr><td>年代</td><td>1955年建，1956年4月竣工</td></tr>
+      <tr><td>建筑</td><td>四层大楼，外墙水泥淡黄色，门廊四根仿罗马柱，五六十年代风格</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>兴建</strong>：1955年建成，1956年4月省政法大楼竣工（<a href="https://blog.sina.cn/dpool/blog/s/blog_71ab79df0102vt8h.html">据新浪博客</a>）。</li>
+    <li><strong>办公</strong>：竣工后省人民检察院由园通街迁至延安西路2号政法大楼办公（据新浪博客）。</li>
+    <li><strong>定级保护</strong>：2015年公布为贵州省第五批省级文物保护单位（据STELE、据六枝特区名单）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>大楼位于延安西路2号，从延安西路城堡式大门上台阶、穿过小铁门即至大楼正面（<a href="https://blog.sina.cn/dpool/blog/s/blog_71ab79df0102vt8h.html">据新浪博客</a>）。</p>
+  <ul>
+    <li><strong>格局</strong>：所谓"大楼"其实并不高，只有四层；门廊处为四根仿罗马柱构造（据新浪博客）。</li>
+    <li><strong>立面</strong>：外墙水泥涂成淡黄色，顶层窗台统一采用圆弧形券拱（据新浪博客）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">贵州省政法大楼旧址 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="44" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">延安西路2号 · 城堡式大门</text>
+        <rect x="80" y="78" width="280" height="20" rx="4" fill="#f6ead0" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="92" text-anchor="middle" fill="#8a4a1f" font-weight="700">台阶 · 小铁门</text>
+        <rect x="120" y="106" width="200" height="46" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="122" text-anchor="middle" fill="#8a4a1f" font-weight="700">政法大楼正面（四层）</text>
+        <text x="220" y="138" text-anchor="middle" fill="#8a4a1f" font-size="8.5">仿罗马柱门廊 · 淡黄外墙 · 顶层圆弧券拱</text>
+        <text x="220" y="196" text-anchor="middle" font-size="8.5" fill="#8a6a40">五六十年代建筑风格 · 按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 贵州省政法大楼旧址布局示意：延安西路2号城堡式大门 → 台阶·小铁门 → 政法大楼正面（四层·仿罗马柱门廊·淡黄外墙·顶层圆弧券拱）· 五六十年代建筑风格 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>五六十年代风格</strong>：门廊四根仿罗马柱、淡黄水泥外墙、顶层圆弧券拱，为典型的五六十年代建筑风格，与贵阳省博物馆老楼、红展馆等同时代建筑一致（<a href="https://blog.sina.cn/dpool/blog/s/blog_71ab79df0102vt8h.html">据新浪博客</a>）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 仿罗马柱门廊</strong>：四根仿罗马柱的门廊构造，具时代特征（据新浪博客）。</li>
+    <li><strong>② 城堡式大门</strong>：延安西路侧城堡式大门，为大楼入口地标（据新浪博客）。</li>
+    <li><strong>③ 圆弧券拱立面</strong>：顶层窗台统一的圆弧形券拱（据新浪博客）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>建筑题记</strong>：大楼以建筑本体为价值主体，未见公开之独立楹联匾额题刻（据新浪博客）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约15—20分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>贵阳市云岩区延安西路2号贵州省政法大楼旧址</strong>；</li>
+    <li>观<strong>城堡式大门</strong>，上台阶入内；</li>
+    <li>看<strong>四层大楼</strong>的淡黄外墙、仿罗马柱门廊与顶层圆弧券拱；</li>
+    <li>了解其作为省政法机关办公旧址的历史后离场（据新浪博客）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　大楼现为办公场所，参观以建筑外立面及现场管理规定为准（据新浪博客）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：1950年代省政法机关办公旧址，见证贵州建国初期政法建设（据新浪博客）。</li>
+    <li><strong>建筑价值</strong>：五六十年代典型建筑风格，与省博物馆老楼等同时代建筑并存的建筑样本（据新浪博客）。</li>
+    <li><strong>保护现状</strong>：2015年公布为省级文保单位（据STELE、据六枝特区名单）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：贵州省贵阳市云岩区延安西路2号。</li>
+    <li><strong>开放状态</strong>：大楼为办公场所，非正式开放景点，以建筑外立面参观及现场管理规定为准（据新浪博客）。</li>
+    <li><strong>交通</strong>：位于贵阳市延安西路，交通便利（据六枝特区名单）。</li>
+    <li><strong>提示</strong>：省级文保单位，参观时请尊重办公场所与文物，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>新浪博客《新增文物之贵州省政法大楼》：<a href="https://blog.sina.cn/dpool/blog/s/blog_71ab79df0102vt8h.html">blog.sina.cn</a></li>
+      <li>六枝特区人民政府《贵州省省级文物保护单位名单》：<a href="https://www.liuzhi.gov.cn/newsite/zwgk_5753282/zdlyxxgk/whlycyfzjwwbh_5753561/202211/t20221101_76978320.html">liuzhi.gov.cn</a></li>
+      <li>STELE中国遗产地图《贵州省政法大楼旧址》：<a href="http://stele.geogv.org/zhcn/geo/25cf9a4bd5944ec4b3291c768b423205">stele.geogv.org</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">政法肇基 · 时代风貌</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

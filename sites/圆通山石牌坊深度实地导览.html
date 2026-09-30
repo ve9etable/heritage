@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>圆通山石牌坊深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a7220'/%3E%3Cpath d='M14 14 L20 14 L20 50 L14 50 Z M30 14 L36 14 L36 50 L30 50 Z M46 14 L52 14 L52 50 L46 50 Z M10 18 L56 18 L56 22 L10 22 Z M10 26 L56 26 L56 30 L10 30 Z' fill='%23c09b1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c09b1e;--brick-deep:#8a7220;--brick-soft:#d8b84a;
+    --gold:#b58a2e;--stone:#f2e8cf;--stone-2:#faf6ec;--paper:#fdfaf3;--line:#e6d9b0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f6f0dd;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6d98a;
+    border:1px solid rgba(230,217,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#ded3ae;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#f8efcf;}
+  .hero .sub a{color:#e6d98a;border-bottom-color:rgba(230,217,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6d98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f0da;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#e0d3a4;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#cfc49a;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6d98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">昆明市市级文物保护单位 · 近现代重要史迹 · 民国石牌坊</div>
+    <h1>圆通山石牌坊</h1>
+    <p class="sub">位于昆明市五华区<strong>圆通山（昆明动物园内）</strong>，包含三座石坊，建于1934—1937年，分别立于圆通山制高点大方亭东南西三面，代表忠、孝、义，<strong>昆明市市级文物保护单位</strong>（2011年公布）（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2525658.shtml">据昆明市五华区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>圆通山石牌坊（三石牌坊）</td></tr>
+      <tr><td>保护级别</td><td><strong>昆明市市级文物保护单位</strong>（2011年昆明市第五批公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（民国石牌坊）</td></tr>
+      <tr><td>位置</td><td>昆明市五华区圆通山（昆明动物园内）</td></tr>
+      <tr><td>年代</td><td>建于1934年至1937年之间</td></tr>
+      <tr><td>组成</td><td>包含三座石坊，分别立于圆通山制高点大方亭东南西三面</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>营建</strong>：三座石牌坊建于1934年至1937年之间，分别立于圆通山制高点大方亭东南西三面（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2525658.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>寓意</strong>：三座石牌坊分别代表忠、孝、义（据昆明信息港）。</li>
+    <li><strong>定级</strong>：2011年公布为市级文保单位（据昆明市五华区人民政府、据昆明市人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>圆通山石牌坊位于圆通山制高点大方亭东南西三面（<a href="http://www.kmwh.gov.cn/c/2018-05-29/2525658.shtml">据昆明市五华区人民政府</a>）。</p>
+  <ul>
+    <li><strong>三坊布局</strong>：三座石牌建制相同，分列大方亭东、南、西三面（据昆明市五华区人民政府）。</li>
+    <li><strong>大方亭</strong>：圆通山制高点建筑，为牌坊围绕的中心（据昆明市五华区人民政府）。</li>
+    <li><strong>园内遗存</strong>：昆明动物园内尚有明城墙残段、唐继尧墓、滇西抗战阵亡将士纪念碑等文物（据昆明市园林绿化局、据昆明信息港）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a7220">圆通山石牌坊 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="44" width="120" height="28" rx="4" fill="#f2e8cf" stroke="#c09b1e" stroke-width="2"/>
+        <text x="140" y="61" text-anchor="middle" fill="#8a7220" font-weight="700">圆通山（昆明动物园）</text>
+        <rect x="230" y="40" width="140" height="36" rx="4" fill="#c09b1e" stroke="#8a7220" stroke-width="2"/>
+        <text x="300" y="55" text-anchor="middle" fill="#fff" font-weight="700">大方亭（制高点）</text>
+        <text x="300" y="69" text-anchor="middle" fill="#ffe9b8" font-size="8">三坊围绕之中心</text>
+        <rect x="80" y="90" width="120" height="28" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="140" y="107" text-anchor="middle" fill="#8a7220" font-weight="700">东面石牌坊（忠）</text>
+        <rect x="230" y="90" width="120" height="28" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="290" y="107" text-anchor="middle" fill="#8a7220" font-weight="700">南面石牌坊（孝）</text>
+        <rect x="80" y="126" width="120" height="28" rx="4" fill="#e8daa8" stroke="#c09b1e" stroke-width="2"/>
+        <text x="140" y="143" text-anchor="middle" fill="#8a7220" font-weight="700">西面石牌坊（义）</text>
+        <text x="220" y="176" text-anchor="middle" font-size="8.5" fill="#8a7a40">园内另有：明城墙残段·唐继尧墓·滇西抗战阵亡将士纪念碑</text>
+        <text x="220" y="190" text-anchor="middle" font-size="8.5" fill="#8a7a40">按公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 圆通山石牌坊布局示意：圆通山（昆明动物园）→ 大方亭（制高点）→ 东面石牌坊（忠）·南面石牌坊（孝）·西面石牌坊（义）→ 园内另有明城墙残段·唐继尧墓·滇西抗战阵亡将士纪念碑 · 按公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑特色（古建筑·牌坊类）</h2></div>
+  <ul>
+    <li><strong>建制</strong>：三座石牌建制相同，青石质地，四柱三门，平顶，方柱，长方形额枋，须弥座夹杆石（据昆明市五华区人民政府）。</li>
+    <li><strong>尺度</strong>：通高6.5米、宽约9米，中间间距2.47米、边间间距1.68米（据昆明市五华区人民政府）。</li>
+    <li><strong>装饰</strong>：石雕镂空动物、卷云等装饰精美，集建筑、雕刻、园林艺术、书法艺术于一体（据昆明信息港）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 三座石牌坊</strong>：大方亭东南西三面的三座青石牌坊，四柱三门、须弥座夹杆石（据昆明市五华区人民政府）。</li>
+    <li><strong>② 石雕装饰</strong>：石雕镂空动物、卷云等图案，精美细致（据昆明信息港）。</li>
+    <li><strong>③ 忠孝义寓意</strong>：三坊分别代表忠、孝、义，蕴含传统伦理内涵（据昆明信息港）。</li>
+    <li><strong>④ 大方亭与园景</strong>：圆通山制高点大方亭及周边历史遗存（据昆明市五华区人民政府、据昆明市园林绿化局）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <p>石牌坊以石雕镂空装饰著称；坊额具体文字未见公开刊布，建议以现场实物及官方公布为准（现有公开资料未完整披露）。</p>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约30—50分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>昆明市五华区圆通山（昆明动物园）</strong>；</li>
+    <li>至圆通山制高点<strong>大方亭</strong>，先观<strong>东面石牌坊</strong>；</li>
+    <li>依次环视<strong>南面、西面石牌坊</strong>，细看四柱三门、须弥座夹杆石与石雕镂空装饰；</li>
+    <li>结合忠、孝、义寓意了解三坊内涵，可顺游明城墙残段、唐继尧墓等园内遗存后离场（据昆明市五华区人民政府、据昆明信息港）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　石牌坊位于昆明动物园内，观览需购动物园门票，具体以官方最新公布为准（据昆明市园林绿化局）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：民国时期营建的石牌坊群，见证昆明近代园林建设史（据昆明市五华区人民政府）。</li>
+    <li><strong>艺术价值</strong>：四柱三门建制与石雕镂空装饰，集建筑、雕刻、书法艺术于一体（据昆明市五华区人民政府、据昆明信息港）。</li>
+    <li><strong>保护现状</strong>：市级文保单位（2011年）；昆明市公布过保护范围与建设控制地带（据昆明市人民政府）。</li>
+    <li><strong>保护范围</strong>：以滇西抗战阵亡将士纪念碑遗址东面台阶向东外延3米，西面牌坊向西外延6米，南面牌坊向南外延3米，北面牌坊向北外延17米为界（据昆明市人民政府）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区圆通山（昆明动物园内）。</li>
+    <li><strong>开放状态</strong>：石牌坊位于昆明动物园内，随动物园开放，具体以官方最新公布为准（据昆明市园林绿化局）。</li>
+    <li><strong>交通</strong>：位于圆通山，毗邻圆通寺、翠湖，可乘地铁4/5号线至圆通山站步行前往（据昆明市园林绿化局、据昆明信息港）。</li>
+    <li><strong>提示</strong>：市级文保单位，参观时请文明守礼，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市五华区人民政府《圆通山石牌坊（市级）》：<a href="http://www.kmwh.gov.cn/c/2018-05-29/2525658.shtml">kmwh.gov.cn</a></li>
+      <li>昆明市人民政府《昆明市第五批市级文物保护单位保护范围和建设控制地带划定方案》：<a href="https://www.km.gov.cn/c/2012-12-20/3773170.shtml">km.gov.cn</a></li>
+      <li>昆明市园林绿化局《登圆通山瞭望亭，感受时光交错中的春城魅力》：<a href="https://yllhj.km.gov.cn/c/2025-11-27/5037982.shtml">yllhj.km.gov.cn</a></li>
+      <li>昆明信息港《昆明动物园面向全国公开有奖征集LOGO活动启事》：<a href="https://www.kunming.cn/zt/2015-09/21/content_4029614.htm">kunming.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">忠孝义坊 · 圆通胜境</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>毛光翔公馆深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M20 16 L44 16 L44 26 L20 26 Z M22 30 L42 30 L40 52 L24 52 Z M28 34 L28 52 M34 34 L34 52 M22 30 L18 34 L18 52 L24 52' fill='%23c05a1e'/%3E%3Ccircle cx='34' cy='20' r='2.5' fill='%23f0d9a8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">贵州省省级文物保护单位 · 近现代重要史迹 · 名人官邸旧址</div>
+    <h1>毛光翔公馆</h1>
+    <p class="sub">位于贵阳市云岩区<strong>中华北路六广门西南侧（中华北路79号）</strong>，1926—1930年建，民国时期贵州省主席毛光翔官邸，中欧式建筑结合、贵阳"民国四大建筑"之一，<strong>贵州省省级文物保护单位</strong>（<a href="http://m.toutiao.com/group/7039161579241259531/">据贵阳晚报</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>毛光翔公馆（俗称"毛公馆"；省级名录名"贵阳毛公馆故宫文物南迁存放旧址"）</td></tr>
+      <tr><td>保护级别</td><td><strong>贵州省省级文物保护单位</strong>（2018年7月31日公布）</td></tr>
+      <tr><td>类别</td><td>近现代重要史迹及代表性建筑（名人官邸·旧址）</td></tr>
+      <tr><td>位置</td><td>贵阳市云岩区中华北路六广门西南侧（中华北路79号）</td></tr>
+      <tr><td>年代</td><td>建于1926年至1930年间，民国时期贵州省主席毛光翔官邸</td></tr>
+      <tr><td>建筑</td><td>中欧式建筑风格结合，主楼三层、跨楼厢楼二层，砖木结构、青砖青瓦</td></tr>
+      <tr><td>地位</td><td>与王伯群故居、王家烈虎峰别墅等并称贵阳"民国四大建筑"</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>兴建</strong>：1926年至1930年间修建，为贵州省主席毛光翔官邸，1929年毛光翔入住（据贵阳晚报、据时空记忆线索）。</li>
+    <li><strong>历事</strong>：1935年蒋介石夫妇住此指挥追剿红军；1937—1938年故宫文物南迁，80余箱文物曾存放于此近一年（<a href="http://wlj.guiyang.gov.cn/zwgk/jyta/202003/t20200316_55269244.html">据贵阳市文旅局</a>、据贵阳晚报）。</li>
+    <li><strong>解放后</strong>：先后作政府办公楼、单位行政中心、职工宿舍（据抖音线索）。</li>
+    <li><strong>定级保护</strong>：2018年7月31日由省政府公布为省级文物保护单位（据贵阳晚报、据360地图）。</li>
+    <li><strong>修缮开放</strong>：2022年启动修缮重建，建筑主体完工，将陈列布展并向公众开放（据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>公馆位于中华北路六广门西南侧，由主楼、跨楼和厢楼组成（<a href="http://m.toutiao.com/group/7039161579241259531/">据贵阳晚报</a>）。</p>
+  <ul>
+    <li><strong>格局</strong>：主楼为三层，跨楼和厢楼为二层，砖木结构、青砖青瓦、宽走廊、深屋檐（据贵阳网、据抖音百科）。</li>
+    <li><strong>门廊</strong>：大圆拱门，镶五彩玻璃窗，木质扶手和地板（据贵阳网、据ZAKER）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">毛光翔公馆 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="44" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">中华北路六广门 · 入口</text>
+        <rect x="80" y="78" width="280" height="36" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="92" text-anchor="middle" fill="#8a4a1f" font-weight="700">主楼（三层·砖木结构·青砖青瓦）</text>
+        <text x="220" y="106" text-anchor="middle" fill="#8a4a1f" font-size="8.5">宽走廊 · 深屋檐 · 大圆拱门</text>
+        <rect x="80" y="122" width="130" height="30" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="145" y="140" text-anchor="middle" fill="#8a4a1f" font-weight="700">跨楼（二层）</text>
+        <rect x="230" y="122" width="130" height="30" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="295" y="140" text-anchor="middle" fill="#8a4a1f" font-weight="700">厢楼（二层）</text>
+        <text x="220" y="182" text-anchor="middle" font-size="8.5" fill="#8a6a40">五彩玻璃窗 · 木质扶手与地板</text>
+        <text x="220" y="200" text-anchor="middle" font-size="8.5" fill="#8a6a40">按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 毛光翔公馆布局示意：中华北路六广门入口 → 主楼（三层·砖木结构·青砖青瓦·宽走廊深屋檐·大圆拱门）→ 跨楼·厢楼（二层）·五彩玻璃窗·木质扶手地板 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>中欧式结合</strong>：效仿欧式建筑风格，又保留中式土木建筑传统，为中欧式建筑结合的公馆（<a href="http://www.gywb.cn/system/2021/06/01/031303496.shtml">据贵阳网</a>、据贵阳晚报）。</li>
+    <li><strong>细部特征</strong>：主楼三层、跨楼厢楼二层，砖木结构、青砖青瓦、宽走廊、深屋檐、大圆拱门、五彩玻璃窗、木质扶手与地板（据贵阳网、据抖音百科）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 主楼与跨楼厢楼</strong>：三层主楼加二层跨楼厢楼的中欧式布局（据贵阳网、据抖音百科）。</li>
+    <li><strong>② 五彩玻璃窗与大圆拱门</strong>：典型细部装饰，中西合璧（据贵阳网、据抖音百科）。</li>
+    <li><strong>③ 故宫文物南迁史迹</strong>：1938年曾为故宫存放80余箱珍贵文物近一年（据贵阳市文旅局、据贵阳晚报）。</li>
+    <li><strong>④ 民国四大建筑</strong>：与王伯群故居、王家烈虎峰别墅等并称（据贵阳晚报）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>建筑题刻</strong>：公馆以建筑本体为主体，修缮后设有陈列布展，具体匾额题刻待修缮开放后以现场为准（据贵阳市文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约30—45分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>贵阳市云岩区中华北路六广门西南侧毛光翔公馆</strong>；</li>
+    <li>观<strong>主楼</strong>三层与青砖青瓦、宽走廊深屋檐形制；</li>
+    <li>细看<strong>跨楼、厢楼</strong>与大圆拱门、五彩玻璃窗细部；</li>
+    <li>了解<strong>故宫文物南迁存放</strong>与民国四大建筑史实后离场（据贵阳网、据贵阳市文旅局）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　公馆修缮主体已完工，将陈列布展并向公众开放，届时可入内参观（据抖音线索、据贵阳市文旅局）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：民国时期贵州省主席官邸，见证军阀统治、红军长征与故宫文物南迁史实（据贵阳晚报、据贵阳市文旅局）。</li>
+    <li><strong>建筑价值</strong>：中欧式建筑结合、贵阳"民国四大建筑"之一，特定环境中幸存的贵阳最古老建筑之一（据贵阳晚报、据中新网）。</li>
+    <li><strong>保护现状</strong>：2018年公布为省级文保单位，2022年起修缮重建，主体完工待开放（据贵阳晚报、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：贵州省贵阳市云岩区中华北路六广门西南侧（中华北路79号）。</li>
+    <li><strong>开放状态</strong>：公馆修缮主体已完工，正进行陈列布展，将向公众开放，具体开放时间以官方最新公告为准（据贵阳市文旅局、据抖音线索）。</li>
+    <li><strong>交通</strong>：位于贵阳中心城区中华北路六广门（据贵阳网）。</li>
+    <li><strong>提示</strong>：省级文保单位，参观时请爱护文物，具体开放安排以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>贵阳晚报《省级文物"毛公馆"将修缮》：<a href="http://m.toutiao.com/group/7039161579241259531/">toutiao.com</a></li>
+      <li>贵阳网《筑城筑迹·贵阳城建百年变迁(69)》：<a href="http://www.gywb.cn/system/2021/06/01/031303496.shtml">gywb.cn</a></li>
+      <li>贵阳市文化和旅游局《关于加强毛光翔公馆旧址保护利用的建议办理情况》：<a href="http://wlj.guiyang.gov.cn/zwgk/jyta/202003/t20200316_55269244.html">wlj.guiyang.gov.cn</a></li>
+      <li>中新网《贵州军阀故居变危房 拟将其列为文物保护单位》：<a href="https://www.chinanews.com/shipin/cnstv/2012/08-24/news85633.shtml">chinanews.com</a></li>
+      <li>贵州省人大常委会《六广门外话沧桑》：<a href="http://www.gzrd.gov.cn/gzwh/201910/t20191017_77669681.html">gzrd.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">中欧华筑 · 南迁藏珍</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>

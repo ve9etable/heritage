@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>筇竹寺（全国重点文物保护单位）深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236b1f17'/%3E%3Cpolygon points='32,8 8,26 56,26' fill='%23e6c98a'/%3E%3Crect x='18' y='26' width='28' height='30' rx='2' fill='%23b7ae9c'/%3E%3Crect x='14' y='56' width='36' height='4' fill='%23b8745a'/%3E%3Ccircle cx='32' cy='40' r='5' fill='%236b1f17'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;--brick:#8a2a20;--brick-deep:#6b1f17;
+    --brick-soft:#a85046;--gold:#a8823c;--stone:#e9e3d8;--stone-2:#f4f0e8;
+    --paper:#fbf9f4;--line:#d9d2c4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  li > ul{margin:6px 0 6px 20px;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f7f3ea;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--gold);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#c9c0ae;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">全国重点文物保护单位 · 古建筑 · 禅宗入滇第一寺</div>
+    <h1>筇竹寺</h1>
+    <p class="sub">位于昆明西郊玉案山，是中国佛教禅宗传入云南的第一寺。因藏有泥塑大师黎广修历时七年塑造的<strong>五百罗汉彩塑</strong>而闻名，被誉为"东方雕塑艺术宝库中的明珠"，2001年列为<strong>全国重点文物保护单位</strong>（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>筇竹寺</td></tr>
+      <tr><td>保护级别</td><td><strong>全国重点文物保护单位</strong>（2001年6月国务院公布第五批；1983年汉族地区佛教全国重点寺院）</td></tr>
+      <tr><td>类别</td><td>古建筑（佛教寺院）</td></tr>
+      <tr><td>地址</td><td>云南省昆明市五华区玉案山（西郊玉案山麓，距城区约12公里）</td></tr>
+      <tr><td>始建</td><td>相传始建于唐贞观十二年（639年），有碑可载建于元代至元十七年（1280年）；清乾隆、光绪年间两次重修</td></tr>
+      <tr><td>规模</td><td>寺院坐西朝东，沿中轴线四进三院，山门、天王殿、大雄宝殿、华严阁依山布局</td></tr>
+      <tr><td>叠加身份</td><td>中国佛教禅宗传入云南第一寺、汉族地区佛教全国重点寺院、藏"东方雕塑艺术宝库中的明珠"五百罗汉彩塑</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>创建</strong>：筇竹寺相传始建于唐贞观年间（627—649年），因"筇竹传奇，犀牛表异"的神话传说得名；有碑文可循建寺最早可追溯至元至元十七年（1280年），禅宗高僧雄辩法师所建（<a href="http://paper.people.com.cn/hwbwap/html/2022-04/22/content_25914240.htm">据人民日报</a>、据抖音百科）。</li>
+    <li><strong>开讲宗先河</strong>：元初高僧雄辩法师在此讲经，开昆明地区汉传大乘佛教讲宗传播先河；元延祐三年（1316年）元仁宗颁敕圣旨保护寺院财产，声誉渐高（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>兴废重建</strong>：明永乐十七年（1419年）毁于大火，经明、清两代修建扩建，逐渐形成今天沿山势逐层而建、布局规整的建筑群；清乾隆、光绪年间两次重修（<a href="http://www.kmwh.gov.cn/c/2020-05-07/4264960.shtml">据昆明市五华区人民政府</a>、据人民日报）。</li>
+    <li><strong>五百罗汉</strong>：清光绪十六年（1890年）大修寺院时，住持梦佛大和尚从四川合川县聘请泥塑艺术大师黎广修重塑五百罗汉，黎广修师徒历时7个寒暑完成（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>定级保护</strong>：2001年6月国务院公布为第五批全国重点文物保护单位（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>筇竹寺坐西朝东，依山而建，采用中轴东西方向布局，形成四进三院式庭院空间。沿中轴线依次为：<strong>山门 → 天王殿 → 大雄宝殿 → 华严阁</strong>；天王殿左右厢房为天台来阁、梵音阁（五百罗汉展区），大雄宝殿左右配殿为伽蓝殿、祖师殿（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>、据抖音百科）。中轴线建筑屋顶用黄色琉璃瓦，围合建筑用青瓦，主从分明（据携程）。</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a7b66">筇竹寺 · 布局示意（坐西朝东·四进三院）</text>
+      <!-- 中轴 -->
+      <line x1="60" y1="90" x2="60" y2="300" stroke="#a8823c" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="36" y="300" font-size="8" fill="#8a7b66">东(入口)</text>
+      <!-- 山门 -->
+      <rect x="120" y="120" width="120" height="26" rx="3" fill="#c9c0ae" stroke="#8a7b66"/>
+      <text x="180" y="138" text-anchor="middle" font-size="9" fill="#4a4438">山门（悬山顶）</text>
+      <!-- 天王殿 -->
+      <rect x="150" y="156" width="120" height="26" rx="3" fill="#b7ae9c" stroke="#8a7b66"/>
+      <text x="210" y="174" text-anchor="middle" font-size="9" fill="#4a4438">天王殿</text>
+      <!-- 罗汉阁 -->
+      <rect x="40" y="196" width="90" height="40" rx="3" fill="#e6c98a" stroke="#a8823c"/>
+      <text x="85" y="212" text-anchor="middle" font-size="8" fill="#6b1f17">天台来阁</text>
+      <text x="85" y="226" text-anchor="middle" font-size="8" fill="#6b1f17">罗汉216尊</text>
+      <rect x="290" y="196" width="90" height="40" rx="3" fill="#e6c98a" stroke="#a8823c"/>
+      <text x="335" y="212" text-anchor="middle" font-size="8" fill="#6b1f17">梵音阁</text>
+      <text x="335" y="226" text-anchor="middle" font-size="8" fill="#6b1f17">罗汉216尊</text>
+      <!-- 大雄宝殿 -->
+      <rect x="140" y="198" width="140" height="34" rx="3" fill="#b7ae9c" stroke="#8a7b66" stroke-width="2"/>
+      <text x="210" y="212" text-anchor="middle" font-size="9" fill="#4a4438" font-weight="700">大雄宝殿</text>
+      <text x="210" y="226" text-anchor="middle" font-size="8" fill="#5a554c">三世佛 · 两壁罗汉68尊</text>
+      <!-- 华严阁 -->
+      <rect x="150" y="246" width="120" height="26" rx="3" fill="#b7ae9c" stroke="#8a7b66"/>
+      <text x="210" y="264" text-anchor="middle" font-size="9" fill="#4a4438">华严阁（重檐歇山）</text>
+      <text x="220" y="312" text-anchor="middle" font-size="9" fill="#8a7b66">中轴：山门—天王殿—大雄宝殿—华严阁（黄琉璃瓦）</text>
+      <text x="220" y="326" text-anchor="middle" font-size="8" fill="#8a7b66">天台来阁/梵音阁分列天王殿后 · 共500罗汉</text>
+    </svg>
+    <div class="cap">▲ 筇竹寺布局示意：山门（悬山顶·孔雀杉）→ 天王殿（回字形天井）→ 大雄宝殿（高台·三世佛·两壁罗汉）→ 华严阁（重檐歇山）；天台来阁（216罗汉）/梵音阁（216罗汉）分列 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格与营造特色 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格与营造特色</h2></div>
+  <ul>
+    <li><strong>坐西朝东、四进三院</strong>：寺院依山就势，中轴东西向，山门、天王殿、大雄宝殿等沿中轴线依山布局，四进三院式庭院空间（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>山门</strong>：两面坡悬山顶，面阔三间11.5米、进深二间7.2米，内塑密执金刚两尊；山门左前方有钟楼一座，占地22平方米；入山门为矩形小院，有相传植于元代的孔雀杉二株，需三人合抱（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>天王殿</strong>：两坡悬山顶，面阔三间19.2米、进深三间12米，内塑四天王及弥勒佛；天王殿与大雄宝殿间为"回"字形天井，占地约1200平方米（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>大雄宝殿</strong>：单檐歇山顶，面阔五间21.2米、进深三间18.1米，檐下无斗拱，正面设三堂隔扇门；大殿正中金装泥塑三世佛（中释迦、左药师、右阿弥陀），两壁塑彩罗汉68尊（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>华严阁</strong>：重檐歇山，斗拱繁富，1986年冬烧毁后重建，金碧灿烂（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>屋顶色彩主从</strong>：中轴线建筑黄色琉璃瓦（"尊者居中"），围合建筑青瓦，主从分明（据携程）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 五百罗汉彩塑</strong>：分布于大雄宝殿两壁（68尊）、天台来阁（216尊）、梵音阁（216尊），共计500尊，黎广修师徒历时7年完成，被誉为"东方雕塑艺术宝库中的明珠"（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>② 大雄宝殿</strong>：单檐歇山顶、面阔五间，正中金装三世佛，两壁彩罗汉（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>③ 元代白话圣旨碑</strong>：大殿右壁下立著名元代白话圣旨碑，见证元仁宗护寺历史（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>④ 元代孔雀杉</strong>：山门内相传植于元代的孔雀杉二株，需三人合抱（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>⑤ 禅宗第一寺</strong>：中国佛教禅宗传入云南第一寺，雄辩法师开讲宗先河（<a href="http://paper.people.com.cn/hwbwap/html/2022-04/22/content_25914240.htm">据人民日报</a>）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>元代《圣旨牌》</strong>：元仁宗颁敕，保护寺院财产（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>明代《重建玉案山筇竹寺记》《玉案山筇竹寺供奉藏经记》</strong>（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>清代《重修玉案山筇竹寺记》《重建华严阁序》</strong>（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>塔顶坟</strong>：寺后山苗圃内有三座塔顶坟，其中一座为开山祖师雄辩法师之大寂塔（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约2—3小时）</strong>：</p>
+  <ol>
+    <li>至<strong>山门</strong>，先观悬山顶山门与密执金刚，入院赏<strong>元代孔雀杉</strong>；</li>
+    <li>入<strong>天王殿</strong>，观四天王及弥勒佛；</li>
+    <li>出天王殿，先览<strong>天台来阁</strong>（216罗汉）；</li>
+    <li>回中轴，步入<strong>大雄宝殿</strong>，观金装三世佛、两壁彩罗汉，读殿内<strong>元代白话圣旨碑</strong>；</li>
+    <li>出殿经"回"字形天井，观配殿伽蓝殿、祖师殿；</li>
+    <li>至<strong>梵音阁</strong>（216罗汉）；</li>
+    <li>沿中轴登至<strong>华严阁</strong>，眺玉案山景；</li>
+    <li>若时间充裕，至寺后观<strong>雄辩法师大寂塔</strong>等塔顶坟。</li>
+  </ol>
+  <div class="tip"><span class="t">时间紧张备选</span>　直奔<strong>大雄宝殿 + 两壁罗汉 + 天台来阁/梵音阁 + 圣旨碑</strong>，约1小时。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>艺术价值</strong>：五百罗汉彩塑摆脱佛教传统泥塑"千佛一面"的呆板模式，以现实生活人物形象创作，喜怒哀乐惟妙惟肖；采用传统矿物、植物颜料彩画，色泽淡雅不褪色；二十世纪六十年代中央美术学院研究八大佛寺五百罗汉后，评价昆明筇竹寺艺术成就最高（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+    <li><strong>历史价值</strong>：中国佛教禅宗传入云南第一寺，集彩塑、碑刻、楹联壁画、古柏为一体，是云南佛教文化瑰宝（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>、据人民日报）。</li>
+    <li><strong>保护现状</strong>：2001年国保；1983年汉族地区佛教全国重点寺院；2001年6月国务院公布为第五批国保（<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">据昆明市五华区人民政府</a>）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：云南省昆明市五华区玉案山（黑筇段）（据昆明本地宝）。</li>
+    <li><strong>开放时间</strong>：一般全年8:00—19:00开放（据携程、昆明本地宝，以官方最新为准）。</li>
+    <li><strong>门票</strong>：约6元/人次（据携程、昆明本地宝，以官方最新为准）。</li>
+    <li><strong>交通</strong>：位于城西玉案山麓，距城区约12公里；自驾或乘公交至黑筇公路一带可达（据抖音百科、携程）。</li>
+    <li><strong>提示</strong>：为全国重点文物，请勿触摸罗汉塑像、爱护文物；开放时间、门票等易变信息以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>昆明市五华区人民政府《筇竹寺（国家级）·文保单位》（2023-11-21）：<a href="http://www.kmwh.gov.cn/c/2023-11-21/6766534.shtml">kmwh.gov.cn</a></li>
+      <li>昆明市五华区人民政府《筇竹寺（国家级）·文保单位》（2025-12-02）：<a href="http://www.kmwh.gov.cn/c/2025-12-02/7082548.shtml">kmwh.gov.cn</a></li>
+      <li>人民日报海外版《五百罗汉耀筇竹》（2022-04-22）：<a href="http://paper.people.com.cn/hwbwap/html/2022-04/22/content_25914240.htm">people.com.cn</a></li>
+      <li>昆明市五华区人民政府《五华高品质核心区实力——人文五华》（2020-05-07）：<a href="http://www.kmwh.gov.cn/c/2020-05-07/4264960.shtml">kmwh.gov.cn</a></li>
+      <li>昆明市民族宗教事务委员会《筇竹寺》：<a href="https://mzw.km.gov.cn/c/2011-04-30/2670632.shtml">mzw.km.gov.cn</a></li>
+      <li>昆明本地宝《昆明筇竹寺攻略》：<a href="https://km.bendibao.com/jingdian/qiongzhusi/">km.bendibao.com</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">筇竹传奇 · 五百罗汉耀名山</div>
+  <div style="margin-top:6px;">信息来自官网、政府、报纸、文物局等官方权威渠道 · 布局示意图以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>
+<!-- （注：内容由AI生成） -->

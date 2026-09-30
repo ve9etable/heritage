@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>君子亭深度实地导览</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a4a1f'/%3E%3Cpath d='M32 10 L36 18 L46 14 L42 24 L50 26 L40 32 L50 38 L42 40 L46 50 L36 46 L32 54 L28 46 L18 50 L22 40 L14 38 L24 32 L14 26 L22 24 L18 14 L28 18 Z' fill='%23c05a1e'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#2b2823;--ink-2:#5a554c;
+    --brick:#c05a1e;--brick-deep:#8a4a1f;--brick-soft:#d98a4a;
+    --gold:#c98a3c;--stone:#efe3d4;--stone-2:#faf4ec;--paper:#fdfaf4;--line:#e3d4c0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink);background:var(--stone-2);line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:"Noto Serif SC","Songti SC",Georgia,serif;}
+  a{color:var(--brick);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{color:var(--brick-deep);border-bottom-color:var(--brick-soft);}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+
+  .hero{background:var(--brick-deep);color:#f3ede2;padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;
+    background:linear-gradient(90deg,var(--gold),transparent 60%);}
+  .hero .wrap{position:relative;z-index:1;}
+  .hero .kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:#e6c98a;
+    border:1px solid rgba(230,201,138,0.4);padding:3px 12px;margin-bottom:18px;}
+  .hero h1{font-size:34px;line-height:1.25;font-weight:800;letter-spacing:1px;}
+  .hero .sub{font-size:14.5px;color:#d8cfc0;margin-top:16px;max-width:680px;line-height:1.9;}
+  .hero .sub strong{color:#ffe4d6;}
+  .hero .sub a{color:#e6c98a;border-bottom-color:rgba(230,201,138,0.4);}
+  .hero .sub a:hover{color:#fff;border-bottom-color:#e6c98a;}
+  @media(max-width:600px){.hero{padding:40px 0 32px;}.hero h1{font-size:26px;}}
+
+  section{padding:44px 0 6px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
+    border-bottom:2px solid var(--line);padding-bottom:10px;}
+  .sec-no{font-family:"Noto Serif SC",serif;font-weight:700;font-size:15px;color:var(--brick);flex:0 0 auto;}
+  .sec-head h2{font-size:23px;font-weight:700;color:var(--ink);letter-spacing:1px;}
+  p{margin:12px 0;font-size:15px;color:var(--ink);}
+  ul{margin:10px 0 10px 22px;}
+  ol{margin:10px 0 10px 24px;}
+  li{margin:7px 0;font-size:15px;line-height:1.8;}
+  strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;table-layout:fixed;background:var(--paper);}
+  thead th{background:var(--brick);color:#fff;text-align:left;padding:10px 12px;
+    font-size:13px;font-weight:600;letter-spacing:0.5px;}
+  tbody td,th{padding:11px 12px;border:1px solid var(--line);vertical-align:top;font-size:13.5px;}
+  thead th{border-color:var(--brick-deep);}
+  tbody tr:nth-child(even) td{background:#f8f1e3;}
+  @media(max-width:600px){.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}table{min-width:520px;}}
+
+  .tip{background:var(--stone);border-left:4px solid var(--gold);border-radius:4px;
+    padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink);}
+  .tip .t{font-weight:700;color:var(--brick);letter-spacing:1px;}
+
+  .fig{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px 16px;margin:16px 0;}
+  .fig svg{width:100%;height:auto;display:block;}
+  .fig .cap{font-size:12.5px;color:var(--ink-2);text-align:center;margin-top:8px;}
+
+  .refs{background:var(--stone);padding:36px 0 54px;margin-top:40px;}
+  .refs .sec-head{border-bottom-color:#d9c7aa;}
+  .refs ol{margin:12px 0 0 22px;font-size:13.5px;color:var(--ink-2);}
+  .refs li{margin:8px 0;overflow-wrap:break-word;}
+  .refs a{color:var(--brick-soft);}
+
+  footer{background:var(--brick-deep);color:#c9bfaf;text-align:center;padding:24px 22px;font-size:12.5px;}
+  footer .q{color:#e6c98a;font-family:"Noto Serif SC",serif;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">贵州省省级文物保护单位 · 古建筑 · 亭</div>
+    <h1>君子亭</h1>
+    <p class="sub">位于贵阳市云岩区<strong>环城东路君子巷中段</strong>，明嘉靖年间贵州总兵沈希仪所建、清嘉庆十九年巡抚许兆椿另建新亭，长方形·八石柱·翼角上翘，贵阳城东古亭，<strong>贵州省省级文物保护单位</strong>（<a href="https://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959417.html">据贵阳市文旅局</a>）。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- 一、基本信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">一</span><h2>基本信息</h2></div>
+  <div class="tbl-scroll">
+  <table>
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <thead><tr><th>项目</th><th>内容</th></tr></thead>
+    <tbody>
+      <tr><td>单位全称</td><td>君子亭</td></tr>
+      <tr><td>保护级别</td><td><strong>贵州省省级文物保护单位</strong>（1982年2月23日公布；1958年贵州省人民委员会曾列为省级文保单位）</td></tr>
+      <tr><td>类别</td><td>古建筑（亭）</td></tr>
+      <tr><td>位置</td><td>贵阳市云岩区环城东路君子巷中段（东门外原城垣下，遥对扶风山阳明祠）</td></tr>
+      <tr><td>年代</td><td>明嘉靖年间贵州总兵沈希仪建，清乾隆年间废弃，嘉庆十九年（1814年）巡抚许兆椿另建新亭</td></tr>
+      <tr><td>形制</td><td>长方形亭，约长7米、宽5米（一说占地50平方米），周遭以8根石柱支撑</td></tr>
+      <tr><td>现状</td><td>惜今仅存建筑构件，已被民房占用</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 二、历史沿革 -->
+<section>
+  <div class="sec-head"><span class="sec-no">二</span><h2>历史沿革</h2></div>
+  <ul>
+    <li><strong>始建</strong>：明嘉靖年间，贵州总兵沈希仪在贵阳老东门外修建东园君子亭（<a href="https://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959417.html">据贵阳市文旅局</a>、据贵州日报）。</li>
+    <li><strong>废弃</strong>：清乾隆年间，君子亭废弃，清乾隆《贵州通志》载"旧有君子亭，今废"（据贵阳市文旅局）。</li>
+    <li><strong>重建</strong>：清嘉庆十九年（1814年），贵州巡抚许兆椿在东门外另建新亭，与阳明祠同期（据贵阳市文旅局、据贵州日报）。</li>
+    <li><strong>定级保护</strong>：1958年贵州省人民委员会列为省级文保单位，1982年2月23日再次由省政府公布为省级文保单位（据云岩区政府、据贵阳市文旅局）。</li>
+  </ul>
+</section>
+
+<!-- 三、整体布局与空间动线 -->
+<section>
+  <div class="sec-head"><span class="sec-no">三</span><h2>整体布局与空间动线</h2></div>
+  <p>亭位于君子巷中段，所在俗称莲花坡，亭前旧时为东城濠、后为荷花池，东面正对扶风山阳明祠，南面紧邻文昌阁（<a href="https://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959417.html">据贵阳市文旅局</a>、据云岩区政府）。</p>
+  <ul>
+    <li><strong>形制</strong>：长方形亭，长约7米、宽约5米，坐西朝东，四周以八根石柱支撑，四脊翼角上翘，木屋架小青瓦覆盖，外形古雅大方（据贵阳市文旅局、据抖音线索）。</li>
+    <li><strong>题刻</strong>：光绪十二年（1886年）赵以炯中状元时，李端棻撰联寄筑、刻于亭石柱上（据南明区政府）。</li>
+  </ul>
+
+  <div class="fig">
+    <svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <text x="220" y="22" font-size="12" fill="#8a4a1f">君子亭 · 布局示意</text>
+      <g font-size="9">
+        <rect x="80" y="44" width="280" height="26" rx="4" fill="#f0d9a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="61" text-anchor="middle" fill="#8a4a1f" font-weight="700">君子巷（环城东路中段）</text>
+        <rect x="120" y="78" width="200" height="40" rx="4" fill="#e8d0a8" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="94" text-anchor="middle" fill="#8a4a1f" font-weight="700">君子亭（长方形·8石柱·翼角上翘）</text>
+        <text x="220" y="110" text-anchor="middle" fill="#8a4a1f" font-size="8.5">木屋架小青瓦 · 坐西朝东</text>
+        <rect x="80" y="126" width="280" height="26" rx="4" fill="#f6ead0" stroke="#c05a1e" stroke-width="2"/>
+        <text x="220" y="143" text-anchor="middle" fill="#8a4a1f" font-weight="700">亭前荷花池（莲花坡）</text>
+        <text x="220" y="196" text-anchor="middle" font-size="8.5" fill="#8a6a40">东对阳明祠 · 南邻文昌阁 · 按官方公开信息整理，以现场为准</text>
+      </g>
+    </svg>
+    <div class="cap">▲ 君子亭布局示意：君子巷（环城东路中段）→ 君子亭（长方形·8石柱·翼角上翘·木屋架小青瓦·坐西朝东）→ 亭前荷花池（莲花坡）· 东对阳明祠、南邻文昌阁 · 按官方公开信息整理，具体以现场为准</div>
+  </div>
+</section>
+
+<!-- 四、建筑风格 -->
+<section>
+  <div class="sec-head"><span class="sec-no">四</span><h2>建筑风格</h2></div>
+  <ul>
+    <li><strong>石柱木构亭</strong>：长方形平面，四周八根石柱支撑，四脊翼角上翘，以木屋架小青瓦覆盖（据贵阳市文旅局、据抖音线索）。</li>
+    <li><strong>形制古朴</strong>：古雅大方的明代亭式建筑遗风，是贵阳城东旧景"莲花坡"一带的重要历史建筑（据贵阳市文旅局、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 五、核心看点·该看什么 -->
+<section>
+  <div class="sec-head"><span class="sec-no">五</span><h2>核心看点 · 该看什么</h2></div>
+  <ul>
+    <li><strong>① 八石柱木构亭</strong>：长方形、八根石柱支撑、翼角上翘、木屋架小青瓦（据贵阳市文旅局、据抖音线索）。</li>
+    <li><strong>② 李端棻亭联</strong>：光绪十二年刻于石柱的状元联（据南明区政府）。</li>
+    <li><strong>③ 地理文脉</strong>：东对阳明祠、南邻文昌阁，处贵阳城东文脉要地（据贵阳市文旅局、据云岩区政府）。</li>
+    <li><strong>④ 建筑遗存</strong>：今虽仅存构件、被民房占用，屋顶与8根石柱仍保持原样（据贵阳市文旅局、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 六、楹联、石刻与匾额 -->
+<section>
+  <div class="sec-head"><span class="sec-no">六</span><h2>楹联、石刻与匾额</h2></div>
+  <ul>
+    <li><strong>李端棻亭联</strong>：光绪十二年（1886年）赵以炯中状元、君子亭重修竣工，李端棻撰联寄筑刻于石柱："游钓记芳踪，重看莲沼波清；君子高风同仰止，秀灵钟闲气；为报杏林春满，状元及第正归来"；今石柱字迹模糊，仍清晰可见（<a href="https://www.nanming.gov.cn/zjnm/whzl/mrmj/202504/t20250407_87478626.html">据南明区政府</a>）。</li>
+    <li><strong>许兆椿亭联（据传）</strong>：嘉庆十九年另建新亭时题联："傍郭临池，坐揽烟波迟素月；浮香送馥，人来……"（据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 七、推荐观看顺序 -->
+<section>
+  <div class="sec-head"><span class="sec-no">七</span><h2>推荐观看顺序</h2></div>
+  <p><strong>主推路线（约15—20分钟）</strong>：</p>
+  <ol>
+    <li>至<strong>贵阳市云岩区环城东路君子巷中段</strong>；</li>
+    <li>于巷南段观<strong>省级文物保护单位石碑</strong>；</li>
+    <li>看<strong>君子亭</strong>遗存，识别长方形、八石柱、翼角上翘形制；</li>
+    <li>细读<strong>石柱亭联</strong>（李端棻联）后，可顺访东对之<strong>阳明祠</strong>、南邻之<strong>文昌阁</strong>（据贵阳市文旅局、据云岩区政府、据南明区政府）。</li>
+  </ol>
+  <div class="tip"><span class="t">说明</span>　君子亭现已为民房占用、仅存建筑构件，现场以遗迹与石碑为主（据贵阳市文旅局、据抖音线索）。</div>
+</section>
+
+<!-- 八、保护价值与现状 -->
+<section>
+  <div class="sec-head"><span class="sec-no">八</span><h2>保护价值与现状</h2></div>
+  <ul>
+    <li><strong>历史价值</strong>：始建于明、重建于清的贵阳城东古亭，见证贵阳城市与文脉变迁（据贵阳市文旅局、据贵州日报）。</li>
+    <li><strong>文化价值</strong>：处阳明祠、文昌阁文脉带，含李端棻等名流题联（据南明区政府、据云岩区政府）。</li>
+    <li><strong>保护现状</strong>：1982年公布为省级文保单位；现亭体仅存构件、被民房占用，屋顶与石柱尚存原貌（据贵阳市文旅局、据抖音线索）。</li>
+  </ul>
+</section>
+
+<!-- 九、参观/开放信息 -->
+<section>
+  <div class="sec-head"><span class="sec-no">九</span><h2>参观/开放信息</h2></div>
+  <ul>
+    <li><strong>地址</strong>：贵州省贵阳市云岩区环城东路君子巷中段。</li>
+    <li><strong>开放状态</strong>：君子亭为省级文保单位，现位于居民区内、为民房占用，非正式开放景点，以现场遗迹及石碑为主（据贵阳市文旅局、据云岩区政府）。</li>
+    <li><strong>交通</strong>：位于环城东路君子巷中段，近文昌北路南端（据云岩区政府、据抖音线索）。</li>
+    <li><strong>提示</strong>：文物保护单位，参观时请勿扰民宅、爱护遗迹，具体以官方最新公告为准。</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- 十、参考资料 -->
+<section class="refs">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">十</span><h2>参考资料</h2></div>
+    <ol>
+      <li>贵阳市文化和旅游局《君子亭》：<a href="https://wlj.guiyang.gov.cn/wlfw/wwjq/201912/t20191220_33959417.html">wlj.guiyang.gov.cn</a></li>
+      <li>云岩区人民政府《君子亭景区》：<a href="https://www.yunyan.gov.cn/wcyy/cyyy/jczy/201712/t20171219_82704743.html?isMobile=false">yunyan.gov.cn</a></li>
+      <li>贵州日报《东园君子亭》：<a href="http://szb.eyesnews.cn/pc/cont/202402/02/content_116812.html">eyesnews.cn</a></li>
+      <li>南明区人民政府《文化南明·历史名人丨清代·李端棻》：<a href="https://www.nanming.gov.cn/zjnm/whzl/mrmj/202504/t20250407_87478626.html">nanming.gov.cn</a></li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="q">君子高风 · 莲沼波清</div>
+  <div style="margin-top:6px;">信息来自官网、政府、媒体等官方权威渠道 · 布局示意以现场为准 · 开放信息以官方最新公告为准</div>
+</footer>
+
+</body>
+</html>
