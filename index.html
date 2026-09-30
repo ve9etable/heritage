@@ -201,10 +201,7 @@
   footer.site::before{content:"";position:absolute;inset:0;
     background:repeating-linear-gradient(122deg,rgba(230,217,138,.04) 0 1px,transparent 1px 14px);}
   footer.site>*{position:relative;}
-  footer.site .q{color:var(--gold-soft);font-family:"Noto Serif SC",serif;font-size:15px;letter-spacing:4px;}
-  footer.site .links{margin-top:12px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
-  footer.site .links a{color:#cbc1ab;border-bottom:1px solid rgba(203,193,171,.28);padding-bottom:1px;}
-  footer.site .links a:hover{color:var(--gold-soft);border-bottom-color:var(--gold-soft);}
+  footer.site .q{color:var(--gold-soft);font-family:"Noto Serif SC",serif;font-size:15px;letter-spacing:3px;}
 
   .totop{position:fixed;right:20px;bottom:20px;z-index:40;width:42px;height:42px;border-radius:50%;
     border:1px solid var(--line);background:rgba(254,253,248,.94);color:var(--brick-deep);cursor:pointer;
@@ -274,17 +271,13 @@
     <button type="button" id="reset">重置搜索与筛选</button>
   </div>
   <div class="note">
-    <b>关于本站：</b>各卡片跳转至独立导览页，内容整理自政府官网、地方志、官方媒体等权威渠道；布局示意图以现场实测为准，开放时间与保护要求以文物主管部门最新公告为准。新增单位只需在 <code>index.html</code> 的 <code>SITES</code> 数组中追加一条记录。
+    <b>关于本站：</b>各卡片跳转至 <code>sites/</code> 目录下的独立导览页，内容整理自政府官网、地方志、官方媒体等权威渠道；布局示意图以现场实测为准，开放时间与保护要求以文物主管部门最新公告为准。新增单位只需在 <code>index.html</code> 的 <code>SITES</code> 数组中追加一条记录。
   </div>
 </main>
 
 <footer class="site">
-  <div class="q">观 其 城 垣 楼 院</div>
+  <div class="q">循古建之迹 · 读千年之信</div>
   <div style="margin-top:8px;">文物保护单位介绍 · 深度实地导览 · 信息以官方最新公布为准</div>
-  <div class="links">
-    <a href="https://www.ncha.gov.cn/" target="_blank" rel="noopener">国家文物局</a>
-    <a href="#top">返回顶部</a>
-  </div>
 </footer>
 
 <button class="totop" id="totop" type="button" aria-label="返回顶部">↑</button>
@@ -358,7 +351,7 @@
 
   var SITES = [
     {
-      file: "叙州城墙深度实地导览.html",
+      file: "sites/叙州城墙深度实地导览.html",
       art: "xz",
       name: "叙州城墙",
       alias: "叙州城城墙旧址（宜宾）",
@@ -380,7 +373,7 @@
       open: "沿滨江路免费参观"
     },
     {
-      file: "甲秀楼深度实地导览.html",
+      file: "sites/甲秀楼深度实地导览.html",
       art: "jxl",
       name: "甲秀楼",
       alias: "甲秀楼（贵阳）",
@@ -402,7 +395,7 @@
       open: "9:00—17:00 · 免费"
     },
     {
-      file: "翠屏书院深度实地导览.html",
+      file: "sites/翠屏书院深度实地导览.html",
       art: "cps",
       name: "翠屏书院",
       alias: "翠屏书院（宜宾）",

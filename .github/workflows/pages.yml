@@ -35,7 +35,8 @@ jobs:
       - name: 生成 artifact
         run: |
           mkdir -p _site
-          cp -r index.html .nojekyll *.html _site/
+          cp index.html .nojekyll _site/
+          cp -r sites _site/
 
       - name: 上传 Pages 构建产物
         uses: actions/upload-pages-artifact@v3
