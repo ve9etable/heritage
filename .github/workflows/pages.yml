@@ -21,6 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 启用并校验 Pages 设置（enablement 默认 true，仓库未开 Pages 时会一并开启）
+      - uses: actions/configure-pages@v5
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
